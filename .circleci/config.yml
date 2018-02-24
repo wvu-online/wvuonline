@@ -123,9 +123,9 @@ jobs:
                 command: ./.circleci/scripts/pantheon/02-init-site-under-test-clone-existing
                 # command: ./.circleci/scripts/pantheon/02-init-site-under-test-reinstall-new
 
-            - run:
-                name: run functional tests with Behat
-                command: ./tests/scripts/run-behat
+            #- run:
+            #    name: run functional tests with Behat
+            #    command: ./tests/scripts/run-behat
 
             - run:
                 name: post-test actions
