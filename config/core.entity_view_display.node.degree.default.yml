@@ -1,0 +1,50 @@
+uuid: fc4d99bc-5138-4e74-9a85-37db217f95de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.degree.body
+    - node.type.degree
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          ae17bf21-c596-4539-a3ad-c5a1c4c13ca5:
+            uuid: ae17bf21-c596-4539-a3ad-c5a1c4c13ca5
+            region: content
+            configuration:
+              id: 'field_block:node:degree:body'
+              label_display: ''
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+id: node.degree.default
+targetEntityType: node
+bundle: degree
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

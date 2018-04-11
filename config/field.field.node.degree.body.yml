@@ -1,0 +1,22 @@
+uuid: 3f30a778-6346-489b-83a8-65cec046aeee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.degree
+  module:
+    - text
+id: node.degree.body
+field_name: body
+entity_type: node
+bundle: degree
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,21 @@
+uuid: 8497c080-05cc-4955-b379-67f07ca922fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_coll_sdes
+    - node.type.coll
+  module:
+    - text
+id: node.coll.field_coll_sdes
+field_name: field_coll_sdes
+entity_type: node
+bundle: coll
+label: 'Short Description'
+description: 'A single paragraph that provides a boilerplate description of the college'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

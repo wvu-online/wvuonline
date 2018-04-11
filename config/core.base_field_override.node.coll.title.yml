@@ -1,0 +1,18 @@
+uuid: 107d62ad-3d7f-4f5c-85ee-a92aab6f8ba3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.coll
+id: node.coll.title
+field_name: title
+entity_type: node
+bundle: coll
+label: 'College Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

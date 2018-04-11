@@ -1,0 +1,18 @@
+default_button: true
+default_message: true
+default_tab: false
+default_tab_edit: false
+_core:
+  default_config_hash: ffjwyOkkEGJcHRBGwLlGLtdWUcTvXx8Dclcq43MZrT8
+button:
+  degree: true
+  coll: true
+message:
+  degree: true
+  coll: true
+tab:
+  degree: false
+  coll: false
+tab_edit:
+  degree: false
+  coll: false

@@ -1,0 +1,25 @@
+uuid: 91c07e02-9da5-46d0-9078-bd39215c4dc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_coll_media
+    - node.type.coll
+id: node.coll.field_coll_media
+field_name: field_coll_media
+entity_type: node
+bundle: coll
+label: 'College Media'
+description: 'A place for images or videos for the college'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: media
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference
