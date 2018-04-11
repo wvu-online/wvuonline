@@ -1,0 +1,43 @@
+uuid: ccd7bef5-30e5-40b2-826a-093fab2a344c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.sdat_tax.field_sdat_start
+    - taxonomy.vocabulary.sdat_tax
+  module:
+    - datetime
+    - field_layout
+    - layout_discovery
+    - path
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: taxonomy_term.sdat_tax.default
+targetEntityType: taxonomy_term
+bundle: sdat_tax
+mode: default
+content:
+  field_sdat_start:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  description: true

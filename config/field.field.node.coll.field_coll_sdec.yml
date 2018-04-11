@@ -1,0 +1,21 @@
+uuid: 809cc7e3-8e11-4e88-bb99-a9468f6c0744
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_coll_sdec
+    - node.type.coll
+  module:
+    - text
+id: node.coll.field_coll_sdec
+field_name: field_coll_sdec
+entity_type: node
+bundle: coll
+label: 'Short Description'
+description: 'A paragraph of information about the college. This will be displayed on the degree pages'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

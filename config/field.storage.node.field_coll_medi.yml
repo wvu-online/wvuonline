@@ -1,0 +1,20 @@
+uuid: b0e6a1ae-68b8-4a15-9fd2-7ed654416125
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_coll_medi
+field_name: field_coll_medi
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,77 @@
+uuid: 3b2a47e0-779f-4698-addb-31d9745a6ccd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.coll.field_coll_medi
+    - field.field.node.coll.field_coll_sdec
+    - node.type.coll
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          521f46ff-1ed5-4d91-bf63-f29446fdc77a:
+            uuid: 521f46ff-1ed5-4d91-bf63-f29446fdc77a
+            region: content
+            configuration:
+              id: 'field_block:node:coll:field_coll_sdec'
+              label_display: ''
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          146c16da-e779-4e8a-b144-487fd159b140:
+            uuid: 146c16da-e779-4e8a-b144-487fd159b140
+            region: content
+            configuration:
+              id: 'field_block:node:coll:field_coll_medi'
+              label_display: ''
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 1
+id: node.coll.default
+targetEntityType: node
+bundle: coll
+mode: default
+content:
+  field_coll_medi:
+    type: entity_reference_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_coll_sdec:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

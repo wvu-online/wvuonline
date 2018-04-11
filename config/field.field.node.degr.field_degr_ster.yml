@@ -1,0 +1,25 @@
+uuid: f165b9f1-5911-4d99-ba8c-4cd1ee6403a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_degr_ster
+    - node.type.degr
+id: node.degr.field_degr_ster
+field_name: field_degr_ster
+entity_type: node
+bundle: degr
+label: 'Start Term'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: start_terms
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

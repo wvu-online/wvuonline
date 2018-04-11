@@ -1,0 +1,25 @@
+uuid: 7a8ea309-cbf1-49be-9205-42c22b9bf0f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_degr_coll_ref
+    - node.type.degr
+id: node.degr.field_degr_coll_ref
+field_name: field_degr_coll_ref
+entity_type: node
+bundle: degr
+label: 'Program College'
+description: 'The college offering the degree'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: colleges
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

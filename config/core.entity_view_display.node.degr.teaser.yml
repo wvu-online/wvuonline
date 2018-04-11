@@ -1,0 +1,27 @@
+uuid: 8aa59479-b069-4de9-a315-fbf07d4f496b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.degr
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components: {  }
+id: node.degr.teaser
+targetEntityType: node
+bundle: degr
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

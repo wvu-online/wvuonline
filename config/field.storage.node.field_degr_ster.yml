@@ -1,0 +1,20 @@
+uuid: d73ff514-ac05-4f26-86e5-fd5dc2a1c87e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_degr_ster
+field_name: field_degr_ster
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 5
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

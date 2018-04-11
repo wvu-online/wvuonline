@@ -1,0 +1,19 @@
+uuid: 0747e5d5-3e6c-4fea-8177-1e807bc47731
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_coll_sdec
+field_name: field_coll_sdec
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

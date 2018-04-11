@@ -1,0 +1,15 @@
+uuid: 25a60aa3-5efc-414c-b828-363d3190f92b
+langcode: en
+status: true
+dependencies:
+  module:
+    - type_style
+third_party_settings:
+  type_style:
+    color: '#000000'
+    icon: ''
+name: 'Program Start Dates'
+vid: sdat_tax
+description: ''
+hierarchy: 0
+weight: 0

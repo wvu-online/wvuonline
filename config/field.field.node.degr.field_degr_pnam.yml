@@ -1,0 +1,19 @@
+uuid: 427d3e50-19ac-4b41-b53e-434a71decf77
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_degr_pnam
+    - node.type.degr
+id: node.degr.field_degr_pnam
+field_name: field_degr_pnam
+entity_type: node
+bundle: degr
+label: 'Program Name'
+description: 'Program name without degree type (i.e. M.A., Ph.D.)'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

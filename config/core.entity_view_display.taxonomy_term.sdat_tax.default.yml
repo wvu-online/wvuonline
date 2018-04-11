@@ -1,0 +1,73 @@
+uuid: 7d683175-9874-4148-ad7e-d7b4a16965bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.sdat_tax.field_sdat_start
+    - taxonomy.vocabulary.sdat_tax
+  module:
+    - datetime
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          5d735b39-3a8c-452f-bc2e-b8f4402517f0:
+            uuid: 5d735b39-3a8c-452f-bc2e-b8f4402517f0
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:sdat_tax:description'
+              label_display: ''
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          37430ac2-c3b7-4b8c-a2a8-1550bc5e5672:
+            uuid: 37430ac2-c3b7-4b8c-a2a8-1550bc5e5672
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:sdat_tax:field_sdat_start'
+              label_display: ''
+              formatter:
+                label: above
+                settings:
+                  format_type: medium
+                  timezone_override: ''
+                third_party_settings: {  }
+                type: datetime_default
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 1
+id: taxonomy_term.sdat_tax.default
+targetEntityType: taxonomy_term
+bundle: sdat_tax
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sdat_start:
+    weight: 1
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+hidden: {  }

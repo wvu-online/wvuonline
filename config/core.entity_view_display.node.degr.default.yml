@@ -1,0 +1,128 @@
+uuid: 1f998abd-eeee-4bca-9a6e-ac4fb54bfe07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.degr.field_degr_chrs
+    - field.field.node.degr.field_degr_coll_ref
+    - field.field.node.degr.field_degr_pnam
+    - field.field.node.degr.field_degr_ster
+    - node.type.degr
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          92bb6cec-d447-4dfc-b82b-a147b1d0d163:
+            uuid: 92bb6cec-d447-4dfc-b82b-a147b1d0d163
+            region: content
+            configuration:
+              id: 'field_block:node:degr:field_degr_pnam'
+              label_display: ''
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          20a27e58-6028-4027-8883-d781fdf486cf:
+            uuid: 20a27e58-6028-4027-8883-d781fdf486cf
+            region: content
+            configuration:
+              id: 'field_block:node:degr:field_degr_chrs'
+              label_display: ''
+              formatter:
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+                type: number_integer
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 1
+          721dfeab-0a3c-4145-b009-89936bf14687:
+            uuid: 721dfeab-0a3c-4145-b009-89936bf14687
+            region: content
+            configuration:
+              id: 'field_block:node:degr:field_degr_coll_ref'
+              label_display: ''
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 2
+          cc81c78c-7644-4822-bc62-2a8295023616:
+            uuid: cc81c78c-7644-4822-bc62-2a8295023616
+            region: content
+            configuration:
+              id: 'field_block:node:degr:field_degr_ster'
+              label_display: ''
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 3
+id: node.degr.default
+targetEntityType: node
+bundle: degr
+mode: default
+content:
+  field_degr_chrs:
+    weight: 102
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_degr_coll_ref:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_degr_pnam:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_degr_ster:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

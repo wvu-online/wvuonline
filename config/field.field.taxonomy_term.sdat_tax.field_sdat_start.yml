@@ -1,0 +1,21 @@
+uuid: c11f0238-6502-42a1-9245-52660bbc9dbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_sdat_start
+    - taxonomy.vocabulary.sdat_tax
+  module:
+    - datetime
+id: taxonomy_term.sdat_tax.field_sdat_start
+field_name: field_sdat_start
+entity_type: taxonomy_term
+bundle: sdat_tax
+label: 'Start Date'
+description: 'Enter the term start date.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
