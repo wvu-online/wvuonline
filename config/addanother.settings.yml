@@ -7,12 +7,16 @@ _core:
 button:
   degree: true
   coll: true
+  sdat: true
 message:
   degree: true
   coll: true
+  sdat: true
 tab:
   degree: false
   coll: false
+  sdat: false
 tab_edit:
   degree: false
   coll: false
+  sdat: false

@@ -1,0 +1,22 @@
+uuid: 6077be61-13e5-42a3-a362-878b6b8dbc21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.sdat
+  module:
+    - text
+id: node.sdat.body
+field_name: body
+entity_type: node
+bundle: sdat
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

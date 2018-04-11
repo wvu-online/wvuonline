@@ -1,0 +1,53 @@
+uuid: acea3b68-1960-45eb-a8b2-b2e3fcc1fb65
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sdat.body
+    - node.type.sdat
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          91d2fa84-a1fa-46e2-a1f0-b55c8edbb74b:
+            uuid: 91d2fa84-a1fa-46e2-a1f0-b55c8edbb74b
+            region: content
+            configuration:
+              id: 'field_block:node:sdat:body'
+              label_display: ''
+              formatter:
+                label: hidden
+                type: text_summary_or_trimmed
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+id: node.sdat.teaser
+targetEntityType: node
+bundle: sdat
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }
