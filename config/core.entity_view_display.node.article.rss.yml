@@ -10,20 +10,7 @@ dependencies:
     - field.field.node.article.field_tags
     - node.type.article
   module:
-    - field_layout
-    - layout_builder
-    - layout_discovery
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
-  layout_builder:
-    sections:
-      -
-        layout_id: layout_onecol
-        layout_settings: {  }
-        components: {  }
 _core:
   default_config_hash: 2rIr6K5Q0UQ9khg0zE_CK-PtJH76UL-BDDZcZnZzwCc
 id: node.article.rss
@@ -34,8 +21,6 @@ content:
   links:
     weight: 100
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   body: true
   comment: true

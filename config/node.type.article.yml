@@ -1,13 +1,7 @@
 uuid: 3db31c8f-1f5e-4c69-8bd3-b8ac48869382
 langcode: en
 status: true
-dependencies:
-  module:
-    - type_style
-third_party_settings:
-  type_style:
-    color: '#039BE5'
-    icon: book
+dependencies: {  }
 _core:
   default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
 name: Article
