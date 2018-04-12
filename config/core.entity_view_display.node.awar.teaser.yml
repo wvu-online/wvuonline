@@ -1,0 +1,27 @@
+uuid: 3f476009-38ba-425d-aca8-ce44031f7568
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.awar
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components: {  }
+id: node.awar.teaser
+targetEntityType: node
+bundle: awar
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,23 @@
+uuid: 834ef3e7-3ae7-4a62-8a53-2889c018944b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_degr_out_cost
+    - node.type.degr
+id: node.degr.field_degr_out_cost
+field_name: field_degr_out_cost
+entity_type: node
+bundle: degr
+label: 'Out of State Cost'
+description: 'Leave blank if no difference between in and out.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: $
+  suffix: ' per credit'
+field_type: integer

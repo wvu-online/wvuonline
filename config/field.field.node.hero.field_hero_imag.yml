@@ -1,0 +1,25 @@
+uuid: ac180ae9-eb22-4f6e-872a-93c9c2219152
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_imag
+    - node.type.hero
+id: node.hero.field_hero_imag
+field_name: field_hero_imag
+entity_type: node
+bundle: hero
+label: 'Hero Image'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: media_entity_browser
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

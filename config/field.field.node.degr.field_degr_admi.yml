@@ -1,0 +1,21 @@
+uuid: df216114-9f43-4adc-bd7e-2fb782a2e30a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_degr_admi
+    - node.type.degr
+  module:
+    - text
+id: node.degr.field_degr_admi
+field_name: field_degr_admi
+entity_type: node
+bundle: degr
+label: Admissions
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

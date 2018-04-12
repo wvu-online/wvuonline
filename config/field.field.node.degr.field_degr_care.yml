@@ -1,0 +1,21 @@
+uuid: bea57b17-7777-4b9f-8b56-2d7e32ee7a4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_degr_care
+    - node.type.degr
+  module:
+    - text
+id: node.degr.field_degr_care
+field_name: field_degr_care
+entity_type: node
+bundle: degr
+label: Career
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

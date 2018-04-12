@@ -1,0 +1,19 @@
+uuid: aebdfd95-322a-465f-942b-435869e88bed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_awar_long
+    - node.type.awar
+id: node.awar.field_awar_long
+field_name: field_awar_long
+entity_type: node
+bundle: awar
+label: 'Long Degree Name'
+description: 'Full Name of Degree. I.e. Master of Fine Arts'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

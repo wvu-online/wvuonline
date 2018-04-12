@@ -1,0 +1,20 @@
+uuid: 128a30f3-bbe1-4c43-9842-aef39b43c5f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_degr_in_state
+field_name: field_degr_in_state
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

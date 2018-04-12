@@ -1,0 +1,51 @@
+uuid: 3cd079e7-180f-4960-9e1d-b8503dfcba23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.facu.field_facu_name
+    - node.type.facu
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          ebcbc676-4572-4460-b60e-dad0265607a8:
+            uuid: ebcbc676-4572-4460-b60e-dad0265607a8
+            region: content
+            configuration:
+              id: 'field_block:node:facu:field_facu_name'
+              label_display: ''
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+id: node.facu.default
+targetEntityType: node
+bundle: facu
+mode: default
+content:
+  field_facu_name:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

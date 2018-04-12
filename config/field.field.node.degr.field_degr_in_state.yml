@@ -1,0 +1,23 @@
+uuid: b1bceb0e-03e4-408f-b791-439abede81c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_degr_in_state
+    - node.type.degr
+id: node.degr.field_degr_in_state
+field_name: field_degr_in_state
+entity_type: node
+bundle: degr
+label: 'In-State Cost'
+description: 'In-State Cost per Credit. If no difference between in and out, use this field.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: $
+  suffix: ' per credit'
+field_type: integer

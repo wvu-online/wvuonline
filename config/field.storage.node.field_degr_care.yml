@@ -1,0 +1,19 @@
+uuid: e4030180-922c-4f7a-92fa-d21588ee79fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_degr_care
+field_name: field_degr_care
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

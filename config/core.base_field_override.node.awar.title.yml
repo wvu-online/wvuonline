@@ -1,0 +1,18 @@
+uuid: fb23b8c2-eba2-4582-9546-4599552e45e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.awar
+id: node.awar.title
+field_name: title
+entity_type: node
+bundle: awar
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

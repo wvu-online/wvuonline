@@ -1,0 +1,22 @@
+uuid: 69e50705-5b6b-4f47-833b-20de13e70ca2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.awar
+id: node.awar.promote
+field_name: promote
+entity_type: node
+bundle: awar
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

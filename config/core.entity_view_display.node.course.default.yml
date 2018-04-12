@@ -1,0 +1,50 @@
+uuid: 27a11faa-7968-4ac9-b897-a03eef39489c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.course.field_course_description
+    - node.type.course
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          39803e28-c9ee-4a26-9eff-9b0cb0ea8f65:
+            uuid: 39803e28-c9ee-4a26-9eff-9b0cb0ea8f65
+            region: content
+            configuration:
+              id: 'field_block:node:course:field_course_description'
+              label_display: ''
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+id: node.course.default
+targetEntityType: node
+bundle: course
+mode: default
+content:
+  field_course_description:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

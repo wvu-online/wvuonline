@@ -1,0 +1,15 @@
+uuid: 2d6f53a8-eaba-41a6-a747-6f4a8ec0ffec
+langcode: en
+status: true
+dependencies:
+  module:
+    - type_style
+third_party_settings:
+  type_style:
+    color: '#000000'
+    icon: ''
+name: 'Program Type'
+vid: program_type
+description: ''
+hierarchy: 0
+weight: 0

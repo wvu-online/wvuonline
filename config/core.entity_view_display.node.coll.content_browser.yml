@@ -1,0 +1,31 @@
+uuid: 6faa96c9-0ab6-4785-a2a5-dad53711cd11
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.content_browser
+    - field.field.node.coll.field_coll_medi
+    - field.field.node.coll.field_coll_sdec
+    - node.type.coll
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components: {  }
+id: node.coll.content_browser
+targetEntityType: node
+bundle: coll
+mode: content_browser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_coll_medi: true
+  field_coll_sdec: true

@@ -1,0 +1,51 @@
+uuid: 70b56e7e-e840-4d1d-9d8c-ee57b2064b7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ssto.field_ssto_name
+    - node.type.ssto
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          86f58642-e2cc-4d55-91c1-687455028e03:
+            uuid: 86f58642-e2cc-4d55-91c1-687455028e03
+            region: content
+            configuration:
+              id: 'field_block:node:ssto:field_ssto_name'
+              label_display: ''
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+id: node.ssto.default
+targetEntityType: node
+bundle: ssto
+mode: default
+content:
+  field_ssto_name:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

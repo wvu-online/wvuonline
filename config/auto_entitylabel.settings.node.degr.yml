@@ -1,0 +1,7 @@
+status: '1'
+pattern: '[node:field_degr_pnam], [node:field_awar_abbr]'
+php: 0
+escape: 1
+dependencies:
+  config:
+    - node.type.degr

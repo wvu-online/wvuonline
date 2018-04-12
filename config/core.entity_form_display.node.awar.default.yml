@@ -1,0 +1,55 @@
+uuid: 6617b1a6-5b81-41a1-ba25-73eb6ad88637
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.awar.field_awar_abbr
+    - field.field.node.awar.field_awar_long
+    - node.type.awar
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.awar.default
+targetEntityType: node
+bundle: awar
+mode: default
+content:
+  field_awar_abbr:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_awar_long:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  moderation_state: true
+  path: true
+  promote: true
+  publish_on: true
+  status: true
+  sticky: true
+  uid: true
+  unpublish_on: true
+  url_redirects: true

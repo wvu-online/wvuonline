@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - image.style.media_entity_browser_thumbnail
+    - media.type.image
   module:
     - entity_browser
     - image
@@ -387,9 +388,10 @@ display:
           group_type: group
           admin_label: ''
           operator: in
-          value: {  }
+          value:
+            image: image
           group: 1
-          exposed: true
+          exposed: false
           expose:
             operator_id: bundle_op
             label: Provider
@@ -532,5 +534,30 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - user.permissions
+      tags: {  }
+  entity_reference_1:
+    display_plugin: entity_reference
+    id: entity_reference_1
+    display_title: 'Entity Reference (Image Only)'
+    position: 2
+    display_options:
+      display_extenders:
+        metatag_display_extender: {  }
+      style:
+        type: entity_reference
+        options:
+          search_fields:
+            name: name
+            thumbnail__target_id: '0'
+            bundle: '0'
+            entity_browser_select: '0'
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
         - user.permissions
       tags: {  }

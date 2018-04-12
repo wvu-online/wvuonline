@@ -1,0 +1,27 @@
+uuid: c3a1f464-a561-446a-ace1-ed740272cc31
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.ssto
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components: {  }
+id: node.ssto.teaser
+targetEntityType: node
+bundle: ssto
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

@@ -69,7 +69,7 @@
     "drupal/config_installer": "^1.0",
     "drupal/config_update": "^1.5",
     "drupal/console": "^1.8",
-    "drupal/content_browser": "^1.0@alpha",
+    "drupal/content_browser": "1.x-dev",
     "drupal/core": "^8",
     "drupal/ctools": "^3.0",
     "drupal/devel": "^1.2",

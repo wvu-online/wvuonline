@@ -3,14 +3,25 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.degr.field_degr_admi
+    - field.field.node.degr.field_degr_awar_ref
+    - field.field.node.degr.field_degr_care
     - field.field.node.degr.field_degr_chrs
     - field.field.node.degr.field_degr_coll_ref
+    - field.field.node.degr.field_degr_cour_ref
+    - field.field.node.degr.field_degr_hero
+    - field.field.node.degr.field_degr_high
+    - field.field.node.degr.field_degr_in_state
+    - field.field.node.degr.field_degr_out_cost
     - field.field.node.degr.field_degr_pnam
+    - field.field.node.degr.field_degr_prog_type_ref
     - field.field.node.degr.field_degr_ster
+    - field.field.node.degr.field_ssto_ref
     - node.type.degr
   module:
     - layout_builder
     - layout_discovery
+    - text
     - user
 third_party_settings:
   layout_builder:
@@ -84,11 +95,192 @@ third_party_settings:
                 entity: layout_builder.entity
             additional: {  }
             weight: 3
+          678ddc5f-741b-411a-9ee1-7fe7fbaba30c:
+            uuid: 678ddc5f-741b-411a-9ee1-7fe7fbaba30c
+            region: content
+            configuration:
+              id: 'field_block:node:degr:field_degr_in_state'
+              label_display: ''
+              formatter:
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+                type: number_integer
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 4
+          541363db-43a2-4976-8c82-ce50a9caa819:
+            uuid: 541363db-43a2-4976-8c82-ce50a9caa819
+            region: content
+            configuration:
+              id: 'field_block:node:degr:field_degr_out_cost'
+              label_display: ''
+              formatter:
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+                type: number_integer
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 5
+          b9be5b7a-e31a-4ce3-87da-8d3548799e2a:
+            uuid: b9be5b7a-e31a-4ce3-87da-8d3548799e2a
+            region: content
+            configuration:
+              id: 'field_block:node:degr:field_degr_hero'
+              label_display: ''
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 6
+          298df66b-be50-463a-9e9d-de26d090edad:
+            uuid: 298df66b-be50-463a-9e9d-de26d090edad
+            region: content
+            configuration:
+              id: 'field_block:node:degr:field_degr_high'
+              label_display: ''
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 7
+          e33f039d-901a-4739-b82e-db563d67e05e:
+            uuid: e33f039d-901a-4739-b82e-db563d67e05e
+            region: content
+            configuration:
+              id: 'field_block:node:degr:field_degr_prog_type_ref'
+              label_display: ''
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 8
+          4ab29652-1b98-4954-bf13-92a9a132627c:
+            uuid: 4ab29652-1b98-4954-bf13-92a9a132627c
+            region: content
+            configuration:
+              id: 'field_block:node:degr:field_degr_awar_ref'
+              label_display: ''
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 9
+          320f9bfd-1da9-4a11-a280-30bdd6b42afe:
+            uuid: 320f9bfd-1da9-4a11-a280-30bdd6b42afe
+            region: content
+            configuration:
+              id: 'field_block:node:degr:field_degr_cour_ref'
+              label_display: ''
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 10
+          9f53be7b-5ac9-4e0a-8331-459b3068a7c6:
+            uuid: 9f53be7b-5ac9-4e0a-8331-459b3068a7c6
+            region: content
+            configuration:
+              id: 'field_block:node:degr:field_degr_care'
+              label_display: ''
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 11
+          160d2154-8a1d-46ac-94c1-993567d7108e:
+            uuid: 160d2154-8a1d-46ac-94c1-993567d7108e
+            region: content
+            configuration:
+              id: 'field_block:node:degr:field_degr_admi'
+              label_display: ''
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 12
+          3122b447-90b3-4198-8d76-c7e2eb57bfc6:
+            uuid: 3122b447-90b3-4198-8d76-c7e2eb57bfc6
+            region: content
+            configuration:
+              id: 'field_block:node:degr:field_ssto_ref'
+              label_display: ''
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 13
 id: node.degr.default
 targetEntityType: node
 bundle: degr
 mode: default
 content:
+  field_degr_admi:
+    weight: 113
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_degr_awar_ref:
+    weight: 110
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_degr_care:
+    weight: 112
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   field_degr_chrs:
     weight: 102
     label: above
@@ -106,6 +298,47 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  field_degr_cour_ref:
+    weight: 111
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_degr_hero:
+    weight: 107
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_degr_high:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_degr_in_state:
+    weight: 105
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_degr_out_cost:
+    weight: 106
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
   field_degr_pnam:
     weight: 101
     label: above
@@ -114,8 +347,24 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  field_degr_prog_type_ref:
+    weight: 109
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_degr_ster:
     weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_ssto_ref:
+    weight: 114
     label: above
     settings:
       link: true

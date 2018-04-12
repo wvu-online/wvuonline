@@ -1,0 +1,21 @@
+uuid: 1206be81-4028-4905-acb0-3b028b63b16c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_awar_abbr
+field_name: field_awar_abbr
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

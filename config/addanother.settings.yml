@@ -9,18 +9,38 @@ button:
   sdat: true
   degree: true
   degr: true
+  hero: true
+  awar: true
+  course: true
+  ssto: true
+  facu: true
 message:
   coll: true
   sdat: true
   degree: true
   degr: true
+  hero: true
+  awar: true
+  course: true
+  ssto: true
+  facu: true
 tab:
   coll: false
   sdat: false
   degree: false
   degr: false
+  hero: false
+  awar: false
+  course: false
+  ssto: false
+  facu: false
 tab_edit:
   coll: false
   sdat: false
   degree: false
   degr: false
+  hero: false
+  awar: false
+  course: false
+  ssto: false
+  facu: false

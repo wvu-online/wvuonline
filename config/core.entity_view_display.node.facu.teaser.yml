@@ -1,0 +1,27 @@
+uuid: b5a26eb1-9049-41f8-8d42-98ddf1a537bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.facu
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components: {  }
+id: node.facu.teaser
+targetEntityType: node
+bundle: facu
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

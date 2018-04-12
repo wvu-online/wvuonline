@@ -1,0 +1,19 @@
+uuid: 52a2c7d4-1741-4172-afc8-b365ee8b576b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ssto_name
+    - node.type.ssto
+id: node.ssto.field_ssto_name
+field_name: field_ssto_name
+entity_type: node
+bundle: ssto
+label: 'Student Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

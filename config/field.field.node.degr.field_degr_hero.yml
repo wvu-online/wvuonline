@@ -1,0 +1,25 @@
+uuid: 11d20981-8191-4495-a669-06882683b84c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_degr_hero
+    - node.type.degr
+id: node.degr.field_degr_hero
+field_name: field_degr_hero
+entity_type: node
+bundle: degr
+label: Hero
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: heros
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

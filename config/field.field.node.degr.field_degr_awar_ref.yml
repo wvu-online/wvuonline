@@ -1,0 +1,25 @@
+uuid: 1f1a1d52-72fa-43a2-95af-ef7f1f5f88c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_degr_awar_ref
+    - node.type.degr
+id: node.degr.field_degr_awar_ref
+field_name: field_degr_awar_ref
+entity_type: node
+bundle: degr
+label: 'Awarded Degree'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: awarded_degrees
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

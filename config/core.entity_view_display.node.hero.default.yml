@@ -1,0 +1,53 @@
+uuid: 03ffc40b-774a-49f9-81c0-86d1ec5f907e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.hero.field_hero_imag
+    - node.type.hero
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          2e7935d6-4ba5-4166-8d57-7f1108936432:
+            uuid: 2e7935d6-4ba5-4166-8d57-7f1108936432
+            region: content
+            configuration:
+              id: 'field_block:node:hero:field_hero_imag'
+              label_display: ''
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+id: node.hero.default
+targetEntityType: node
+bundle: hero
+mode: default
+content:
+  field_hero_imag:
+    type: entity_reference_entity_view
+    weight: 101
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

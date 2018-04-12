@@ -1,0 +1,76 @@
+uuid: 1a8a2577-152c-4c29-af09-4895cbd6d610
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.awar.field_awar_abbr
+    - field.field.node.awar.field_awar_long
+    - node.type.awar
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          98970604-d283-4a54-a96e-de94112cc46d:
+            uuid: 98970604-d283-4a54-a96e-de94112cc46d
+            region: content
+            configuration:
+              id: 'field_block:node:awar:field_awar_long'
+              label_display: ''
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          c85b742b-a284-4ad8-8e42-c01ede81b648:
+            uuid: c85b742b-a284-4ad8-8e42-c01ede81b648
+            region: content
+            configuration:
+              id: 'field_block:node:awar:field_awar_abbr'
+              label_display: ''
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 1
+id: node.awar.default
+targetEntityType: node
+bundle: awar
+mode: default
+content:
+  field_awar_abbr:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_awar_long:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

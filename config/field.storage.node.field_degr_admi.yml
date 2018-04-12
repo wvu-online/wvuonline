@@ -1,0 +1,19 @@
+uuid: ff620a8e-2418-4893-912d-b6aa8e2c1955
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_degr_admi
+field_name: field_degr_admi
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "268f7f10d705b81d00bff1f2f957de31",
+    "content-hash": "f0ab2e88bec1b41ff5be180870a72cb7",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2574,17 +2574,11 @@
         },
         {
             "name": "drupal/content_browser",
-            "version": "1.0.0-alpha4",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/content_browser",
-                "reference": "8.x-1.0-alpha4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/content_browser-8.x-1.0-alpha4.zip",
-                "reference": "8.x-1.0-alpha4",
-                "shasum": "9a59098140ab1db4cc513993f3a037747da7da01"
+                "reference": "72d79f541d3390d597bc38ebd5c8822d53e378df"
             },
             "require": {
                 "drupal/core": "*",
@@ -2597,8 +2591,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha4",
-                    "datestamp": "1485822485",
+                    "version": "8.x-1.0-alpha4+4-dev",
+                    "datestamp": "1499805542",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -2619,7 +2613,8 @@
             "homepage": "https://www.drupal.org/project/content_browser",
             "support": {
                 "source": "http://cgit.drupalcode.org/content_browser"
-            }
+            },
+            "time": "2017-07-11T20:36:48+00:00"
         },
         {
             "name": "drupal/core",
@@ -11795,7 +11790,7 @@
         "drupal/captcha": 10,
         "drupal/coffee": 10,
         "drupal/conditional_fields": 15,
-        "drupal/content_browser": 15,
+        "drupal/content_browser": 20,
         "drupal/entity_browser_enhanced": 5,
         "drupal/entity_embed": 10,
         "drupal/entity_share": 15,

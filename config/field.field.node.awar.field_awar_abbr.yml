@@ -1,0 +1,19 @@
+uuid: c0b8ca23-029f-44a5-9814-19c8051d7ff7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_awar_abbr
+    - node.type.awar
+id: node.awar.field_awar_abbr
+field_name: field_awar_abbr
+entity_type: node
+bundle: awar
+label: 'Degree Abbreviation '
+description: 'Degree Abbreviation I.e. M.F.A.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

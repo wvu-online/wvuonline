@@ -1,0 +1,22 @@
+uuid: 381a9711-8630-4f94-b685-24d7efb6c7ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.facu
+id: node.facu.promote
+field_name: promote
+entity_type: node
+bundle: facu
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

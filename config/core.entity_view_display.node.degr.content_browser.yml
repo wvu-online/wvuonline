@@ -1,0 +1,35 @@
+uuid: 5d5fb66f-a4a2-4034-8dcd-56e69fc4e72c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.content_browser
+    - field.field.node.degr.field_degr_chrs
+    - field.field.node.degr.field_degr_coll_ref
+    - field.field.node.degr.field_degr_pnam
+    - field.field.node.degr.field_degr_ster
+    - node.type.degr
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components: {  }
+id: node.degr.content_browser
+targetEntityType: node
+bundle: degr
+mode: content_browser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_degr_chrs: true
+  field_degr_coll_ref: true
+  field_degr_pnam: true
+  field_degr_ster: true
