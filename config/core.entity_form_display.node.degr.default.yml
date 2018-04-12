@@ -49,6 +49,12 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
+  field_degr_awar_ref:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: erviews_options_select
+    region: content
   field_degr_care:
     weight: 27
     settings:
@@ -64,6 +70,12 @@ content:
     third_party_settings: {  }
     type: number
     region: content
+  field_degr_coll_ref:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: erviews_options_select
+    region: content
   field_degr_cour_ref:
     weight: 26
     settings:
@@ -72,6 +84,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_degr_hero:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: erviews_options_select
     region: content
   field_degr_high:
     weight: 5
@@ -191,7 +209,4 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden:
-  field_degr_awar_ref: true
-  field_degr_coll_ref: true
-  field_degr_hero: true
+hidden: {  }

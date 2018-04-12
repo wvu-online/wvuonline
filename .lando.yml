@@ -4,3 +4,12 @@ config:
   framework: drupal8
   site: wvuonline
   id: 8fb52aa5-5525-4d73-9b84-f2d86faf1da2
+tooling:
+  drupal:
+    cmd:
+      - "/app/vendor/bin/drupal"
+      - "--root=/app/web"
+  drush:
+    cmd:
+      - "/app/vendor/bin/drush"
+      - "--root=/app/web"

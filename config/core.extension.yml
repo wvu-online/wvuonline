@@ -25,7 +25,6 @@ module:
   config_update: 0
   config_update_ui: 0
   contact: 0
-  content_browser: 0
   content_moderation: 0
   contextual: 0
   ctools: 0
