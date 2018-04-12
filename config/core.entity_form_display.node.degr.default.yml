@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.browse_content
     - field.field.node.degr.field_degr_admi
     - field.field.node.degr.field_degr_awar_ref
     - field.field.node.degr.field_degr_care
@@ -21,7 +20,6 @@ dependencies:
     - node.type.degr
   module:
     - content_moderation
-    - entity_browser
     - entity_reference_views_select
     - field_layout
     - layout_discovery
@@ -51,19 +49,6 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
-  field_degr_awar_ref:
-    weight: 3
-    settings:
-      entity_browser: browse_content
-      field_widget_display: label
-      field_widget_edit: true
-      field_widget_remove: true
-      selection_mode: selection_append
-      open: false
-      field_widget_display_settings: {  }
-    third_party_settings: {  }
-    type: entity_browser_entity_reference
-    region: content
   field_degr_care:
     weight: 27
     settings:
@@ -79,19 +64,6 @@ content:
     third_party_settings: {  }
     type: number
     region: content
-  field_degr_coll_ref:
-    weight: 4
-    settings:
-      entity_browser: browse_content
-      field_widget_display: label
-      field_widget_edit: true
-      field_widget_remove: true
-      selection_mode: selection_append
-      open: false
-      field_widget_display_settings: {  }
-    third_party_settings: {  }
-    type: entity_browser_entity_reference
-    region: content
   field_degr_cour_ref:
     weight: 26
     settings:
@@ -100,19 +72,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
-    region: content
-  field_degr_hero:
-    weight: 10
-    settings:
-      entity_browser: browse_content
-      field_widget_display: label
-      field_widget_edit: true
-      field_widget_remove: true
-      selection_mode: selection_append
-      open: false
-      field_widget_display_settings: {  }
-    third_party_settings: {  }
-    type: entity_browser_entity_reference
     region: content
   field_degr_high:
     weight: 5
@@ -232,4 +191,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_degr_awar_ref: true
+  field_degr_coll_ref: true
+  field_degr_hero: true
