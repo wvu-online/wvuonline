@@ -40,7 +40,6 @@ version: 2
 jobs:
     # @todo: common initialization: 'composer install' for the site-under-test
     build:
-        <<: *defaults
         steps:
             - checkout
 
@@ -82,7 +81,6 @@ jobs:
                 command: composer -n unit-test
 
     build_deploy_and_test:
-        <<: *defaults
         steps:
             - checkout
 
