@@ -1,0 +1,76 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.coll.field_coll_media
+    - field.field.node.coll.field_coll_sdes
+    - node.type.coll
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          8b0375a4-5511-46e4-b3f3-a44674f21534:
+            uuid: 8b0375a4-5511-46e4-b3f3-a44674f21534
+            region: content
+            configuration:
+              id: 'field_block:node:coll:field_coll_sdes'
+              label_display: ''
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          78cdd5a2-d8b7-4059-af44-fa2e05267a10:
+            uuid: 78cdd5a2-d8b7-4059-af44-fa2e05267a10
+            region: content
+            configuration:
+              id: 'field_block:node:coll:field_coll_media'
+              label_display: ''
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 1
+id: node.coll.default
+targetEntityType: node
+bundle: coll
+mode: default
+content:
+  field_coll_media:
+    type: entity_reference_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_coll_sdes:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

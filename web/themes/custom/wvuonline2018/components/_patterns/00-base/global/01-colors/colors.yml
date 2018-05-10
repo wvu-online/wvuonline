@@ -1,0 +1,63 @@
+items:
+  - name: $white
+    value: white
+  - name: $near-white
+    value: '#f2f2f2'
+  - name: $gray-lightest
+    value: '#e5e5e5'
+  - name: $gray-lighter
+    value: '#ccc'
+  - name: $gray-light
+    value: '#999'
+  - name: $gray
+    value: '#666'
+  - name: $gray-dark
+    value: '#4c4c4c'
+  - name: $gray-darker
+    value: '#333'
+  - name: $black
+    value: black
+  - name: $wvu-blue
+    value: '#002855'
+  - name: $wvu-gold
+    value: '#eaaa00'
+  - name: $black
+    value: '#2c2a29'
+  - name: $pms-432-c
+    value: '#333f48'
+  - name: $pms-429-c
+    value: '#a2aaad'
+  - name: $pms-warm-gray-11
+    value: '#6e6259'
+  - name: $pms-warm-gray-7
+    value: '#7c736a'
+  - name: $pms-warm-gray-3
+    value: '#bfb8af'
+  - name: $pms-286-c
+    value: '#0033a0'
+  - name: $pms-300-c
+    value: '#005eb8'
+  - name: $pms-629-c
+    value: '#9bd3dd'
+  - name: $pms-7554-c
+    value: '#4b3d2a'
+  - name: $pms-7557-c
+    value: '#8f701e'
+  - name: $pms-144-c
+    value: '#ed8b00'
+  - name: $pms-7476-c
+    value: '#0d5257'
+  - name: $pms-5625-c
+    value: '#657a68'
+  - name: $pms-558-c
+    value: '#9abeaa'
+  - name: $pms-180-c
+    value: '#be3a34'
+  - name: $pms-166-c
+    value: '#cd4c08'
+  - name: $pms-115-c
+    value: '#fdda24'
+meta:
+  description: >-
+    To add to these items, use Sass variables that start with <code>$</code> in
+    <code>.//components/_patterns/00-base/global/01-colors/_color-vars.scss</code>

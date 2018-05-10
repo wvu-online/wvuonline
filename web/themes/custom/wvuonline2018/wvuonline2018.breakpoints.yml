@@ -1,0 +1,16 @@
+# Breakpoints - change based on site need
+wvuonline2018.large:
+  label: large
+  mediaQuery: 'all and (min-width: 61.25em)'
+wvuonline2018.medium:
+  label: medium
+  mediaQuery: 'all and (min-width: 48em)'
+wvuonline2018.small-large:
+  label: small-large
+  mediaQuery: 'all and (min-width: 41em)'
+wvuonline2018.small-med:
+  label: small-med
+  mediaQuery: 'all and (min-width: 26em)'
+wvuonline2018.small:
+  label: small
+  mediaQuery: 'all and (min-width: 25em)'

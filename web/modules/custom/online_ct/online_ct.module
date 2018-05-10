@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains online_ct.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function online_ct_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the online_ct module.
+    case 'help.page.online_ct':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function online_ct_theme() {
+  return [
+    'online_ct' => [
+      'render element' => 'children',
+    ],
+  ];
+}
