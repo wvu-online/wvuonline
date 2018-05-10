@@ -40,6 +40,7 @@ version: 2
 jobs:
     # @todo: common initialization: 'composer install' for the site-under-test
     build:
+        <<: *defaults
         steps:
             - checkout
 
@@ -81,6 +82,7 @@ jobs:
                 command: composer -n unit-test
 
     build_deploy_and_test:
+        <<: *defaults
         steps:
             - checkout
 
@@ -104,19 +106,18 @@ jobs:
                 name: build assets
                 command: composer -n build-assets
 
-            - run:
-                name: Install Node Modules
-                command: cd web/themes/custom/wvuonline2018 && yarn install
+            #- run:
+            #    name: Install Node Modules
+            #    command: cd web/themes/custom/wvuidesign && yarn install
+            
+            #- save_cache:
+            #    key: node-cache
+            #    paths:
+            #        - $HOME/.node/cache
 
-            - save_cache:
-                key: node-cache
-                paths:
-                    - $HOME/.node/cache
-
-            - run:
-               name: Build Theme Assets
-                command: cd web/themes/custom/wvuonline2018 && yarn
-
+            #- run:    
+            #   name: Build Theme Assets
+            #    command: cd web/themes/custom/wvuidesign && yarn run build:dev
             - run:
                 name: prepare database for site-under test
                 command: ./.circleci/scripts/pantheon/02-init-site-under-test-clone-existing
