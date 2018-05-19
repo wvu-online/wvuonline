@@ -170,7 +170,7 @@
     "post-install-cmd": [
       "@drupal-scaffold",
       "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
-      "./web/modules/contrib/twig_components/scripts/copyfiles.sh web"
+      "cd web/modules/contrib/twig_components && ./scripts/copyfiles.sh web"
     ],
     "post-update-cmd": [
       "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
