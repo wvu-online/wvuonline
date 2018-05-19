@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "268f7f10d705b81d00bff1f2f957de31",
+    "content-hash": "950b3a498c6cecdafa269240c318bc5c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1321,17 +1321,17 @@
         },
         {
             "name": "drupal/adminimal_admin_toolbar",
-            "version": "1.5.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/adminimal_admin_toolbar",
-                "reference": "8.x-1.5"
+                "reference": "8.x-1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/adminimal_admin_toolbar-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "2b4b4f04d5b0a5ff1d94b55a2096d1221a1010a4"
+                "url": "https://ftp.drupal.org/files/projects/adminimal_admin_toolbar-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "b99c96d6b6ad5f88e77b1e1b0385128f3841292f"
             },
             "require": {
                 "drupal/admin_toolbar": "*",
@@ -1343,8 +1343,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1500955443",
+                    "version": "8.x-1.6",
+                    "datestamp": "1526659380",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1353,19 +1353,18 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
-                    "name": "Ted Slesinski",
-                    "homepage": "https://www.drupal.org/u/energee"
+                    "name": "energee",
+                    "homepage": "https://www.drupal.org/user/962636"
                 }
             ],
             "description": "Adminimal styling brought to admin toolbar.",
             "homepage": "https://www.drupal.org/project/adminimal_admin_toolbar",
             "support": {
-                "source": "http://cgit.drupalcode.org/adminimal_admin_toolbar",
-                "issues": "https://www.drupal.org/project/issues/adminimal_admin_toolbar"
+                "source": "http://cgit.drupalcode.org/adminimal_admin_toolbar"
             }
         },
         {
@@ -3582,17 +3581,17 @@
         },
         {
             "name": "drupal/entity_reference_views_select",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/entity_reference_views_select",
-                "reference": "8.x-1.2"
+                "reference": "8.x-1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_reference_views_select-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "ae6c8946f8d6e1d910af87eac24fbeffd46d2777"
+                "url": "https://ftp.drupal.org/files/projects/entity_reference_views_select-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "bc8a7d0072a45b096989e30b2f81ec000227404b"
             },
             "require": {
                 "drupal/core": "*"
@@ -3603,8 +3602,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1515608284",
+                    "version": "8.x-1.3",
+                    "datestamp": "1524751984",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4253,17 +4252,17 @@
         },
         {
             "name": "drupal/jsonapi",
-            "version": "1.16.0",
+            "version": "1.18.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/jsonapi",
-                "reference": "8.x-1.16"
+                "reference": "8.x-1.18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/jsonapi-8.x-1.16.zip",
-                "reference": "8.x-1.16",
-                "shasum": "2750ba9c137ef87da10089bc100d6f88d8ac4342"
+                "url": "https://ftp.drupal.org/files/projects/jsonapi-8.x-1.18.zip",
+                "reference": "8.x-1.18",
+                "shasum": "eb412bc11d45fd2ccc5a1883fa33b1cad067495e"
             },
             "require": {
                 "drupal/core": "^8.4.3"
@@ -4271,7 +4270,7 @@
             "require-dev": {
                 "drupal/schemata": "1.x-dev#8325d172e1d6880aa24073f8f751ef089282cf9a",
                 "drupal/schemata_json_schema": "*",
-                "justinrainbow/json-schema": "^4.1"
+                "justinrainbow/json-schema": "^5.2"
             },
             "type": "drupal-module",
             "extra": {
@@ -4279,8 +4278,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.16",
-                    "datestamp": "1524679677",
+                    "version": "8.x-1.18",
+                    "datestamp": "1526665085",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5177,17 +5176,17 @@
         },
         {
             "name": "drupal/redirect",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/redirect",
-                "reference": "8.x-1.1"
+                "reference": "8.x-1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/redirect-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "32916081c436ea325b51bc5b3ec840fa19857cf7"
+                "url": "https://ftp.drupal.org/files/projects/redirect-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "ac503fbfbd15523c65f38d8b326e5f2159683cdb"
             },
             "require": {
                 "drupal/core": "~8"
@@ -5198,8 +5197,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1520897880",
+                    "version": "8.x-1.2",
+                    "datestamp": "1525419785",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6038,6 +6037,50 @@
             }
         },
         {
+            "name": "drupal/twig_components",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/twig_components",
+                "reference": "5843b577d5f797a586f98c5a608b85151142b12a"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "mortenson/twig-components-ssr": "dev-master"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1522848486",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel Mortenson",
+                    "homepage": "https://www.drupal.org/user/2582268",
+                    "email": "samuel@mortenson.coffee"
+                }
+            ],
+            "description": "Adds Drupal support for Twig Components.",
+            "homepage": "https://www.drupal.org/project/twig_components",
+            "support": {
+                "source": "http://cgit.drupalcode.org/twig_components"
+            },
+            "time": "2018-05-05T13:37:33+00:00"
+        },
+        {
             "name": "drupal/twig_tweak",
             "version": "1.9.0",
             "source": {
@@ -6308,17 +6351,17 @@
         },
         {
             "name": "drupal/webform",
-            "version": "5.0.0-rc11",
+            "version": "5.0.0-rc12",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/webform",
-                "reference": "8.x-5.0-rc11"
+                "reference": "8.x-5.0-rc12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-rc11.zip",
-                "reference": "8.x-5.0-rc11",
-                "shasum": "2e8bd5ecb2b3120b0101f3eb7cf32d30429d9f7f"
+                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-rc12.zip",
+                "reference": "8.x-5.0-rc12",
+                "shasum": "d677eb59bf2084267476fa482b5fbccb0dc8afb9"
             },
             "require": {
                 "drupal/core": "*"
@@ -6335,8 +6378,8 @@
                     "dev-5.x": "5.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.0-rc11",
-                    "datestamp": "1524229380",
+                    "version": "8.x-5.0-rc12",
+                    "datestamp": "1524706684",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -6739,16 +6782,16 @@
         },
         {
             "name": "fourkitchens/emulsify",
-            "version": "v2.2",
+            "version": "2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fourkitchens/emulsify.git",
-                "reference": "774e73be99ebc942a2d5534112da260fc632bb26"
+                "reference": "8b69009091f1f655cbaec40e68ea1f7f5c466097"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fourkitchens/emulsify/zipball/774e73be99ebc942a2d5534112da260fc632bb26",
-                "reference": "774e73be99ebc942a2d5534112da260fc632bb26",
+                "url": "https://api.github.com/repos/fourkitchens/emulsify/zipball/8b69009091f1f655cbaec40e68ea1f7f5c466097",
+                "reference": "8b69009091f1f655cbaec40e68ea1f7f5c466097",
                 "shasum": ""
             },
             "require": {
@@ -6782,7 +6825,7 @@
             ],
             "description": "Project template for Drupal 8 themes",
             "homepage": "http://emulsify.info",
-            "time": "2017-10-09T14:39:42+00:00"
+            "time": "2018-05-08T20:24:15+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -7143,6 +7186,46 @@
                 "plugin"
             ],
             "time": "2017-05-30T13:00:18+00:00"
+        },
+        {
+            "name": "mortenson/twig-components-ssr",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mortenson/twig-components-ssr.git",
+                "reference": "fb8b1f197a63c0b5c0c55266cb0a290c33ce0361"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mortenson/twig-components-ssr/zipball/fb8b1f197a63c0b5c0c55266cb0a290c33ce0361",
+                "reference": "fb8b1f197a63c0b5c0c55266cb0a290c33ce0361",
+                "shasum": ""
+            },
+            "require": {
+                "sabberworm/php-css-parser": "dev-master",
+                "twig/twig": "^1.0|^2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.0@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TwigComponentsSSR\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel Mortenson",
+                    "email": "samuel@mortenson.coffee"
+                }
+            ],
+            "description": "Provides tools to server side render Twig Components.",
+            "time": "2018-04-04T16:45:02+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -7555,6 +7638,50 @@
             "time": "2017-01-27T20:40:31+00:00"
         },
         {
+            "name": "sabberworm/php-css-parser",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sabberworm/PHP-CSS-Parser.git",
+                "reference": "c3b01ef0a85824e86fd86a74a8154d8d5c34b0ff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sabberworm/PHP-CSS-Parser/zipball/c3b01ef0a85824e86fd86a74a8154d8d5c34b0ff",
+                "reference": "c3b01ef0a85824e86fd86a74a8154d8d5c34b0ff",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sabberworm\\CSS": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Raphael Schweikert"
+                }
+            ],
+            "description": "Parser for CSS Files written in PHP",
+            "homepage": "http://www.sabberworm.com/blog/2010/6/10/php-css-parser",
+            "keywords": [
+                "css",
+                "parser",
+                "stylesheet"
+            ],
+            "time": "2017-05-31T21:19:41+00:00"
+        },
+        {
             "name": "stack/builder",
             "version": "v1.0.5",
             "source": {
@@ -7765,7 +7892,7 @@
         },
         {
             "name": "symfony/config",
-            "version": "v3.4.8",
+            "version": "v3.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
@@ -7897,7 +8024,7 @@
         },
         {
             "name": "symfony/css-selector",
-            "version": "v2.8.38",
+            "version": "v2.8.39",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
@@ -8077,7 +8204,7 @@
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v3.4.8",
+            "version": "v3.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
@@ -8196,7 +8323,7 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v3.4.8",
+            "version": "v3.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
@@ -8245,7 +8372,7 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v3.4.8",
+            "version": "v3.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -9030,16 +9157,16 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v3.4.8",
+            "version": "v3.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "951643091b39a6fd40fce56cd16e21e12bef3feb"
+                "reference": "0e6545672d8c9ce70dd472adc2f8b03155a46f73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/951643091b39a6fd40fce56cd16e21e12bef3feb",
-                "reference": "951643091b39a6fd40fce56cd16e21e12bef3feb",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/0e6545672d8c9ce70dd472adc2f8b03155a46f73",
+                "reference": "0e6545672d8c9ce70dd472adc2f8b03155a46f73",
                 "shasum": ""
             },
             "require": {
@@ -9095,7 +9222,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2018-04-03T20:34:11+00:00"
+            "time": "2018-04-26T12:42:15+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -9911,27 +10038,27 @@
         },
         {
             "name": "behat/mink-browserkit-driver",
-            "version": "v1.3.2",
+            "version": "1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/minkphp/MinkBrowserKitDriver.git",
-                "reference": "10e67fb4a295efcd62ea0bf16025a85ea19534fb"
+                "reference": "1b9a7ce903cfdaaec5fb32bfdbb26118343662eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/minkphp/MinkBrowserKitDriver/zipball/10e67fb4a295efcd62ea0bf16025a85ea19534fb",
-                "reference": "10e67fb4a295efcd62ea0bf16025a85ea19534fb",
+                "url": "https://api.github.com/repos/minkphp/MinkBrowserKitDriver/zipball/1b9a7ce903cfdaaec5fb32bfdbb26118343662eb",
+                "reference": "1b9a7ce903cfdaaec5fb32bfdbb26118343662eb",
                 "shasum": ""
             },
             "require": {
                 "behat/mink": "^1.7.1@dev",
                 "php": ">=5.3.6",
-                "symfony/browser-kit": "~2.3|~3.0",
-                "symfony/dom-crawler": "~2.3|~3.0"
+                "symfony/browser-kit": "~2.3|~3.0|~4.0",
+                "symfony/dom-crawler": "~2.3|~3.0|~4.0"
             },
             "require-dev": {
-                "silex/silex": "~1.2",
-                "symfony/phpunit-bridge": "~2.7|~3.0"
+                "mink/driver-testsuite": "dev-master",
+                "symfony/http-kernel": "~2.3|~3.0|~4.0"
             },
             "type": "mink-driver",
             "extra": {
@@ -9963,7 +10090,7 @@
                 "browser",
                 "testing"
             ],
-            "time": "2016-03-05T08:59:47+00:00"
+            "time": "2018-05-02T09:25:31+00:00"
         },
         {
             "name": "behat/mink-extension",
@@ -11729,7 +11856,7 @@
         },
         {
             "name": "symfony/browser-kit",
-            "version": "v3.4.8",
+            "version": "v3.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/browser-kit.git",
@@ -11809,6 +11936,7 @@
         "drupal/search_api_page": 15,
         "drupal/simple_block": 10,
         "drupal/slick_views": 5,
+        "drupal/twig_components": 20,
         "drupal/webform": 10,
         "drupal/webform_views": 15
     },
