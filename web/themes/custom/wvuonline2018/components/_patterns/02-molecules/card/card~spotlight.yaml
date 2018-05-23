@@ -7,8 +7,10 @@ card_img_alt:
   "This is the card image's alt text"
 
 # Title
-card_title:
+title_prefix:
   "Faculty Spotlight"
+card_title:
+  "Dr. Sean Bulger"
 card_title_link:
 card_title_modifiers:
   1:
@@ -20,16 +22,12 @@ card_heading:
 
 # Subtitle
 card_subtitle:
-  "Dr. Sean Bulger"
+  "Physical Education Teacher"
 card_subtitle_link:
 card_subtitle_modifiers:
   1:
     no-space
 card_subtitle_blockname:
-
-# Subsubtitle
-card_subsubtitle:
-  "Physical Education Teacher"
 
 # Body
 card_body:
@@ -51,3 +49,5 @@ card_link_blockname:
 card_modifiers:
   1:
     spotlight
+  2:
+    faculty

@@ -33,17 +33,46 @@
 }
 
 .card--spotlight {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "image card-title"
+    "image body"
+    "title body"
+    "subtitle body"
+    "cta body";
 
-  .card__title {
+  .card__header {
+    grid-area: card-title;
     background: $wvu-blue;
+    color: $white;
+  }
+  .card__title {
+    grid-area: title;
+    //background: $wvu-blue;
     width: 100%;
     order: 1;
+    font-size: 3em;
+    font-weight: bold;
+    color: $white;
+  }
+
+  .card__subtitle {
+    grid-area: subtitle;
+  }
+
+  .card__body {
+    grid-area: body;
+  }
+
+  .card__link {
+    grid-area: cta;
   }
 
   .card__image {
-    order: 2;
+    grid-area: image;
+    order: -2;
     .card__img {
       border-radius: 50%;
     }
