@@ -1,0 +1,94 @@
+.spotlight {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+  > * {
+    width: 100%;
+    padding: 0 1.5em;
+
+    @include small {
+      width: 50%;
+    }
+  }
+
+  &__header {
+    width: 100%;
+    background: $wvu-blue;
+    display: flex;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    background: url("../images/background__blue--1.0.0.svg") no-repeat $wvu-blue;
+    background-size: cover;
+
+    @include small {
+      padding-left: calc(50% + 1.5em);
+    }
+  }
+
+  &__h2 {
+    width: 100%;
+    font-size: 3em;
+    color: $white;
+    text-transform: uppercase;
+    line-height: 0.75;
+    font-weight: 900;
+    letter-spacing: -2px;
+    font-family: $font-heading;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: calc(-150px - 2em);
+  }
+
+  &__body {
+    padding: 0 1.5em;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: $wvu-blue;
+    font-size: 1.5em;
+    font-weight: bold;
+
+    @include small {
+      //margin-top: 150px;
+    }
+  }
+
+  &__subtitle {
+    width: 100%;
+  }
+
+  &__img {
+    border-radius: 50%;
+    margin-bottom: 3em;
+    //max-width: 45%;
+
+    @include small {
+
+    }
+  }
+
+  &__button {
+    @include button($wvu-blue, $white, $white, $wvu-blue);
+    border: 2px solid;
+
+    &:hover {
+
+      @extend .u-wvu-blue;
+    }
+  }
+}
+
+
+
