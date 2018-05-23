@@ -18,10 +18,12 @@
   },
   "scripts": {
     "start": "gulp clean && gulp compile && gulp theme",
-    "postinstall": "./scripts/pattern_lab.sh && ./scripts/twig_functions.sh"
+    "postinstall": "./scripts/pattern_lab.sh && ./scripts/twig_functions.sh",
+    "start-webpack": "webpack --watch",
+    "build": "webpack"
   },
   "precommit.silent": true,
   "dependencies": {
-    "rangeslider-pure": "^0.4.5-1"
+    "global": "^4.3.2"
   }
 }
