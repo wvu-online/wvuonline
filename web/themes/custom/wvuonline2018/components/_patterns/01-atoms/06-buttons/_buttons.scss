@@ -9,6 +9,8 @@
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
 
   &:visited {
     color: $color;
@@ -16,6 +18,7 @@
 
   &:hover {
     background-color: $hoverBg;
+    color: $hoverColor;
   }
 }
 
