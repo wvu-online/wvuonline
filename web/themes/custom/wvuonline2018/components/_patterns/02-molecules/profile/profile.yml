@@ -1,20 +1,23 @@
-spotlight_type:
+profile_type:
   'faculty'
-spotlight_img_src:
+profile_header_modifiers:
+  1:
+    'gold'
+profile_img_src:
   'https://placeimg.com/300/300/people'
-spotlight_img_alt:
+profile_img_alt:
   'Image alt'
-spotlight_name:
+profile_name:
   'Dr. Sean Bulger'
-spotlight_role:
+profile_role:
   'Physical Education Teacher'
-spotlight_link:
+profile_link:
   '#'
-spotlight_button_text:
+profile_button_text:
   'Read Feature on Dr. Sean Bulger'
-spotlight_body_short:
+profile_body_short:
    'Dr. Bulger was very involved in sports at a young age and throughout his childhood and adolescence. As a young boy in Buffalo, NY, he played almost every traditional team sport there was. Baseball, basketball and soccer–just to name a few–slowly transitioned into cross country and track as he began his college career. When choosing a field of study in college as an undergraduate and master’s student, his decision never wavered. It would be physical education.'
-spotlight_body_long:
+profile_body_long:
   "Sed vel diam blandit, viverra neque non, porttitor eros. Morbi malesuada felis ut sapien malesuada luctus. Fusce feugiat sem nec risus ultricies ultricies. Nullam quis rhoncus nisi, ac interdum orci. Maecenas sodales nibh vel nulla lacinia pulvinar. Sed pulvinar dolor nisl, lobortis ultrices ex eleifend a. Sed vulputate feugiat nisi vitae accumsan. Ut fermentum ligula justo, ac blandit nisi pharetra a. Phasellus quis pharetra ligula, fringilla pharetra est. Nullam posuere risus eget orci dapibus lobortis. Nam vel elementum quam, nec dapibus turpis. Nullam eget hendrerit orci. Nam suscipit imperdiet fermentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis suscipit sed velit ut tincidunt.
 
    Nunc pellentesque imperdiet bibendum. Aliquam ac erat at mauris accumsan dictum vitae sit amet justo. Mauris hendrerit consectetur velit, at faucibus enim sagittis eget. Aliquam eu sollicitudin augue. Suspendisse lacus nulla, blandit cursus arcu et, varius tincidunt metus. Nunc non erat nec purus laoreet hendrerit. Praesent quis lectus quis nibh blandit euismod. Donec vel bibendum orci. Morbi porta molestie varius. Vivamus quis risus pulvinar, pulvinar diam non, fringilla lorem. Nulla facilisis, metus ut placerat cursus, ligula tellus tincidunt magna, a vestibulum lacus arcu vel metus. Nam convallis odio sit amet metus luctus, sit amet ultrices enim rutrum. Phasellus ac laoreet magna. Cras dignissim libero eget molestie feugiat. Morbi non pellentesque nunc, ac mattis est. Donec nisl neque, facilisis quis dui in, eleifend tristique augue.

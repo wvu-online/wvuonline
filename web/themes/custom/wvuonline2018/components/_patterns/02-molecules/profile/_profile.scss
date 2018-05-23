@@ -1,4 +1,4 @@
-.spotlight {
+.profile {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -20,23 +20,38 @@
     padding-top: 2em;
     padding-bottom: 2em;
     margin-bottom: 2em;
-    background: url("../images/background__blue--1.0.0.svg") no-repeat $wvu-blue;
-    background-size: cover;
 
     @include small {
       padding-left: calc(50% + 1.5em);
+    }
+
+    &--blue {
+      background: url("../images/background__blue--1.0.0.svg") no-repeat $wvu-blue;
+      background-size: cover;
+    }
+
+    &--gold {
+      background: url("../images/background__gold--1.0.0.svg") no-repeat $wvu-gold;
+      background-size: cover;
     }
   }
 
   &__h2 {
     width: 100%;
     font-size: 3em;
-    color: $white;
     text-transform: uppercase;
     line-height: 0.75;
     font-weight: 900;
     letter-spacing: -2px;
     font-family: $font-heading;
+
+    &--blue {
+      color: $white;
+    }
+
+    &--gold {
+      color: $wvu-blue;
+    }
   }
 
   &__info {
@@ -46,8 +61,15 @@
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    position: relative;
-    top: calc(-150px - 2em);
+    margin-top: -10em;
+
+    @include medium {
+      margin-top: -5em;
+    }
+
+    @include small {
+      margin-top: -9em;
+    }
   }
 
   &__body {
