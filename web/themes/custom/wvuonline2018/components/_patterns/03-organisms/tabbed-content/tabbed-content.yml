@@ -1,0 +1,12 @@
+tabbedItems:
+  1:
+    title: Program Information
+    content: 'Nullam dictum massa nec lectus sodales porttitor. Ut quis efficitur lectus. Pellentesque ut scelerisque urna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vitae ligula rutrum, blandit ligula eget, sollicitudin felis. Pellentesque euismod, ligula ac tincidunt aliquet, lacus augue tempus velit, a feugiat sem purus at ante. Quisque sit amet lacus eros. Ut porttitor condimentum pellentesque. Praesent a suscipit metus. Pellentesque ornare libero neque, vitae auctor nulla maximus non. Pellentesque lacinia accumsan arcu, fermentum ullamcorper orci consequat in. In id viverra urna, sed ultricies nunc.'
+  2:
+    title: Courses
+  3:
+    title: Admissions
+  4:
+    title: Careers
+  5:
+    title: Financial Aid

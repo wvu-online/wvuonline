@@ -1,4 +1,8 @@
-(function () {
+(function (Drupal) { // UNCOMMENT IF DRUPAL.
+
+    Drupal.behaviors.mainMenu = {
+        attach: function (context) {
+//(function () {
 
   'use strict';
 
@@ -36,6 +40,7 @@
     }
   };
 
+
   /**
    * init
    * @description Initializes the component by removing the no-js class from
@@ -51,4 +56,8 @@
     handleClick(link, i);
   }
 
-})();
+
+// })(); // REMOVE IF DRUPAL.
+        }
+    }
+})(Drupal); // UNCOMMENT IF DRUPAL.

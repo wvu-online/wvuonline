@@ -10,37 +10,38 @@
 // - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
 
 
-// (function (Drupal) { // UNCOMMENT IF DRUPAL.
-//
-//   Drupal.behaviors.mainMenu = {
-//     attach: function (context) {
+(function (Drupal) { // UNCOMMENT IF DRUPAL.
 
-(function () { // REMOVE IF DRUPAL.
+  Drupal.behaviors.mainMenu = {
+      attach: function (context) {
 
-  'use strict';
+// (function () { // REMOVE IF DRUPAL.
 
-  // Use context instead of document IF DRUPAL.
-  var toggle_expand = document.getElementById('toggle-expand');
-  var menu = document.getElementById('main-nav');
-  var expand_menu = menu.getElementsByClassName('expand-sub');
+          'use strict';
 
-  // Mobile Menu Show/Hide.
-  toggle_expand.addEventListener('click', function (e) {
-    toggle_expand.classList.toggle('toggle-expand--open');
-    menu.classList.toggle('main-nav--open');
-  });
+          // Use context instead of document IF DRUPAL.
+          var toggle_expand = context.getElementById('toggle-expand');
+          var menu = context.getElementById('main-nav');
+          var expand_menu = menu.getElementsByClassName('expand-sub');
 
-  // Expose mobile sub menu on click.
-  for (var i = 0; i < expand_menu.length; i++) {
-    expand_menu[i].addEventListener('click', function (e) {
-      var menu_item = e.currentTarget;
-      var sub_menu = menu_item.nextElementSibling;
+          // Mobile Menu Show/Hide.
+          toggle_expand.addEventListener('click', function (e) {
+              toggle_expand.classList.toggle('toggle-expand--open');
+              menu.classList.toggle('main-nav--open');
+          });
 
-      menu_item.classList.toggle('expand-sub--open');
-      sub_menu.classList.toggle('main-menu--sub-open');
-    });
+          // Expose mobile sub menu on click.
+          for (var i = 0; i < expand_menu.length; i++) {
+              expand_menu[i].addEventListener('click', function (e) {
+                  var menu_item = e.currentTarget;
+                  var sub_menu = menu_item.nextElementSibling;
+
+                  menu_item.classList.toggle('expand-sub--open');
+                  sub_menu.classList.toggle('main-menu--sub-open');
+              });
+          }
+
+// })(); // REMOVE IF DRUPAL.
+      }
   }
-
-})(); // REMOVE IF DRUPAL.
-
-// })(Drupal); // UNCOMMENT IF DRUPAL.
+})(Drupal); // UNCOMMENT IF DRUPAL.

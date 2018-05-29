@@ -1,0 +1,48 @@
+@import "../../00-base/global/01-colors/color-vars";
+
+.tabbed {
+  background: $pms-5625-c;
+  padding: 2em 5%;
+
+  &__list {
+    display: flex !important;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+  }
+
+  &__item {
+    flex: 1 0;
+    text-align: center;
+    margin-right: 5px;
+    //border-bottom: 1px solid $wvu-blue;
+    border-right: none !important;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+  }
+
+  &__link {
+    border: none;
+    border-top: 4px solid transparent;
+    top: 0;
+  }
+
+  &__content {
+    background: $white;
+    padding: 1em 5%;
+
+  }
+}
+
+[aria-selected="true"].tabbed__link {
+  color: $black;
+  background: $white;
+  border-top: 4px $wvu-blue solid !important;
+}
+
+[aria-hidden="true"].tabbed__content {
+  display: none;
+}

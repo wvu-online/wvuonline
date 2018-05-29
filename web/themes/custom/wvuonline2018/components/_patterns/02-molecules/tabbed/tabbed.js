@@ -1,5 +1,5 @@
 //UNCOMMENT IF DRUPAL - see components/_meta/_01-foot.twig for attachBehaviors
-Drupal.behaviors.l = {
+Drupal.behaviors.tabbed = {
   attach: function (context, settings) {
 
 // (function () { // REMOVE IF DRUPAL

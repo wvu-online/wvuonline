@@ -34,9 +34,8 @@
 
 .card--spotlight {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto;
-  grid-template-areas:
+  grid-template:
+    auto / 50% 50%
     "image card-title"
     "image body"
     "title body"
@@ -48,6 +47,7 @@
     background: $wvu-blue;
     color: $white;
   }
+
   .card__title {
     grid-area: title;
     //background: $wvu-blue;
@@ -73,6 +73,7 @@
   .card__image {
     grid-area: image;
     order: -2;
+
     .card__img {
       border-radius: 50%;
     }

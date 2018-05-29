@@ -56,9 +56,8 @@
 
   &__info {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     justify-content: space-around;
-    flex-wrap: wrap;
     align-items: center;
     text-align: center;
     margin-top: -10em;
@@ -95,22 +94,15 @@
     border-radius: 50%;
     margin-bottom: 3em;
     //max-width: 45%;
-
-    @include small {
-
-    }
   }
 
   &__button {
     @include button($wvu-blue, $white, $white, $wvu-blue);
+
     border: 2px solid;
 
     &:hover {
-
       @extend .u-wvu-blue;
     }
   }
 }
-
-
-

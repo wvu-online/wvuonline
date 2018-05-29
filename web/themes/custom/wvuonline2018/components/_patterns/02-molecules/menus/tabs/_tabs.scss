@@ -1,8 +1,18 @@
+.tabs {
+  background: $white;
+  box-shadow: black 0px 2px 1px 0px;
+
+  a {
+    background: $gray-dark;
+    color: $white;
+  }
+}
+
 // Tab Navigation
 .tabs__nav {
   @include list-reset;
 
-  border-bottom: 1px solid $gray-lightest;
+  //border-bottom: 1px solid $gray-lightest;
 
   @include large {
     border-left: 1px solid $gray-lightest;

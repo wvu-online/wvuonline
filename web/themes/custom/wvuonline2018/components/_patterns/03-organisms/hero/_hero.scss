@@ -1,0 +1,58 @@
+.wvu-hero {
+  width: 100vw;
+  max-height: 100vh;
+  background-size: cover;
+  background-color: $pms-432-c;
+
+  .wvu-hero__container {
+    max-width: 68em;
+    margin: 0 auto;
+  }
+
+  .wvu-hero__copy {
+    margin-bottom: 2em;
+
+    h1 {
+      text-shadow: 1px 1px 1px #000;
+      font-size: 6.2em;
+      max-width: 6em;
+      margin-top: 0.8em;
+      line-height: 0.80487em;
+      color: white;
+      text-transform: uppercase;
+      font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+
+      &::before {
+        background-color: #eaaa00;
+        content: '';
+        position: absolute;
+        right: 0;
+        left: 2em;
+        height: 3em;
+        top: 0;
+        width: 1.75em;
+        opacity: 1;
+        z-index: 1;
+        -ms-transform: skewX(146.25deg);
+        -webkit-transform: skewX(146.25deg);
+        transform: skewX(146.25deg);
+      }
+
+      span {
+        display: block;
+        z-index: 4;
+        position: relative;
+      }
+    }
+
+    p {
+      color: $white;
+    }
+  }
+}
+
+.wvu-hero--big-picture {
+  .wvu-hero__container {
+    padding: 4em 0 8.3em;
+  }
+}
