@@ -10,8 +10,8 @@ Drupal.behaviors.accordion = {
 
     // Set 'document' to 'context' if Drupal
 
-    var accordionTerm = document.querySelectorAll('.accordion-term');
-    var accordionDef = document.querySelectorAll('.accordion-def');
+    var accordionTerm = context.querySelectorAll('.accordion-term');
+    var accordionDef = context.querySelectorAll('.accordion-def');
 
     // If javascript, hide accordion definition on load
     function jsCheck() {
