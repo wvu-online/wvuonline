@@ -5,16 +5,17 @@
   box-sizing: border-box;
 
   > * {
-    width: 100%;
-    padding: 0 1.5em;
+    //width: 100%;
+    //padding: 0 1.5em;
 
-    @include small {
-      width: 50%;
-    }
+    //@include small {
+    //  width: 50%;
+    //}
   }
 
   &__header {
     width: 100%;
+    height: 145px;
     background: $wvu-blue;
     display: flex;
     padding-top: 2em;
@@ -22,7 +23,7 @@
     margin-bottom: 2em;
 
     @include small {
-      padding-left: calc(50% + 1.5em);
+      padding-left: calc(50% + 1.6em);
     }
 
     &--blue {
@@ -37,7 +38,7 @@
   }
 
   &__h2 {
-    width: 100%;
+    width: 50%;
     font-size: 3em;
     text-transform: uppercase;
     line-height: 0.75;
@@ -60,19 +61,31 @@
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    margin-top: -10em;
-
-    @include medium {
-      margin-top: -5em;
-    }
+    margin-top: calc(-100px - 3em);
 
     @include small {
-      margin-top: -9em;
+      width: 40%;
     }
+
+    //@include medium {
+    //  margin-top: -5em;
+    //}
+    //
+    //@include small {
+    //  margin-top: -9em;
+    //}
+  }
+
+  &__name {
+    height: 180px;
   }
 
   &__body {
-    padding: 0 1.5em;
+    //padding: 0 1.5em;
+
+    @include small {
+      width: 55%;
+    }
   }
 
   &__title {
@@ -80,6 +93,7 @@
     color: $wvu-blue;
     font-size: 1.5em;
     font-weight: bold;
+    margin-top: 20px;
 
     @include small {
       //margin-top: 150px;
@@ -88,12 +102,13 @@
 
   &__subtitle {
     width: 100%;
+    height: 60px;
   }
 
   &__img {
     border-radius: 50%;
-    margin-bottom: 3em;
-    //max-width: 45%;
+    //margin-bottom: 3em;
+    max-width: 200px;
   }
 
   &__button {

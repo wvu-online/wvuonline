@@ -26,13 +26,15 @@
 }
 
 .form-item__select {
-  border: 1px solid $gray-lightest;
+  border: 1px solid $gray;
+  border-radius: 0;
   height: 41px; // set height required for discrepancy between .form-item__dropdown border and the select :focus border
   font-size: 16px;
   margin: 0;
   outline: none;
   padding: 0.6em 0.8em 0.5em;
   width: 100%;
+  background-color: $white;
 
   :focus {
     outline: none;
@@ -51,10 +53,10 @@
     padding-right: 2em; /* Match-01 */
 
     /* inside @supports so that iOS <= 8 display the native arrow */
-    background: none; /* Match-04 */
+    //background: none; /* Match-04 */
 
     /* inside @supports so that Android <= 4.3 display the native arrow */
-    border: 1px solid transparent; /* Match-05 */
+    //border: 1px solid transparent; /* Match-05 */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;

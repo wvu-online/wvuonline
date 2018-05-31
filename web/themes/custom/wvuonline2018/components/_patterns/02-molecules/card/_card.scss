@@ -1,81 +1,38 @@
-.card__title {
-  @include heading-large($font-size: 1.3rem);
-  @include no-bottom;
+.card {
+  box-shadow: 0 3px 7px 0 $gray;
+  padding: 1em;
 
-  &-link {
+  &__title {
+    @include heading-large($font-size: 1.3rem);
+    @include no-bottom;
+
+    &-link {
+      @include link;
+    }
+  }
+
+  &__subtitle {
+    @include heading-medium($font-size: 1rem);
+    @include no-bottom;
+
+    color: $gray;
+  }
+
+  &__body {
+    margin: 0.7em 0 1em;
+  }
+
+  &__link {
     @include link;
   }
-}
 
-.card__subtitle {
-  @include heading-medium($font-size: 1rem);
-  @include no-bottom;
-
-  color: $gray;
-}
-
-.card__body {
-  margin: 0.7em 0 1em;
-}
-
-.card__link {
-  @include link;
-}
-
-.card__button {
-  @include button;
-}
-
-// Variations
-.card--bg {
-  background-color: $gray-lightest;
-  padding: 1em;
-}
-
-.card--spotlight {
-  display: grid;
-  grid-template:
-    auto / 50% 50%
-    "image card-title"
-    "image body"
-    "title body"
-    "subtitle body"
-    "cta body";
-
-  .card__header {
-    grid-area: card-title;
-    background: $wvu-blue;
-    color: $white;
+  &__button {
+    @include button;
   }
 
-  .card__title {
-    grid-area: title;
-    //background: $wvu-blue;
-    width: 100%;
-    order: 1;
-    font-size: 3em;
-    font-weight: bold;
-    color: $white;
-  }
-
-  .card__subtitle {
-    grid-area: subtitle;
-  }
-
-  .card__body {
-    grid-area: body;
-  }
-
-  .card__link {
-    grid-area: cta;
-  }
-
-  .card__image {
-    grid-area: image;
-    order: -2;
-
-    .card__img {
-      border-radius: 50%;
-    }
+  // Variations
+  &--bg {
+    background-color: $gray-lightest;
+    padding: 1em;
   }
 }

@@ -1,0 +1,19 @@
+.overlay {
+  background: black;
+  opacity: 0.8;
+  z-index: 10000;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+
+}
+.overlay.visible {
+    display: block;
+  }
+
+.ui-dialog {
+  background: $white;
+  z-index: 100000;
+  padding: 1em 2em;
+}

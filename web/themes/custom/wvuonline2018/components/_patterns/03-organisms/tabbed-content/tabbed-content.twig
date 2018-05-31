@@ -12,7 +12,25 @@
     {% for keys, tabbedItem in tabbedItems %}
         <section {{ bem('content', (''), tabbed_content_base_class, ['js-tabcontent']) }} id="tab-panel-{{ loop.index }}">
             <h2>{{ tabbedItem.title }}</h2>
-            {{ tabbedItem.content }}
+            {% if tabbedItem.layout == 'card' %}
+                {% include "@organisms/card-grid/card-grid.twig" with {
+                    "cards": tabbedItem.content
+                }%}
+            {% elseif tabbedItem.layout == 'table' %}
+            <table>
+                {% for con in tabbedItem.content %}
+                    <tr>
+                        <td>{{ con }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+            {% else %}
+                {% for con in tabbedItem.content %}
+                    {% include "@atoms/02-text/text/01-paragraph.twig" with {
+                        paragraph_content: con
+                    } %}
+                {% endfor %}
+            {% endif %}
         </section>
     {% endfor %}
 </div>

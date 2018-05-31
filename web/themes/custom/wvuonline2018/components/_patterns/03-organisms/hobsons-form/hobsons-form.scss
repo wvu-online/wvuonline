@@ -1,0 +1,42 @@
+@import '../../00-base/global/01-colors/color-vars';
+@import '../../00-base/mixins';
+
+.h-form {
+  box-shadow: 0 3px 7px 0 $gray;
+  width: 70em;
+  padding: 2em 1em;
+
+  &--gold {
+    @include wvu-gold-background;
+
+    background: transparentize($wvu-gold, 0.2);
+  }
+
+  &--blue {
+    @include wvu-blue-background;
+
+    background: transparentize($wvu-blue, 0.2);
+  }
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  form {
+    display: flex;
+    flex-flow: wrap row;
+    max-width: 50em;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+
+  &__label {
+    @extend .visually-hidden;
+  }
+
+  &__field {
+    width: 45%;
+    margin-bottom: 1em;
+  }
+
+}

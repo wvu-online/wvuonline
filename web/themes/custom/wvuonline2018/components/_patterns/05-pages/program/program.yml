@@ -1,0 +1,100 @@
+hero_title: Sport Mangement M.S.
+tab_items:
+  1:
+    content:
+      1:
+        "Beginning in fall 2018, the Sport Management program will offer a 100 percent online track. This track will focus on preparing students to be Interscholastic Athletic Administrators, and the degree will be conferred as a MS in Sport Management."
+      2:
+        "Two course changes for this track: Leadership in Interscholastic Athletic Administration and Interscholastic Sport Organization and Administration will be offered in place of Individual Interactions in Sport and Teaching Practicum Research Project."
+      3:
+        "Courses taught by experts in the profession."
+      4:
+        "The online program will consist of 10 total courses and can be completed in less than two years. Students can start the online program in any semester - fall, spring or summer."
+      5:
+        "Students who prefer a low-residency approach, online learning with required on-campus residencies, can elect to follow the traditional path in Comprehensive Sport Industry Management. The low-residency format offers the flexibility to complete courses at times that are convenient for students. Students will complete 75 percent of the coursework online and the remaining 25 percent will be completed onsite at the WVU campus over a two-week period during the first semester (summer). Throughout the summer on-campus format, students will network and interact with their cohort and faculty. To enhance their careers, students must expand their skill sets including event management, administration and governance, staffing, marketing and resource development. The low-residency program also consists of 10 courses, but is a summer only start."
+      6:
+        "The Sport Management graduate program, offered by the College of Physical Activity and Sport Sciences, is designed to advance the careers of established sport professionals while helping those individuals wanting to gain entry into this highly sought-after field."
+    title: "Program Information"
+    layout: "column"
+  2:
+    content:
+      1:
+        card_title: "Course 493"
+        card_body: "Vivamus tellus est, imperdiet id."
+      2:
+        card_title: "Course 426"
+        card_body: "Vivamus et mauris auctor magna."
+      3:
+        card_title: "Course 446"
+        card_body: "Vivamus molestie porta erat, et."
+    title: "Courses"
+    layout: "card"
+  3:
+    content: "Cras mattis blandit est vel suscipit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus porta aliquam neque, eget condimentum enim varius vitae. Praesent non lacus rutrum arcu congue hendrerit id eget libero."
+    title: "Admissions"
+  4:
+    content:
+      1:
+        "Career info - 30%"
+      2:
+        "Career info - 40%"
+      3:
+        "Career info - 36%"
+    title: "Careers"
+    layout: "table"
+  5:
+    content:
+    title: "Financial Aid"
+total_hours: 30
+cost_per_credit: 589
+
+hobsons_form_modifiers:
+  1:
+    gold
+
+button_content: "Calculate Your Cost"
+button_attributes:
+  id:
+    dialog-button
+
+profiles:
+  1:
+    profile_type:
+      'faculty'
+    profile_header_modifiers:
+      1:
+        'gold'
+    profile_img_src:
+      'https://placeimg.com/300/300/people'
+    profile_img_alt:
+      'Image alt'
+    profile_name:
+      'Dr. Sean Bulger'
+    profile_role:
+      'Physical Education Teacher'
+    profile_link:
+      '#'
+    profile_button_text:
+      'Read Feature on Dr. Sean Bulger'
+    profile_body_short:
+      'Dr. Bulger was very involved in sports at a young age and throughout his childhood and adolescence. As a young boy in Buffalo, NY, he played almost every traditional team sport there was. Baseball, basketball and soccer–just to name a few–slowly transitioned into cross country and track as he began his college career. When choosing a field of study in college as an undergraduate and master’s student, his decision never wavered. It would be physical education.'
+  2:
+    profile_type:
+      'student'
+    profile_header_modifiers:
+      1:
+        'blue'
+    profile_img_src:
+      'https://placeimg.com/300/300/people'
+    profile_img_alt:
+      'Image alt'
+    profile_name:
+      'Steve Robertson'
+    profile_role:
+      'Sport Management Graduate'
+    profile_link:
+      '#'
+    profile_button_text:
+      'Read Feature on Steve Robertson'
+    profile_body_short:
+      'Steve Robertson has his future planned out, and he chose WVU’s online Sport Management program to help him get to a Power 5 conference. WVU’s program is one of the most recognized programs in the world, and comes with an extensive alumni network, and that is something Steve had to be part of.'
