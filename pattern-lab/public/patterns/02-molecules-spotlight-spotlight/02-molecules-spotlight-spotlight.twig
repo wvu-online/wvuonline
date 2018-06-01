@@ -1,0 +1,35 @@
+{% set spotlight_base_class = 'spotlight' %}
+<div {{ bem(spotlight_base_class, (spotlight_modifiers), spotlight_blockname) }}>
+    <div class="spotlight__header">
+        {% include "@atoms/02-text/00-headings/_heading.twig" with {
+            "heading_level": 2,
+            "heading": 'Faculty Spotlight',
+            "heading_blockname": spotlight_base_class,
+        } %}
+    </div>
+    <div {{ bem('info', '', 'spotlight') }}>
+        {% include "@atoms/04-images/00-image/image.twig" with {
+            "img_src": spotlight_img_src,
+            "img_alt": spotlight_img_alt,
+            "image_blockname": spotlight_base_class,
+        } %}
+        {% include "@atoms/02-text/00-headings/_heading.twig" with {
+            "heading_level": 3,
+            "heading": spotlight_name,
+            "heading_base_class": 'title',
+            "heading_blockname": spotlight_base_class,
+        } %}
+
+        <div class="spotlight__subtitle">Physical Education Teacher</div>
+        <div class="spotlight__link">
+            <a href="#">
+                <button>Read More About</button>
+            </a>
+        </div>
+    </div>
+    {% include "@atoms/02-text/text/01-paragraph.twig" with {
+        "paragraph_blockname": spotlight_base_class,
+        "paragraph_content": spotlight_body_short,
+        "paragraph_base_class": "body",
+    } %}
+</div>
