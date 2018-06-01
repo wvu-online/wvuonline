@@ -22,13 +22,15 @@
   }
 }
 
-.section-3 {}
+.section-3 {
+}
 
 .section-4 {
   width: 75em;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  padding: 2em 0;
 
   .profile {
     width: 45%;

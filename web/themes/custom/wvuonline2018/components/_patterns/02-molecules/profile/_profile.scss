@@ -56,14 +56,18 @@
     }
   }
 
+  &__container {
+    display: flex;
+    height: 450px;
+    padding: 0 2em;
+  }
+
   &__info {
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-around;
     align-items: center;
     text-align: center;
     margin-top: calc(-100px - 3em);
-    padding-left: 1em;
 
     @include small {
       width: 40%;
@@ -83,7 +87,7 @@
   }
 
   &__body {
-    padding-right: 1em;
+    margin-left: 2em;
 
     @include small {
       width: 55%;

@@ -7,7 +7,7 @@
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "browserify": "^16.2.2",
-    "emulsify-gulp": "fourkitchens/emulsify-gulp#v2.0.0",
+    "emulsify-gulp": "fourkitchens/emulsify-gulp#v2.1.0",
     "gulp": "^3.9.1",
     "requirejs": "^2.3.5",
     "twig-components": "0.0.6",

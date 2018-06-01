@@ -9,35 +9,38 @@
             "heading_modifiers": profile_header_modifiers,
         } %}
     </div>
-    <div {{ bem('info', '', 'profile') }}>
-        {% include "@atoms/04-images/00-image/image.twig" with {
-            "img_src": profile_img_src,
-            "img_alt": profile_img_alt,
-            "image_blockname": profile_base_class,
-        } %}
-        <div {{ bem('name', '', 'profile') }}>
-            {% include "@atoms/02-text/00-headings/_heading.twig" with {
-                "heading_level": 3,
-                "heading": profile_name,
-                "heading_base_class": 'title',
-                "heading_blockname": profile_base_class,
+    <div {{ bem('container', '', profile_base_class) }} >
+        <div {{ bem('info', '', 'profile') }}>
+            {% include "@atoms/04-images/00-image/image.twig" with {
+                "img_src": profile_img_src,
+                "img_alt": profile_img_alt,
+                "image_blockname": profile_base_class,
             } %}
-            {% include "@atoms/02-text/00-headings/_heading.twig" with {
-                "heading_level": 4,
-                "heading": profile_role,
-                "heading_base_class": 'subtitle',
-                "heading_blockname": profile_base_class,
-            } %}
-            {% include "@atoms/06-buttons/01-button.twig" with {
-                "button_url": profile_link,
-                "button_blockname": profile_base_class,
-                "button_content": profile_button_text,
-            } %}
+
+            <div {{ bem('name', '', 'profile') }}>
+                {% include "@atoms/02-text/00-headings/_heading.twig" with {
+                    "heading_level": 3,
+                    "heading": profile_name,
+                    "heading_base_class": 'title',
+                    "heading_blockname": profile_base_class,
+                } %}
+                {% include "@atoms/02-text/00-headings/_heading.twig" with {
+                    "heading_level": 4,
+                    "heading": profile_role,
+                    "heading_base_class": 'subtitle',
+                    "heading_blockname": profile_base_class,
+                } %}
+                {% include "@atoms/06-buttons/01-button.twig" with {
+                    "button_url": profile_link,
+                    "button_blockname": profile_base_class,
+                    "button_content": profile_button_text,
+                } %}
+            </div>
         </div>
+        {% include "@atoms/02-text/text/01-paragraph.twig" with {
+            "paragraph_blockname": profile_base_class,
+            "paragraph_content": profile_body_short,
+            "paragraph_base_class": "body",
+        } %}
     </div>
-    {% include "@atoms/02-text/text/01-paragraph.twig" with {
-        "paragraph_blockname": profile_base_class,
-        "paragraph_content": profile_body_short,
-        "paragraph_base_class": "body",
-    } %}
 </div>
