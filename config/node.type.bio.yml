@@ -1,0 +1,33 @@
+uuid: cde7f70e-4229-4cc5-b5a7-252ed2827f07
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+    - type_style
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+  type_style:
+    color: '#000000'
+    icon: ''
+name: Bio
+type: bio
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

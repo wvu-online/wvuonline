@@ -1,0 +1,19 @@
+uuid: e1f8ee25-fa10-4dd2-a047-b6c357c76010
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_cour_body
+field_name: field_cour_body
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,36 @@
+{% set tabbed_content_base_class = tabbed_content_base_class|default('tabbed') %}
+<div id="tabbed-content" {{ bem(tabbed_content_base_class, (tabbed_content_modifiers), tabbed_content_blockname, ['js-tabs']) }}>
+    <ul {{ bem('list', (''), tabbed_content_base_class, ['js-tablist'])}} data-existing-hx="h2">
+        {% for keys, tabbedItem in tabbedItems %}
+            <li id="tabbed-{{ loop.index }}" {{ bem('item', (''), tabbed_content_base_class, ['js-tablist__item']) }}>
+                <a href="#tab-panel-{{ loop.index }}" {{ bem('link', (''), tabbed_content_base_class, ['js-tablist__link']) }}>
+                    {{ tabbedItem.title }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+    {% for keys, tabbedItem in tabbedItems %}
+        <section {{ bem('content', (''), tabbed_content_base_class, ['js-tabcontent']) }} id="tab-panel-{{ loop.index }}">
+            <h2>{{ tabbedItem.title }}</h2>
+            {% if tabbedItem.layout == 'card' %}
+                {% include "@organisms/card-grid/card-grid.twig" with {
+                    "cards": tabbedItem.content
+                }%}
+            {% elseif tabbedItem.layout == 'table' %}
+            <table>
+                {% for con in tabbedItem.content %}
+                    <tr>
+                        <td>{{ con }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+            {% else %}
+                {% for con in tabbedItem.content %}
+                    {% include "@atoms/02-text/text/01-paragraph.twig" with {
+                        paragraph_content: con
+                    } %}
+                {% endfor %}
+            {% endif %}
+        </section>
+    {% endfor %}
+</div>

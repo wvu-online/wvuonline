@@ -1,0 +1,28 @@
+uuid: 41349a1f-ec59-4d94-b9f0-8f9094a25fa0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prog_curr_ref
+    - node.type.curr
+    - node.type.prog
+id: node.prog.field_prog_curr_ref
+field_name: field_prog_curr_ref
+entity_type: node
+bundle: prog
+label: Curriculum
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      curr: curr
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

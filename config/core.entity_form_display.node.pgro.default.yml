@@ -1,0 +1,56 @@
+uuid: a0e4f0c4-9033-464e-b44a-f30210952ea4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.pgro.field_pgro_coll_ref
+    - node.type.pgro
+  module:
+    - field_layout
+    - layout_discovery
+    - path
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.pgro.default
+targetEntityType: node
+bundle: pgro
+mode: default
+content:
+  field_pgro_coll_ref:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  path:
+    type: path
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  moderation_state: true
+  promote: true
+  publish_on: true
+  sticky: true
+  uid: true
+  unpublish_on: true
+  url_redirects: true

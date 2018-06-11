@@ -1,0 +1,29 @@
+uuid: d3b4f502-8110-41f9-b345-8c82228491e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.spotlight_type
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: taxonomy_term.spotlight_type.default
+targetEntityType: taxonomy_term
+bundle: spotlight_type
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

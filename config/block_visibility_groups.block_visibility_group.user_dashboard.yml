@@ -1,0 +1,26 @@
+uuid: 055a4aa5-e001-4cc9-b208-90410d74b443
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+id: user_dashboard
+label: 'User Dashboard'
+logic: and
+conditions:
+  61eaa120-2186-4c8e-80fd-a9cf8a9ea196:
+    id: request_path
+    pages: '/user/*'
+    negate: false
+    context_mapping: {  }
+    uuid: 61eaa120-2186-4c8e-80fd-a9cf8a9ea196
+  27820f56-62c2-4936-b0e9-d534417846ae:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    uuid: 27820f56-62c2-4936-b0e9-d534417846ae
+allow_other_conditions: false

@@ -1,0 +1,22 @@
+uuid: 0c4f193c-5c7e-4e5c-9554-22358de0db69
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - wvuonline2018
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: wvuonline2018_breadcrumbs
+theme: wvuonline2018
+region: header
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

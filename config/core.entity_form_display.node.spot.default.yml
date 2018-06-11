@@ -1,0 +1,186 @@
+uuid: d19aac60-63c2-4d76-9d2d-d6d866e4324d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.spot.field_seo_summary
+    - field.field.node.spot.field_spot_body
+    - field.field.node.spot.field_spot_faculty_bio_ref
+    - field.field.node.spot.field_spot_prog_ref
+    - field.field.node.spot.field_spot_spotlight_type_ref
+    - field.field.node.spot.field_spot_student_bio_ref
+    - node.type.spot
+  module:
+    - conditional_fields
+    - entity_reference_views_select
+    - field_group
+    - field_layout
+    - layout_discovery
+    - path
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  field_group:
+    group_wrapper:
+      children:
+        - group_text
+      parent_name: ''
+      weight: 6
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Wrapper
+    group_text:
+      children:
+        - field_seo_summary
+        - field_spot_body
+      parent_name: group_wrapper
+      weight: 8
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Text
+id: node.spot.default
+targetEntityType: node
+bundle: spot
+mode: default
+content:
+  field_seo_summary:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_spot_body:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_spot_faculty_bio_ref:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        ce89031c-4ac2-4cad-8c17-57e586118a5e:
+          dependee: field_spot_spotlight_type_ref
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '8'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: spot
+    type: entity_reference_autocomplete
+    region: content
+  field_spot_prog_ref:
+    weight: 5
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        3a6cddbb-a28b-4c2e-8651-ba7c6885148c:
+          dependee: field_spot_spotlight_type_ref
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '9'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: spot
+    type: options_select
+    region: content
+  field_spot_spotlight_type_ref:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_spot_student_bio_ref:
+    weight: 4
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        e03b6e02-2fd5-4e32-ade9-69eb84e8a56f:
+          dependee: field_spot_spotlight_type_ref
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '7'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: spot
+    type: erviews_options_select
+    region: content
+  path:
+    type: path
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 9
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  moderation_state: true
+  promote: true
+  publish_on: true
+  sticky: true
+  uid: true
+  unpublish_on: true

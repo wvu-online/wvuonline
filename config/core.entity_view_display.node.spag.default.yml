@@ -1,0 +1,38 @@
+uuid: 7024d42a-1c4d-4fb6-a1cb-84187a324a32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.spag.field_seo_summary
+    - field.field.node.spag.field_spag_body
+    - field.field.node.spag.field_spag_hero_ref
+    - node.type.spag
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.spag.default
+targetEntityType: node
+bundle: spag
+mode: default
+content:
+  field_spag_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_seo_summary: true
+  field_spag_hero_ref: true

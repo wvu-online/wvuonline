@@ -1,0 +1,255 @@
+uuid: 2be776e2-1c98-4e9b-9a5b-d64997630334
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.prog.field_prog_accreditation
+    - field.field.node.prog.field_prog_admissions
+    - field.field.node.prog.field_prog_applicat_requirements
+    - field.field.node.prog.field_prog_body
+    - field.field.node.prog.field_prog_care_ref
+    - field.field.node.prog.field_prog_curr_ref
+    - field.field.node.prog.field_prog_financial_aid_clause
+    - field.field.node.prog.field_prog_gawa_ref
+    - field.field.node.prog.field_prog_is_offered_current
+    - field.field.node.prog.field_prog_non_residents_fee
+    - field.field.node.prog.field_prog_pgro_ref
+    - field.field.node.prog.field_prog_residents_fee
+    - field.field.node.prog.field_seo_summary
+    - node.type.prog
+  module:
+    - entity_browser_entity_form
+    - field_group
+    - field_layout
+    - inline_entity_form
+    - layout_discovery
+    - path
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  field_group:
+    group_wrapper:
+      children:
+        - group_text
+        - group_fees
+        - group_curriculum
+        - group_careers
+      parent_name: ''
+      weight: 4
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Wrapper
+    group_text:
+      children:
+        - field_seo_summary
+        - field_prog_body
+        - field_prog_accreditation
+        - field_prog_admissions
+        - field_prog_applicat_requirements
+        - field_prog_financial_aid_clause
+      parent_name: group_wrapper
+      weight: 11
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Text
+    group_fees:
+      children:
+        - field_prog_residents_fee
+        - field_prog_non_residents_fee
+      parent_name: group_wrapper
+      weight: 12
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Fees
+    group_curriculum:
+      children:
+        - field_prog_curr_ref
+      parent_name: group_wrapper
+      weight: 13
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Curriculum
+    group_careers:
+      children:
+        - field_prog_care_ref
+      parent_name: group_wrapper
+      weight: 14
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Careers
+id: node.prog.default
+targetEntityType: node
+bundle: prog
+mode: default
+content:
+  field_prog_accreditation:
+    weight: 6
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_prog_admissions:
+    weight: 7
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_prog_applicat_requirements:
+    weight: 8
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_prog_body:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_prog_care_ref:
+    weight: 27
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Career
+      label_plural: Careers
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
+  field_prog_curr_ref:
+    weight: 26
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Curriculum
+      label_plural: Curriculums
+      allow_existing: true
+      match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_new: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
+  field_prog_financial_aid_clause:
+    weight: 9
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_prog_gawa_ref:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_prog_is_offered_current:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_prog_non_residents_fee:
+    weight: 10
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_prog_pgro_ref:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_prog_residents_fee:
+    weight: 9
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_seo_summary:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: 'Google and Bing suggest keeping this value to 300 characters or less.'
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  moderation_state: true
+  promote: true
+  publish_on: true
+  sticky: true
+  uid: true
+  unpublish_on: true
+  url_redirects: true

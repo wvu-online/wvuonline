@@ -1,0 +1,21 @@
+uuid: 30ccc17b-8adc-4c54-92bd-915d088b01e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cour_body
+    - node.type.cour
+  module:
+    - text
+id: node.cour.field_cour_body
+field_name: field_cour_body
+entity_type: node
+bundle: cour
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

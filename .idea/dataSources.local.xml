@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="pantheon@dbserver.dev.e7f42cd0-07e8-41e3-a6e7-15ea40919d09.drush.in" uuid="5d8afe49-3a31-45ad-b60f-4c22c587e893">
+      <database-info product="MySQL" version="5.5.5-10.0.23-MariaDB-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>pantheon</user-name>
+      <introspection-schemas>*:pantheon</introspection-schemas>
+      <ssh-properties>
+        <enabled>true</enabled>
+        <proxy-host>dbserver.dev.e7f42cd0-07e8-41e3-a6e7-15ea40919d09.drush.in</proxy-host>
+        <proxy-port>2222</proxy-port>
+        <user>dev.e7f42cd0-07e8-41e3-a6e7-15ea40919d09</user>
+        <use-password>false</use-password>
+        <auth-type>KEY_PAIR</auth-type>
+        <private-key-path>$USER_HOME$/.ssh/id_rsa</private-key-path>
+      </ssh-properties>
+    </data-source>
+    <data-source name="pantheon@dbserver.dashboard.e7f42cd0-07e8-41e3-a6e7-15ea40919d09.drush.in" uuid="7bcfb466-91df-43c9-a91b-6128c5cff586">
+      <database-info product="MySQL" version="5.5.5-10.0.23-MariaDB-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>pantheon</user-name>
+      <introspection-schemas>*:pantheon</introspection-schemas>
+      <ssh-properties>
+        <enabled>true</enabled>
+        <proxy-host>dbserver.dashboard.e7f42cd0-07e8-41e3-a6e7-15ea40919d09.drush.in</proxy-host>
+        <proxy-port>2222</proxy-port>
+        <user>dashboard.e7f42cd0-07e8-41e3-a6e7-15ea40919d09</user>
+        <use-password>false</use-password>
+        <auth-type>KEY_PAIR</auth-type>
+        <private-key-path>$USER_HOME$/.ssh/id_rsa</private-key-path>
+      </ssh-properties>
+    </data-source>
+    <data-source name="pantheon@dbserver.live.e7f42cd0-07e8-41e3-a6e7-15ea40919d09.drush.in" uuid="d88abc24-d418-40f9-a07e-1a917ec64438">
+      <database-info product="MySQL" version="5.5.5-10.0.23-MariaDB-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>pantheon</user-name>
+      <introspection-schemas>*:pantheon</introspection-schemas>
+      <ssh-properties>
+        <enabled>true</enabled>
+        <proxy-host>dbserver.dev.e7f42cd0-07e8-41e3-a6e7-15ea40919d09.drush.in</proxy-host>
+        <proxy-port>2222</proxy-port>
+        <user>dev.e7f42cd0-07e8-41e3-a6e7-15ea40919d09</user>
+        <use-password>false</use-password>
+        <auth-type>KEY_PAIR</auth-type>
+        <private-key-path>$USER_HOME$/.ssh/id_rsa</private-key-path>
+      </ssh-properties>
+    </data-source>
+  </component>
+</project>

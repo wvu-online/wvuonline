@@ -1,0 +1,44 @@
+uuid: b4a4b6e7-2cff-4ae3-be2b-a6b3e8971c7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.current_semester.field_end_date_time
+    - field.field.taxonomy_term.current_semester.field_start_date_time
+    - taxonomy.vocabulary.current_semester
+  module:
+    - datetime
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: taxonomy_term.current_semester.default
+targetEntityType: taxonomy_term
+bundle: current_semester
+mode: default
+content:
+  field_end_date_time:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_start_date_time:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

@@ -1,0 +1,87 @@
+uuid: 2d34093f-9a76-4015-b68c-663222dfe31e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.care.field_care_body
+    - field.field.node.care.field_care_bright_outlook
+    - field.field.node.care.field_care_projected_growth
+    - field.field.node.care.field_seo_summary
+    - node.type.care
+  module:
+    - field_group
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  field_group:
+    group_wrapper:
+      children: {  }
+      parent_name: ''
+      weight: 4
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Wrapper
+    group_text:
+      children: {  }
+      parent_name: ''
+      weight: 5
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Text
+id: node.care.default
+targetEntityType: node
+bundle: care
+mode: default
+content:
+  field_care_bright_outlook:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_care_projected_growth:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_care_body: true
+  field_seo_summary: true
+  moderation_state: true
+  path: true
+  promote: true
+  publish_on: true
+  sticky: true
+  uid: true
+  unpublish_on: true
+  url_redirects: true

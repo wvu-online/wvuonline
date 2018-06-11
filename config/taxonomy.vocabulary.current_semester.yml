@@ -1,0 +1,15 @@
+uuid: 7dfd9c03-67c1-4303-8875-25719cd86e8c
+langcode: en
+status: true
+dependencies:
+  module:
+    - type_style
+third_party_settings:
+  type_style:
+    color: '#000000'
+    icon: ''
+name: 'Current Semester'
+vid: current_semester
+description: ''
+hierarchy: 0
+weight: 0

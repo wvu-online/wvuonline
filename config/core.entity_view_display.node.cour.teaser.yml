@@ -1,0 +1,31 @@
+uuid: e0feb819-795c-4066-9107-0d27f99b0fca
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.cour.field_cour_body
+    - field.field.node.cour.field_seo_summary
+    - node.type.cour
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.cour.teaser
+targetEntityType: node
+bundle: cour
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_cour_body: true
+  field_cour_course_id: true
+  field_cour_course_name: true
+  field_cour_credits: true
+  field_seo_summary: true

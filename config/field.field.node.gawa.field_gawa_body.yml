@@ -1,0 +1,21 @@
+uuid: 8ebcf985-7354-4a88-9f45-d2feab61c142
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gawa_body
+    - node.type.gawa
+  module:
+    - text
+id: node.gawa.field_gawa_body
+field_name: field_gawa_body
+entity_type: node
+bundle: gawa
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,20 @@
+uuid: 318e6c85-f6d8-4780-b7e2-02ba089aefae
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_cour_credits
+field_name: field_cour_credits
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

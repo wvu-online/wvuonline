@@ -1,0 +1,136 @@
+uuid: 277280e8-a2c6-4da8-a22e-05ca86ecf43d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.spag.field_seo_summary
+    - field.field.node.spag.field_spag_body
+    - field.field.node.spag.field_spag_hero_ref
+    - node.type.spag
+  module:
+    - content_moderation
+    - entity_browser_entity_form
+    - field_group
+    - field_layout
+    - inline_entity_form
+    - layout_discovery
+    - path
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  field_group:
+    group_wrapper:
+      children:
+        - group_text
+        - group_hero
+      parent_name: ''
+      weight: 1
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Wrapper
+    group_text:
+      children:
+        - field_seo_summary
+        - field_spag_body
+      parent_name: group_wrapper
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Text
+    group_hero:
+      children:
+        - field_spag_hero_ref
+      parent_name: group_wrapper
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Hero
+id: node.spag.default
+targetEntityType: node
+bundle: spag
+mode: default
+content:
+  field_seo_summary:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: 'Google and Bing suggest keeping this value to 300 characters or less.'
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_spag_body:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_spag_hero_ref:
+    weight: 7
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Hero
+      label_plural: ''
+      allow_new: true
+      match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_existing: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 4
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  publish_on: true
+  sticky: true
+  uid: true
+  unpublish_on: true
+  url_redirects: true

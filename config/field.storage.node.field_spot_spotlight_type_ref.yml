@@ -1,0 +1,20 @@
+uuid: 6c74f102-8ccb-43e7-b302-b07a96cd3a87
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_spot_spotlight_type_ref
+field_name: field_spot_spotlight_type_ref
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

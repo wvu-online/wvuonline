@@ -1,0 +1,19 @@
+uuid: 592ffaa8-38e2-4cd3-a9b1-896eeddbad30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bio_suffix
+    - node.type.bio
+id: node.bio.field_bio_suffix
+field_name: field_bio_suffix
+entity_type: node
+bundle: bio
+label: Suffix
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

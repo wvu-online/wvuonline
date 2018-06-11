@@ -1,0 +1,21 @@
+uuid: 20d18d5d-0e5d-410c-b939-6d7d33ba4dd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_start_date_time
+    - taxonomy.vocabulary.current_semester
+  module:
+    - datetime
+id: taxonomy_term.current_semester.field_start_date_time
+field_name: field_start_date_time
+entity_type: taxonomy_term
+bundle: current_semester
+label: 'Start Date/Time'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

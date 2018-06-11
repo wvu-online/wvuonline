@@ -1,0 +1,29 @@
+uuid: e6a11145-4d2a-4d26-91ca-f3d3862bd142
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prog_pgro_ref
+    - node.type.pgro
+    - node.type.prog
+id: node.prog.field_prog_pgro_ref
+field_name: field_prog_pgro_ref
+entity_type: node
+bundle: prog
+label: 'Parent Program Grouping'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      pgro: pgro
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

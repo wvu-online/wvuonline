@@ -1,0 +1,21 @@
+uuid: 1e285336-b884-4f36-812f-b61a9c9bc503
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prog_body
+    - node.type.prog
+  module:
+    - text
+id: node.prog.field_prog_body
+field_name: field_prog_body
+entity_type: node
+bundle: prog
+label: 'Body (Overview)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

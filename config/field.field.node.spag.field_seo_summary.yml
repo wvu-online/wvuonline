@@ -1,0 +1,19 @@
+uuid: c30938c4-6fbf-49ab-9087-5d12d5d8ecf0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_seo_summary
+    - node.type.spag
+id: node.spag.field_seo_summary
+field_name: field_seo_summary
+entity_type: node
+bundle: spag
+label: 'SEO Summary'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

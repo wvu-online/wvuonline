@@ -1,0 +1,29 @@
+uuid: 7accce69-95df-4bbe-9e9d-eac39dd76381
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_spot_prog_ref
+    - node.type.prog
+    - node.type.spot
+id: node.spot.field_spot_prog_ref
+field_name: field_spot_prog_ref
+entity_type: node
+bundle: spot
+label: Program
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      prog: prog
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

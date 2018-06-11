@@ -1,0 +1,115 @@
+uuid: e179c45a-a229-48d5-89b0-2df39ace66b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cour.field_cour_body
+    - field.field.node.cour.field_cour_course_id
+    - field.field.node.cour.field_cour_course_name
+    - field.field.node.cour.field_cour_credits
+    - field.field.node.cour.field_seo_summary
+    - node.type.cour
+  module:
+    - field_group
+    - field_layout
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  field_group:
+    group_wrapper:
+      children:
+        - group_text
+      parent_name: ''
+      weight: 4
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Wrapper
+    group_text:
+      children:
+        - field_seo_summary
+        - field_cour_body
+      parent_name: group_wrapper
+      weight: 8
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Text
+id: node.cour.default
+targetEntityType: node
+bundle: cour
+mode: default
+content:
+  field_cour_body:
+    weight: 6
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_cour_course_id:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_cour_course_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_cour_credits:
+    weight: 3
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_seo_summary:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: 'Google and Bing suggest keeping this value to 300 characters or less.'
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 7
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  moderation_state: true
+  path: true
+  promote: true
+  publish_on: true
+  sticky: true
+  uid: true
+  unpublish_on: true
+  url_redirects: true

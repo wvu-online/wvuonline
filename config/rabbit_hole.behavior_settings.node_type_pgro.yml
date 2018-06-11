@@ -1,0 +1,9 @@
+uuid: 22dff0b1-1756-477c-bdda-3cef2e627280
+langcode: en
+status: true
+dependencies: {  }
+id: node_type_pgro
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301

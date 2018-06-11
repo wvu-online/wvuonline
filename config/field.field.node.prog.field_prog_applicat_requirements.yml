@@ -1,0 +1,21 @@
+uuid: 1d74350d-bfce-466b-90a4-ab96776f786e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prog_applicat_requirements
+    - node.type.prog
+  module:
+    - text
+id: node.prog.field_prog_applicat_requirements
+field_name: field_prog_applicat_requirements
+entity_type: node
+bundle: prog
+label: 'Application Requirements'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

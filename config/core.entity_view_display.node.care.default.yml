@@ -1,0 +1,40 @@
+uuid: 64f33cb1-e09c-40bc-b04e-a240cef79b29
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.care.field_care_body
+    - field.field.node.care.field_care_bright_outlook
+    - field.field.node.care.field_care_projected_growth
+    - field.field.node.care.field_seo_summary
+    - node.type.care
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.care.default
+targetEntityType: node
+bundle: care
+mode: default
+content:
+  field_care_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_care_bright_outlook: true
+  field_care_projected_growth: true
+  field_seo_summary: true

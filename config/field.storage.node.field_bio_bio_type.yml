@@ -1,0 +1,20 @@
+uuid: fb566728-80a7-4d87-9b47-5b95b266ab4c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_bio_bio_type
+field_name: field_bio_bio_type
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

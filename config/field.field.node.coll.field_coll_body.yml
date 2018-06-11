@@ -1,0 +1,21 @@
+uuid: 054bf360-70d2-47ba-a599-9cbe4d23b479
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_coll_body
+    - node.type.coll
+  module:
+    - text
+id: node.coll.field_coll_body
+field_name: field_coll_body
+entity_type: node
+bundle: coll
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

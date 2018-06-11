@@ -1,0 +1,33 @@
+uuid: 0e0ad4b8-3a60-4d3e-95a0-a191a4d0a35e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+    - type_style
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+  type_style:
+    color: '#000000'
+    icon: ''
+name: Curriculum
+type: curr
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

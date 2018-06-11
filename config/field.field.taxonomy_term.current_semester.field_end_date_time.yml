@@ -1,0 +1,21 @@
+uuid: 1fa7235b-5c2d-4fd6-b67a-958de680213e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_end_date_time
+    - taxonomy.vocabulary.current_semester
+  module:
+    - datetime
+id: taxonomy_term.current_semester.field_end_date_time
+field_name: field_end_date_time
+entity_type: taxonomy_term
+bundle: current_semester
+label: 'End Date/Time'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

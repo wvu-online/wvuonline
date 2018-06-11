@@ -1,0 +1,21 @@
+uuid: 68853265-3ae6-4020-8164-d44dda8497fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prog_accreditation
+    - node.type.prog
+  module:
+    - text
+id: node.prog.field_prog_accreditation
+field_name: field_prog_accreditation
+entity_type: node
+bundle: prog
+label: Accreditation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

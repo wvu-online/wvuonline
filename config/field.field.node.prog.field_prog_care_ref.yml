@@ -1,0 +1,28 @@
+uuid: 84b2399b-ed2c-4b97-b3d4-d92ac2dee3b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prog_care_ref
+    - node.type.care
+    - node.type.prog
+id: node.prog.field_prog_care_ref
+field_name: field_prog_care_ref
+entity_type: node
+bundle: prog
+label: Careers
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      care: care
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

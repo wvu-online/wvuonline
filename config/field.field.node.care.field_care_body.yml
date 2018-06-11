@@ -1,0 +1,21 @@
+uuid: a5d3f857-7ac5-4d28-907b-cb00cf04e131
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_care_body
+    - node.type.care
+  module:
+    - text
+id: node.care.field_care_body
+field_name: field_care_body
+entity_type: node
+bundle: care
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

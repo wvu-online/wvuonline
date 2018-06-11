@@ -1,0 +1,21 @@
+uuid: 9d3b28c8-348b-4e01-8594-e8a849d59e44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prog_admissions
+    - node.type.prog
+  module:
+    - text
+id: node.prog.field_prog_admissions
+field_name: field_prog_admissions
+entity_type: node
+bundle: prog
+label: Admissions
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

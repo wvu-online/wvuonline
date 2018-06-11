@@ -1,0 +1,29 @@
+uuid: 3b5c7ab3-27a5-4a1e-a0bb-bdef7fb4cc25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pgro_coll_ref
+    - node.type.coll
+    - node.type.pgro
+id: node.pgro.field_pgro_coll_ref
+field_name: field_pgro_coll_ref
+entity_type: node
+bundle: pgro
+label: 'Parent College'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      coll: coll
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

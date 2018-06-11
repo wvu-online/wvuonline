@@ -1,0 +1,48 @@
+uuid: 5dc39c25-c69e-4ce0-b92c-bc09a38f13f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.coll.field_coll_body
+    - field.field.node.coll.field_coll_fee
+    - field.field.node.coll.field_seo_summary
+    - node.type.coll
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.coll.default
+targetEntityType: node
+bundle: coll
+mode: default
+content:
+  field_coll_body:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_coll_fee:
+    weight: 1
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_seo_summary: true

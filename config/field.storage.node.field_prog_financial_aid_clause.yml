@@ -1,0 +1,19 @@
+uuid: ae2fcc63-a189-4940-9715-9a820aa7ccf6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_prog_financial_aid_clause
+field_name: field_prog_financial_aid_clause
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

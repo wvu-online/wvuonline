@@ -1,0 +1,9 @@
+uuid: 084e00d1-2d02-4224-8ca3-591bb35691ac
+langcode: en
+status: true
+dependencies: {  }
+id: taxonomy_vocabulary_hero_type
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301

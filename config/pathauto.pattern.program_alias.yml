@@ -1,0 +1,22 @@
+uuid: 1db34117-8a05-4d23-914d-efd9096f3750
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: program_alias
+label: 'Program Alias'
+type: 'canonical_entities:node'
+pattern: '/programs/[node:field_prog_pgro_ref]/[node:title]/[node:field_prog_gawa_ref]'
+selection_criteria:
+  ef8419d5-aba5-488e-b53a-eeec6949c629:
+    id: node_type
+    bundles:
+      prog: prog
+    negate: false
+    context_mapping:
+      node: node
+    uuid: ef8419d5-aba5-488e-b53a-eeec6949c629
+selection_logic: and
+weight: -5
+relationships: {  }

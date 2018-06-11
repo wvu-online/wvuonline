@@ -1,0 +1,28 @@
+uuid: 632b2580-162c-464c-84ee-4fd7c680b155
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.curr
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.curr.teaser
+targetEntityType: node
+bundle: curr
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_curr_body: true
+  field_curr_cour_ref: true
+  field_prog_curric_prog_type_ref: true
+  field_prog_next_start_month: true

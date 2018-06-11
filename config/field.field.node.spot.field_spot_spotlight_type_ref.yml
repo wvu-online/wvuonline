@@ -1,0 +1,29 @@
+uuid: e18a210b-97c5-495e-8a57-ef7f97b89547
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_spot_spotlight_type_ref
+    - node.type.spot
+    - taxonomy.vocabulary.spotlight_type
+id: node.spot.field_spot_spotlight_type_ref
+field_name: field_spot_spotlight_type_ref
+entity_type: node
+bundle: spot
+label: 'Spotlight Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      spotlight_type: spotlight_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

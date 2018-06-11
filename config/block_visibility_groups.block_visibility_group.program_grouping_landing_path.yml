@@ -1,0 +1,17 @@
+uuid: 8d83aeb7-16cc-40e8-8ebe-4314a3a399f0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: program_grouping_landing_path
+label: 'Program Grouping Landing Path'
+logic: or
+conditions:
+  72c43f71-12ef-48cb-b3ac-d6d45740065d:
+    id: request_path
+    pages: '/programs/*'
+    negate: false
+    context_mapping: {  }
+    uuid: 72c43f71-12ef-48cb-b3ac-d6d45740065d
+allow_other_conditions: false

@@ -1,0 +1,19 @@
+uuid: 5d15e30f-3b4f-4e9c-abb7-47edfcf60997
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_seo_summary
+    - node.type.spot
+id: node.spot.field_seo_summary
+field_name: field_seo_summary
+entity_type: node
+bundle: spot
+label: 'SEO Summary'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

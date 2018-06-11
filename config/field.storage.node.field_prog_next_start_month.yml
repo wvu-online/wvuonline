@@ -1,0 +1,57 @@
+uuid: f0b905cc-e2d3-44a1-a4e1-581fc9dcf4a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_prog_next_start_month
+field_name: field_prog_next_start_month
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: January
+      label: January
+    -
+      value: February
+      label: February
+    -
+      value: March
+      label: March
+    -
+      value: April
+      label: April
+    -
+      value: May
+      label: May
+    -
+      value: June
+      label: June
+    -
+      value: July
+      label: July
+    -
+      value: August
+      label: August
+    -
+      value: September
+      label: September
+    -
+      value: October
+      label: October
+    -
+      value: November
+      label: November
+    -
+      value: December
+      label: December
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

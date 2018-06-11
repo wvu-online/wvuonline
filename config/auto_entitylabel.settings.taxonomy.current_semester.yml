@@ -1,0 +1,7 @@
+status: '1'
+pattern: '[term:field_start_date_time:date:html_year]-[term:field_end_date_time:date:html_year]'
+php: 0
+escape: 0
+dependencies:
+  config:
+    - taxonomy.vocabulary.current_semester

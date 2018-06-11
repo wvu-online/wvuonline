@@ -1,0 +1,9 @@
+uuid: c59839cc-3fb7-4c45-a4cb-0975df758a08
+langcode: en
+status: true
+dependencies: {  }
+id: taxonomy_vocabulary_curriculum_program_type
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
