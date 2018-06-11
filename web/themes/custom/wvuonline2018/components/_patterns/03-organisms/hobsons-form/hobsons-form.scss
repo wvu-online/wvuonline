@@ -19,7 +19,12 @@
   }
 
   &__title {
+    font-size: 2em;
+    font-weight: 700;
     text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 1.5em;
+    @extend .u-wvu-blue;
   }
 
   form {

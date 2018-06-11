@@ -8,18 +8,6 @@
             'use strict';
 
             // Your JS Code Here
-            $("#dialog").dialog({
-                autoOpen: false,
-                width: "800",
-                modal: true,
-                close: function( event, ui ) {
-                    $('.overlay').removeClass("visible");
-                }
-            });
-            $("#dialog-button").on("click", function() {
-                $("#dialog").dialog("open");
-                $('.overlay').addClass("visible");
-            });
             // })(); // REMOVE IF DRUPAL
 
             // UNCOMMENT IF DRUPAL

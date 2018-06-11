@@ -6,21 +6,34 @@
 
   &__list {
     display: flex !important;
-    width: 100%;
+    width: 20% !important;
+    font-size: 50%;
     list-style: none;
     padding: 0;
+    flex-direction: row;
+
+    @include large {
+      flex-direction: row;
+    }
   }
 
   &__item {
-    flex: 1 0;
+    flex: 1 0 100%;
     text-align: center;
-    margin-right: 5px;
-    //border-bottom: 1px solid $wvu-blue;
+
+
+    border-bottom: 1px solid $white;
     border-right: none !important;
 
-    &:last-of-type {
-      margin-right: 0;
+    @include large {
+      flex: 1 0;
+      margin-right: 5px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
     }
+
 
   }
 
@@ -28,6 +41,15 @@
     border: none;
     border-top: 4px solid transparent;
     top: 0;
+    padding: 0.2em !important;
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+      content: "\f368";
+      font-size: 40%;
+      font-family: "Font Awesome 5 Free";
+    }
   }
 
   &__content {

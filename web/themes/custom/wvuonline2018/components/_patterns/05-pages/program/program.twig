@@ -4,10 +4,7 @@
 } %}
 <div class="section-2">
     <div class="cost-calc">
-        <h2>What Does It Cost?</h2>
-        {% include "@atoms/06-buttons/01-button.twig" with {
-            button_content: button_content
-        } %}
+        {% include "@organisms/tuition-calc/tuition-calc.twig" %}
     </div>
     {% include "@organisms/hobsons-form/hobsons-form.twig" %}
 </div>
@@ -32,7 +29,4 @@
             profile_body_short: profile.profile_body_short
         }%}
     {% endfor %}
-</div>
-<div id="dialog">
-    {% include "@organisms/tuition-calc/tuition-calc.twig" %}
 </div>

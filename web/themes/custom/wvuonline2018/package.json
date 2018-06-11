@@ -20,6 +20,7 @@
   "precommit.silent": true,
   "dependencies": {
     "global": "^4.3.2",
+    "van11y-accessible-accordion-aria": "^2.1.0",
     "van11y-accessible-tab-panel-aria": "^2.0.4"
   }
 }

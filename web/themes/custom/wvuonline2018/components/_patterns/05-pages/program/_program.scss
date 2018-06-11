@@ -1,6 +1,7 @@
 .section-2 {
   display: flex;
   padding: 0 10%;
+  flex-flow: wrap;
   background:
           linear-gradient(
             rgba(234, 170, 0, 0.6),
@@ -9,15 +10,28 @@
           url('https://placeimg.com/2000/800/building');
 
   .h-form {
-    width: 33%;
+    width: 100%;
+    order: 1;
+
+    @include large {
+      width: 50%;
+      order: 2;
+    }
   }
 
   .cost-calc {
-    width: 66%;
-    margin: 1em 4em;
+    width: 100%;
+    padding: 2em;
+    background: $white;
+    order: 2;
 
     h2 {
       @extend .u-wvu-blue;
+    }
+
+    @include large {
+      width: 50%;
+      order: 1;
     }
   }
 }
@@ -26,13 +40,19 @@
 }
 
 .section-4 {
-  width: 75em;
+  //width: 75em;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   padding: 2em 0;
+  flex-flow: wrap;
 
   .profile {
-    width: 45%;
+    width: 80%;
+    margin: 0 auto 1.5em;
+
+    @include large {
+      width: 45%;
+    }
   }
 }
