@@ -1,2 +1,22 @@
-{% set tabbed_base_class = tabbed_base_class|default('tabbed') %}
-<div {{ bem(tabbed_base_class, (tabbed_modifiers), tabbed_blockname) }}
+<section {{ bem('content', (''), 'tabbed', ['js-tabcontent']) }} id="tab-panel-{{ loop.index }}">
+    <h2>{{ tabbedItem.title }}</h2>
+    {% if tabbedItem.layout == 'card' %}
+        {% include "@organisms/card-grid/card-grid.twig" with {
+            "cards": tabbedItem.content
+        }%}
+    {% elseif tabbedItem.layout == 'table' %}
+        <table>
+            {% for con in tabbedItem.content %}
+                <tr>
+                    <td>{{ con }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        {% for con in tabbedItem.content %}
+            {% include "@atoms/02-text/text/01-paragraph.twig" with {
+                paragraph_content: con
+            } %}
+        {% endfor %}
+    {% endif %}
+</section>
