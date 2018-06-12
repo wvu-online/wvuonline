@@ -1,0 +1,29 @@
+uuid: e14da7bf-8898-4052-a7dd-d89ff5e46a4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.curriculum_program_type
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: taxonomy_term.curriculum_program_type.default
+targetEntityType: taxonomy_term
+bundle: curriculum_program_type
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

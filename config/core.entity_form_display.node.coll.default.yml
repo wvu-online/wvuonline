@@ -1,0 +1,80 @@
+uuid: cec9b70d-eb0e-4967-80b7-3125c7d67789
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.coll.field_coll_body
+    - field.field.node.coll.field_coll_fee
+    - field.field.node.coll.field_seo_summary
+    - node.type.coll
+  module:
+    - field_layout
+    - layout_discovery
+    - path
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.coll.default
+targetEntityType: node
+bundle: coll
+mode: default
+content:
+  field_coll_body:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_coll_fee:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_seo_summary:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: 'Google and Bing suggest keeping this value to 300 characters or less.'
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  moderation_state: true
+  promote: true
+  publish_on: true
+  sticky: true
+  uid: true
+  unpublish_on: true

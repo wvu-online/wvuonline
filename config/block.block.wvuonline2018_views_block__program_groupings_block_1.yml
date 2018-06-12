@@ -1,0 +1,35 @@
+uuid: d944aa50-a510-4ad3-82a4-873e5e148d79
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.program_groupings_landing_path
+    - views.view.program_groupings
+  module:
+    - block_class
+    - block_visibility_groups
+    - views
+  theme:
+    - wvuonline2018
+third_party_settings:
+  block_class:
+    classes: ''
+id: wvuonline2018_views_block__program_groupings_block_1
+theme: wvuonline2018
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:program_groupings-block_1'
+settings:
+  id: 'views_block:program_groupings-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: program_groupings_landing_path
+    context_mapping: {  }

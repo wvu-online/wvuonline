@@ -1,0 +1,24 @@
+uuid: 8e82b3a2-a90c-4aa0-810e-789589b7dc5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.bio
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.bio.teaser
+targetEntityType: node
+bundle: bio
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

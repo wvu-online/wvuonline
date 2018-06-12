@@ -1,0 +1,20 @@
+uuid: cd72e6b7-4ca5-4499-ab85-d8622c47b775
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_bio_graduation_year
+field_name: field_bio_graduation_year
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

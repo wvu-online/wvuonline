@@ -1,0 +1,19 @@
+uuid: 9ac45fe8-6d44-4603-8a92-0667ece9082c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bio_prefix
+    - node.type.bio
+id: node.bio.field_bio_prefix
+field_name: field_bio_prefix
+entity_type: node
+bundle: bio
+label: Prefix
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

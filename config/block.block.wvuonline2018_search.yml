@@ -1,0 +1,22 @@
+uuid: 4c85552c-91df-4665-801e-1e3f6d4ada02
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - wvuonline2018
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: wvuonline2018_search
+theme: wvuonline2018
+region: header
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

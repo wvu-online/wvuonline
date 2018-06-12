@@ -1,0 +1,19 @@
+uuid: 4e179554-f164-4b0c-af3f-07a3f9b75481
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user_is_logged_in
+label: 'User is Logged In'
+logic: or
+conditions:
+  2bb5daae-46fe-475f-b668-39d3e1d78dcd:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    uuid: 2bb5daae-46fe-475f-b668-39d3e1d78dcd
+allow_other_conditions: false

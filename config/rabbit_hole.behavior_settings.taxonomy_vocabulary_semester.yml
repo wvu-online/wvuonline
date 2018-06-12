@@ -1,0 +1,9 @@
+uuid: a04bd061-1ee7-4be3-b539-9de925adc086
+langcode: en
+status: true
+dependencies: {  }
+id: taxonomy_vocabulary_semester
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301

@@ -1,0 +1,32 @@
+uuid: 305e219d-b344-4a76-a4ff-eb95bfa4c12a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.care.field_care_body
+    - field.field.node.care.field_care_bright_outlook
+    - field.field.node.care.field_care_projected_growth
+    - field.field.node.care.field_seo_summary
+    - node.type.care
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.care.teaser
+targetEntityType: node
+bundle: care
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_care_body: true
+  field_care_bright_outlook: true
+  field_care_projected_growth: true
+  field_seo_summary: true

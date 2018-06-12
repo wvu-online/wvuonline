@@ -1,0 +1,9 @@
+uuid: 528e21b2-c799-4292-85a5-a6f6ecaa9ec3
+langcode: en
+status: true
+dependencies: {  }
+id: node_type_spag
+action: display_page
+allow_override: 0
+redirect: ''
+redirect_code: 301

@@ -1,0 +1,22 @@
+uuid: 64d0ecfc-2c80-4c07-b4bf-4d519c7fd716
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.gawa.field_gawa_award_abbreviation
+    - field.field.node.gawa.field_gawa_body
+    - node.type.gawa
+  module:
+    - user
+id: node.gawa.teaser
+targetEntityType: node
+bundle: gawa
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_gawa_award_abbreviation: true
+  field_gawa_body: true

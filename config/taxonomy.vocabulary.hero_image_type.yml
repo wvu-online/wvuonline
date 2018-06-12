@@ -1,0 +1,15 @@
+uuid: 47dcac3d-f400-4d2b-a989-e44114b420f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - type_style
+third_party_settings:
+  type_style:
+    color: '#000000'
+    icon: ''
+name: 'Hero Image Type'
+vid: hero_image_type
+description: ''
+hierarchy: 0
+weight: 0

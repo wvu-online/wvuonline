@@ -1,0 +1,22 @@
+uuid: 70a123c4-cf8a-4335-8ee0-5ded3afad9a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: college_alias
+label: 'College Alias'
+type: 'canonical_entities:node'
+pattern: 'colleges/[node:title]'
+selection_criteria:
+  7570119d-337e-47ae-bf8d-61357c145884:
+    id: node_type
+    bundles:
+      coll: coll
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 7570119d-337e-47ae-bf8d-61357c145884
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,22 @@
+uuid: df6e2c1f-beed-4f3b-a885-e960b6a72dbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.coll.field_coll_body
+    - field.field.node.coll.field_coll_fee
+    - node.type.coll
+  module:
+    - user
+id: node.coll.teaser
+targetEntityType: node
+bundle: coll
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_coll_body: true
+  field_coll_fee: true

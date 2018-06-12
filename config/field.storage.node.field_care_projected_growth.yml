@@ -1,0 +1,21 @@
+uuid: f04afd31-1d76-4755-8621-7e33a088f4fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_care_projected_growth
+field_name: field_care_projected_growth
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

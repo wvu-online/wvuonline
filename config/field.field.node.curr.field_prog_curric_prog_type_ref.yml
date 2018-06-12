@@ -1,0 +1,29 @@
+uuid: 3196846b-116d-490d-9f91-bc8b04aa7437
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prog_curric_prog_type_ref
+    - node.type.curr
+    - taxonomy.vocabulary.curriculum_program_type
+id: node.curr.field_prog_curric_prog_type_ref
+field_name: field_prog_curric_prog_type_ref
+entity_type: node
+bundle: curr
+label: 'Curriculum Program Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      curriculum_program_type: curriculum_program_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

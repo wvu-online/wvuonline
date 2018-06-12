@@ -1,0 +1,36 @@
+uuid: 45dbb31e-5ef7-4fee-a95f-145f1b8ae395
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.user_is_logged_in
+    - views.view.user_admin_people
+  module:
+    - block_class
+    - block_visibility_groups
+    - views
+  theme:
+    - adminimal_theme
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__user_admin_people_block_1
+theme: adminimal_theme
+region: header
+weight: -5
+provider: null
+plugin: 'views_block:user_admin_people-block_1'
+settings:
+  id: 'views_block:user_admin_people-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: user_is_logged_in
+    context_mapping: {  }

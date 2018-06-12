@@ -1,0 +1,22 @@
+uuid: 2664b85f-e96f-4cbd-886d-7e5f47fd3804
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.pgro
+id: node.pgro.promote
+field_name: promote
+entity_type: node
+bundle: pgro
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

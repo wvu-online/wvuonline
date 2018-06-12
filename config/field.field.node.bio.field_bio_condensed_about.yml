@@ -1,0 +1,19 @@
+uuid: c6f25308-499d-48ce-924b-e640353d7696
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bio_condensed_about
+    - node.type.bio
+id: node.bio.field_bio_condensed_about
+field_name: field_bio_condensed_about
+entity_type: node
+bundle: bio
+label: 'Condensed Bio'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

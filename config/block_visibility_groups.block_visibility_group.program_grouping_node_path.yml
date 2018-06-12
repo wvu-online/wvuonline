@@ -1,0 +1,19 @@
+uuid: ab6b6b9d-52cb-426d-89f0-bbc0d999f149
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+id: program_grouping_node_path
+label: 'Program Grouping Node Path'
+logic: or
+conditions:
+  1e75b850-92ad-4a5e-8801-3c82468079b1:
+    id: 'entity_bundle:node'
+    bundles:
+      pgro: pgro
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 1e75b850-92ad-4a5e-8801-3c82468079b1
+allow_other_conditions: false

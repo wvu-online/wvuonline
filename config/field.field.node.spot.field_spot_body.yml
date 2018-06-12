@@ -1,0 +1,21 @@
+uuid: 1f93ae6d-dd1d-4169-9bfe-a1ca3f6a9bec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_spot_body
+    - node.type.spot
+  module:
+    - text
+id: node.spot.field_spot_body
+field_name: field_spot_body
+entity_type: node
+bundle: spot
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

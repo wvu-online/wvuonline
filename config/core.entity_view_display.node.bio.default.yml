@@ -1,0 +1,62 @@
+uuid: ce64e65d-6918-4b78-9a9a-ec619c895ebe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.bio.field_bio_bio_type
+    - field.field.node.bio.field_bio_condensed_about
+    - field.field.node.bio.field_bio_first_name
+    - field.field.node.bio.field_bio_full_bio_about
+    - field.field.node.bio.field_bio_graduation_year
+    - field.field.node.bio.field_bio_last_name
+    - field.field.node.bio.field_bio_middle_initial
+    - field.field.node.bio.field_bio_portrait
+    - field.field.node.bio.field_bio_prefix
+    - field.field.node.bio.field_bio_suffix
+    - node.type.bio
+  module:
+    - field_layout
+    - image
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.bio.default
+targetEntityType: node
+bundle: bio
+mode: default
+content:
+  field_bio_graduation_year:
+    weight: 2
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_bio_portrait:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_bio_bio_type: true
+  field_bio_condensed_about: true
+  field_bio_first_name: true
+  field_bio_full_bio_about: true
+  field_bio_last_name: true
+  field_bio_middle_initial: true
+  field_bio_prefix: true
+  field_bio_suffix: true

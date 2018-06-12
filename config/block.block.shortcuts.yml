@@ -1,0 +1,30 @@
+uuid: 1690b876-00f1-4a30-b58d-57b2ff8ce706
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - block_visibility_groups
+    - shortcut
+  theme:
+    - adminimal_theme
+third_party_settings:
+  block_class:
+    classes: ''
+id: shortcuts
+theme: adminimal_theme
+region: header
+weight: -3
+provider: null
+plugin: shortcuts
+settings:
+  id: shortcuts
+  label: Shortcuts
+  provider: shortcut
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

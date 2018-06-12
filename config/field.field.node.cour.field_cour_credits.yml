@@ -1,0 +1,23 @@
+uuid: 31588fb6-b702-4de2-bf8a-a6274c77ffdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cour_credits
+    - node.type.cour
+id: node.cour.field_cour_credits
+field_name: field_cour_credits
+entity_type: node
+bundle: cour
+label: Credits
+description: 'Please enter numerical value. ex; 3'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

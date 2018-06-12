@@ -1,0 +1,23 @@
+uuid: 84bdcfaf-ec96-493b-a09f-9e0b02143548
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prog_is_offered_current
+    - node.type.prog
+  module:
+    - options
+id: node.prog.field_prog_is_offered_current
+field_name: field_prog_is_offered_current
+entity_type: node
+bundle: prog
+label: 'This program is offered for the Current Semester'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'Yes'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

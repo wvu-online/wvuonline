@@ -1,0 +1,19 @@
+uuid: 9b259b24-7b86-47c8-9614-d72a20a853a6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_prog_care_ref
+field_name: field_prog_care_ref
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

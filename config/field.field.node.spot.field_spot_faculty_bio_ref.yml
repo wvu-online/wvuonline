@@ -1,0 +1,28 @@
+uuid: ad4d6731-7adb-4440-a5bb-64303515225f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_spot_faculty_bio_ref
+    - node.type.bio
+    - node.type.spot
+id: node.spot.field_spot_faculty_bio_ref
+field_name: field_spot_faculty_bio_ref
+entity_type: node
+bundle: spot
+label: 'Faculty Bio'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      bio: bio
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

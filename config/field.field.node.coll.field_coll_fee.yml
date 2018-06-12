@@ -1,0 +1,23 @@
+uuid: c36f8e6d-9377-41b3-b801-4d21b9c3d425
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_coll_fee
+    - node.type.coll
+id: node.coll.field_coll_fee
+field_name: field_coll_fee
+entity_type: node
+bundle: coll
+label: 'College Tuition Fee'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: $
+  suffix: ''
+field_type: decimal

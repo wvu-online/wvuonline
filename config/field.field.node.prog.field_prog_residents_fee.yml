@@ -1,0 +1,23 @@
+uuid: e92380ca-f192-4c67-84ed-112ee40d881b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prog_residents_fee
+    - node.type.prog
+id: node.prog.field_prog_residents_fee
+field_name: field_prog_residents_fee
+entity_type: node
+bundle: prog
+label: 'Residents Fee'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: $
+  suffix: ' per credit hour'
+field_type: decimal

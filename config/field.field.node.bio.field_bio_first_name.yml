@@ -1,0 +1,19 @@
+uuid: 3f845af7-9ffc-4ebc-b693-47ad7c5ad701
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bio_first_name
+    - node.type.bio
+id: node.bio.field_bio_first_name
+field_name: field_bio_first_name
+entity_type: node
+bundle: bio
+label: 'First Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

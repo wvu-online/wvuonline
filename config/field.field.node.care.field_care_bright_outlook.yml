@@ -1,0 +1,23 @@
+uuid: 2c150b1d-f18b-4092-b6dc-2da74ff103de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_care_bright_outlook
+    - node.type.care
+  module:
+    - options
+id: node.care.field_care_bright_outlook
+field_name: field_care_bright_outlook
+entity_type: node
+bundle: care
+label: 'Bright Outlook'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'No'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

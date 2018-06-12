@@ -1,0 +1,24 @@
+uuid: c547ce15-a105-4c51-b4dc-44c28eebcaef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prog_financial_aid_clause
+    - node.type.prog
+  module:
+    - text
+id: node.prog.field_prog_financial_aid_clause
+field_name: field_prog_financial_aid_clause
+entity_type: node
+bundle: prog
+label: 'Financial Aid Clause'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<p>Financial aid is available. Students are encouraged to file the Free Application for&nbsp;<a href=\"https://fafsa.ed.gov/\">Federal Student Aid (FAFSA)</a>&nbsp;form to determine their eligibility for federal and state funds as well as scholarships. WVU’s FAFSA Code is 003827.</p>\r\n"
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,7 @@
+status: '1'
+pattern: '[node:field_bio_prefix] [node:field_bio_first_name] [node:field_bio_middle_initial] [node:field_bio_last_name]'
+php: 0
+escape: 0
+dependencies:
+  config:
+    - node.type.bio

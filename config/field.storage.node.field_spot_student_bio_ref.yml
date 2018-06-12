@@ -1,0 +1,19 @@
+uuid: 912dcc54-1cd3-4360-8965-7dc7452bdf8f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_spot_student_bio_ref
+field_name: field_spot_student_bio_ref
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

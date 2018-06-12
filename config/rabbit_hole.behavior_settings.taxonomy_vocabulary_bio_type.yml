@@ -1,0 +1,9 @@
+uuid: 6013022c-9c42-4c38-9bbd-e6fe2e8f240c
+langcode: en
+status: true
+dependencies: {  }
+id: taxonomy_vocabulary_bio_type
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301

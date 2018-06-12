@@ -1,0 +1,19 @@
+uuid: 98a59ae4-2936-49e7-8747-b065a04dc531
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_seo_summary
+    - node.type.care
+id: node.care.field_seo_summary
+field_name: field_seo_summary
+entity_type: node
+bundle: care
+label: 'SEO Summary'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

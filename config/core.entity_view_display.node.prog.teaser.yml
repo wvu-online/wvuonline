@@ -1,0 +1,32 @@
+uuid: c49b689c-c35a-42a8-80b3-cb3288dba4ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.prog.field_prog_body
+    - field.field.node.prog.field_prog_non_residents_fee
+    - field.field.node.prog.field_prog_residents_fee
+    - field.field.node.prog.field_seo_summary
+    - node.type.prog
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.prog.teaser
+targetEntityType: node
+bundle: prog
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_prog_body: true
+  field_prog_non_residents_fee: true
+  field_prog_residents_fee: true
+  field_seo_summary: true

@@ -1,0 +1,21 @@
+uuid: f5c46aaa-de8c-4792-bba0-ea1a33fb69ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prog_next_start_month
+    - node.type.curr
+  module:
+    - options
+id: node.curr.field_prog_next_start_month
+field_name: field_prog_next_start_month
+entity_type: node
+bundle: curr
+label: 'Next Start Month'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

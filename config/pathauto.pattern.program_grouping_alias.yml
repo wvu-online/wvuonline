@@ -1,0 +1,22 @@
+uuid: 0bcc955d-67c4-4c68-9961-1fe59b30f568
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: program_grouping_alias
+label: 'Program Grouping Alias'
+type: 'canonical_entities:node'
+pattern: '/programs/[node:title]'
+selection_criteria:
+  8f66cbe9-58d1-42cc-9699-386dad08d48e:
+    id: node_type
+    bundles:
+      pgro: pgro
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 8f66cbe9-58d1-42cc-9699-386dad08d48e
+selection_logic: and
+weight: -5
+relationships: {  }

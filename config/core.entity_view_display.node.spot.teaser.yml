@@ -1,0 +1,28 @@
+uuid: 0ed1e2da-9872-46d8-82f1-56f447fb4d13
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.spot.field_seo_summary
+    - field.field.node.spot.field_spot_body
+    - node.type.spot
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.spot.teaser
+targetEntityType: node
+bundle: spot
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_seo_summary: true
+  field_spot_body: true

@@ -1,0 +1,23 @@
+uuid: 3cfe9bdd-ee26-4cf5-9be6-d351b2a40bce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bio_graduation_year
+    - node.type.bio
+id: node.bio.field_bio_graduation_year
+field_name: field_bio_graduation_year
+entity_type: node
+bundle: bio
+label: 'Graduation Year'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: 'Class of '
+  suffix: ''
+field_type: integer

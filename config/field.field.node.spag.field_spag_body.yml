@@ -1,0 +1,21 @@
+uuid: 3b169514-88be-43ae-8077-9e90861d4b8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_spag_body
+    - node.type.spag
+  module:
+    - text
+id: node.spag.field_spag_body
+field_name: field_spag_body
+entity_type: node
+bundle: spag
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

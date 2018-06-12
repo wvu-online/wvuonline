@@ -1,0 +1,38 @@
+uuid: c4a3ab25-5d6c-4b52-97b2-80d362141ec8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bio_portrait
+    - node.type.bio
+  module:
+    - image
+id: node.bio.field_bio_portrait
+field_name: field_bio_portrait
+entity_type: node
+bundle: bio
+label: Portrait
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: bio_portrait_images
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

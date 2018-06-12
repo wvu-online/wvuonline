@@ -1,0 +1,65 @@
+uuid: d6259aa9-bc7f-45c5-a24f-9c51f3b8906c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.spot.field_seo_summary
+    - field.field.node.spot.field_spot_body
+    - field.field.node.spot.field_spot_faculty_bio_ref
+    - field.field.node.spot.field_spot_prog_ref
+    - field.field.node.spot.field_spot_spotlight_type_ref
+    - field.field.node.spot.field_spot_student_bio_ref
+    - node.type.spot
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.spot.default
+targetEntityType: node
+bundle: spot
+mode: default
+content:
+  field_spot_body:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_spot_faculty_bio_ref:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_spot_prog_ref:
+    weight: 5
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_spot_student_bio_ref:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_seo_summary: true
+  field_spot_spotlight_type_ref: true
