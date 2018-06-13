@@ -15,6 +15,9 @@
 web/themes/custom/wvuonline2018/node_modules/
 web/themes/custom/wvuonline2018/build/
 web/themes/custom/wvuonlone2018/dist/
+
+# Ignore PHPStorm
+.idea/
 # Ignore scaffold files
 web/.csslintrc
 web/.editorconfig
