@@ -82,6 +82,7 @@ jobs:
                 command: composer -n unit-test
 
     build_deploy_and_test:
+        <<: *defaults
         steps:
             - checkout
 
@@ -117,7 +118,6 @@ jobs:
             - run:
                name: Build Theme Assets
                 command: cd web/themes/custom/wvuonline2018 && gulp build
-
             - run:
                 name: prepare database for site-under test
                 command: ./.circleci/scripts/pantheon/02-init-site-under-test-clone-existing
