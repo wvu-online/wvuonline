@@ -109,15 +109,16 @@ jobs:
             - run:
                 name: Install Node Modules
                 command: cd web/themes/custom/wvuonline2018 && yarn install
-            
+
             - save_cache:
                 key: node-cache
                 paths:
                     - $HOME/.node/cache
 
-            - run:    
+            - run:
                name: Build Theme Assets
                 command: cd web/themes/custom/wvuonline2018 && gulp build
+
             - run:
                 name: prepare database for site-under test
                 command: ./.circleci/scripts/pantheon/02-init-site-under-test-clone-existing
