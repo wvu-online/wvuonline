@@ -82,7 +82,6 @@ jobs:
                 command: composer -n unit-test
 
     build_deploy_and_test:
-        <<: *defaults
         steps:
             - checkout
 
