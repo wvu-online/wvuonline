@@ -168,8 +168,7 @@
     "prepare-for-pantheon": "DrupalProject\\composer\\ScriptHandler::prepareForPantheon",
     "post-install-cmd": [
       "@drupal-scaffold",
-      "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
-      "cd web/modules/contrib/twig_components && ./scripts/copyfiles.sh web"
+      "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
     ],
     "post-update-cmd": [
       "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"

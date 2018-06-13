@@ -8,7 +8,7 @@ defaults: &defaults
     # In addition to the environment variables defined in this file, also
     # add the following variables in the Circle CI UI.
     #
-    # See: https://circleci.com/docs/2.0/env-vars/
+    # See: https://circleci.com/docs/2.0/environment-variables/
     #
     # TERMINUS_SITE:  Name of the Pantheon site to run tests on, e.g. my_site
     # TERMINUS_TOKEN: The Pantheon machine token
@@ -90,13 +90,18 @@ jobs:
                 keys:
                     - composer-cache
                     - terminus-install
-             #       - node-cache
+                    - node-cache
 
             - run:
                 # Set TERMINUS_ENV and related environment variables.
                 # https://github.com/pantheon-systems/docker-build-tools-ci/blob/1.x/scripts/set-environment
                 name: dependencies
                 command: /build-tools-ci/scripts/set-environment
+
+            #- run:
+            #    name: add node
+            #    command: curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+            #                         && sudo apt-get install -y nodejs
 
             - run:
                 name: install dev dependencies, build assets, etc.
@@ -106,26 +111,27 @@ jobs:
                 name: build assets
                 command: composer -n build-assets
 
-            #- run:
-            #    name: Install Node Modules
-            #    command: cd web/themes/custom/wvuidesign && yarn install
+            - run:
+                name: Install Node Modules
+                command: cd web/themes/custom/wvuonline2018 && yarn install
 
-            #- save_cache:
-            #    key: node-cache
-            #    paths:
-            #        - $HOME/.node/cache
+            - save_cache:
+                key: node-cache
+                paths:
+                    - $HOME/.node/cache
 
-            #- run:
-            #   name: Build Theme Assets
-            #    command: cd web/themes/custom/wvuidesign && yarn run build:dev
+            - run:
+                name: Build Theme Assets
+                command: cd web/themes/custom/wvuonline2018 && gulp build
+
             - run:
                 name: prepare database for site-under test
                 command: ./.circleci/scripts/pantheon/02-init-site-under-test-clone-existing
                 # command: ./.circleci/scripts/pantheon/02-init-site-under-test-reinstall-new
 
-            #- run:
-            #    name: run functional tests with Behat
-            #    command: ./tests/scripts/run-behat
+#            - run:
+#                name: run functional tests with Behat
+#                command: ./tests/scripts/run-behat
 
             - run:
                 name: post-test actions
