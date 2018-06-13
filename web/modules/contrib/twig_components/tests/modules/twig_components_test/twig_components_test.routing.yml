@@ -1,6 +1,0 @@
-twig_components_test.test_page:
-  path: '/twig-components-test'
-  defaults:
-    _controller: '\Drupal\twig_components_test\Controller\TwigComponentsTestController::testPage'
-  requirements:
-    _access: 'TRUE'
