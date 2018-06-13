@@ -90,7 +90,7 @@ jobs:
                 keys:
                     - composer-cache
                     - terminus-install
-             #       - node-cache
+                    - node-cache
 
             - run:
                 # Set TERMINUS_ENV and related environment variables.
@@ -106,18 +106,18 @@ jobs:
                 name: build assets
                 command: composer -n build-assets
 
-            #- run:
-            #    name: Install Node Modules
-            #    command: cd web/themes/custom/wvuidesign && yarn install
+            - run:
+                name: Install Node Modules
+                command: cd web/themes/custom/wvuonline2018 && yarn install
             
-            #- save_cache:
-            #    key: node-cache
-            #    paths:
-            #        - $HOME/.node/cache
+            - save_cache:
+                key: node-cache
+                paths:
+                    - $HOME/.node/cache
 
-            #- run:    
-            #   name: Build Theme Assets
-            #    command: cd web/themes/custom/wvuidesign && yarn run build:dev
+            - run:    
+               name: Build Theme Assets
+                command: cd web/themes/custom/wvuonline2018 && gulp build
             - run:
                 name: prepare database for site-under test
                 command: ./.circleci/scripts/pantheon/02-init-site-under-test-clone-existing
