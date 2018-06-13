@@ -62,25 +62,6 @@ Drupal.behaviors.tabbedContent = {
 };
 'use strict';
 
-(function ($, Drupal) {
-    //UNCOMMENT IF DRUPAL - see components/_meta/_01-foot.twig for attachBehaviors
-    Drupal.behaviors.programPage = {
-        attach: function attach(context, settings) {
-
-            // (function () { // REMOVE IF DRUPAL
-
-            'use strict';
-
-            // Your JS Code Here
-            // })(); // REMOVE IF DRUPAL
-
-            // UNCOMMENT IF DRUPAL
-        }
-    };
-})(jQuery, Drupal);
-"use strict";
-'use strict';
-
 //UNCOMMENT IF DRUPAL - see components/_meta/_01-foot.twig for attachBehaviors
 Drupal.behaviors.accordion = {
   attach: function attach(context, settings) {
@@ -137,6 +118,37 @@ Drupal.behaviors.accordion = {
     // UNCOMMENT IF DRUPAL
   }
 };
+"use strict";
+'use strict';
+
+(function ($, Drupal) {
+    //UNCOMMENT IF DRUPAL - see components/_meta/_01-foot.twig for attachBehaviors
+    Drupal.behaviors.programPage = {
+        attach: function attach(context, settings) {
+
+            // (function () { // REMOVE IF DRUPAL
+
+            'use strict';
+
+            // Your JS Code Here
+            // })(); // REMOVE IF DRUPAL
+
+            // UNCOMMENT IF DRUPAL
+        }
+    };
+})(jQuery, Drupal);
+// Global javascript (loaded on all pages in Pattern Lab and Drupal)
+// Should be used sparingly because javascript files can be used in components
+// See https://github.com/fourkitchens/wvuonline2018/wiki/Drupal-Components#javascript-in-drupal for more details on using component javascript in Drupal.
+
+// Typekit Example
+// try {
+//   Typekit.load({ async: true });
+// }
+// catch (e) {
+//   alert('An error has occurred: ' + e.message);
+// }
+"use strict";
 'use strict';
 
 //UNCOMMENT IF DRUPAL - see components/_meta/_01-foot.twig for attachBehaviors
@@ -154,18 +166,6 @@ Drupal.behaviors.tabbed = {
     // UNCOMMENT IF DRUPAL
   }
 };
-// Global javascript (loaded on all pages in Pattern Lab and Drupal)
-// Should be used sparingly because javascript files can be used in components
-// See https://github.com/fourkitchens/wvuonline2018/wiki/Drupal-Components#javascript-in-drupal for more details on using component javascript in Drupal.
-
-// Typekit Example
-// try {
-//   Typekit.load({ async: true });
-// }
-// catch (e) {
-//   alert('An error has occurred: ' + e.message);
-// }
-"use strict";
 'use strict';
 
 (function (Drupal) {

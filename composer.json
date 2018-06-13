@@ -117,7 +117,6 @@
     "drupal/svg_image_field": "^1.0",
     "drupal/switch_page_theme": "^1.0",
     "drupal/token": "^1.0",
-    "drupal/twig_components": "1.x-dev",
     "drupal/twig_tweak": "^1.9",
     "drupal/twitter_block": "^2.1",
     "drupal/video_embed_field": "^2.0",
