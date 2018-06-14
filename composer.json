@@ -87,7 +87,7 @@
     "drupal/honeypot": "^1.27",
     "drupal/imce": "^1.6",
     "drupal/imce_rename_plugin": "^1.1",
-    "drupal/inline_entity_form": "^1.0@beta",
+    "drupal/inline_entity_form": "^1.0@RC",
     "drupal/jsonapi": "^1.4",
     "drupal/link_attributes": "^1.1",
     "drupal/linkit": "^4.3",
