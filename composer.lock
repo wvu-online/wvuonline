@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "835e009b4259ce444b1fb65cb2309d2e",
+    "content-hash": "18245bb437f425f6401f6a412600280e",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3747,17 +3747,11 @@
         },
         {
             "name": "drupal/field_group",
-            "version": "1.0.0",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/field_group",
-                "reference": "8.x-1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/field_group-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "e8aa3fae5c3c5dec84644bb577996938d638a611"
+                "reference": "8d3bdce51c5d0a35ab88a08383ccac9f5efc9794"
             },
             "require": {
                 "drupal/core": "*"
@@ -3768,11 +3762,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1510352885",
+                    "version": "8.x-1.0-rc6+13-dev",
+                    "datestamp": "1499981942",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 },
                 "patches_applied": {
@@ -3809,7 +3803,8 @@
             "homepage": "https://www.drupal.org/project/field_group",
             "support": {
                 "source": "http://cgit.drupalcode.org/field_group"
-            }
+            },
+            "time": "2017-07-13T21:36:25+00:00"
         },
         {
             "name": "drupal/field_permissions",
@@ -11865,6 +11860,7 @@
         "drupal/entity_browser_enhanced": 5,
         "drupal/entity_embed": 10,
         "drupal/entity_share": 15,
+        "drupal/field_group": 20,
         "drupal/field_permissions": 10,
         "drupal/inline_entity_form": 5,
         "drupal/material_admin": 15,
