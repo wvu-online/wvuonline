@@ -1,0 +1,44 @@
+uuid: aceff16c-1052-4756-b911-e579a7d2813a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.semester.field_semester_end_date
+    - field.field.taxonomy_term.semester.field_semester_start_date
+    - taxonomy.vocabulary.semester
+  module:
+    - datetime
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: taxonomy_term.semester.default
+targetEntityType: taxonomy_term
+bundle: semester
+mode: default
+content:
+  field_semester_end_date:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_semester_start_date:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

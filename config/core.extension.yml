@@ -17,7 +17,6 @@ module:
   ckeditor: 0
   coffee: 0
   color: 0
-  comment: 0
   components: 0
   conditional_fields: 0
   config: 0
@@ -43,7 +42,6 @@ module:
   entity_browser_enhanced: 0
   entity_browser_entity_form: 0
   entity_embed: 0
-  entity_reference_revisions: 0
   entity_reference_views_select: 0
   field: 0
   field_group: 0
@@ -64,7 +62,6 @@ module:
   link: 0
   link_attributes: 0
   linkit: 0
-  material_admin_support: 0
   media: 0
   media_entity_browser: 0
   menu_ui: 0
@@ -89,7 +86,8 @@ module:
   rh_taxonomy: 0
   rh_user: 0
   scheduler: 0
-  search: 0
+  search_api: 0
+  search_api_db: 0
   settings_tray: 0
   shortcut: 0
   sidr: 0
@@ -100,6 +98,7 @@ module:
   slick_views: 0
   superfish: 0
   svg_image_field: 0
+  switch_page_theme: 0
   system: 0
   taxonomy: 0
   telephone: 0
@@ -115,13 +114,11 @@ module:
   video_embed_field: 0
   video_embed_media: 0
   views_ui: 0
-  webform: 0
   workflows: 0
   extlink: 1
   menu_link_content: 1
   pathauto: 1
   views: 10
-  paragraphs: 11
   standard: 1000
 theme:
   stable: 0

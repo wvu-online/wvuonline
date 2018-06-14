@@ -1,0 +1,18 @@
+uuid: 1714de47-50af-4006-9713-c4a3ea3f7a59
+langcode: en
+status: true
+dependencies: {  }
+id: college_admin
+label: 'College Admin'
+weight: 3
+is_admin: null
+permissions:
+  - 'access contextual links'
+  - 'access shortcuts'
+  - 'create care content'
+  - 'create cour content'
+  - 'create curr content'
+  - 'create prog content'
+  - 'create spot content'
+  - 'use text format basic_html'
+  - 'view conditional fields'
