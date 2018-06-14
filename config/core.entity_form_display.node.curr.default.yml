@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.curr.field_curr_cour_ref
     - field.field.node.curr.field_curr_prereq_cour_ref
     - field.field.node.curr.field_prog_curric_prog_type_ref
-    - field.field.node.curr.field_prog_next_start_month
     - node.type.curr
   module:
     - entity_browser_entity_form
@@ -124,12 +123,6 @@ content:
     region: content
   field_prog_curric_prog_type_ref:
     weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_prog_next_start_month:
-    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: options_select

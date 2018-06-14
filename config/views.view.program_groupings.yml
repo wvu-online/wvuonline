@@ -491,7 +491,7 @@ display:
         type: normal
         title: 'Manage Program Groupings'
         menu_name: account
-        weight: -43
+        weight: -42
       display_description: ''
       header:
         area_text_custom:
