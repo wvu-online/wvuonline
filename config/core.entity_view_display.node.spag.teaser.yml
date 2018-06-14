@@ -8,10 +8,6 @@ dependencies:
     - node.type.spag
   module:
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.spag.teaser
 targetEntityType: node
 bundle: spag
@@ -21,6 +17,4 @@ content:
     weight: 100
     region: content
 hidden:
-  field_seo_summary: true
   field_spag_body: true
-  field_spag_hero_ref: true

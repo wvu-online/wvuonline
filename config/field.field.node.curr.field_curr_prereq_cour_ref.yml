@@ -1,0 +1,28 @@
+uuid: 0d007d7a-c8da-4176-a928-1bbf61661545
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_curr_prereq_cour_ref
+    - node.type.cour
+    - node.type.curr
+id: node.curr.field_curr_prereq_cour_ref
+field_name: field_curr_prereq_cour_ref
+entity_type: node
+bundle: curr
+label: Prerequisites
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      cour: cour
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

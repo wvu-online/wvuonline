@@ -1,10 +1,10 @@
-uuid: 0a4842ca-46f4-419b-8563-c6e83275426c
+uuid: 2235643e-b1dd-4587-90b1-b7ac379d84ad
 langcode: en
 status: true
 dependencies:
   config:
-    - block_visibility_groups.block_visibility_group.front_page_only_path
-    - views.view.node_counters
+    - block_visibility_groups.block_visibility_group.program_landing_path
+    - views.view.curriculum
   module:
     - block_class
     - block_visibility_groups
@@ -14,22 +14,23 @@ dependencies:
 third_party_settings:
   block_class:
     classes: ''
-id: views_block__node_counters_block_1
+id: views_block__curriculum_block_1
 theme: bartik
 region: content
-weight: 0
+weight: -1
 provider: null
-plugin: 'views_block:node_counters-block_1'
+plugin: 'views_block:curriculum-block_1'
 settings:
-  id: 'views_block:node_counters-block_1'
+  id: 'views_block:curriculum-block_1'
   label: ''
   provider: views
   label_display: visible
   views_label: ''
   items_per_page: none
+  context_mapping: {  }
 visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: front_page_only_path
+    block_visibility_group: program_landing_path
     context_mapping: {  }

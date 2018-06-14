@@ -16,14 +16,14 @@ third_party_settings:
 id: mainpagecontent_2
 theme: bartik
 region: content
-weight: -3
+weight: -2
 provider: null
 plugin: system_main_block
 settings:
   id: system_main_block
   label: 'Main page content'
   provider: system
-  label_display: visible
+  label_display: '0'
 visibility:
   condition_group:
     id: condition_group

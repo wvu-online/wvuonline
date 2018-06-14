@@ -164,11 +164,11 @@ content:
       override_labels: true
       label_singular: Curriculum
       label_plural: Curriculums
+      allow_new: true
       allow_existing: true
       match_operator: CONTAINS
       collapsible: false
       collapsed: false
-      allow_new: false
       allow_duplicate: false
     third_party_settings:
       entity_browser_entity_form:

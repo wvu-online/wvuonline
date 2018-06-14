@@ -26,16 +26,7 @@ content:
     weight: 100
     region: content
 hidden:
-  field_prog_accreditation: true
-  field_prog_admissions: true
-  field_prog_applicat_requirements: true
   field_prog_body: true
-  field_prog_care_ref: true
-  field_prog_curr_ref: true
-  field_prog_financial_aid_clause: true
-  field_prog_gawa_ref: true
-  field_prog_is_offered_current: true
   field_prog_non_residents_fee: true
-  field_prog_pgro_ref: true
   field_prog_residents_fee: true
   field_seo_summary: true

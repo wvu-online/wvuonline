@@ -1,9 +1,9 @@
-uuid: e21c582f-435c-4b50-839a-6751d1782007
+uuid: b3ec1e01-6e7c-4ba3-8cff-4be7c868ac49
 langcode: en
 status: true
 dependencies:
   config:
-    - block_visibility_groups.block_visibility_group.front_page_only_path
+    - block_visibility_groups.block_visibility_group.degrees_main_link_landing_path
   module:
     - block_class
     - block_visibility_groups
@@ -13,10 +13,10 @@ dependencies:
 third_party_settings:
   block_class:
     classes: ''
-id: mainpagecontent
+id: mainpagecontent_3
 theme: bartik
 region: content
-weight: -2
+weight: -1
 provider: null
 plugin: system_main_block
 settings:
@@ -28,5 +28,5 @@ visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: front_page_only_path
+    block_visibility_group: degrees_main_link_landing_path
     context_mapping: {  }

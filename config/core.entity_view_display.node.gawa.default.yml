@@ -9,10 +9,6 @@ dependencies:
   module:
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.gawa.default
 targetEntityType: node
 bundle: gawa

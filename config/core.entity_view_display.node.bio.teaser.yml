@@ -21,14 +21,4 @@ content:
   links:
     weight: 100
     region: content
-hidden:
-  field_bio_bio_type: true
-  field_bio_condensed_about: true
-  field_bio_first_name: true
-  field_bio_full_bio_about: true
-  field_bio_graduation_year: true
-  field_bio_last_name: true
-  field_bio_middle_initial: true
-  field_bio_portrait: true
-  field_bio_prefix: true
-  field_bio_suffix: true
+hidden: {  }
