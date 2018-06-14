@@ -1,9 +1,9 @@
-uuid: 200657dd-b116-4899-aa4d-d4afc45b39a1
+uuid: 13df7733-9e45-47c2-b892-900d2ce3b9f5
 langcode: en
 status: true
 dependencies:
   config:
-    - block_visibility_groups.block_visibility_group.program_grouping_landing_path
+    - block_visibility_groups.block_visibility_group.program_grouping_node_path
     - views.view.programs
   module:
     - block_class
@@ -24,7 +24,7 @@ settings:
   id: 'views_block:programs-block_2'
   label: ''
   provider: views
-  label_display: '0'
+  label_display: visible
   views_label: ''
   items_per_page: none
   context_mapping: {  }
@@ -32,5 +32,5 @@ visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: program_grouping_landing_path
+    block_visibility_group: program_grouping_node_path
     context_mapping: {  }

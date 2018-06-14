@@ -9,10 +9,6 @@ dependencies:
     - node.type.coll
   module:
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.coll.teaser
 targetEntityType: node
 bundle: coll
@@ -24,4 +20,3 @@ content:
 hidden:
   field_coll_body: true
   field_coll_fee: true
-  field_seo_summary: true

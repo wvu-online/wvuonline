@@ -25,7 +25,4 @@ content:
     region: content
 hidden:
   field_cour_body: true
-  field_cour_course_id: true
-  field_cour_course_name: true
-  field_cour_credits: true
   field_seo_summary: true

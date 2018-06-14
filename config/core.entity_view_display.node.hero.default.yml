@@ -13,10 +13,6 @@ dependencies:
     - image
     - link
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.hero.default
 targetEntityType: node
 bundle: hero

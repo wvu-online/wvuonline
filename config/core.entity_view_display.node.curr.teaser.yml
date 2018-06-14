@@ -21,8 +21,4 @@ content:
   links:
     weight: 100
     region: content
-hidden:
-  field_curr_body: true
-  field_curr_cour_ref: true
-  field_prog_curric_prog_type_ref: true
-  field_prog_next_start_month: true
+hidden: {  }

@@ -12,10 +12,6 @@ dependencies:
     - node.type.hero
   module:
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.hero.teaser
 targetEntityType: node
 bundle: hero

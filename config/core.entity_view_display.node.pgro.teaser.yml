@@ -21,5 +21,4 @@ content:
   links:
     weight: 100
     region: content
-hidden:
-  field_pgro_coll_ref: true
+hidden: {  }

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.curr.field_curr_body
     - field.field.node.curr.field_curr_cour_ref
+    - field.field.node.curr.field_curr_prereq_cour_ref
     - field.field.node.curr.field_prog_curric_prog_type_ref
     - field.field.node.curr.field_prog_next_start_month
     - node.type.curr
@@ -24,6 +25,7 @@ third_party_settings:
       children:
         - group_text
         - group_courses
+        - group_prerequisites
       parent_name: ''
       weight: 3
       format_type: tabs
@@ -58,6 +60,19 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Courses
+    group_prerequisites:
+      children:
+        - field_curr_prereq_cour_ref
+      parent_name: group_wrapper
+      weight: 10
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Prerequisites
 id: node.curr.default
 targetEntityType: node
 bundle: curr
@@ -78,11 +93,29 @@ content:
       override_labels: true
       label_singular: Course
       label_plural: Courses
+      allow_new: true
       allow_existing: true
       match_operator: CONTAINS
       collapsible: false
       collapsed: false
-      allow_new: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
+  field_curr_prereq_cour_ref:
+    weight: 26
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Prerequisite
+      label_plural: Prerequisites
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
       allow_duplicate: false
     third_party_settings:
       entity_browser_entity_form:
