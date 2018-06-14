@@ -1,0 +1,7 @@
+<li id="tabbed-{{ loop.index }}" {{ bem('item', (''), 'tabbed', ['js-tablist__item']) }}>
+
+    <a href="#tab-panel-{{ loop.index }}" {{ bem('link', (''), 'tabbed', ['js-tablist__link']) }}>
+        <i class="fas fa-camera-retro"></i>
+        {{ tabbedItem.title }}
+    </a>
+</li>
