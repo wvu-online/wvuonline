@@ -125,7 +125,7 @@
     "drupal/webform_views": "^5.0@alpha",
     "drupal/yaml_content": "1.x",
     "drush/drush": "~8",
-    "fourkitchens/emulsify": "^2.2",
+    "fourkitchens/emulsify": "^2.333",
     "rvtraveller/qs-composer-installer": "^1.1",
     "webflo/drupal-core-strict": "^8"
   },

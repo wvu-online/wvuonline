@@ -1271,7 +1271,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.23",
-                    "datestamp": "1517936581",
+                    "datestamp": "1527522480",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2079,7 +2079,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -3275,7 +3275,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-beta3",
-                    "datestamp": "1520958485",
+                    "datestamp": "1528452184",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -3346,7 +3346,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.4",
-                    "datestamp": "1512033785",
+                    "datestamp": "1528140780",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3424,7 +3424,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-rc1",
-                    "datestamp": "1520255284",
+                    "datestamp": "1528637884",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -3549,7 +3549,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.4",
-                    "datestamp": "1515143885",
+                    "datestamp": "1527241084",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4280,7 +4280,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.18",
-                    "datestamp": "1526665085",
+                    "datestamp": "1527880980",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4891,7 +4891,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.2",
-                    "datestamp": "1505802867",
+                    "datestamp": "1527502684",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5018,7 +5018,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0",
-                    "datestamp": "1458723239",
+                    "datestamp": "1528046918",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5031,8 +5031,12 @@
             ],
             "authors": [
                 {
-                    "name": "varunmishra2006",
-                    "homepage": "https://www.drupal.org/user/168948"
+                    "name": "Unsupported Projects",
+                    "homepage": "https://www.drupal.org/user/291168"
+                },
+                {
+                    "name": "oksana-c",
+                    "homepage": "https://www.drupal.org/user/2916547"
                 }
             ],
             "description": "Allow you to protect pages, private files by secure password.",
@@ -5487,7 +5491,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.2",
-                    "datestamp": "1524164284",
+                    "datestamp": "1524508094",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -5543,7 +5547,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -5632,7 +5636,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.12",
-                    "datestamp": "1523202480",
+                    "datestamp": "1523203180",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5994,7 +5998,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.1",
-                    "datestamp": "1513810384",
+                    "datestamp": "1527112080",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6336,7 +6340,7 @@
                 },
                 "drupal": {
                     "version": "8.x-5.0-rc12",
-                    "datestamp": "1524706684",
+                    "datestamp": "1528137480",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -6430,7 +6434,7 @@
                 },
                 "drupal": {
                     "version": "8.x-5.0-alpha4",
-                    "datestamp": "1518427980",
+                    "datestamp": "1527431884",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
