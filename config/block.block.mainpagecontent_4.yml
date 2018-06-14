@@ -1,0 +1,32 @@
+uuid: 7b0f7793-8885-4e6e-b8b0-4753fc64748e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.program_groupings_landing_path
+  module:
+    - block_class
+    - block_visibility_groups
+    - system
+  theme:
+    - bartik
+third_party_settings:
+  block_class:
+    classes: ''
+id: mainpagecontent_4
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: program_groupings_landing_path
+    context_mapping: {  }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "950b3a498c6cecdafa269240c318bc5c",
+    "content-hash": "268f7f10d705b81d00bff1f2f957de31",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1271,7 +1271,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.23",
-                    "datestamp": "1517936581",
+                    "datestamp": "1527522480",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2079,7 +2079,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -3275,7 +3275,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-beta3",
-                    "datestamp": "1520958485",
+                    "datestamp": "1528452184",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -3346,7 +3346,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.4",
-                    "datestamp": "1512033785",
+                    "datestamp": "1528140780",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3424,7 +3424,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-rc1",
-                    "datestamp": "1520255284",
+                    "datestamp": "1528637884",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -3549,7 +3549,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.4",
-                    "datestamp": "1515143885",
+                    "datestamp": "1527241084",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4280,7 +4280,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.18",
-                    "datestamp": "1526665085",
+                    "datestamp": "1527880980",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4891,7 +4891,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.2",
-                    "datestamp": "1505802867",
+                    "datestamp": "1527502684",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5018,7 +5018,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0",
-                    "datestamp": "1458723239",
+                    "datestamp": "1528046918",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5031,8 +5031,12 @@
             ],
             "authors": [
                 {
-                    "name": "varunmishra2006",
-                    "homepage": "https://www.drupal.org/user/168948"
+                    "name": "Unsupported Projects",
+                    "homepage": "https://www.drupal.org/user/291168"
+                },
+                {
+                    "name": "oksana-c",
+                    "homepage": "https://www.drupal.org/user/2916547"
                 }
             ],
             "description": "Allow you to protect pages, private files by secure password.",
@@ -5487,7 +5491,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.2",
-                    "datestamp": "1524164284",
+                    "datestamp": "1524508094",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -5543,7 +5547,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -5632,7 +5636,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.12",
-                    "datestamp": "1523202480",
+                    "datestamp": "1523203180",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5994,7 +5998,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.1",
-                    "datestamp": "1513810384",
+                    "datestamp": "1527112080",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6036,50 +6040,6 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/token"
             }
-        },
-        {
-            "name": "drupal/twig_components",
-            "version": "dev-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/twig_components",
-                "reference": "5843b577d5f797a586f98c5a608b85151142b12a"
-            },
-            "require": {
-                "drupal/core": "~8.0",
-                "mortenson/twig-components-ssr": "dev-master"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1522848486",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Samuel Mortenson",
-                    "homepage": "https://www.drupal.org/user/2582268",
-                    "email": "samuel@mortenson.coffee"
-                }
-            ],
-            "description": "Adds Drupal support for Twig Components.",
-            "homepage": "https://www.drupal.org/project/twig_components",
-            "support": {
-                "source": "http://cgit.drupalcode.org/twig_components"
-            },
-            "time": "2018-05-05T13:37:33+00:00"
         },
         {
             "name": "drupal/twig_tweak",
@@ -6380,7 +6340,7 @@
                 },
                 "drupal": {
                     "version": "8.x-5.0-rc12",
-                    "datestamp": "1524706684",
+                    "datestamp": "1528137480",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -6474,7 +6434,7 @@
                 },
                 "drupal": {
                     "version": "8.x-5.0-alpha4",
-                    "datestamp": "1518427980",
+                    "datestamp": "1527431884",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -7189,46 +7149,6 @@
             "time": "2017-05-30T13:00:18+00:00"
         },
         {
-            "name": "mortenson/twig-components-ssr",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mortenson/twig-components-ssr.git",
-                "reference": "fb8b1f197a63c0b5c0c55266cb0a290c33ce0361"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mortenson/twig-components-ssr/zipball/fb8b1f197a63c0b5c0c55266cb0a290c33ce0361",
-                "reference": "fb8b1f197a63c0b5c0c55266cb0a290c33ce0361",
-                "shasum": ""
-            },
-            "require": {
-                "sabberworm/php-css-parser": "dev-master",
-                "twig/twig": "^1.0|^2.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^7.0@dev"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "TwigComponentsSSR\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Samuel Mortenson",
-                    "email": "samuel@mortenson.coffee"
-                }
-            ],
-            "description": "Provides tools to server side render Twig Components.",
-            "time": "2018-04-04T16:45:02+00:00"
-        },
-        {
             "name": "nikic/php-parser",
             "version": "v4.0.1",
             "source": {
@@ -7637,50 +7557,6 @@
             "description": "Install Quicksilver modules for Pantheon into custom locations.",
             "homepage": "https://github.com/rvtraveller/qs-composer-installer",
             "time": "2017-01-27T20:40:31+00:00"
-        },
-        {
-            "name": "sabberworm/php-css-parser",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sabberworm/PHP-CSS-Parser.git",
-                "reference": "c3b01ef0a85824e86fd86a74a8154d8d5c34b0ff"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sabberworm/PHP-CSS-Parser/zipball/c3b01ef0a85824e86fd86a74a8154d8d5c34b0ff",
-                "reference": "c3b01ef0a85824e86fd86a74a8154d8d5c34b0ff",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.8"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Sabberworm\\CSS": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Raphael Schweikert"
-                }
-            ],
-            "description": "Parser for CSS Files written in PHP",
-            "homepage": "http://www.sabberworm.com/blog/2010/6/10/php-css-parser",
-            "keywords": [
-                "css",
-                "parser",
-                "stylesheet"
-            ],
-            "time": "2017-05-31T21:19:41+00:00"
         },
         {
             "name": "stack/builder",
@@ -11995,7 +11871,6 @@
         "drupal/search_api_page": 15,
         "drupal/simple_block": 10,
         "drupal/slick_views": 5,
-        "drupal/twig_components": 20,
         "drupal/webform": 10,
         "drupal/webform_views": 15
     },

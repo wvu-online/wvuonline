@@ -548,7 +548,7 @@ display:
           group_type: group
           admin_label: ''
           operator: not
-          value: Cert
+          value: certificate
           group: 1
           exposed: false
           expose:
@@ -829,7 +829,7 @@ display:
           group_type: group
           admin_label: ''
           operator: contains
-          value: Cert
+          value: certificate
           group: 1
           exposed: false
           expose:
