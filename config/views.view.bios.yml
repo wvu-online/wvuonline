@@ -576,7 +576,7 @@ display:
         type: normal
         title: 'Manage Bios'
         menu_name: account
-        weight: -50
+        weight: -49
       display_description: ''
     cache_metadata:
       max-age: -1

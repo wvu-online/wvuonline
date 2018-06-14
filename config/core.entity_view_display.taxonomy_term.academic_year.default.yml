@@ -1,0 +1,66 @@
+uuid: 9ee6f7e9-bb20-49c2-a0ae-01dd6c59a909
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.academic_year.field_academic_year_end_date
+    - field.field.taxonomy_term.academic_year.field_academic_year_is_current
+    - field.field.taxonomy_term.academic_year.field_academic_year_semester_ref
+    - field.field.taxonomy_term.academic_year.field_academic_year_start_date
+    - taxonomy.vocabulary.academic_year
+  module:
+    - datetime
+    - field_layout
+    - layout_discovery
+    - options
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: taxonomy_term.academic_year.default
+targetEntityType: taxonomy_term
+bundle: academic_year
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_academic_year_end_date:
+    weight: 2
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_academic_year_is_current:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_academic_year_semester_ref:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_academic_year_start_date:
+    weight: 1
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+hidden: {  }

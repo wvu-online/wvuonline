@@ -1,0 +1,17 @@
+uuid: c6111b91-1b68-43ca-875a-0c8c1c8a0220
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: wvu_online
+name: 'WVU Online'
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 3
+  partial_matches: true
+  autocomplete:
+    suggest_suffix: true
+    suggest_words: true

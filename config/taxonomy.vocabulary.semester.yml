@@ -1,0 +1,15 @@
+uuid: 447d788f-6073-47af-a787-3cad5a5011ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - type_style
+third_party_settings:
+  type_style:
+    color: '#000000'
+    icon: ''
+name: Semester
+vid: semester
+description: ''
+hierarchy: 0
+weight: 0

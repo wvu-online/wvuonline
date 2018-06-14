@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.prog.field_prog_is_offered_current
     - field.field.node.prog.field_prog_non_residents_fee
     - field.field.node.prog.field_prog_pgro_ref
+    - field.field.node.prog.field_prog_residency_required
     - field.field.node.prog.field_prog_residents_fee
     - field.field.node.prog.field_seo_summary
     - node.type.prog
@@ -37,7 +38,7 @@ third_party_settings:
         - group_curriculum
         - group_careers
       parent_name: ''
-      weight: 4
+      weight: 5
       format_type: tabs
       format_settings:
         id: ''
@@ -116,7 +117,7 @@ content:
     type: text_textarea
     region: content
   field_prog_admissions:
-    weight: 7
+    weight: 8
     settings:
       rows: 5
       placeholder: ''
@@ -124,7 +125,7 @@ content:
     type: text_textarea
     region: content
   field_prog_applicat_requirements:
-    weight: 8
+    weight: 9
     settings:
       rows: 5
       placeholder: ''
@@ -176,7 +177,7 @@ content:
     type: inline_entity_form_complex
     region: content
   field_prog_financial_aid_clause:
-    weight: 9
+    weight: 10
     settings:
       rows: 5
       placeholder: ''
@@ -184,13 +185,13 @@ content:
     type: text_textarea
     region: content
   field_prog_gawa_ref:
-    weight: 3
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_prog_is_offered_current:
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
@@ -203,10 +204,16 @@ content:
     type: number
     region: content
   field_prog_pgro_ref:
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_prog_residency_required:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
     region: content
   field_prog_residents_fee:
     weight: 9
@@ -225,7 +232,7 @@ content:
     region: content
   path:
     type: path
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -233,7 +240,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 7
     region: content
     third_party_settings: {  }
   title:
