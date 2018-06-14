@@ -1,5 +1,0 @@
-protected_pages_add:
-  route_name: protected_pages_add
-  title: 'Add Protected Page'
-  appears_on:
-    - protected_pages_list

@@ -1,6 +1,0 @@
-services:
-  type_style.twig.type_style_extension:
-    arguments: ['@renderer']
-    class: Drupal\type_style\TwigExtension\TypeStyleExtension
-    tags:
-      - { name: twig.extension }
