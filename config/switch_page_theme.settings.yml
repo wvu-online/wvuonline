@@ -1,0 +1,12 @@
+spt_table:
+  -
+    status: '1'
+    pages: '/user*'
+    theme: adminimal_theme
+    roles:
+      authenticated: authenticated
+      anonymous: 0
+      administrator: 0
+      curriculum_editor: 0
+    weight: '-10'
+    remove: Remove

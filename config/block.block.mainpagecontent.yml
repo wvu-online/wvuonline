@@ -16,7 +16,7 @@ third_party_settings:
 id: mainpagecontent
 theme: bartik
 region: content
-weight: -2
+weight: -3
 provider: null
 plugin: system_main_block
 settings:

@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.curr.field_curr_cour_ref
     - field.field.node.curr.field_curr_prereq_cour_ref
     - field.field.node.curr.field_prog_curric_prog_type_ref
-    - field.field.node.curr.field_prog_next_start_month
     - node.type.curr
   module:
     - field_layout
@@ -32,4 +31,3 @@ hidden:
   field_curr_cour_ref: true
   field_curr_prereq_cour_ref: true
   field_prog_curric_prog_type_ref: true
-  field_prog_next_start_month: true

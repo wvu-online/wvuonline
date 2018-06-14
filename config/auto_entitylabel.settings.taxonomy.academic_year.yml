@@ -1,0 +1,7 @@
+status: '1'
+pattern: '[term:field_academic_year_start_date:date:html_year]-[term:field_academic_year_end_date:date:html_year]'
+php: 0
+escape: 0
+dependencies:
+  config:
+    - taxonomy.vocabulary.academic_year

@@ -1,0 +1,20 @@
+uuid: e9049f4a-1ba8-4118-b57d-3a7bfb689d4e
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - taxonomy
+id: taxonomy_term.field_semester_end_date
+field_name: field_semester_end_date
+entity_type: taxonomy_term
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

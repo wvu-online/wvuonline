@@ -1,0 +1,23 @@
+uuid: d987f8fa-88ab-4291-acc0-47e3501a9667
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_academic_year_is_current
+    - taxonomy.vocabulary.academic_year
+  module:
+    - options
+id: taxonomy_term.academic_year.field_academic_year_is_current
+field_name: field_academic_year_is_current
+entity_type: taxonomy_term
+bundle: academic_year
+label: 'Is Current'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'No'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

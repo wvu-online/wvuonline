@@ -1,9 +1,0 @@
-uuid: f012b498-7fad-412d-85f1-edbbfa452ac6
-langcode: en
-status: true
-dependencies: {  }
-id: curriculum_editor
-label: 'Curriculum Editor'
-weight: 3
-is_admin: null
-permissions: {  }
