@@ -1,4 +1,4 @@
-uuid: ab6b6b9d-52cb-426d-89f0-bbc0d999f149
+uuid: 2aa761e0-f10e-4238-8d3a-e455a9f86d65
 langcode: en
 status: true
 dependencies:
@@ -8,12 +8,12 @@ id: program_grouping_node_path
 label: 'Program Grouping Node Path'
 logic: or
 conditions:
-  1e75b850-92ad-4a5e-8801-3c82468079b1:
+  152175bf-c199-4064-be43-432625e0eff4:
     id: 'entity_bundle:node'
     bundles:
       pgro: pgro
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
-    uuid: 1e75b850-92ad-4a5e-8801-3c82468079b1
+    uuid: 152175bf-c199-4064-be43-432625e0eff4
 allow_other_conditions: false

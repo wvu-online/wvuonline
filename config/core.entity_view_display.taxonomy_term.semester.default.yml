@@ -1,9 +1,10 @@
-uuid: 8de743ea-8670-4c21-81a0-5ac269c1587c
+uuid: 666661dd-5a55-4777-9586-a2aed1586744
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.taxonomy_term.semester.field_semester_end_date
+    - field.field.taxonomy_term.semester.field_semester_name_ref
     - field.field.taxonomy_term.semester.field_semester_start_date
     - taxonomy.vocabulary.semester
   module:
@@ -35,6 +36,14 @@ content:
       timezone_override: ''
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_semester_name_ref:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   field_semester_start_date:
     weight: 1

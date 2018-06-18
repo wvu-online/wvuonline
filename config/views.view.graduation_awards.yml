@@ -13,7 +13,7 @@ dependencies:
     - node
     - user
 id: graduation_awards
-label: 'Graduation Awards'
+label: 'Rel: Graduation Awards'
 module: views
 description: ''
 tag: ''
@@ -1410,7 +1410,7 @@ display:
         type: normal
         title: 'Manage Graduation Awards'
         menu_name: account
-        weight: -44
+        weight: -45
       display_description: ''
     cache_metadata:
       max-age: -1

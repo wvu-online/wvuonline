@@ -11,7 +11,6 @@ dependencies:
     - field.field.node.prog.field_prog_curr_ref
     - field.field.node.prog.field_prog_financial_aid_clause
     - field.field.node.prog.field_prog_gawa_ref
-    - field.field.node.prog.field_prog_is_offered_current
     - field.field.node.prog.field_prog_non_residents_fee
     - field.field.node.prog.field_prog_pgro_ref
     - field.field.node.prog.field_prog_residency_required
@@ -84,7 +83,6 @@ hidden:
   field_prog_care_ref: true
   field_prog_curr_ref: true
   field_prog_gawa_ref: true
-  field_prog_is_offered_current: true
   field_prog_non_residents_fee: true
   field_prog_pgro_ref: true
   field_prog_residents_fee: true

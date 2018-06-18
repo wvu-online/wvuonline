@@ -1,32 +1,32 @@
-uuid: bc9d11b9-4909-4046-ab22-dc0e1dc19430
+uuid: 4ae3d510-8953-45b3-9094-99fc2a1872fd
 langcode: en
 status: true
 dependencies:
   config:
-    - block_visibility_groups.block_visibility_group.certificates_main_link_landing_path
+    - block_visibility_groups.block_visibility_group.menu_link_programs
   module:
     - block_class
     - block_visibility_groups
     - system
   theme:
-    - bartik
+    - wvuonline2018
 third_party_settings:
   block_class:
     classes: ''
 id: mainpagecontent_5
-theme: bartik
+theme: wvuonline2018
 region: content
-weight: -1
+weight: -2
 provider: null
 plugin: system_main_block
 settings:
   id: system_main_block
   label: 'Main page content'
   provider: system
-  label_display: '0'
+  label_display: visible
 visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: certificates_main_link_landing_path
+    block_visibility_group: menu_link_programs
     context_mapping: {  }

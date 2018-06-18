@@ -1,0 +1,17 @@
+uuid: 1790f9cb-9602-4d28-bbf4-b465426615f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: menu_link_programs
+label: 'Menu Link: Programs'
+logic: or
+conditions:
+  9cd6f4f6-df15-437b-b972-6036e61af3e1:
+    id: request_path
+    pages: /programs
+    negate: false
+    context_mapping: {  }
+    uuid: 9cd6f4f6-df15-437b-b972-6036e61af3e1
+allow_other_conditions: false

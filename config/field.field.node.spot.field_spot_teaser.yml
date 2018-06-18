@@ -1,0 +1,19 @@
+uuid: 5580caee-bd27-40b3-bf63-62dcae704d1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_spot_teaser
+    - node.type.spot
+id: node.spot.field_spot_teaser
+field_name: field_spot_teaser
+entity_type: node
+bundle: spot
+label: Teaser
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

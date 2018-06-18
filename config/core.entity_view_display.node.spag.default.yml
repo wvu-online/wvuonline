@@ -6,6 +6,8 @@ dependencies:
     - field.field.node.spag.field_seo_summary
     - field.field.node.spag.field_spag_body
     - field.field.node.spag.field_spag_hero_ref
+    - field.field.node.spag.field_spag_spot_ref
+    - field.field.node.spag.field_spag_video
     - node.type.spag
   module:
     - field_layout
@@ -22,12 +24,12 @@ bundle: spag
 mode: default
 content:
   field_spag_body:
+    type: text_default
     weight: 1
+    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
-    region: content
   links:
     weight: 0
     region: content
@@ -36,3 +38,5 @@ content:
 hidden:
   field_seo_summary: true
   field_spag_hero_ref: true
+  field_spag_spot_ref: true
+  field_spag_video: true

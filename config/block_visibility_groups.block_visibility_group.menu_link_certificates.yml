@@ -1,0 +1,17 @@
+uuid: 394e0755-e027-4a36-ac21-31cf198d7b0a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: menu_link_certificates
+label: 'Menu Link: Certificates'
+logic: or
+conditions:
+  f010f66b-7a40-4d0b-aed4-e1f3b0cff2c0:
+    id: request_path
+    pages: /certificates
+    negate: false
+    context_mapping: {  }
+    uuid: f010f66b-7a40-4d0b-aed4-e1f3b0cff2c0
+allow_other_conditions: false

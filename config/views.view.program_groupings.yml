@@ -11,7 +11,7 @@ dependencies:
     - node
     - user
 id: program_groupings
-label: 'Program Groupings'
+label: 'Rel: Program Groupings'
 module: views
 description: ''
 tag: ''
@@ -491,7 +491,7 @@ display:
         type: normal
         title: 'Manage Program Groupings'
         menu_name: account
-        weight: -42
+        weight: -43
       display_description: ''
       header:
         area_text_custom:

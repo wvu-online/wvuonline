@@ -1,0 +1,19 @@
+uuid: 22a9f945-0ff3-468a-b990-8a4e96d4ca07
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+id: program_node_path
+label: 'Program Node Path'
+logic: or
+conditions:
+  f2ce4fed-b2b9-4afd-a717-b4c4b8ad1efd:
+    id: 'entity_bundle:node'
+    bundles:
+      prog: prog
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: f2ce4fed-b2b9-4afd-a717-b4c4b8ad1efd
+allow_other_conditions: false
