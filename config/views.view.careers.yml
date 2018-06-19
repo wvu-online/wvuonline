@@ -13,7 +13,7 @@ dependencies:
     - options
     - user
 id: careers
-label: Careers
+label: 'Rel: Careers'
 module: views
 description: ''
 tag: ''
@@ -803,7 +803,7 @@ display:
         type: normal
         title: 'Manage Careers'
         menu_name: account
-        weight: -48
+        weight: -49
       display_description: ''
       filters:
         status:
@@ -913,7 +913,6 @@ display:
         filters: false
         filter_groups: false
         pager: false
-        relationships: false
       filter_groups:
         operator: AND
         groups:
@@ -939,7 +938,6 @@ display:
             offset: false
             offset_label: Offset
           quantity: 9
-      relationships: {  }
     cache_metadata:
       max-age: -1
       contexts:

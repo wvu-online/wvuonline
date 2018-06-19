@@ -1,35 +1,35 @@
-uuid: ea6440a3-ad64-4e58-9bf5-eff5289b2ead
+uuid: b73bc868-5238-4ee3-beea-c380a6ad045e
 langcode: en
 status: true
 dependencies:
   config:
-    - block_visibility_groups.block_visibility_group.front_page_only_path
+    - block_visibility_groups.block_visibility_group.front_page_path
     - views.view.node_counters
   module:
     - block_class
     - block_visibility_groups
     - views
   theme:
-    - bartik
+    - wvuonline2018
 third_party_settings:
   block_class:
     classes: ''
 id: views_block__node_counters_block_4
-theme: bartik
+theme: wvuonline2018
 region: content
-weight: -2
+weight: -1
 provider: null
 plugin: 'views_block:node_counters-block_4'
 settings:
   id: 'views_block:node_counters-block_4'
   label: ''
   provider: views
-  label_display: visible
+  label_display: '0'
   views_label: ''
   items_per_page: none
 visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: front_page_only_path
+    block_visibility_group: front_page_path
     context_mapping: {  }

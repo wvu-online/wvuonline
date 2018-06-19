@@ -1,0 +1,9 @@
+uuid: 1bfea884-6ae8-4621-b0b1-d4747d1114f6
+langcode: en
+status: true
+dependencies: {  }
+id: program_editor
+label: 'Program Editor'
+weight: 4
+is_admin: null
+permissions: {  }

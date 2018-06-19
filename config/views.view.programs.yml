@@ -16,7 +16,7 @@ dependencies:
     - options
     - user
 id: programs
-label: Programs
+label: 'Rel: Programs'
 module: views
 description: ''
 tag: ''
@@ -1276,7 +1276,7 @@ display:
         type: normal
         title: 'Manage Programs'
         menu_name: account
-        weight: -43
+        weight: -44
       display_description: ''
       fields:
         title:

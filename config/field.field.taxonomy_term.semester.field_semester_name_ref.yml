@@ -1,0 +1,29 @@
+uuid: 47106e6f-c371-4b8f-aaf9-e14524ec0d3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_semester_name_ref
+    - taxonomy.vocabulary.semester
+    - taxonomy.vocabulary.semester_names
+id: taxonomy_term.semester.field_semester_name_ref
+field_name: field_semester_name_ref
+entity_type: taxonomy_term
+bundle: semester
+label: 'Semester Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      semester_names: semester_names
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

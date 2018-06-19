@@ -17,7 +17,7 @@ dependencies:
     - taxonomy
     - user
 id: bios
-label: Bios
+label: 'Rel: Bios'
 module: views
 description: ''
 tag: ''
@@ -576,7 +576,7 @@ display:
         type: normal
         title: 'Manage Bios'
         menu_name: account
-        weight: -49
+        weight: -50
       display_description: ''
     cache_metadata:
       max-age: -1

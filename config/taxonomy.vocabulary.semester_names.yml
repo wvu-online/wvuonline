@@ -1,0 +1,15 @@
+uuid: 2ff8d083-5baf-4bf8-8537-7e40d292e8c0
+langcode: en
+status: true
+dependencies:
+  module:
+    - type_style
+third_party_settings:
+  type_style:
+    color: '#000000'
+    icon: ''
+name: 'Semester Names'
+vid: semester_names
+description: ''
+hierarchy: 0
+weight: 0
