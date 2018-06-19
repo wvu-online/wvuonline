@@ -1,0 +1,21 @@
+{% set grid_base_class = link_grid_base_class|default('link_grid') %}
+{% embed "@base/layouts/grid/00-grid.twig"%}
+
+{% block grid_content %}
+  {# Drupal content #}
+  {% if grid_content %}
+    {{ grid_content }}
+    {# PL content in YAML #}
+  {% else %}
+    {% for link in links %}
+        {% include "@atoms/01-links/link/link.twig" with {
+          "link_content": link.content,
+          "link_url": link.url,
+          "link_blockname": 'grid',
+          "link_base_class": 'item'
+        } %}
+    {% endfor %}
+  {% endif %}
+{% endblock %}
+
+{% endembed %}
