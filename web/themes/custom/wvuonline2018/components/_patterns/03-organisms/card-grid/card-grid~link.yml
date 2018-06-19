@@ -1,17 +1,16 @@
 grid_label:
-  "Card Grid"
 grid_blockname:
   card
 grid_modifiers:
   1:
     divider
   2:
-    columns-3
+    columns-2
 cards:
   1:
     card_modifiers:
       1: "grid-item"
-      2: "divider-3"
+      2: "divider-2"
     card_img:
       "https://placeimg.com/480/300/nature"
     card_title:
@@ -25,7 +24,7 @@ cards:
   2:
     card_modifiers:
       1: "grid-item"
-      2: "divider-3"
+      2: "divider-2"
     card_img:
       "https://placeimg.com/480/300/nature"
     card_title:
@@ -37,7 +36,7 @@ cards:
   3:
     card_modifiers:
       1: "grid-item"
-      2: "divider-3"
+      2: "divider-2"
     card_img:
       "https://placeimg.com/480/300/nature"
     card_title:
