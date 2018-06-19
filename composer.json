@@ -200,7 +200,7 @@
       "drupal/media_entity_browser": {
         "Issue 2928275": "https://www.drupal.org/files/issues/2018-04-04/2928275-upload-widget-6.patch"
       },
-      "drupal/auto_entity_label": {
+      "drupal/auto_entitylabel": {
         "Issue 2923876": "https://www.drupal.org/files/issues/2018-05-09/2923876-18.patch"
       }
     },
