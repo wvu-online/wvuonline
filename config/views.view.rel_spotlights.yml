@@ -881,8 +881,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: 'read more about {{ title }}{{ field_bio_first_name }} {{ field_bio_last_name }}'
             make_link: false
             path: ''
             absolute: false
@@ -919,7 +919,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: 'read the Feature'
+          text: ''
           output_url_as_text: false
           absolute: false
           entity_type: node

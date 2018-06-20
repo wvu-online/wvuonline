@@ -1,16 +1,16 @@
-uuid: 0d007d7a-c8da-4176-a928-1bbf61661545
+uuid: a61d7852-170c-43a5-b100-24b2bdf352df
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_curr_prereq_cour_ref
+    - field.storage.node.field_cgro_cour_ref
+    - node.type.cgro
     - node.type.cour
-    - node.type.curr
-id: node.curr.field_curr_prereq_cour_ref
-field_name: field_curr_prereq_cour_ref
+id: node.cgro.field_cgro_cour_ref
+field_name: field_cgro_cour_ref
 entity_type: node
-bundle: curr
-label: Prerequisites
+bundle: cgro
+label: Course
 description: ''
 required: false
 translatable: false

@@ -1,18 +1,18 @@
-uuid: c1cb54cd-e602-4b45-a8b4-55b815ebcfa1
+uuid: 4fe3fa3f-bbf2-4e6f-86a0-c07c5e019950
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_curr_cour_ref
-    - node.type.cour
+    - field.storage.node.field_curr_prog_ref
     - node.type.curr
-id: node.curr.field_curr_cour_ref
-field_name: field_curr_cour_ref
+    - node.type.prog
+id: node.curr.field_curr_prog_ref
+field_name: field_curr_prog_ref
 entity_type: node
 bundle: curr
-label: Course
+label: 'Parent Program'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -20,9 +20,10 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      cour: cour
+      prog: prog
     sort:
-      field: _none
+      field: title
+      direction: ASC
     auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: 5e89fb0a-9ab0-432d-a7f5-264a950da011
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gawa_title_or_abbreviation
+    - node.type.gawa
+  module:
+    - options
+id: node.gawa.field_gawa_title_or_abbreviation
+field_name: field_gawa_title_or_abbreviation
+entity_type: node
+bundle: gawa
+label: 'Display full title, or abbreviation'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

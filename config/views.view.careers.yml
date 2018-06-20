@@ -711,7 +711,7 @@ display:
           field: reverse__node__field_prog_care_ref
           relationship: none
           group_type: group
-          admin_label: field_prog_care_ref
+          admin_label: 'care UP TO prog'
           required: false
           entity_type: node
           plugin_id: entity_reverse

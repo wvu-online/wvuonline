@@ -4,15 +4,19 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.bio.field_bio_bio_type
+    - field.field.node.bio.field_bio_condensed_about
+    - field.field.node.bio.field_bio_first_name
+    - field.field.node.bio.field_bio_full_bio_about
+    - field.field.node.bio.field_bio_graduation_year
+    - field.field.node.bio.field_bio_last_name
+    - field.field.node.bio.field_bio_middle_initial
+    - field.field.node.bio.field_bio_portrait
+    - field.field.node.bio.field_bio_prefix
+    - field.field.node.bio.field_bio_suffix
     - node.type.bio
   module:
-    - field_layout
-    - layout_discovery
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.bio.teaser
 targetEntityType: node
 bundle: bio
@@ -21,4 +25,14 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_bio_bio_type: true
+  field_bio_condensed_about: true
+  field_bio_first_name: true
+  field_bio_full_bio_about: true
+  field_bio_graduation_year: true
+  field_bio_last_name: true
+  field_bio_middle_initial: true
+  field_bio_portrait: true
+  field_bio_prefix: true
+  field_bio_suffix: true

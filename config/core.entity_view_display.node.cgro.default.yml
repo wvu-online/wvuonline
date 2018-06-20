@@ -1,0 +1,21 @@
+uuid: b4516a97-7226-4ca9-a595-cd0c143bfea0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cgro.field_cgro_cour_ref
+    - node.type.cgro
+  module:
+    - user
+id: node.cgro.default
+targetEntityType: node
+bundle: cgro
+mode: default
+content:
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_cgro_cour_ref: true

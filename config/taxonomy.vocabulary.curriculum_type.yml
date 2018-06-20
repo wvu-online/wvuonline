@@ -1,0 +1,9 @@
+uuid: 907d5cbc-7a4b-4104-8f54-ea2563215345
+langcode: en
+status: true
+dependencies: {  }
+name: 'Curriculum Type'
+vid: curriculum_type
+description: ''
+hierarchy: 0
+weight: 0

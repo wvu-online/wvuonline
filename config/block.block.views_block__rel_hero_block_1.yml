@@ -13,7 +13,7 @@ dependencies:
     - wvuonline2018
 third_party_settings:
   block_class:
-    classes: ''
+    classes: block__rel-hero
 id: views_block__rel_hero_block_1
 theme: wvuonline2018
 region: content

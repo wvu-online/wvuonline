@@ -15,14 +15,9 @@ dependencies:
     - conditional_fields
     - entity_reference_views_select
     - field_group
-    - field_layout
-    - layout_discovery
     - path
     - text
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
   field_group:
     group_wrapper:
       children:

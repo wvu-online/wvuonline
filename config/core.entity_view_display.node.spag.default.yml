@@ -10,14 +10,8 @@ dependencies:
     - field.field.node.spag.field_spag_video
     - node.type.spag
   module:
-    - field_layout
-    - layout_discovery
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.spag.default
 targetEntityType: node
 bundle: spag

@@ -5,16 +5,12 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.cour.field_cour_body
-    - field.field.node.cour.field_seo_summary
+    - field.field.node.cour.field_cour_course_id
+    - field.field.node.cour.field_cour_course_name
+    - field.field.node.cour.field_cour_credits
     - node.type.cour
   module:
-    - field_layout
-    - layout_discovery
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.cour.teaser
 targetEntityType: node
 bundle: cour
@@ -25,4 +21,6 @@ content:
     region: content
 hidden:
   field_cour_body: true
-  field_seo_summary: true
+  field_cour_course_id: true
+  field_cour_course_name: true
+  field_cour_credits: true

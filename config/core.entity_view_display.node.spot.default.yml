@@ -12,14 +12,8 @@ dependencies:
     - field.field.node.spot.field_spot_teaser
     - node.type.spot
   module:
-    - field_layout
-    - layout_discovery
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.spot.default
 targetEntityType: node
 bundle: spot

@@ -1,15 +1,15 @@
-uuid: bcbff60f-c48e-4dc4-b0d6-a104d38f22ad
+uuid: 596a6437-3956-444a-b26d-04741c22f896
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_gawa_award_abbreviation
-field_name: field_gawa_award_abbreviation
+id: node.field_curr_public_title
+field_name: field_curr_public_title
 entity_type: node
 type: string
 settings:
-  max_length: 8
+  max_length: 255
   is_ascii: false
   case_sensitive: false
 module: core

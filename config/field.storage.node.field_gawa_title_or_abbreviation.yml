@@ -1,22 +1,22 @@
-uuid: 78cc2f49-436d-403b-b020-a8896f33527b
+uuid: 6fcae895-66f3-4983-9c13-0971c235a842
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - options
-id: node.field_prog_residency_required
-field_name: field_prog_residency_required
+id: node.field_gawa_title_or_abbreviation
+field_name: field_gawa_title_or_abbreviation
 entity_type: node
 type: list_string
 settings:
   allowed_values:
     -
-      value: 'Yes'
-      label: 'Yes'
+      value: 'Full Title'
+      label: 'Full Title'
     -
-      value: 'No'
-      label: 'No'
+      value: Abbreviation
+      label: Abbreviation
   allowed_values_function: ''
 module: options
 locked: false

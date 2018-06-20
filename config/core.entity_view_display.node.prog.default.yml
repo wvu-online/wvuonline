@@ -13,20 +13,12 @@ dependencies:
     - field.field.node.prog.field_prog_gawa_ref
     - field.field.node.prog.field_prog_non_residents_fee
     - field.field.node.prog.field_prog_pgro_ref
-    - field.field.node.prog.field_prog_residency_required
     - field.field.node.prog.field_prog_residents_fee
     - field.field.node.prog.field_seo_summary
     - node.type.prog
   module:
-    - field_layout
-    - layout_discovery
-    - options
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.prog.default
 targetEntityType: node
 bundle: prog
@@ -34,20 +26,20 @@ mode: default
 content:
   field_prog_accreditation:
     type: text_default
-    weight: 3
+    weight: 4
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_prog_admissions:
-    weight: 4
+    weight: 5
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_prog_applicat_requirements:
-    weight: 5
+    weight: 6
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -55,25 +47,26 @@ content:
     region: content
   field_prog_body:
     type: text_default
-    weight: 2
+    weight: 3
     region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
   field_prog_financial_aid_clause:
-    weight: 6
+    weight: 7
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
-  field_prog_residency_required:
+  field_prog_gawa_ref:
+    type: entity_reference_label
     weight: 1
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
     region: content
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
   links:
     weight: 0
     region: content
@@ -82,7 +75,6 @@ content:
 hidden:
   field_prog_care_ref: true
   field_prog_curr_ref: true
-  field_prog_gawa_ref: true
   field_prog_non_residents_fee: true
   field_prog_pgro_ref: true
   field_prog_residents_fee: true

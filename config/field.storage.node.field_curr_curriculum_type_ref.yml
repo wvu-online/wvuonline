@@ -1,18 +1,19 @@
-uuid: 4b5a6b50-a8c1-481d-894c-60dd596cdfd1
+uuid: 95e20f58-3081-4878-a506-ce53d671f0a5
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_curr_cour_ref
-field_name: field_curr_cour_ref
+    - taxonomy
+id: node.field_curr_curriculum_type_ref
+field_name: field_curr_curriculum_type_ref
 entity_type: node
 type: entity_reference
 settings:
-  target_type: node
+  target_type: taxonomy_term
 module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

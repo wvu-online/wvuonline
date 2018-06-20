@@ -4,7 +4,11 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.spag.field_seo_summary
     - field.field.node.spag.field_spag_body
+    - field.field.node.spag.field_spag_hero_ref
+    - field.field.node.spag.field_spag_spot_ref
+    - field.field.node.spag.field_spag_video
     - node.type.spag
   module:
     - user
@@ -17,4 +21,8 @@ content:
     weight: 100
     region: content
 hidden:
+  field_seo_summary: true
   field_spag_body: true
+  field_spag_hero_ref: true
+  field_spag_spot_ref: true
+  field_spag_video: true

@@ -4,8 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.gawa.field_gawa_award_abbreviation
-    - field.field.node.gawa.field_gawa_body
     - node.type.gawa
   module:
     - user
@@ -17,6 +15,4 @@ content:
   links:
     weight: 100
     region: content
-hidden:
-  field_gawa_award_abbreviation: true
-  field_gawa_body: true
+hidden: {  }

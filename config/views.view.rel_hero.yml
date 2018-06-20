@@ -8,12 +8,10 @@ dependencies:
     - field.storage.node.field_hero_tall_image
     - field.storage.node.field_hero_teaser
     - node.type.hero
-    - responsive_image.styles.tall_hero
   module:
     - image
     - link
     - node
-    - responsive_image
     - user
 id: rel_hero
 label: 'Rel: Hero'
@@ -114,10 +112,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: responsive_image
+          type: image_url
           settings:
-            responsive_image_style: tall_hero
-            image_link: ''
+            image_style: ''
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -178,10 +175,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: image_url
           settings:
             image_style: ''
-            image_link: ''
           group_column: ''
           group_columns: {  }
           group_rows: true

@@ -1,21 +1,19 @@
-uuid: 8ebcf985-7354-4a88-9f45-d2feab61c142
+uuid: 9ef32ecb-8708-4e99-bfb8-351babc63824
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_gawa_body
+    - field.storage.node.field_gawa_abbreviation
     - node.type.gawa
-  module:
-    - text
-id: node.gawa.field_gawa_body
-field_name: field_gawa_body
+id: node.gawa.field_gawa_abbreviation
+field_name: field_gawa_abbreviation
 entity_type: node
 bundle: gawa
-label: Body
+label: Abbreviation
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: text_long
+field_type: string
