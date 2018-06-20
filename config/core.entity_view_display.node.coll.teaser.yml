@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.coll.field_coll_body
     - field.field.node.coll.field_coll_fee
+    - field.field.node.coll.field_seo_summary
     - node.type.coll
   module:
     - user
@@ -20,3 +21,4 @@ content:
 hidden:
   field_coll_body: true
   field_coll_fee: true
+  field_seo_summary: true

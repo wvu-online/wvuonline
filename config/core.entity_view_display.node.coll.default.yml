@@ -8,14 +8,8 @@ dependencies:
     - field.field.node.coll.field_seo_summary
     - node.type.coll
   module:
-    - field_layout
-    - layout_discovery
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.coll.default
 targetEntityType: node
 bundle: coll

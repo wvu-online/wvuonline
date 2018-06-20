@@ -17,7 +17,7 @@ third_party_settings:
 id: views_block__rel_video_block_1
 theme: wvuonline2018
 region: content
-weight: -2
+weight: -3
 provider: null
 plugin: 'views_block:rel_video-block_1'
 settings:

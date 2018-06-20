@@ -4,13 +4,6 @@ status: true
 dependencies:
   config:
     - taxonomy.vocabulary.bio_type
-  module:
-    - field_layout
-    - layout_discovery
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: taxonomy_term.bio_type.default
 targetEntityType: taxonomy_term
 bundle: bio_type

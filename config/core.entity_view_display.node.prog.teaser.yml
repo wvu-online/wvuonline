@@ -4,19 +4,22 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.prog.field_prog_accreditation
+    - field.field.node.prog.field_prog_admissions
+    - field.field.node.prog.field_prog_applicat_requirements
     - field.field.node.prog.field_prog_body
+    - field.field.node.prog.field_prog_care_ref
+    - field.field.node.prog.field_prog_curr_ref
+    - field.field.node.prog.field_prog_financial_aid_clause
+    - field.field.node.prog.field_prog_gawa_ref
     - field.field.node.prog.field_prog_non_residents_fee
+    - field.field.node.prog.field_prog_pgro_ref
+    - field.field.node.prog.field_prog_residency_required
     - field.field.node.prog.field_prog_residents_fee
     - field.field.node.prog.field_seo_summary
     - node.type.prog
   module:
-    - field_layout
-    - layout_discovery
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.prog.teaser
 targetEntityType: node
 bundle: prog
@@ -26,7 +29,16 @@ content:
     weight: 100
     region: content
 hidden:
+  field_prog_accreditation: true
+  field_prog_admissions: true
+  field_prog_applicat_requirements: true
   field_prog_body: true
+  field_prog_care_ref: true
+  field_prog_curr_ref: true
+  field_prog_financial_aid_clause: true
+  field_prog_gawa_ref: true
   field_prog_non_residents_fee: true
+  field_prog_pgro_ref: true
+  field_prog_residency_required: true
   field_prog_residents_fee: true
   field_seo_summary: true

@@ -1,13 +1,7 @@
 uuid: c3852883-7726-4071-a218-ec88097f6c8f
 langcode: en
 status: true
-dependencies:
-  module:
-    - type_style
-third_party_settings:
-  type_style:
-    color: '#000000'
-    icon: ''
+dependencies: {  }
 name: 'Curriculum Program Type'
 vid: curriculum_program_type
 description: ''

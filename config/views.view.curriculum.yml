@@ -769,6 +769,7 @@ display:
         use_ajax: false
         header: false
         pager: false
+        title: false
       filter_groups:
         operator: AND
         groups:
@@ -817,6 +818,7 @@ display:
             offset: false
             offset_label: Offset
           quantity: 9
+      title: 'Manage Curriculum'
     cache_metadata:
       max-age: -1
       contexts:

@@ -11,7 +11,7 @@ id: node.prog.field_prog_financial_aid_clause
 field_name: field_prog_financial_aid_clause
 entity_type: node
 bundle: prog
-label: 'Financial Aid Clause'
+label: 'Financial Aid'
 description: ''
 required: false
 translatable: false

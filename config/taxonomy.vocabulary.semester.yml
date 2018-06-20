@@ -1,13 +1,7 @@
 uuid: 3385dc59-80ba-47f1-a1b7-07f021bd8adb
 langcode: en
 status: true
-dependencies:
-  module:
-    - type_style
-third_party_settings:
-  type_style:
-    color: '#000000'
-    icon: ''
+dependencies: {  }
 name: Semester
 vid: semester
 description: ''

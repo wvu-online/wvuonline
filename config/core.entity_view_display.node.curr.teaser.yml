@@ -4,15 +4,13 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.curr.field_curr_body
+    - field.field.node.curr.field_curr_cour_ref
+    - field.field.node.curr.field_curr_prereq_cour_ref
+    - field.field.node.curr.field_prog_curric_prog_type_ref
     - node.type.curr
   module:
-    - field_layout
-    - layout_discovery
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.curr.teaser
 targetEntityType: node
 bundle: curr
@@ -21,4 +19,8 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_curr_body: true
+  field_curr_cour_ref: true
+  field_curr_prereq_cour_ref: true
+  field_prog_curric_prog_type_ref: true

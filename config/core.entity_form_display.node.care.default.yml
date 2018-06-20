@@ -10,12 +10,7 @@ dependencies:
     - node.type.care
   module:
     - field_group
-    - field_layout
-    - layout_discovery
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
   field_group:
     group_wrapper:
       children: {  }

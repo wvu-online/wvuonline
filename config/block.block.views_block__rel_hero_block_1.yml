@@ -13,11 +13,11 @@ dependencies:
     - wvuonline2018
 third_party_settings:
   block_class:
-    classes: ''
+    classes: block__rel-hero
 id: views_block__rel_hero_block_1
 theme: wvuonline2018
 region: content
-weight: -5
+weight: -6
 provider: null
 plugin: 'views_block:rel_hero-block_1'
 settings:

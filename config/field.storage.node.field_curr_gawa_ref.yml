@@ -1,16 +1,16 @@
-uuid: 481b3572-d03a-4d33-8481-708db8da0e76
+uuid: 56c9eddc-721e-4525-a568-16caa19edd27
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - text
-id: node.field_gawa_body
-field_name: field_gawa_body
+id: node.field_curr_gawa_ref
+field_name: field_curr_gawa_ref
 entity_type: node
-type: text_long
-settings: {  }
-module: text
+type: entity_reference
+settings:
+  target_type: node
+module: core
 locked: false
 cardinality: 1
 translatable: true

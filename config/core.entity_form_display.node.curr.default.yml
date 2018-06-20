@@ -5,20 +5,17 @@ dependencies:
   config:
     - field.field.node.curr.field_curr_body
     - field.field.node.curr.field_curr_cour_ref
+    - field.field.node.curr.field_curr_gawa_ref
     - field.field.node.curr.field_curr_prereq_cour_ref
+    - field.field.node.curr.field_curr_prog_ref
     - field.field.node.curr.field_prog_curric_prog_type_ref
     - node.type.curr
   module:
     - entity_browser_entity_form
     - field_group
-    - field_layout
     - inline_entity_form
-    - layout_discovery
     - text
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
   field_group:
     group_wrapper:
       children:
@@ -26,7 +23,7 @@ third_party_settings:
         - group_courses
         - group_prerequisites
       parent_name: ''
-      weight: 3
+      weight: 4
       format_type: tabs
       format_settings:
         id: ''
@@ -103,6 +100,12 @@ content:
         entity_browser_id: _none
     type: inline_entity_form_complex
     region: content
+  field_curr_gawa_ref:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_curr_prereq_cour_ref:
     weight: 26
     settings:
@@ -121,17 +124,23 @@ content:
         entity_browser_id: _none
     type: inline_entity_form_complex
     region: content
+  field_curr_prog_ref:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_prog_curric_prog_type_ref:
     weight: 1
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: options_buttons
     region: content
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 5
     region: content
     third_party_settings: {  }
   title:

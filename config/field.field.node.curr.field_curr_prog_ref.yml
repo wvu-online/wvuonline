@@ -1,0 +1,29 @@
+uuid: 4fe3fa3f-bbf2-4e6f-86a0-c07c5e019950
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_curr_prog_ref
+    - node.type.curr
+    - node.type.prog
+id: node.curr.field_curr_prog_ref
+field_name: field_curr_prog_ref
+entity_type: node
+bundle: curr
+label: 'Parent Program'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      prog: prog
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
