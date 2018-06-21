@@ -1,16 +1,16 @@
-uuid: c1cb54cd-e602-4b45-a8b4-55b815ebcfa1
+uuid: 0d4f44da-0d9a-4676-8f8d-c893cc275a31
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_curr_cour_ref
-    - node.type.cour
+    - field.storage.node.field_curr_cgro_ref
+    - node.type.cgro
     - node.type.curr
-id: node.curr.field_curr_cour_ref
-field_name: field_curr_cour_ref
+id: node.curr.field_curr_cgro_ref
+field_name: field_curr_cgro_ref
 entity_type: node
 bundle: curr
-label: Course
+label: 'Course Group'
 description: ''
 required: false
 translatable: false
@@ -20,7 +20,7 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      cour: cour
+      cgro: cgro
     sort:
       field: _none
     auto_create: false

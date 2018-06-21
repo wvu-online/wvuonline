@@ -14,7 +14,6 @@ dependencies:
     - field.field.node.prog.field_prog_gawa_ref
     - field.field.node.prog.field_prog_non_residents_fee
     - field.field.node.prog.field_prog_pgro_ref
-    - field.field.node.prog.field_prog_residency_required
     - field.field.node.prog.field_prog_residents_fee
     - field.field.node.prog.field_seo_summary
     - node.type.prog
@@ -39,6 +38,5 @@ hidden:
   field_prog_gawa_ref: true
   field_prog_non_residents_fee: true
   field_prog_pgro_ref: true
-  field_prog_residency_required: true
   field_prog_residents_fee: true
   field_seo_summary: true

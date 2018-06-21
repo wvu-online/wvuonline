@@ -5,8 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.curr.field_curr_body
-    - field.field.node.curr.field_curr_cour_ref
-    - field.field.node.curr.field_curr_prereq_cour_ref
+    - field.field.node.curr.field_curr_curriculum_type_ref
+    - field.field.node.curr.field_curr_prog_ref
+    - field.field.node.curr.field_curr_public_title
     - field.field.node.curr.field_prog_curric_prog_type_ref
     - node.type.curr
   module:
@@ -21,6 +22,7 @@ content:
     region: content
 hidden:
   field_curr_body: true
-  field_curr_cour_ref: true
-  field_curr_prereq_cour_ref: true
+  field_curr_curriculum_type_ref: true
+  field_curr_prog_ref: true
+  field_curr_public_title: true
   field_prog_curric_prog_type_ref: true

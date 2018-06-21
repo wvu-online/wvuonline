@@ -1,5 +1,5 @@
 status: '1'
-pattern: '[node:field_curr_prog_ref], [node:field_curr_gawa_ref]'
+pattern: '[node:field_curr_prog_ref], [node:field_curr_public_title]'
 php: 0
 escape: 0
 dependencies:

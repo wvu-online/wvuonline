@@ -1,16 +1,15 @@
-uuid: 4d1e47ea-f768-4139-909a-1cacf7d802b2
+uuid: 890a0f0a-28ec-4cc6-89b0-96000c9cf466
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - taxonomy
-id: node.field_prog_curric_prog_type_ref
-field_name: field_prog_curric_prog_type_ref
+id: node.field_curr_cgro_ref
+field_name: field_curr_cgro_ref
 entity_type: node
 type: entity_reference
 settings:
-  target_type: taxonomy_term
+  target_type: node
 module: core
 locked: false
 cardinality: -1

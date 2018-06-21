@@ -4,10 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.curr.field_curr_body
-    - field.field.node.curr.field_curr_cour_ref
-    - field.field.node.curr.field_curr_gawa_ref
-    - field.field.node.curr.field_curr_prereq_cour_ref
+    - field.field.node.curr.field_curr_cgro_ref
+    - field.field.node.curr.field_curr_curriculum_type_ref
     - field.field.node.curr.field_curr_prog_ref
+    - field.field.node.curr.field_curr_public_title
     - field.field.node.curr.field_prog_curric_prog_type_ref
     - node.type.curr
   module:
@@ -17,112 +17,85 @@ dependencies:
     - text
 third_party_settings:
   field_group:
-    group_wrapper:
+    group_curriculum_details:
       children:
-        - group_text
-        - group_courses
-        - group_prerequisites
-      parent_name: ''
-      weight: 4
-      format_type: tabs
-      format_settings:
-        id: ''
-        classes: ''
-        direction: horizontal
-      label: Wrapper
-    group_text:
-      children:
+        - field_curr_prog_ref
+        - field_prog_curric_prog_type_ref
+        - field_curr_curriculum_type_ref
         - field_curr_body
-      parent_name: group_wrapper
-      weight: 8
-      format_type: tab
+      parent_name: ''
+      weight: 2
+      format_type: details
       format_settings:
+        label: 'Curriculum Details'
+        required_fields: true
         id: ''
         classes: ''
-        formatter: closed
-        description: ''
-        required_fields: true
-      label: Text
-    group_courses:
+        open: false
+      label: 'Curriculum Details'
+    group_course_group:
       children:
-        - field_curr_cour_ref
-      parent_name: group_wrapper
-      weight: 9
-      format_type: tab
+        - field_curr_cgro_ref
+      parent_name: ''
+      weight: 3
+      format_type: details
       format_settings:
+        label: 'Course Group'
+        required_fields: true
         id: ''
         classes: ''
-        formatter: closed
-        description: ''
-        required_fields: true
-      label: Courses
-    group_prerequisites:
-      children:
-        - field_curr_prereq_cour_ref
-      parent_name: group_wrapper
-      weight: 10
-      format_type: tab
-      format_settings:
-        id: ''
-        classes: ''
-        formatter: closed
-        description: ''
-        required_fields: true
-      label: Prerequisites
+        open: false
+      label: 'Course Group'
 id: node.curr.default
 targetEntityType: node
 bundle: curr
 mode: default
 content:
   field_curr_body:
-    weight: 4
+    weight: 8
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
     region: content
-  field_curr_cour_ref:
-    weight: 5
+  field_curr_cgro_ref:
+    weight: 4
     settings:
       form_mode: default
       override_labels: true
-      label_singular: Course
-      label_plural: Courses
+      label_singular: 'Course Group'
+      label_plural: ''
       allow_new: true
-      allow_existing: true
       match_operator: CONTAINS
       collapsible: false
       collapsed: false
+      allow_existing: false
       allow_duplicate: false
     third_party_settings:
       entity_browser_entity_form:
         entity_browser_id: _none
     type: inline_entity_form_complex
     region: content
-  field_curr_gawa_ref:
-    weight: 3
+  field_curr_curriculum_type_ref:
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
-  field_curr_prereq_cour_ref:
-    weight: 26
+  field_curr_prog_ref:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_curr_public_title:
+    weight: 1
     settings:
-      form_mode: default
-      override_labels: true
-      label_singular: Prerequisite
-      label_plural: Prerequisites
-      allow_new: true
-      allow_existing: true
-      match_operator: CONTAINS
-      collapsible: false
-      collapsed: false
-      allow_duplicate: false
-    third_party_settings:
-      entity_browser_entity_form:
-        entity_browser_id: _none
-    type: inline_entity_form_complex
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_curr_prog_ref:
     weight: 2
@@ -131,7 +104,7 @@ content:
     type: options_select
     region: content
   field_prog_curric_prog_type_ref:
-    weight: 1
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_buttons

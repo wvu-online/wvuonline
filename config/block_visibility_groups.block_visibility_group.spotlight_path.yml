@@ -1,0 +1,19 @@
+uuid: c384fe34-0b16-43b9-a9b4-e3f039e7d0d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+id: spotlight_path
+label: 'Spotlight Path'
+logic: or
+conditions:
+  98905114-1e02-46a0-b497-071b450a8561:
+    id: 'entity_bundle:node'
+    bundles:
+      spot: spot
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 98905114-1e02-46a0-b497-071b450a8561
+allow_other_conditions: false
