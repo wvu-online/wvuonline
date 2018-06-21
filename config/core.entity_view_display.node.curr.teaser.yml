@@ -22,6 +22,7 @@ content:
     region: content
 hidden:
   field_curr_body: true
+  field_curr_cgro_ref: true
   field_curr_curriculum_type_ref: true
   field_curr_prog_ref: true
   field_curr_public_title: true

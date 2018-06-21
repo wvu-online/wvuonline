@@ -97,12 +97,6 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_curr_prog_ref:
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   field_prog_curric_prog_type_ref:
     weight: 6
     settings: {  }

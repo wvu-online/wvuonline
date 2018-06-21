@@ -15,4 +15,6 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_gawa_abbreviation: true
+  field_gawa_title_or_abbreviation: true

@@ -1,10 +1,10 @@
-uuid: 83589fc0-d3ef-46e3-9045-1ba03ff1f903
+uuid: 63c983dd-6d83-4249-a922-d8e96fd9050c
 langcode: en
 status: true
 dependencies:
   config:
-    - block_visibility_groups.block_visibility_group.front_page_path
-    - views.view.rel_video
+    - block_visibility_groups.block_visibility_group.program_node_path
+    - views.view.curriculum
   module:
     - block_class
     - block_visibility_groups
@@ -14,17 +14,17 @@ dependencies:
 third_party_settings:
   block_class:
     classes: ''
-id: views_block__rel_video_block_1
+id: views_block__curriculum_block_2
 theme: wvuonline2018
 region: content
-weight: -2
+weight: 0
 provider: null
-plugin: 'views_block:rel_video-block_1'
+plugin: 'views_block:curriculum-block_2'
 settings:
-  id: 'views_block:rel_video-block_1'
+  id: 'views_block:curriculum-block_2'
   label: ''
   provider: views
-  label_display: '0'
+  label_display: visible
   views_label: ''
   items_per_page: none
   context_mapping: {  }
@@ -32,5 +32,5 @@ visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: front_page_path
+    block_visibility_group: program_node_path
     context_mapping: {  }

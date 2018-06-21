@@ -10,6 +10,33 @@ dependencies:
     - node.type.cour
   module:
     - text
+third_party_settings:
+  field_group:
+    group_wrapper:
+      children:
+        - group_text
+      parent_name: ''
+      weight: 4
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Wrapper
+    group_text:
+      children:
+        - field_seo_summary
+        - field_cour_body
+      parent_name: group_wrapper
+      weight: 8
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Text
 id: node.cour.default
 targetEntityType: node
 bundle: cour
