@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "37c377c966ca3b380f98846430d157bb",
+    "content-hash": "169337eb4e470d2c558f0fc8a87322bf",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1432,17 +1432,11 @@
         },
         {
             "name": "drupal/auto_entitylabel",
-            "version": "2.1.0-beta1",
+            "version": "dev-2.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/auto_entitylabel",
-                "reference": "8.x-2.1-beta1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/auto_entitylabel-8.x-2.1-beta1.zip",
-                "reference": "8.x-2.1-beta1",
-                "shasum": "94a77f55896744075ff21bc2bdfab91308a69a27"
+                "reference": "494cfef21f1e3880070e3f80af84426c2f875e50"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -1453,14 +1447,16 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.1-beta1",
-                    "datestamp": "1510484584",
+                    "version": "8.x-2.1-beta1+10-dev",
+                    "datestamp": "1523370184",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 },
-                "patches_applied": []
+                "patches_applied": {
+                    "Issue 2923876": "https://www.drupal.org/files/issues/2018-05-09/2923876-18.patch"
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -1489,7 +1485,8 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/auto_entitylabel",
                 "issues": "https://www.drupal.org/project/issues/auto_entitylabel"
-            }
+            },
+            "time": "2018-04-23T19:49:32+00:00"
         },
         {
             "name": "drupal/blazy",
@@ -12067,7 +12064,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/addanother": 5,
-        "drupal/auto_entitylabel": 10,
+        "drupal/auto_entitylabel": 20,
         "drupal/blazy": 5,
         "drupal/block_class": 15,
         "drupal/captcha": 10,
