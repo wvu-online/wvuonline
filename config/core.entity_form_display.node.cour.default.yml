@@ -7,8 +7,12 @@ dependencies:
     - field.field.node.cour.field_cour_course_id
     - field.field.node.cour.field_cour_course_name
     - field.field.node.cour.field_cour_credits
+    - field.field.node.cour.field_cour_prerequisite_cour_ref
     - node.type.cour
   module:
+    - entity_browser_entity_form
+    - field_group
+    - inline_entity_form
     - text
 third_party_settings:
   field_group:
@@ -16,7 +20,7 @@ third_party_settings:
       children:
         - group_text
       parent_name: ''
-      weight: 4
+      weight: 5
       format_type: tabs
       format_settings:
         id: ''
@@ -25,18 +29,18 @@ third_party_settings:
       label: Wrapper
     group_text:
       children:
-        - field_seo_summary
         - field_cour_body
       parent_name: group_wrapper
       weight: 8
       format_type: tab
       format_settings:
-        id: ''
-        classes: ''
+        label: 'Course Description'
         formatter: closed
         description: ''
         required_fields: true
-      label: Text
+        id: ''
+        classes: ''
+      label: 'Course Description'
 id: node.cour.default
 targetEntityType: node
 bundle: cour
@@ -73,11 +77,29 @@ content:
     third_party_settings: {  }
     type: number
     region: content
+  field_cour_prerequisite_cour_ref:
+    weight: 4
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'Course Prerequisite'
+      label_plural: ''
+      allow_existing: true
+      match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_new: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 6
     region: content
     third_party_settings: {  }
   title:

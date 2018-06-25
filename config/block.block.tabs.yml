@@ -15,7 +15,7 @@ third_party_settings:
 id: tabs
 theme: wvuonline2018
 region: content
-weight: -2
+weight: -3
 provider: null
 plugin: local_tasks_block
 settings:

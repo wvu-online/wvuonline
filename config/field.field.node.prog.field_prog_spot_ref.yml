@@ -1,16 +1,16 @@
-uuid: 84b2399b-ed2c-4b97-b3d4-d92ac2dee3b7
+uuid: 19bcb97e-0c2e-4f55-b3f2-92c986371b15
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_prog_care_ref
-    - node.type.care
+    - field.storage.node.field_prog_spot_ref
     - node.type.prog
-id: node.prog.field_prog_care_ref
-field_name: field_prog_care_ref
+    - node.type.spot
+id: node.prog.field_prog_spot_ref
+field_name: field_prog_spot_ref
 entity_type: node
 bundle: prog
-label: Careers
+label: Spotlight
 description: ''
 required: false
 translatable: false
@@ -20,10 +20,9 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      care: care
+      spot: spot
     sort:
-      field: title
-      direction: ASC
+      field: _none
     auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

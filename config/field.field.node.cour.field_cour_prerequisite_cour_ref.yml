@@ -1,16 +1,15 @@
-uuid: 84b2399b-ed2c-4b97-b3d4-d92ac2dee3b7
+uuid: 4992f2c5-472f-40c6-b1c0-dfddec036d6f
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_prog_care_ref
-    - node.type.care
-    - node.type.prog
-id: node.prog.field_prog_care_ref
-field_name: field_prog_care_ref
+    - field.storage.node.field_cour_prerequisite_cour_ref
+    - node.type.cour
+id: node.cour.field_cour_prerequisite_cour_ref
+field_name: field_cour_prerequisite_cour_ref
 entity_type: node
-bundle: prog
-label: Careers
+bundle: cour
+label: 'Course Prerequisite'
 description: ''
 required: false
 translatable: false
@@ -20,10 +19,9 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      care: care
+      cour: cour
     sort:
-      field: title
-      direction: ASC
+      field: _none
     auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference
