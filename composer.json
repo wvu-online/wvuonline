@@ -59,6 +59,7 @@
     "drupal/block_styles": "^1.2",
     "drupal/block_visibility_groups": "^1.1",
     "drupal/captcha": "^1.0@beta",
+    "drupal/chosen": "^2.5",
     "drupal/coffee": "^1.0@beta",
     "drupal/cog": "^1.10",
     "drupal/components": "^1.0",
