@@ -3,9 +3,9 @@
 {% embed "@atoms/01-links/link/link.twig" %}
   {% block link_content %}
     {% include "@atoms/04-images/00-image/image.twig" with {
-      img_src: '/themes/custom/wvuonline2018/images/flying-wv-w-signature.png',
-      img_alt: alt,
-      image_base_class: 'wvu-masthead__image'
+      "img_src": img_src,
+      "img_alt": img_alt,
+      "image_base_class": 'wvu-masthead__image'
     } %}
     <span class="wvu-masthead__title">WVU Online</span>
   {% endblock %}
