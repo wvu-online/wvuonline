@@ -11,7 +11,7 @@ _core:
 id: wvuonline2018_branding
 theme: wvuonline2018
 region: header
-weight: 0
+weight: -14
 provider: null
 plugin: system_branding_block
 settings:
