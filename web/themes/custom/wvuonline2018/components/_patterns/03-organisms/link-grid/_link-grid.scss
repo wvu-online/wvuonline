@@ -1,0 +1,35 @@
+@import '../../00-base/01-variables';
+@import '../../00-base/layouts/grid/grid';
+@import '../../00-base/layouts/grid/01-grid-item';
+
+.link_grid {
+  @include grid;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+
+  .grid__item {
+    @include grid-item($columns: 2);
+    display: block;
+    height: 40vh;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+    background: transparentize($wvu-blue, 0.2);
+    border: 1px solid white;
+    color: $white;
+    font-size: 4em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: $font-heading;
+    letter-spacing: -2px;
+    font-weight: 900;
+    line-height: 1.2em;
+
+    &:hover {
+      background: transparentize($wvu-blue, 0.5);
+    }
+  }
+}

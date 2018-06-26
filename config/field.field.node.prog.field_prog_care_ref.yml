@@ -22,7 +22,8 @@ settings:
     target_bundles:
       care: care
     sort:
-      field: _none
+      field: title
+      direction: ASC
     auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

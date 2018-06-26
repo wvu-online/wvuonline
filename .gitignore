@@ -39,6 +39,8 @@ web/update.php
 web/web.config
 web/ht.router.php
 
+.DS_Store*
+
 # Add directories containing build assets below.
 # Keep all additions above the "cut" line.
 

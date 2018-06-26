@@ -1,0 +1,21 @@
+uuid: a0662f4a-c2c9-4ac0-b301-64df8dc54113
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cgro_body
+    - node.type.cgro
+  module:
+    - text
+id: node.cgro.field_cgro_body
+field_name: field_cgro_body
+entity_type: node
+bundle: cgro
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -24,6 +24,6 @@ name: Course
 type: cour
 description: 'For entering/editing individual courses such as ARE110 Agribusiness Accounting'
 help: ''
-new_revision: false
+new_revision: true
 preview_mode: 1
 display_submitted: false

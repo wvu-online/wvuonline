@@ -10,9 +10,8 @@ roles:
   administrator: administrator
   curriculum_editor: curriculum_editor
   program_editor: program_editor
-  college_admin: college_admin
 author: true
-emails: ''
+emails: gregg.shanefelt@mail.wvu.edu
 subject: 'A new Curriculum has been created and now needs review.'
 body:
   value: ''
