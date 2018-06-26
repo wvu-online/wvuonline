@@ -1,0 +1,33 @@
+uuid: 5b0f7cdb-c7a7-4274-b9a4-919ff7ded94d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.rel_search_api
+  module:
+    - block_class
+    - block_visibility_groups
+    - views
+  theme:
+    - wvuonline2018
+third_party_settings:
+  block_class:
+    classes: ''
+id: exposedformrel_search_apipage_1
+theme: wvuonline2018
+region: header
+weight: -2
+provider: null
+plugin: 'views_exposed_filter_block:rel_search_api-page_1'
+settings:
+  id: 'views_exposed_filter_block:rel_search_api-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

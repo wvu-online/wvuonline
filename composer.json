@@ -70,6 +70,7 @@
     "drupal/config_update": "^1.5",
     "drupal/console": "^1.8",
     "drupal/content_browser": "^1.0@alpha",
+    "drupal/content_moderation_notifications": "^3.0@RC",
     "drupal/core": "^8",
     "drupal/ctools": "^3.0",
     "drupal/devel": "^1.2",
@@ -121,6 +122,7 @@
     "drupal/twitter_block": "^2.1",
     "drupal/video_embed_field": "^2.0",
     "drupal/views_accordion": "^1.0",
+    "drupal/views_bulk_edit": "^2.1",
     "drupal/webform": "^5.0@beta",
     "drupal/webform_views": "^5.0@alpha",
     "drupal/yaml_content": "1.x",
@@ -192,14 +194,14 @@
       "drupal/field_group": {
         "patch 36": "https://www.drupal.org/files/issues/field-layout-support-2878359-36.patch"
       },
-      "drupal/paragraphs": {
-        "patch 7": "https://www.drupal.org/files/issues/2907094_7_field_group_support.patch"
-      },
       "drupal/webform_views": {
         "patch 2": "https://www.drupal.org/files/issues/2945921-php-notice-2.patch"
       },
       "drupal/media_entity_browser": {
         "Issue 2928275": "https://www.drupal.org/files/issues/2018-04-04/2928275-upload-widget-6.patch"
+      },
+      "drupal/auto_entity_label": {
+        "Issue 2923876": "https://www.drupal.org/files/issues/2018-05-09/2923876-18.patch"
       }
     },
     "installer-paths": {

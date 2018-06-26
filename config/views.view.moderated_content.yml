@@ -1,9 +1,7 @@
 uuid: 45371f29-336d-4bc5-8aab-c68bd1ed45bb
 langcode: en
-status: true
+status: false
 dependencies:
-  config:
-    - workflows.workflow.editorial
   module:
     - content_moderation
     - node
@@ -624,48 +622,6 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
-        moderation_state:
-          id: moderation_state
-          table: node_field_revision
-          field: moderation_state
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: in
-          value:
-            editorial-draft: editorial-draft
-            editorial-archived: editorial-archived
-          group: 1
-          exposed: true
-          expose:
-            operator_id: moderation_state_op
-            label: 'Moderation state'
-            description: ''
-            use_operator: false
-            operator: moderation_state_op
-            identifier: moderation_state
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-            reduce: true
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: node
-          plugin_id: moderation_state_filter
         langcode:
           id: langcode
           table: node_field_revision
@@ -707,45 +663,6 @@ display:
           entity_type: node
           entity_field: langcode
           plugin_id: language
-        moderation_state_1:
-          id: moderation_state_1
-          table: node_field_revision
-          field: moderation_state
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: 'not in'
-          value:
-            editorial-published: editorial-published
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: node
-          plugin_id: moderation_state_filter
       sorts: {  }
       title: 'Moderated content'
       header: {  }
@@ -800,8 +717,7 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:workflow_list'
+      tags: {  }
   moderated_content:
     display_plugin: page
     id: moderated_content
@@ -820,5 +736,4 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:workflow_list'
+      tags: {  }

@@ -13,14 +13,9 @@ dependencies:
   module:
     - conditional_fields
     - field_group
-    - field_layout
     - image
-    - layout_discovery
     - link
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
   field_group:
     group_wrapper:
       children:

@@ -1,0 +1,25 @@
+uuid: 96e52734-3f6e-4fab-97ad-b6be129f12be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_spag_video
+    - node.type.spag
+  module:
+    - video_embed_field
+id: node.spag.field_spag_video
+field_name: field_spag_video
+entity_type: node
+bundle: spag
+label: Video
+description: 'YouTube, YouTube Playlist and Vimeo URL''s can be added.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: vimeo
+    youtube: youtube
+    youtube_playlist: youtube_playlist
+field_type: video_embed_field

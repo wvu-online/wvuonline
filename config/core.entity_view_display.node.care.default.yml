@@ -9,14 +9,8 @@ dependencies:
     - field.field.node.care.field_seo_summary
     - node.type.care
   module:
-    - field_layout
-    - layout_discovery
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.care.default
 targetEntityType: node
 bundle: care

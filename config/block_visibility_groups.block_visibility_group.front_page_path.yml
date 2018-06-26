@@ -1,0 +1,17 @@
+uuid: bb150be9-d872-47ff-904b-d03e232c39fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: front_page_path
+label: 'Front Page Path'
+logic: or
+conditions:
+  7857519f-0cf1-4e76-b8e4-269118505c29:
+    id: request_path
+    pages: /node/9
+    negate: false
+    context_mapping: {  }
+    uuid: 7857519f-0cf1-4e76-b8e4-269118505c29
+allow_other_conditions: false

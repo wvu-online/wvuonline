@@ -1,23 +1,23 @@
-uuid: 4884d917-84b5-4410-bab0-db5a301bfbc2
+uuid: dda8bc63-1b7a-4db7-b7a3-15b32fdb753a
 langcode: en
 status: true
 dependencies:
   config:
-    - block_visibility_groups.block_visibility_group.program_landing_path
+    - block_visibility_groups.block_visibility_group.program_node_path
     - views.view.careers
   module:
     - block_class
     - block_visibility_groups
     - views
   theme:
-    - bartik
+    - wvuonline2018
 third_party_settings:
   block_class:
     classes: ''
 id: views_block__careers_block_1
-theme: bartik
+theme: wvuonline2018
 region: content
-weight: 0
+weight: 1
 provider: null
 plugin: 'views_block:careers-block_1'
 settings:
@@ -32,5 +32,5 @@ visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: program_landing_path
+    block_visibility_group: program_node_path
     context_mapping: {  }

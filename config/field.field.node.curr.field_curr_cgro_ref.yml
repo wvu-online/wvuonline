@@ -1,0 +1,28 @@
+uuid: 0d4f44da-0d9a-4676-8f8d-c893cc275a31
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_curr_cgro_ref
+    - node.type.cgro
+    - node.type.curr
+id: node.curr.field_curr_cgro_ref
+field_name: field_curr_cgro_ref
+entity_type: node
+bundle: curr
+label: 'Course Group'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      cgro: cgro
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

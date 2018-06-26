@@ -1,4 +1,4 @@
-uuid: 13df7733-9e45-47c2-b892-900d2ce3b9f5
+uuid: a3d01eb3-2b01-4714-9cdf-bed29213408d
 langcode: en
 status: true
 dependencies:
@@ -10,12 +10,12 @@ dependencies:
     - block_visibility_groups
     - views
   theme:
-    - bartik
+    - wvuonline2018
 third_party_settings:
   block_class:
     classes: ''
 id: views_block__programs_block_2
-theme: bartik
+theme: wvuonline2018
 region: content
 weight: 0
 provider: null
@@ -24,7 +24,7 @@ settings:
   id: 'views_block:programs-block_2'
   label: ''
   provider: views
-  label_display: visible
+  label_display: '0'
   views_label: ''
   items_per_page: none
   context_mapping: {  }

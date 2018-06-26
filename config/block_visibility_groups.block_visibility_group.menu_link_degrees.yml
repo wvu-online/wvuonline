@@ -1,0 +1,17 @@
+uuid: 99198115-191c-4c3c-8deb-aec6fa54e5fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: menu_link_degrees
+label: 'Menu Link: Degrees'
+logic: and
+conditions:
+  07ad271c-9da4-468c-a9b4-cfe018d3a484:
+    id: request_path
+    pages: /degrees
+    negate: false
+    context_mapping: {  }
+    uuid: 07ad271c-9da4-468c-a9b4-cfe018d3a484
+allow_other_conditions: false

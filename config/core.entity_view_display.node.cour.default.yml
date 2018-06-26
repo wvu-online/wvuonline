@@ -7,16 +7,9 @@ dependencies:
     - field.field.node.cour.field_cour_course_id
     - field.field.node.cour.field_cour_course_name
     - field.field.node.cour.field_cour_credits
-    - field.field.node.cour.field_seo_summary
     - node.type.cour
   module:
-    - field_layout
-    - layout_discovery
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.cour.default
 targetEntityType: node
 bundle: cour
@@ -32,4 +25,3 @@ hidden:
   field_cour_course_id: true
   field_cour_course_name: true
   field_cour_credits: true
-  field_seo_summary: true

@@ -11,25 +11,18 @@ dependencies:
     - field.field.node.prog.field_prog_curr_ref
     - field.field.node.prog.field_prog_financial_aid_clause
     - field.field.node.prog.field_prog_gawa_ref
-    - field.field.node.prog.field_prog_is_offered_current
     - field.field.node.prog.field_prog_non_residents_fee
     - field.field.node.prog.field_prog_pgro_ref
-    - field.field.node.prog.field_prog_residency_required
     - field.field.node.prog.field_prog_residents_fee
     - field.field.node.prog.field_seo_summary
     - node.type.prog
   module:
     - entity_browser_entity_form
     - field_group
-    - field_layout
     - inline_entity_form
-    - layout_discovery
     - path
     - text
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
   field_group:
     group_wrapper:
       children:
@@ -190,12 +183,6 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
-  field_prog_is_offered_current:
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
   field_prog_non_residents_fee:
     weight: 10
     settings:
@@ -208,12 +195,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
-    region: content
-  field_prog_residency_required:
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
     region: content
   field_prog_residents_fee:
     weight: 9

@@ -1,0 +1,14 @@
+uuid: 6c4f22be-73fb-4228-9434-0830023cee78
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.curriculum_editor
+  module:
+    - user
+id: user_add_role_action.curriculum_editor
+label: 'Add the Curriculum Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: curriculum_editor

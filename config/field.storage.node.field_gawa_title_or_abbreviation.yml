@@ -1,0 +1,27 @@
+uuid: 6fcae895-66f3-4983-9c13-0971c235a842
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_gawa_title_or_abbreviation
+field_name: field_gawa_title_or_abbreviation
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Full Title'
+      label: 'Full Title'
+    -
+      value: Abbreviation
+      label: Abbreviation
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

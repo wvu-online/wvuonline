@@ -1,0 +1,20 @@
+uuid: d16f080f-1714-448d-8741-a067d01ebbe7
+langcode: en
+status: true
+dependencies: {  }
+id: curriculum_needs_review
+workflow: wvuo_curriculum
+transitions:
+  needs_review: needs_review
+roles:
+  administrator: administrator
+  curriculum_editor: curriculum_editor
+  program_editor: program_editor
+  college_admin: college_admin
+author: true
+emails: ''
+subject: 'A new Curriculum has been created and now needs review.'
+body:
+  value: ''
+  format: basic_html
+label: 'Curriculum Needs review'

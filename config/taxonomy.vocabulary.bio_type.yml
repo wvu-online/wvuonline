@@ -1,13 +1,7 @@
 uuid: f6a2320d-8c05-4c2b-af79-748c8ce6fefc
 langcode: en
 status: true
-dependencies:
-  module:
-    - type_style
-third_party_settings:
-  type_style:
-    color: '#000000'
-    icon: ''
+dependencies: {  }
 name: 'Bio Type'
 vid: bio_type
 description: ''

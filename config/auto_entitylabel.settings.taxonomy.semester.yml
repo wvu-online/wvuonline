@@ -1,5 +1,5 @@
 status: '1'
-pattern: '[term:field_semester_start_date:date:html_year] - [term:field_semester_end_date:date:html_year]'
+pattern: '[term:field_semester_name_ref] [term:field_semester_start_date:date:html_year]'
 php: 0
 escape: 0
 dependencies:

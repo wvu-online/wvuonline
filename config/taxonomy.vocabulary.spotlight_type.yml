@@ -1,13 +1,7 @@
 uuid: 0a4cc955-4460-4585-8d30-b227cd696e71
 langcode: en
 status: true
-dependencies:
-  module:
-    - type_style
-third_party_settings:
-  type_style:
-    color: '#000000'
-    icon: ''
+dependencies: {  }
 name: 'Spotlight Type'
 vid: spotlight_type
 description: ''
