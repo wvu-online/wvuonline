@@ -1,0 +1,12 @@
+{% set flying_wv_base_class = flying_wv_base_class|default('wvu-masthead__logo') %}
+{% set link_base_class = flying_wv_base_class %}
+{% embed "@atoms/01-links/link/link.twig" %}
+  {% block link_content %}
+    {% include "@atoms/04-images/00-image/image.twig" with {
+      "img_src": img_src,
+      "img_alt": img_alt,
+      "image_base_class": 'wvu-masthead__image'
+    } %}
+    <span class="wvu-masthead__title">WVU Online</span>
+  {% endblock %}
+{% endembed %}

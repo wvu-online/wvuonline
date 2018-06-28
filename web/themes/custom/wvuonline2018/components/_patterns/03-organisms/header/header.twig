@@ -1,0 +1,6 @@
+{% set header_base_class = header_base_class|default('wvu-masthead') %}
+<header {{ bem(header_base_class, (header_modifiers), header_blockname) }} >
+  <div class="container">
+    {% include "@molecules/flying-wv/flying-wv.twig" %}
+  </div>
+</header>

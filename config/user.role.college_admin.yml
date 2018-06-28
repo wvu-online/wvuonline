@@ -1,9 +1,0 @@
-uuid: 9fda6c26-1097-4ad6-bcb2-972f18e2f225
-langcode: en
-status: true
-dependencies: {  }
-id: college_admin
-label: 'College Admin'
-weight: 5
-is_admin: null
-permissions: {  }

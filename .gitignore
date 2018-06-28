@@ -6,6 +6,7 @@
 /drush/contrib/
 /vendor/
 /web/core/
+/web/libraries/
 /web/modules/contrib/
 /web/themes/contrib/
 /web/profiles/contrib/
@@ -38,6 +39,8 @@ web/sites/example.sites.php
 web/update.php
 web/web.config
 web/ht.router.php
+
+.DS_Store*
 
 # Add directories containing build assets below.
 # Keep all additions above the "cut" line.

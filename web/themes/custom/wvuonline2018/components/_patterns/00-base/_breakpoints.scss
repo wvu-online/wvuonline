@@ -19,6 +19,17 @@ $large: 60em;
 $xl: 75em;
 $max-width: $xl;
 
+// Container
+%container {
+  max-width: $max-width;
+  margin: 0 auto;
+  display: block;
+  padding: 0 1em;
+  @media large {
+    padding: 0;
+  }
+}
+
 /// Mixin - xs Breakpoint
 /// Allows easier @include xs {} syntax
 @mixin xs {

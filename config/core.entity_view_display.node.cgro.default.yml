@@ -3,15 +3,24 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.cgro.field_cgro_body
     - field.field.node.cgro.field_cgro_cour_ref
     - node.type.cgro
   module:
+    - text
     - user
 id: node.cgro.default
 targetEntityType: node
 bundle: cgro
 mode: default
 content:
+  field_cgro_body:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   links:
     weight: 0
     region: content

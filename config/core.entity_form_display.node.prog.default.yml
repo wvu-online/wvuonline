@@ -8,12 +8,14 @@ dependencies:
     - field.field.node.prog.field_prog_applicat_requirements
     - field.field.node.prog.field_prog_body
     - field.field.node.prog.field_prog_care_ref
+    - field.field.node.prog.field_prog_careers_body
     - field.field.node.prog.field_prog_curr_ref
     - field.field.node.prog.field_prog_financial_aid_clause
     - field.field.node.prog.field_prog_gawa_ref
     - field.field.node.prog.field_prog_non_residents_fee
     - field.field.node.prog.field_prog_pgro_ref
     - field.field.node.prog.field_prog_residents_fee
+    - field.field.node.prog.field_prog_spot_ref
     - field.field.node.prog.field_seo_summary
     - node.type.prog
   module:
@@ -30,6 +32,7 @@ third_party_settings:
         - group_fees
         - group_curriculum
         - group_careers
+        - group_spotlight
       parent_name: ''
       weight: 5
       format_type: tabs
@@ -85,6 +88,7 @@ third_party_settings:
       label: Curriculum
     group_careers:
       children:
+        - field_prog_careers_body
         - field_prog_care_ref
       parent_name: group_wrapper
       weight: 14
@@ -96,6 +100,19 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Careers
+    group_spotlight:
+      children:
+        - field_prog_spot_ref
+      parent_name: group_wrapper
+      weight: 15
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Spotlight
 id: node.prog.default
 targetEntityType: node
 bundle: prog
@@ -134,7 +151,7 @@ content:
     type: text_textarea
     region: content
   field_prog_care_ref:
-    weight: 27
+    weight: 29
     settings:
       form_mode: default
       override_labels: true
@@ -150,6 +167,14 @@ content:
       entity_browser_entity_form:
         entity_browser_id: _none
     type: inline_entity_form_complex
+    region: content
+  field_prog_careers_body:
+    weight: 28
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
     region: content
   field_prog_curr_ref:
     weight: 26
@@ -202,6 +227,24 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: number
+    region: content
+  field_prog_spot_ref:
+    weight: 30
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Spotlight
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
     region: content
   field_seo_summary:
     weight: 4

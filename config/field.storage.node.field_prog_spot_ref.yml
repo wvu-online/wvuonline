@@ -1,0 +1,19 @@
+uuid: 04d11c91-2cc8-446f-bbd7-88c3f7db7617
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_prog_spot_ref
+field_name: field_prog_spot_ref
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 2
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.curr.field_curr_body
     - field.field.node.curr.field_curr_cgro_ref
-    - field.field.node.curr.field_curr_curriculum_type_ref
     - field.field.node.curr.field_curr_prog_ref
     - field.field.node.curr.field_curr_public_title
     - field.field.node.curr.field_prog_curric_prog_type_ref
@@ -25,14 +24,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_curr_curriculum_type_ref:
-    type: entity_reference_label
-    weight: 1
-    region: content
-    label: hidden
-    settings:
-      link: false
-    third_party_settings: {  }
   field_curr_public_title:
     weight: 2
     label: above

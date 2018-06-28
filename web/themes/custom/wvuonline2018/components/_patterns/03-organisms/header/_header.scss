@@ -1,0 +1,11 @@
+@import '../../00-base/01-variables';
+@import '../../00-base/global/01-colors/color-vars';
+@import '../../00-base/breakpoints';
+
+.wvu-masthead {
+  background: $wvu-blue;
+  padding: 2em 0;
+  .container {
+    @extend %container;
+  }
+}

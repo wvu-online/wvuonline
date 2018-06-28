@@ -681,25 +681,32 @@ display:
                   value: '24'
                   min: ''
                   max: ''
-              4:
+              3:
                 title: 'Master of Arts'
                 operator: '='
                 value:
                   value: '6'
                   min: ''
                   max: ''
-              5:
+              4:
                 title: 'Master of Laws'
                 operator: '='
                 value:
                   value: '30'
                   min: ''
                   max: ''
-              6:
+              5:
                 title: 'Master of Science'
                 operator: '='
                 value:
                   value: '7'
+                  min: ''
+                  max: ''
+              6:
+                title: Minor
+                operator: '='
+                value:
+                  value: '101'
                   min: ''
                   max: ''
           plugin_id: numeric

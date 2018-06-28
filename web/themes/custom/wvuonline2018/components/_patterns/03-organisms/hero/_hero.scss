@@ -1,3 +1,9 @@
+.block__rel-hero {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+
+}
+
 .wvu-hero {
   width: 100vw;
   max-height: 100vh;
@@ -30,7 +36,7 @@
         right: 0;
         left: 2em;
         height: 3em;
-        top: 0;
+        top: 2em;
         width: 1.75em;
         opacity: 1;
         z-index: 1;
