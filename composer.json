@@ -120,8 +120,11 @@
     "drupal/token": "^1.0",
     "drupal/twig_tweak": "^2.0",
     "drupal/twitter_block": "^2.1",
+    "drupal/varbase_total_control": "^1.1",
+    "drupal/vartheme_admin": "^5.0@alpha",
     "drupal/video_embed_field": "^2.0",
     "drupal/views_accordion": "^1.0",
+    "drupal/views_bootstrap": "^3.0",
     "drupal/views_bulk_edit": "^2.1",
     "drupal/views_field_view": "^1.0@beta",
     "drupal/webform": "^5.0@beta",
@@ -203,6 +206,15 @@
       },
       "drupal/auto_entitylabel": {
         "Issue 2923876": "https://www.drupal.org/files/issues/2018-05-09/2923876-18.patch"
+      },
+      "drupal/content_moderation_notifications": {
+        "Issue 2959026: Support Twig, TO, CC, BCC, FROM, REPLY-TO, SUBJECT, Message, Abort, Debugging and Tips": "https://www.drupal.org/files/issues/2018-04-13/cmn-twig-2959026-8.patch"
+      },
+      "drupal/varbase_total_control": {
+        "Views Bootstrap": "https://www.drupal.org/files/issues/varbase_total_control-fix-views-bootstrap.patch"
+      },
+      "drupal/page_manager": {
+        "Clickable": "https://www.drupal.org/files/issues/page_manager-page_variants_selection-2868216-7.patch"
       }
     },
     "installer-paths": {
