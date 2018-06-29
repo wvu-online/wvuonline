@@ -23,6 +23,18 @@
     {
       "type": "package",
       "package": {
+        "name": "harvesthq/chosen",
+        "type": "drupal-library",
+        "version": "1.8.7",
+        "dist": {
+          "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.7/chosen_v1.8.7.zip",
+          "type": "zip"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
         "name": "desandro/imagesloaded",
         "type": "drupal-library",
         "version": "4.1.1",
@@ -60,6 +72,7 @@
     "drupal/block_visibility_groups": "^1.1",
     "drupal/captcha": "^1.0@beta",
     "drupal/cas": "^1.0",
+    "drupal/chosen": "^2.5",
     "drupal/coffee": "^1.0@beta",
     "drupal/cog": "^1.10",
     "drupal/components": "^1.0",
@@ -134,6 +147,7 @@
     "drupal/yaml_content": "1.x",
     "drush/drush": "~8",
     "fourkitchens/emulsify": "^2.3",
+    "harvesthq/chosen": "^1.8",
     "rvtraveller/qs-composer-installer": "^1.1",
     "webflo/drupal-core-strict": "^8"
   },
@@ -211,6 +225,9 @@
       },
       "drupal/page_manager": {
         "Clickable": "https://www.drupal.org/files/issues/page_manager-page_variants_selection-2868216-7.patch"
+      },
+      "drupal/inline_entity_form": {
+        "Issue 2653574: Unable to keep nested IEF data separate with multivalue fields.": "https://www.drupal.org/files/issues/2018-05-30/multivalue-complex-and-simple-ief-fix-2653574-100.patch"
       }
     },
     "installer-paths": {
