@@ -116,6 +116,7 @@
     "drupal/slick_views": "^1.0@RC",
     "drupal/superfish": "^1.2",
     "drupal/svg_image_field": "^1.0",
+    "drupal/swiftmailer": "^1.0@beta",
     "drupal/switch_page_theme": "^1.0",
     "drupal/token": "^1.0",
     "drupal/twig_tweak": "^2.0",
@@ -198,9 +199,6 @@
       "drupal/field_group": {
         "patch 36": "https://www.drupal.org/files/issues/field-layout-support-2878359-36.patch"
       },
-      "drupal/webform_views": {
-        "patch 2": "https://www.drupal.org/files/issues/2945921-php-notice-2.patch"
-      },
       "drupal/media_entity_browser": {
         "Issue 2928275": "https://www.drupal.org/files/issues/2018-04-04/2928275-upload-widget-6.patch"
       },
@@ -209,9 +207,6 @@
       },
       "drupal/content_moderation_notifications": {
         "Issue 2959026: Support Twig, TO, CC, BCC, FROM, REPLY-TO, SUBJECT, Message, Abort, Debugging and Tips": "https://www.drupal.org/files/issues/2018-04-13/cmn-twig-2959026-8.patch"
-      },
-      "drupal/varbase_total_control": {
-        "Views Bootstrap": "https://www.drupal.org/files/issues/varbase_total_control-fix-views-bootstrap.patch"
       },
       "drupal/page_manager": {
         "Clickable": "https://www.drupal.org/files/issues/page_manager-page_variants_selection-2868216-7.patch"
