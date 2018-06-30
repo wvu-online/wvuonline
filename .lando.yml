@@ -9,3 +9,7 @@ tooling:
     cmd:
       - "/app/vendor/bin/drupal"
       - "--root=/app/web"
+  drush:
+    cmd:
+      - "/app/vendor/bin/drush"
+      - "--root=/app/web"

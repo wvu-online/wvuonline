@@ -30,6 +30,16 @@ $max-width: $xl;
   }
 }
 
+%flex-container {
+  max-width: $max-width;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 1em;
+  @media large {
+    padding: 0;
+  }
+}
+
 /// Mixin - xs Breakpoint
 /// Allows easier @include xs {} syntax
 @mixin xs {

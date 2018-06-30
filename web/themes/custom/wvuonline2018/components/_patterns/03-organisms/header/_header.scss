@@ -5,7 +5,8 @@
 .wvu-masthead {
   background: $wvu-blue;
   padding: 2em 0;
-  .container {
-    @extend %container;
+  .flex-container {
+    @extend %flex-container;
+    flex-wrap: wrap;
   }
 }
