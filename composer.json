@@ -94,7 +94,7 @@
     "drupal/entity_reference_views_select": "^1.1",
     "drupal/entity_share": "^1.0@alpha",
     "drupal/extlink": "^1.0",
-    "drupal/field_group": "1.x-dev",
+    "drupal/field_group": "3.x-dev",
     "drupal/field_permissions": "^1.0@beta",
     "drupal/file_browser": "^1.1",
     "drupal/force_password_change": "^1.3",
@@ -280,6 +280,7 @@
     "optimize-autoloader": true,
     "preferred-install": "dist",
     "sort-packages": true,
+    "discard-changes": true,
     "platform": {
       "php": "7.1"
     }
