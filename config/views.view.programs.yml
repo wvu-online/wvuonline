@@ -13,6 +13,7 @@ dependencies:
     - node.type.prog
     - system.menu.account
     - user.role.administrator
+    - user.role.program_editor
   module:
     - node
     - user
@@ -36,6 +37,7 @@ display:
         options:
           role:
             administrator: administrator
+            program_editor: program_editor
       cache:
         type: tag
         options: {  }
@@ -1792,14 +1794,14 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        operations:
-          id: operations
-          table: node
-          field: operations
+        edit_node:
+          id: edit_node
+          table: node_field_revision
+          field: edit_node
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: 'Link to edit Content'
           exclude: false
           alter:
             alter_text: false
@@ -1840,9 +1842,11 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          destination: false
+          text: edit
+          output_url_as_text: false
+          absolute: false
           entity_type: node
-          plugin_id: entity_operations
+          plugin_id: entity_link_edit
       defaults:
         fields: false
         filters: false

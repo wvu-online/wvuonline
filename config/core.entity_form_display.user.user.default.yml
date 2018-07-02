@@ -22,18 +22,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_user_curr_ref:
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
-  field_user_prog_ref:
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
   user_picture:
     type: image_image
     settings:
@@ -44,6 +32,8 @@ content:
     region: content
 hidden:
   contact: true
+  field_user_curr_ref: true
+  field_user_prog_ref: true
   google_analytics: true
   language: true
   path: true

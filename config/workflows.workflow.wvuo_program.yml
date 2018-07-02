@@ -1,13 +1,13 @@
-uuid: ce1706c0-1684-410e-9208-2b9ee2d40bff
+uuid: 43db0039-2aec-4336-aef7-12dad915c488
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.curr
+    - node.type.prog
   module:
     - content_moderation
-id: wvuo_curriculum
-label: 'WVUO Curriculum'
+id: wvuo_program
+label: 'WVUO Program'
 type: content_moderation
 type_settings:
   states:
@@ -39,16 +39,17 @@ type_settings:
       label: 'Needs Review'
       from:
         - draft
+        - published
       to: needs_review
       weight: -1
     publish:
       label: Publish
-      to: published
-      weight: 0
       from:
         - draft
         - needs_review
         - published
+      to: published
+      weight: 0
   entity_types:
     node:
-      - curr
+      - prog

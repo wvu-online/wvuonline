@@ -19,6 +19,7 @@ dependencies:
     - field.field.node.prog.field_seo_summary
     - node.type.prog
   module:
+    - content_moderation
     - entity_browser_entity_form
     - field_group
     - inline_entity_form
@@ -34,7 +35,7 @@ third_party_settings:
         - group_careers
         - group_spotlight
       parent_name: ''
-      weight: 5
+      weight: 3
       format_type: tabs
       format_settings:
         id: ''
@@ -127,7 +128,7 @@ content:
     type: text_textarea
     region: content
   field_prog_admissions:
-    weight: 8
+    weight: 7
     settings:
       rows: 5
       placeholder: ''
@@ -135,7 +136,7 @@ content:
     type: text_textarea
     region: content
   field_prog_applicat_requirements:
-    weight: 9
+    weight: 8
     settings:
       rows: 5
       placeholder: ''
@@ -203,7 +204,7 @@ content:
     type: text_textarea
     region: content
   field_prog_gawa_ref:
-    weight: 4
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -216,7 +217,7 @@ content:
     type: number
     region: content
   field_prog_pgro_ref:
-    weight: 3
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -254,9 +255,15 @@ content:
     third_party_settings: {  }
     type: string_textarea
     region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   path:
     type: path
-    weight: 6
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -264,7 +271,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 6
     region: content
     third_party_settings: {  }
   title:
@@ -277,7 +284,6 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
-  moderation_state: true
   promote: true
   publish_on: true
   sticky: true

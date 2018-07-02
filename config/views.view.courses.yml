@@ -11,6 +11,8 @@ dependencies:
     - node.type.cour
     - system.menu.account
     - user.role.administrator
+    - user.role.curriculum_editor
+    - user.role.program_editor
   module:
     - node
     - text
@@ -35,6 +37,8 @@ display:
         options:
           role:
             administrator: administrator
+            curriculum_editor: curriculum_editor
+            program_editor: program_editor
       cache:
         type: tag
         options: {  }

@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.curr.field_prog_curric_prog_type_ref
     - node.type.curr
   module:
+    - content_moderation
     - entity_browser_entity_form
     - field_group
     - inline_entity_form
@@ -19,7 +20,6 @@ third_party_settings:
     group_wrapper:
       children:
         - group_course_groups
-        - group_details
       parent_name: ''
       weight: 5
       format_type: tabs
@@ -92,11 +92,17 @@ content:
     third_party_settings: {  }
     type: options_buttons
     region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 7
     region: content
     third_party_settings: {  }
   title:
@@ -109,7 +115,6 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
-  moderation_state: true
   path: true
   promote: true
   publish_on: true

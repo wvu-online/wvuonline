@@ -225,6 +225,9 @@
       },
       "drupal/inline_entity_form": {
         "Issue 2653574: Unable to keep nested IEF data separate with multivalue fields.": "https://www.drupal.org/files/issues/2018-05-30/multivalue-complex-and-simple-ief-fix-2653574-100.patch"
+      },
+      "drupal/field_group": {
+        "Issue 2878359: Field groups are not compatible with field layout": "https://www.drupal.org/files/issues/2018-06-29/field_group-n2878359-72.patch"
       }
     },
     "installer-paths": {
