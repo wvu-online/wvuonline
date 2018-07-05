@@ -1,0 +1,14 @@
+transport: smtp
+smtp_host: email-smtp.us-east-1.amazonaws.com
+smtp_port: 25
+smtp_encryption: tls
+smtp_credential_provider: swiftmailer
+smtp_credentials:
+  swiftmailer:
+    username: AKIAILAAUCF3ZOWMEZLA
+    password: AtmXj1AmMDTLQxjzpN72PwHQce2qRbJ4xtqgIexEqzNN
+sendmail_path: /usr/sbin/sendmail
+sendmail_mode: bs
+spool_directory: ''
+_core:
+  default_config_hash: 0dJfQivKgyEp-S8D6gSRTBbpRFApE3VkpltnPMBQ5OY
