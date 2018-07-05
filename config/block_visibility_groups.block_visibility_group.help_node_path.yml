@@ -1,0 +1,19 @@
+uuid: 29eccdbf-781e-4bc6-9513-e8b9b712f164
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+id: help_node_path
+label: 'Help Node Path'
+logic: or
+conditions:
+  cf405170-3025-4055-b2f6-624e74daaf8a:
+    id: 'entity_bundle:node'
+    bundles:
+      help: help
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: cf405170-3025-4055-b2f6-624e74daaf8a
+allow_other_conditions: false

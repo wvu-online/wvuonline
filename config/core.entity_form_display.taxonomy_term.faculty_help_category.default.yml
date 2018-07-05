@@ -1,0 +1,22 @@
+uuid: e5e4f7a2-84c4-4cbb-ab30-156f2cfa40c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.faculty_help_category
+id: taxonomy_term.faculty_help_category.default
+targetEntityType: taxonomy_term
+bundle: faculty_help_category
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

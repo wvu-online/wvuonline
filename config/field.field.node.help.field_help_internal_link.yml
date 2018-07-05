@@ -1,0 +1,23 @@
+uuid: 63bbc274-9638-4dc6-adb8-e75823798182
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_help_internal_link
+    - node.type.help
+  module:
+    - link
+id: node.help.field_help_internal_link
+field_name: field_help_internal_link
+entity_type: node
+bundle: help
+label: 'Internal Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 2
+field_type: link

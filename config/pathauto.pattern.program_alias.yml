@@ -7,16 +7,16 @@ dependencies:
 id: program_alias
 label: 'Program Alias'
 type: 'canonical_entities:node'
-pattern: '/programs/[node:field_prog_pgro_ref]/[node:title]/[node:field_prog_gawa_ref]'
+pattern: '/programs/[node:field_prog_pgro_ref]/[node:title]'
 selection_criteria:
-  ef8419d5-aba5-488e-b53a-eeec6949c629:
+  d86db889-00c3-4cfb-89f3-3645205501de:
     id: node_type
     bundles:
       prog: prog
     negate: false
     context_mapping:
       node: node
-    uuid: ef8419d5-aba5-488e-b53a-eeec6949c629
+    uuid: d86db889-00c3-4cfb-89f3-3645205501de
 selection_logic: and
 weight: -5
 relationships: {  }

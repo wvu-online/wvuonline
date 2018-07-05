@@ -1,0 +1,9 @@
+uuid: 314dcf3e-19f7-4cc9-9ace-3bcdb6226a3a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Student Help Category'
+vid: student_help_category
+description: ''
+hierarchy: 0
+weight: 0

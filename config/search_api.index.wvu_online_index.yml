@@ -9,6 +9,8 @@ dependencies:
     - field.storage.node.field_prog_body
     - field.storage.node.field_spag_body
     - field.storage.node.field_prog_financial_aid_clause
+    - field.storage.node.field_help_body_question_answer
+    - field.storage.node.field_help_body
     - search_api.server.wvu_online
   module:
     - search_api
@@ -76,11 +78,28 @@ field_settings:
     property_path: title
     type: text
     boost: !!float 5
+  field_help_body_question_answer:
+    label: 'Body (question-answer)'
+    datasource_id: 'entity:node'
+    property_path: field_help_body_question_answer
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_help_body_question_answer
+  field_help_body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: field_help_body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_help_body
 datasource_settings:
   'entity:node':
     bundles:
       default: false
       selected:
+        - help
         - prog
         - spag
     languages:
@@ -88,8 +107,17 @@ datasource_settings:
       selected:
         - en
 processor_settings:
-  add_url: {  }
-  aggregated_field: {  }
+  highlight:
+    highlight: always
+    highlight_partial: true
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
+  rendered_item: {  }
   type_boost:
     boosts:
       'entity:node':
@@ -99,6 +127,7 @@ processor_settings:
           spag: !!float 3
     weights:
       preprocess_index: 0
+  aggregated_field: {  }
   ignorecase:
     all_fields: true
     fields:
@@ -110,20 +139,12 @@ processor_settings:
       - field_spag_body
       - field_prog_financial_aid_clause
       - title
+      - field_help_body_question_answer
+      - field_help_body
     weights:
       preprocess_index: -20
       preprocess_query: -20
-  rendered_item: {  }
-  highlight:
-    highlight: always
-    highlight_partial: true
-    excerpt: true
-    excerpt_length: 256
-    exclude_fields: {  }
-    prefix: '<strong>'
-    suffix: '</strong>'
-    weights:
-      postprocess_query: 0
+  add_url: {  }
 tracker_settings:
   default:
     indexing_order: fifo

@@ -1,0 +1,22 @@
+uuid: 9a293b5a-6622-4a74-a5d3-e3b65a3648b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.student_help_category
+id: taxonomy_term.student_help_category.default
+targetEntityType: taxonomy_term
+bundle: student_help_category
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

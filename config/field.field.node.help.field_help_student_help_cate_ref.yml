@@ -1,0 +1,29 @@
+uuid: 058c8d25-7c0b-49c8-9b9c-beab3fe06d86
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_help_student_help_cate_ref
+    - node.type.help
+    - taxonomy.vocabulary.student_help_category
+id: node.help.field_help_student_help_cate_ref
+field_name: field_help_student_help_cate_ref
+entity_type: node
+bundle: help
+label: 'Student Help Category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      student_help_category: student_help_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

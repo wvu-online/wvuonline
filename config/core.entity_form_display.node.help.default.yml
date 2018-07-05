@@ -1,0 +1,241 @@
+uuid: 5771ca3a-d306-42e0-8f83-8fec467cf8a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.help.field_help_audience
+    - field.field.node.help.field_help_body
+    - field.field.node.help.field_help_body_question_answer
+    - field.field.node.help.field_help_external_link
+    - field.field.node.help.field_help_faculty_help_cate_ref
+    - field.field.node.help.field_help_help_format_ref
+    - field.field.node.help.field_help_internal_link
+    - field.field.node.help.field_help_student_help_cate_ref
+    - node.type.help
+  module:
+    - conditional_fields
+    - field_group
+    - link
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_wrapper:
+      children:
+        - group_text
+        - group_internal_links
+        - group_external_links
+      parent_name: ''
+      weight: 5
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Wrapper
+      region: content
+    group_text:
+      children:
+        - field_help_body
+        - field_help_body_question_answer
+      parent_name: group_wrapper
+      weight: 6
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Text
+      region: content
+    group_external_links:
+      children:
+        - field_help_external_link
+      parent_name: group_wrapper
+      weight: 8
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'External Links'
+      region: content
+    group_internal_links:
+      children:
+        - field_help_internal_link
+      parent_name: group_wrapper
+      weight: 7
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Internal Links'
+      region: content
+id: node.help.default
+targetEntityType: node
+bundle: help
+mode: default
+content:
+  field_help_audience:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_help_body:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        c36e6f25-0288-41e8-a2b6-bc2d52846d1a:
+          dependee: field_help_help_format_ref
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 3
+            value: ''
+            values: "30\r\n31"
+            value_form: {  }
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: help
+    type: text_textarea
+    region: content
+  field_help_body_question_answer:
+    weight: 7
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        ddd859fa-7302-4294-8b34-85a35b52e34f:
+          dependee: field_help_help_format_ref
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '28'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: help
+    type: text_textarea_with_summary
+    region: content
+  field_help_external_link:
+    weight: 8
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_help_faculty_help_cate_ref:
+    weight: 3
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        dc822224-93e3-40a9-9539-7f56413e94fd:
+          dependee: field_help_audience
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: Faculty
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: help
+    type: options_select
+    region: content
+  field_help_help_format_ref:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_help_internal_link:
+    weight: 6
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_help_student_help_cate_ref:
+    weight: 2
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        386b54f0-15fb-45af-8ae1-0c433a3d2492:
+          dependee: field_help_audience
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: Student
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: help
+    type: options_select
+    region: content
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 7
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  moderation_state: true
+  promote: true
+  publish_on: true
+  sticky: true
+  uid: true
+  unpublish_on: true
+  url_redirects: true

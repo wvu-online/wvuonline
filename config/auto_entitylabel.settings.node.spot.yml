@@ -1,7 +1,7 @@
-status: '1'
+status: 1
 pattern: '[node:field_spot_spotlight_type_ref]: [node:field_spot_student_bio_ref][node:field_spot_faculty_bio_ref] [node:field_spot_prog_ref]'
-php: 0
-escape: 0
+php: false
+escape: false
 dependencies:
   config:
     - node.type.spot

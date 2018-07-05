@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.prog.field_prog_gawa_ref
     - field.field.node.prog.field_prog_non_residents_fee
     - field.field.node.prog.field_prog_pgro_ref
+    - field.field.node.prog.field_prog_public_title
     - field.field.node.prog.field_prog_residents_fee
     - field.field.node.prog.field_prog_spot_ref
     - field.field.node.prog.field_seo_summary
@@ -26,6 +27,11 @@ targetEntityType: node
 bundle: prog
 mode: default
 content:
+  content_moderation_control:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_prog_accreditation:
     type: text_default
     weight: 3
@@ -61,16 +67,16 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-  field_prog_gawa_ref:
-    type: entity_reference_label
-    weight: 1
-    region: content
-    label: hidden
+  field_prog_public_title:
+    weight: 7
+    label: above
     settings:
-      link: false
+      link_to_entity: false
     third_party_settings: {  }
+    type: string
+    region: content
   links:
-    weight: 0
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -78,6 +84,7 @@ hidden:
   field_prog_care_ref: true
   field_prog_careers_body: true
   field_prog_curr_ref: true
+  field_prog_gawa_ref: true
   field_prog_non_residents_fee: true
   field_prog_pgro_ref: true
   field_prog_residents_fee: true

@@ -16,7 +16,7 @@ third_party_settings:
 id: exposedformrel_search_apipage_1
 theme: wvuonline2018
 region: header
-weight: -2
+weight: -16
 provider: null
 plugin: 'views_exposed_filter_block:rel_search_api-page_1'
 settings:

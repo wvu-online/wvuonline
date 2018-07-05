@@ -1,0 +1,21 @@
+uuid: 3b932a9c-7b0e-4543-a3f0-23c51ed6e824
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_bio_work_title
+field_name: field_bio_work_title
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

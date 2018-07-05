@@ -1,0 +1,19 @@
+uuid: 732c52c4-c4c3-4716-a3a7-39d306ea31b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prog_public_title
+    - node.type.prog
+id: node.prog.field_prog_public_title
+field_name: field_prog_public_title
+entity_type: node
+bundle: prog
+label: 'Public Title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

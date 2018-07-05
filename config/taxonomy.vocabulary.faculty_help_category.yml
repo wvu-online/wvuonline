@@ -1,0 +1,9 @@
+uuid: d2333ba0-7fc3-4f33-a4f6-041bae56c565
+langcode: en
+status: true
+dependencies: {  }
+name: 'Faculty Help Category'
+vid: faculty_help_category
+description: ''
+hierarchy: 0
+weight: 0

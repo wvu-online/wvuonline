@@ -1,0 +1,9 @@
+uuid: ff503caf-32c6-4519-a216-5b32f098647f
+langcode: en
+status: true
+dependencies: {  }
+id: taxonomy_vocabulary_student_help_category
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
