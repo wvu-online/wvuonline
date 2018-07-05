@@ -1,0 +1,22 @@
+uuid: 2df1ee75-e0ed-47f0-bc7a-b0ffcf762846
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: help_alias
+label: 'Help Alias'
+type: 'canonical_entities:node'
+pattern: '/help/[node:field_help_audience]/[node:field_help_student_help_cate_ref][node:field_help_faculty_help_cate_ref]/[node:title]'
+selection_criteria:
+  7378caba-b803-42ba-bf8e-217a06010f70:
+    id: node_type
+    bundles:
+      help: help
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 7378caba-b803-42ba-bf8e-217a06010f70
+selection_logic: and
+weight: -5
+relationships: {  }

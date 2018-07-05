@@ -1,0 +1,20 @@
+uuid: 837e7b48-2bc7-472a-bb6e-5d87554c5b2d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_help_faculty_help_cate_ref
+field_name: field_help_faculty_help_cate_ref
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -6,13 +6,20 @@ id: curriculum_needs_review
 workflow: wvuo_curriculum
 transitions:
   needs_review: needs_review
+  publish: publish
 roles:
   administrator: administrator
   curriculum_editor: curriculum_editor
 author: true
-emails: gregg.shanefelt@mail.wvu.edu
-subject: 'A new Curriculum has been created and now needs review.'
+to: ''
+cc: ''
+bcc: ''
+from: ''
+replyto: ''
+subject: 'A curriculum has been added, edited or published '
 body:
-  value: ''
+  value: "<p>Please review the following to ensure proper data handling:</p>\r\n\r\n<p>Curriculum Title:&nbsp;{{ entity.title.value }}<br />\r\nCurriculum Author:&nbsp;{{ entity.Owner.username }}<br />\r\nCurrent Status (revision state):&nbsp;{{ state }}</p>\r\n\r\n<p>This content can be accessed at the following url: {{ base_url }}/node/{{ entity.nid.value }}</p>\r\n"
   format: basic_html
 label: 'Curriculum Needs review'
+abort: ''
+debug: false

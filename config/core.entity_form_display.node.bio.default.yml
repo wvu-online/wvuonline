@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.bio.field_bio_portrait
     - field.field.node.bio.field_bio_prefix
     - field.field.node.bio.field_bio_suffix
+    - field.field.node.bio.field_bio_work_title
     - image.style.thumbnail
     - node.type.bio
   module:
@@ -28,13 +29,14 @@ third_party_settings:
         - group_text
         - group_image
       parent_name: ''
-      weight: 3
+      weight: 5
       format_type: tabs
       format_settings:
         id: ''
         classes: ''
         direction: horizontal
       label: Wrapper
+      region: content
     group_identity:
       children:
         - field_bio_prefix
@@ -42,6 +44,7 @@ third_party_settings:
         - field_bio_middle_initial
         - field_bio_last_name
         - field_bio_suffix
+        - field_bio_work_title
       parent_name: group_wrapper
       weight: 13
       format_type: tab
@@ -52,6 +55,7 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Identity
+      region: content
     group_text:
       children:
         - field_bio_condensed_about
@@ -66,6 +70,7 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Text
+      region: content
     group_image:
       children:
         - field_bio_portrait
@@ -79,6 +84,7 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Image
+      region: content
 id: node.bio.default
 targetEntityType: node
 bundle: bio
@@ -99,7 +105,7 @@ content:
     type: string_textarea
     region: content
   field_bio_first_name:
-    weight: 5
+    weight: 14
     settings:
       size: 60
       placeholder: ''
@@ -107,7 +113,7 @@ content:
     type: string_textfield
     region: content
   field_bio_full_bio_about:
-    weight: 11
+    weight: 12
     settings:
       rows: 5
       placeholder: ''
@@ -140,7 +146,7 @@ content:
     type: number
     region: content
   field_bio_last_name:
-    weight: 7
+    weight: 16
     settings:
       size: 60
       placeholder: ''
@@ -148,7 +154,7 @@ content:
     type: string_textfield
     region: content
   field_bio_middle_initial:
-    weight: 6
+    weight: 15
     settings:
       size: 5
       placeholder: ''
@@ -156,7 +162,7 @@ content:
     type: string_textfield
     region: content
   field_bio_portrait:
-    weight: 9
+    weight: 18
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -164,7 +170,7 @@ content:
     type: image_image
     region: content
   field_bio_prefix:
-    weight: 4
+    weight: 13
     settings:
       size: 5
       placeholder: ''
@@ -172,16 +178,24 @@ content:
     type: string_textfield
     region: content
   field_bio_suffix:
-    weight: 8
+    weight: 17
     settings:
       size: 5
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_bio_work_title:
+    weight: 18
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   status:
     type: boolean_checkbox
-    weight: 4
+    weight: 3
     region: content
     settings:
       display_label: true

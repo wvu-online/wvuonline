@@ -1,0 +1,22 @@
+uuid: b4fd221f-bb12-4dc4-be57-178ac5146a78
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_help_body_question_answer
+    - node.type.help
+  module:
+    - text
+id: node.help.field_help_body_question_answer
+field_name: field_help_body_question_answer
+entity_type: node
+bundle: help
+label: 'Body (question-answer)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

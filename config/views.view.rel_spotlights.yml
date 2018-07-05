@@ -181,9 +181,8 @@ display:
       row:
         type: fields
       pager:
-        type: some
+        type: none
         options:
-          items_per_page: 2
           offset: 0
       display_description: ''
       block_description: 'Spotlight on Static Page Block'
@@ -583,7 +582,7 @@ display:
           exclude: true
           alter:
             alter_text: false
-            text: ''
+            text: '{{ field_bio_last_name }}, '
             make_link: false
             path: ''
             absolute: false
@@ -874,7 +873,7 @@ display:
           plugin_id: field
         view_node:
           id: view_node
-          table: node_field_revision
+          table: node
           field: view_node
           relationship: none
           group_type: group
@@ -883,7 +882,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: 'read more about {{ title }}{{ field_bio_first_name }} {{ field_bio_last_name }}'
+            text: 'read more about {{ field_bio_first_name }}{{ field_bio_last_name }}{{ title }}'
             make_link: false
             path: ''
             absolute: false
@@ -1805,7 +1804,7 @@ display:
         type: normal
         title: 'Manage Spotlights'
         menu_name: account
-        weight: -41
+        weight: -40
       display_description: ''
       access:
         type: role

@@ -1,0 +1,17 @@
+uuid: 832ec5fb-9a39-4080-bb49-32d292b1de97
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: help_landing_path
+label: 'Help Landing Path'
+logic: or
+conditions:
+  8c2163ef-00ef-4d1f-a51b-a30e7dc2c581:
+    id: request_path
+    pages: "/node/725\r\n/help"
+    negate: false
+    context_mapping: {  }
+    uuid: 8c2163ef-00ef-4d1f-a51b-a30e7dc2c581
+allow_other_conditions: false

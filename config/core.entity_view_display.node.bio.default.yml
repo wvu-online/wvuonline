@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.bio.field_bio_portrait
     - field.field.node.bio.field_bio_prefix
     - field.field.node.bio.field_bio_suffix
+    - field.field.node.bio.field_bio_work_title
     - node.type.bio
   module:
     - image
@@ -54,3 +55,4 @@ hidden:
   field_bio_middle_initial: true
   field_bio_prefix: true
   field_bio_suffix: true
+  field_bio_work_title: true

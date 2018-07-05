@@ -1,0 +1,29 @@
+uuid: 8236c59e-17dc-4745-86b5-0cb7f404ab17
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_help_faculty_help_cate_ref
+    - node.type.help
+    - taxonomy.vocabulary.faculty_help_category
+id: node.help.field_help_faculty_help_cate_ref
+field_name: field_help_faculty_help_cate_ref
+entity_type: node
+bundle: help
+label: 'Faculty Help Category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      faculty_help_category: faculty_help_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

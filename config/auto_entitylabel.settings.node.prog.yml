@@ -1,7 +1,7 @@
-status: '0'
-pattern: ''
-php: 0
-escape: 0
+status: 1
+pattern: '[node:field_prog_public_title], [node:field_prog_gawa_ref]'
+php: false
+escape: false
 dependencies:
   config:
     - node.type.prog

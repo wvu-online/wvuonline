@@ -1,0 +1,19 @@
+uuid: 91077255-e2d1-412b-8d19-ab387b1c51aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bio_work_title
+    - node.type.bio
+id: node.bio.field_bio_work_title
+field_name: field_bio_work_title
+entity_type: node
+bundle: bio
+label: 'Work Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

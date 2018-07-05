@@ -1,0 +1,26 @@
+uuid: a01bd1dd-3179-4969-8d42-6ba5f975aa9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.help
+  module:
+    - user
+id: node.help.teaser
+targetEntityType: node
+bundle: help
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_help_audience: true
+  field_help_body: true
+  field_help_body_question_answer: true
+  field_help_external_link: true
+  field_help_faculty_help_cate_ref: true
+  field_help_help_format_ref: true
+  field_help_internal_link: true
+  field_help_student_help_cate_ref: true

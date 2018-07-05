@@ -1,0 +1,9 @@
+uuid: fa79c619-e865-4d55-91af-15e3ba4d3261
+langcode: en
+status: true
+dependencies: {  }
+name: 'Help Format'
+vid: help_format
+description: ''
+hierarchy: 0
+weight: 0

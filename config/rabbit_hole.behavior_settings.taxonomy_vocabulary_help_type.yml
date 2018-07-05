@@ -1,0 +1,9 @@
+uuid: ff81a34f-b2e8-4996-9ebf-c81b6dd4e54f
+langcode: en
+status: true
+dependencies: {  }
+id: taxonomy_vocabulary_help_type
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301

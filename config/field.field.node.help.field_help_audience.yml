@@ -1,0 +1,21 @@
+uuid: a2deb0a6-2e56-4331-891c-e1257b5d8168
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_help_audience
+    - node.type.help
+  module:
+    - options
+id: node.help.field_help_audience
+field_name: field_help_audience
+entity_type: node
+bundle: help
+label: 'Help Audience'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

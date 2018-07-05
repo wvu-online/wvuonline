@@ -1,0 +1,48 @@
+uuid: 9557ba9b-7faa-45da-a38d-33df3208db40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.help.field_help_audience
+    - field.field.node.help.field_help_body
+    - field.field.node.help.field_help_body_question_answer
+    - field.field.node.help.field_help_external_link
+    - field.field.node.help.field_help_faculty_help_cate_ref
+    - field.field.node.help.field_help_help_format_ref
+    - field.field.node.help.field_help_internal_link
+    - field.field.node.help.field_help_student_help_cate_ref
+    - node.type.help
+  module:
+    - text
+    - user
+id: node.help.default
+targetEntityType: node
+bundle: help
+mode: default
+content:
+  field_help_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_help_body_question_answer:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_help_audience: true
+  field_help_external_link: true
+  field_help_faculty_help_cate_ref: true
+  field_help_help_format_ref: true
+  field_help_internal_link: true
+  field_help_student_help_cate_ref: true
