@@ -4151,7 +4151,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/field_group",
-                "reference": "9ab1b9963a07bdefde4829b025a1ea56cb63e03e"
+                "reference": "daa070a2c2a455d9df36969409b5f1759968da0f"
             },
             "require": {
                 "drupal/core": "*"
@@ -4162,13 +4162,14 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-beta1+2-dev",
-                    "datestamp": "1523311084",
+                    "version": "8.x-3.0-beta1+5-dev",
+                    "datestamp": "1530630220",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
-                }
+                },
+                "patches_applied": []
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -4200,7 +4201,8 @@
             "homepage": "https://www.drupal.org/project/field_group",
             "support": {
                 "source": "http://cgit.drupalcode.org/field_group"
-            }
+            },
+            "time": "2018-07-03T17:22:08+00:00"
         },
         {
             "name": "drupal/field_permissions",
