@@ -88,6 +88,7 @@
     "drupal/core": "^8",
     "drupal/ctools": "^3.0",
     "drupal/devel": "^1.2",
+    "drupal/diff": "^1.0@RC",
     "drupal/entity_browser": "^1.4",
     "drupal/entity_browser_enhanced": "^1.0@RC",
     "drupal/entity_embed": "^1.0@beta",
