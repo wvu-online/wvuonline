@@ -282,6 +282,7 @@
   "config": {
     "optimize-autoloader": true,
     "preferred-install": "dist",
+    "discard-changes": true,
     "sort-packages": true,
     "platform": {
       "php": "7.1"
