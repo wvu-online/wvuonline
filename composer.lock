@@ -4293,7 +4293,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/field_group",
-                "reference": "c405a0bf66d8b02ebc52f2a0622a7a983c1fb6e0"
+                "reference": "156100419fa88b185197affdc35a6d3876e9756b"
             },
             "require": {
                 "drupal/core": "*"
@@ -4304,8 +4304,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-beta1+12-dev",
-                    "datestamp": "1530912220",
+                    "version": "8.x-3.0-beta1+15-dev",
+                    "datestamp": "1531041220",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -4344,7 +4344,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/field_group"
             },
-            "time": "2018-07-06T21:42:00+00:00"
+            "time": "2018-07-08T09:15:00+00:00"
         },
         {
             "name": "drupal/field_permissions",
