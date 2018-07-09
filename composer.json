@@ -231,6 +231,9 @@
       },
       "drupal/field_group": {
         "Issue 2878359: Field groups are not compatible with field layout": "https://www.drupal.org/files/issues/2018-06-29/field_group-n2878359-72.patch"
+      },
+      "drupal/lockr": {
+        "Issue 2926257: Module settings should be stored as config": "https://www.drupal.org/files/issues/2926257-store-settings-as-config-2.patch"
       }
     },
     "installer-paths": {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "176dbce4912548ba20ad9a22b5c2f087",
+    "content-hash": "a22bf4ec48a81bbc323a05306ffdc642",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4343,8 +4343,7 @@
             "homepage": "https://www.drupal.org/project/field_group",
             "support": {
                 "source": "http://cgit.drupalcode.org/field_group"
-            },
-            "time": "2018-07-08T09:15:00+00:00"
+            }
         },
         {
             "name": "drupal/field_permissions",
@@ -5193,8 +5192,7 @@
             "homepage": "https://www.drupal.org/project/lockr",
             "support": {
                 "source": "http://cgit.drupalcode.org/lockr"
-            },
-            "time": "2018-07-06T20:18:40+00:00"
+            }
         },
         {
             "name": "drupal/mailsystem",
