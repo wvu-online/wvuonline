@@ -1,15 +1,11 @@
-transport: native
-smtp_host: 127.0.0.1
-smtp_port: 25
-smtp_encryption: ''
-smtp_credential_provider: swiftmailer
+transport: smtp
+smtp_host: email-smtp.us-east-1.amazonaws.com
+smtp_port: 587
+smtp_encryption: tls
+smtp_credential_provider: multikey
 smtp_credentials:
-  swiftmailer:
-    username: ''
-    password: ''
-  key:
-    username: ''
-    password: ''
+  multikey:
+    user_password: aws_smtp_lockr
 sendmail_path: /usr/sbin/sendmail
 sendmail_mode: bs
 spool_directory: ''
