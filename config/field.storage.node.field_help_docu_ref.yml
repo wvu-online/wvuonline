@@ -1,18 +1,18 @@
-uuid: 0c8dc6bd-faa6-4e60-83d9-a04bff490b92
+uuid: ca7aa8d4-4efb-4533-b09b-52002984ac3a
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_spot_teaser
-field_name: field_spot_teaser
+id: node.field_help_docu_ref
+field_name: field_help_docu_ref
 entity_type: node
-type: string_long
+type: entity_reference
 settings:
-  case_sensitive: false
+  target_type: node
 module: core
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.prog.field_prog_curr_ref
     - field.field.node.prog.field_prog_financial_aid_clause
     - field.field.node.prog.field_prog_gawa_ref
+    - field.field.node.prog.field_prog_hero_ref
     - field.field.node.prog.field_prog_non_residents_fee
     - field.field.node.prog.field_prog_pgro_ref
     - field.field.node.prog.field_prog_public_title
@@ -67,14 +68,6 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-  field_prog_public_title:
-    weight: 7
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
   links:
     weight: 1
     region: content
@@ -85,8 +78,10 @@ hidden:
   field_prog_careers_body: true
   field_prog_curr_ref: true
   field_prog_gawa_ref: true
+  field_prog_hero_ref: true
   field_prog_non_residents_fee: true
   field_prog_pgro_ref: true
+  field_prog_public_title: true
   field_prog_residents_fee: true
   field_prog_spot_ref: true
   field_seo_summary: true

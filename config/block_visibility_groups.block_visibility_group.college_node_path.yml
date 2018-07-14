@@ -1,0 +1,19 @@
+uuid: e1877497-b5c4-46e9-9d24-dff47f0002be
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+id: college_node_path
+label: 'College Node Path'
+logic: or
+conditions:
+  630838ec-b714-4d1b-85c8-03e083f6ae5a:
+    id: 'entity_bundle:node'
+    bundles:
+      coll: coll
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 630838ec-b714-4d1b-85c8-03e083f6ae5a
+allow_other_conditions: false

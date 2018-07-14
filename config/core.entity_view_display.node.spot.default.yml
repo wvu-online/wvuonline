@@ -3,38 +3,25 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.spot.field_seo_summary
-    - field.field.node.spot.field_spot_body
     - field.field.node.spot.field_spot_faculty_bio_ref
     - field.field.node.spot.field_spot_prog_ref
     - field.field.node.spot.field_spot_spotlight_type_ref
     - field.field.node.spot.field_spot_student_bio_ref
-    - field.field.node.spot.field_spot_teaser
     - node.type.spot
   module:
-    - text
     - user
 id: node.spot.default
 targetEntityType: node
 bundle: spot
 mode: default
 content:
-  field_spot_body:
-    weight: 1
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
   links:
     weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_seo_summary: true
   field_spot_faculty_bio_ref: true
   field_spot_prog_ref: true
   field_spot_spotlight_type_ref: true
   field_spot_student_bio_ref: true
-  field_spot_teaser: true

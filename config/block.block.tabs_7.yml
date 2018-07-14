@@ -1,9 +1,7 @@
-uuid: 631d563c-d5c2-488a-b738-e5d8bc723636
+uuid: edc24dac-c0ad-4235-b562-015d6c5afe18
 langcode: en
 status: true
 dependencies:
-  config:
-    - block_visibility_groups.block_visibility_group.front_page_path
   module:
     - block_class
     - block_visibility_groups
@@ -12,10 +10,10 @@ dependencies:
 third_party_settings:
   block_class:
     classes: ''
-id: tabs_2
+id: tabs_7
 theme: wvuonline2018
 region: content
-weight: -4
+weight: -16
 provider: null
 plugin: local_tasks_block
 settings:
@@ -29,5 +27,5 @@ visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: front_page_path
+    block_visibility_group: ''
     context_mapping: {  }

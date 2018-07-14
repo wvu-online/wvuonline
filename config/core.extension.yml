@@ -57,13 +57,10 @@ module:
   image: 0
   inline_entity_form: 0
   inline_form_errors: 0
-  key: 0
   layout_discovery: 0
   link: 0
   link_attributes: 0
   linkit: 0
-  lockr: 0
-  mailsystem: 0
   media: 0
   menu_ui: 0
   metatag: 0
@@ -98,7 +95,6 @@ module:
   slick_ui: 0
   slick_views: 0
   svg_image_field: 0
-  swiftmailer: 0
   switch_page_theme: 0
   system: 0
   taxonomy: 0

@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.help.field_help_audience
     - field.field.node.help.field_help_body
     - field.field.node.help.field_help_body_question_answer
+    - field.field.node.help.field_help_docu_ref
     - field.field.node.help.field_help_external_link
     - field.field.node.help.field_help_faculty_help_cate_ref
     - field.field.node.help.field_help_help_format_ref
@@ -41,6 +42,7 @@ content:
     third_party_settings: {  }
 hidden:
   field_help_audience: true
+  field_help_docu_ref: true
   field_help_external_link: true
   field_help_faculty_help_cate_ref: true
   field_help_help_format_ref: true

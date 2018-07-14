@@ -3,27 +3,22 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.spot.field_seo_summary
-    - field.field.node.spot.field_spot_body
     - field.field.node.spot.field_spot_faculty_bio_ref
     - field.field.node.spot.field_spot_prog_ref
     - field.field.node.spot.field_spot_spotlight_type_ref
     - field.field.node.spot.field_spot_student_bio_ref
-    - field.field.node.spot.field_spot_teaser
     - node.type.spot
   module:
     - conditional_fields
     - entity_reference_views_select
     - field_group
-    - path
-    - text
 third_party_settings:
   field_group:
     group_wrapper:
       children:
         - group_text
       parent_name: ''
-      weight: 6
+      weight: 5
       format_type: tabs
       format_settings:
         id: ''
@@ -32,10 +27,7 @@ third_party_settings:
       label: Wrapper
       region: content
     group_text:
-      children:
-        - field_seo_summary
-        - field_spot_teaser
-        - field_spot_body
+      children: {  }
       parent_name: group_wrapper
       weight: 8
       format_type: tab
@@ -52,22 +44,6 @@ targetEntityType: node
 bundle: spot
 mode: default
 content:
-  field_seo_summary:
-    weight: 3
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textarea
-    region: content
-  field_spot_body:
-    weight: 5
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
-    region: content
   field_spot_faculty_bio_ref:
     weight: 2
     settings: {  }
@@ -93,7 +69,7 @@ content:
     type: options_select
     region: content
   field_spot_prog_ref:
-    weight: 5
+    weight: 4
     settings: {  }
     third_party_settings:
       conditional_fields:
@@ -146,25 +122,11 @@ content:
           bundle: spot
     type: erviews_options_select
     region: content
-  field_spot_teaser:
-    weight: 4
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textarea
-    region: content
-  path:
-    type: path
-    weight: 7
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 9
+    weight: 6
     region: content
     third_party_settings: {  }
   title:
@@ -175,16 +137,13 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  url_redirects:
-    weight: 8
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   created: true
   moderation_state: true
+  path: true
   promote: true
   publish_on: true
   sticky: true
   uid: true
   unpublish_on: true
+  url_redirects: true

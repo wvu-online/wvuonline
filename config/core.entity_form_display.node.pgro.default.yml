@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.pgro.field_pgro_coll_ref
+    - field.field.node.pgro.field_pgro_hero_ref
     - node.type.pgro
   module:
+    - inline_entity_form
     - path
 id: node.pgro.default
 targetEntityType: node
@@ -18,9 +20,25 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
+  field_pgro_hero_ref:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      allow_new: true
+      allow_existing: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
   path:
     type: path
-    weight: 2
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -28,7 +46,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 3
+    weight: 4
     region: content
     third_party_settings: {  }
   title:
