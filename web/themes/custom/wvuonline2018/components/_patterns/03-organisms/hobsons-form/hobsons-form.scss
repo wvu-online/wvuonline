@@ -2,9 +2,15 @@
 @import '../../00-base/mixins';
 
 .h-form {
-  box-shadow: 0 3px 7px 0 $gray;
-  width: 70em;
-  padding: 2em 1em;
+  //box-shadow: 0 3px 7px 0 $gray;
+  //width: 70em;
+  //padding: 2em 1em;
+  background:
+          linear-gradient(
+                          rgba(234, 170, 0, 0.8),
+                          rgba(234, 170, 0, 0.8)
+          ),
+          url('https://placeimg.com/2000/800/building');
 
   &--gold {
     @include wvu-gold-background;
@@ -36,7 +42,7 @@
   }
 
   &__label {
-    @extend .visually-hidden !optional;
+    @extend .visually-hidden;
   }
 
   &__field {

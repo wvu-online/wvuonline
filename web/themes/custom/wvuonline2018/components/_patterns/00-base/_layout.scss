@@ -1,0 +1,9 @@
+@import "mixins";
+
+.wrapper {
+  @include wrapper;
+}
+
+.node {
+  @include full-width;
+}

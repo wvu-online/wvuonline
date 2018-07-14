@@ -70,34 +70,43 @@
  *   in different view modes.
  */
 #}
-<article {{ bem("node") }}>
 
-  {{ title_prefix }}
-  {% if not page %}
-    {% include "@atoms/02-text/00-headings/_heading.twig" with {
-      "heading_level": 2,
-      "heading": label,
-      "heading_url": url,
-      "heading_link_attributes": {
-        'rel': 'bookmark'
-      },
-    } %}
-  {% endif %}
-  {{ title_suffix }}
+{{ attach_library('wvuonline2018/van11y-accessible-tab-panel-aria') }}
+{{ attach_library('wvuonline2018/tuition-calc') }}
+{% set tab_content = [
+  content.field_prog_body,
+  content.field_prog_admissions
+] %}
 
-  {% if display_submitted %}
-    <footer>
-      {{ author_picture }}
-      <div{{ author_attributes }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}
+{% set tab_titles = [
+  'Program Info',
+  'Admissions',
+  'Courses',
+  'Financial Aid'
+] %}
 
+{% set course = drupal_view('curriculum', 'block_1') %}
+
+{% set tabbedItems = {
+  0: {'title': 'Program Info', 'content': content.field_prog_body},
+  1: {'title': 'Admissions', 'content': content.field_prog_admissions},
+  2: {'title': 'Courses', 'content': course},
+  3: {'title': 'Financial Aid', 'content': content.field_prog_financial_aid_clause }
+} %}
+{{ dd(course) }}
+{% embed "@organisms/_node.twig" %}
   {% block content %}
-    <div{{ content_attributes }}>
-      {{ content }}
+    <div class="section-2">
+      <div class="cost-calc">
+        {% include "@organisms/tuition-calc/tuition-calc.twig" %}
+      </div>
+      {% include "@organisms/hobsons-form/hobsons-form.twig" %}
+    </div>
+    <div class="wrapper">
+      {% include "@organisms/tabbed-content/tabbed-content.twig" with
+      {
+        tabbedItems: tabbedItems
+      } %}
     </div>
   {% endblock %}
-</article>
+{% endembed %}

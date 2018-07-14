@@ -1,0 +1,9 @@
+{% set course_group_base_class = course_group_base_class|default('course_group') %}
+<div {{ bem(course_group_base_class, (course_group_modifiers), course_group_blockname) }} >
+  {{ course_group.title }}
+  {{ course_group.content }}
+
+    {% include "@molecules/course-table/course-table.twig" with {
+      courses: course_group.courses
+    } %}
+</div>

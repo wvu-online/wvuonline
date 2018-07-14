@@ -1,6 +1,6 @@
 uuid: 98fddb4d-e8c4-4e34-9ca6-f7222afa646d
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - block_visibility_groups.block_visibility_group.faculty_landing_path
