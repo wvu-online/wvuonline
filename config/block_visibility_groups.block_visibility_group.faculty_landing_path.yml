@@ -1,0 +1,17 @@
+uuid: 47494a75-fa3f-4d06-810c-c2046d7dfa40
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: faculty_landing_path
+label: 'Faculty Landing Path'
+logic: or
+conditions:
+  7e525e38-0f6d-40ad-9a1b-b890d2973db5:
+    id: request_path
+    pages: "/node/722\r\n/faculty"
+    negate: false
+    context_mapping: {  }
+    uuid: 7e525e38-0f6d-40ad-9a1b-b890d2973db5
+allow_other_conditions: false

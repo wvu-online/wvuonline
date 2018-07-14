@@ -1,0 +1,26 @@
+uuid: eae76092-c505-466a-bd90-96f1134761c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+id: relativity_management_uis
+label: 'Relativity Management UIs'
+logic: and
+conditions:
+  7b721838-a407-4de0-93d7-e680611b3d00:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    uuid: 7b721838-a407-4de0-93d7-e680611b3d00
+  7f43bb3b-cb17-46b2-afb2-eebf281edff1:
+    id: request_path
+    pages: '/admin/manage/*'
+    negate: false
+    context_mapping: {  }
+    uuid: 7f43bb3b-cb17-46b2-afb2-eebf281edff1
+allow_other_conditions: false

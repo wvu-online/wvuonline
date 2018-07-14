@@ -1,0 +1,38 @@
+uuid: 5aa39469-0c1d-41f9-a9e6-ad7f9f95765a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.docu.field_docu_description
+    - field.field.node.docu.field_docu_document_file
+    - node.type.docu
+  module:
+    - file
+    - text
+    - user
+id: node.docu.default
+targetEntityType: node
+bundle: docu
+mode: default
+content:
+  field_docu_description:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_docu_document_file:
+    weight: 102
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

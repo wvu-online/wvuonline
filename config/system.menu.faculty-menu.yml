@@ -1,0 +1,8 @@
+uuid: b9bbcfe2-cc42-44e5-8086-10d1c7fbd27a
+langcode: en
+status: true
+dependencies: {  }
+id: faculty-menu
+label: 'Faculty Menu'
+description: ''
+locked: false

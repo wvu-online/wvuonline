@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.coll.field_coll_body
     - field.field.node.coll.field_coll_fee
+    - field.field.node.coll.field_coll_hero_ref
     - field.field.node.coll.field_seo_summary
     - node.type.coll
   module:
@@ -39,4 +40,5 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_coll_hero_ref: true
   field_seo_summary: true

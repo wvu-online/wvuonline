@@ -1,17 +1,17 @@
-uuid: 1f93ae6d-dd1d-4169-9bfe-a1ca3f6a9bec
+uuid: 54cdd136-7caa-440f-a702-05fb02cc2028
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_spot_body
-    - node.type.spot
+    - field.storage.node.field_bio_personal_quote
+    - node.type.bio
   module:
     - text
-id: node.spot.field_spot_body
-field_name: field_spot_body
+id: node.bio.field_bio_personal_quote
+field_name: field_bio_personal_quote
 entity_type: node
-bundle: spot
-label: Body
+bundle: bio
+label: 'Personal Quote'
 description: ''
 required: false
 translatable: false

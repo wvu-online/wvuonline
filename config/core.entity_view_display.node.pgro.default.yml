@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.pgro.field_pgro_coll_ref
+    - field.field.node.pgro.field_pgro_hero_ref
     - node.type.pgro
   module:
     - user
@@ -19,3 +20,4 @@ content:
     third_party_settings: {  }
 hidden:
   field_pgro_coll_ref: true
+  field_pgro_hero_ref: true

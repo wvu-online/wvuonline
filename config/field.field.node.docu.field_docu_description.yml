@@ -1,0 +1,21 @@
+uuid: eadd37cd-fb0a-4568-95b5-e37ab5f14b00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_docu_description
+    - node.type.docu
+  module:
+    - text
+id: node.docu.field_docu_description
+field_name: field_docu_description
+entity_type: node
+bundle: docu
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

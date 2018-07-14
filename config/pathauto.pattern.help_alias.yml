@@ -7,16 +7,16 @@ dependencies:
 id: help_alias
 label: 'Help Alias'
 type: 'canonical_entities:node'
-pattern: '/help/[node:field_help_audience]/[node:field_help_student_help_cate_ref][node:field_help_faculty_help_cate_ref]/[node:title]'
+pattern: '/[node:field_help_audience]/help/[node:field_help_student_help_cate_ref][node:field_help_faculty_help_cate_ref]/[node:title]'
 selection_criteria:
-  7378caba-b803-42ba-bf8e-217a06010f70:
+  51af09bd-9625-412a-b5e0-1d2c29884e46:
     id: node_type
     bundles:
       help: help
     negate: false
     context_mapping:
       node: node
-    uuid: 7378caba-b803-42ba-bf8e-217a06010f70
+    uuid: 51af09bd-9625-412a-b5e0-1d2c29884e46
 selection_logic: and
 weight: -5
 relationships: {  }

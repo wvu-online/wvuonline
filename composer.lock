@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a22bf4ec48a81bbc323a05306ffdc642",
+    "content-hash": "893a3db5d521873d817bfd8ee5baf15e",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1605,17 +1605,17 @@
         },
         {
             "name": "drupal/block_class",
-            "version": "1.0.0-alpha1",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/block_class",
-                "reference": "8.x-1.0-alpha1"
+                "reference": "8.x-1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/block_class-8.x-1.0-alpha1.zip",
-                "reference": "8.x-1.0-alpha1",
-                "shasum": "194cd52210ea2e0e5dbbd34fad4528d500424430"
+                "url": "https://ftp.drupal.org/files/projects/block_class-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "1a691999d051a3c010c2b6f2df73954ee02f424d"
             },
             "require": {
                 "drupal/core": "*"
@@ -1626,68 +1626,81 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha1",
-                    "datestamp": "1475623439",
+                    "version": "8.x-1.0",
+                    "datestamp": "1531440821",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
-                    "name": "Aaron Stanush",
-                    "homepage": "https://www.drupal.org/user/89718"
+                    "name": "Todd Nienkerk",
+                    "homepage": "https://www.drupal.org/u/todd-nienkerk",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "DYdave",
-                    "homepage": "https://www.drupal.org/user/467284"
+                    "name": "Renato Gonçalves (RenatoG)",
+                    "homepage": "https://www.drupal.org/u/RenatoG",
+                    "email": "renatog@ciandt.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Aaron Stanush",
+                    "homepage": "https://www.drupal.org/u/aaron-stanush",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "David Suissa (DYdave)",
+                    "homepage": "https://www.drupal.org/u/DYdave",
+                    "role": "Maintainer"
                 },
                 {
                     "name": "Four Kitchens",
-                    "homepage": "https://www.drupal.org/user/358502"
-                },
-                {
-                    "name": "RenatoG",
-                    "homepage": "https://www.drupal.org/user/3326031"
-                },
-                {
-                    "name": "Todd Nienkerk",
-                    "homepage": "https://www.drupal.org/user/92096"
+                    "homepage": "https://www.drupal.org/user/358502",
+                    "role": "Maintainer"
                 },
                 {
                     "name": "berenddeboer",
-                    "homepage": "https://www.drupal.org/user/143552"
+                    "homepage": "https://www.drupal.org/u/berenddeboer",
+                    "role": "Maintainer"
                 },
                 {
                     "name": "elliotttf",
-                    "homepage": "https://www.drupal.org/user/61601"
+                    "homepage": "https://www.drupal.org/u/elliotttf",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "mirzu",
-                    "homepage": "https://www.drupal.org/user/7710"
+                    "name": "Michal Minecki (mirzu)",
+                    "homepage": "https://www.drupal.org/u/mirzu",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "patrickcoffeyo",
-                    "homepage": "https://www.drupal.org/user/2837945"
+                    "name": "Patrick Coffey (pcoffey)",
+                    "homepage": "https://www.drupal.org/u/pcoffey",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "pcoffey",
-                    "homepage": "https://www.drupal.org/user/1595818"
+                    "name": "Taylor Smith (tsmith512)",
+                    "homepage": "https://www.drupal.org/u/tsmith512",
+                    "role": "Maintainer"
                 },
                 {
                     "name": "tsmith512",
                     "homepage": "https://www.drupal.org/user/2031446"
                 }
             ],
-            "description": "Allows assigning classes to Blocks",
+            "description": "Allows assigning classes to Blocks.",
             "homepage": "https://www.drupal.org/project/block_class",
             "support": {
-                "source": "http://cgit.drupalcode.org/block_class"
+                "source": "https://cgit.drupalcode.org/block_class",
+                "issues": "https://www.drupal.org/project/issues/block_class",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
             }
         },
         {
@@ -2403,7 +2416,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/conditional_fields",
-                "reference": "ed154530e041c443779bf0c43c71c78055b0a6df"
+                "reference": "836d70aa08509699552f169c41bb7cd6a4374180"
             },
             "require": {
                 "drupal/core": "*"
@@ -2414,8 +2427,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha4+2-dev",
-                    "datestamp": "1520450584",
+                    "version": "8.x-1.0-alpha4+3-dev",
+                    "datestamp": "1520603284",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -2430,6 +2443,10 @@
                 {
                     "name": "Adyax",
                     "homepage": "https://www.adyax.com/"
+                },
+                {
+                    "name": "axel.rutz",
+                    "homepage": "https://www.drupal.org/user/229048"
                 },
                 {
                     "name": "colan",
@@ -2449,7 +2466,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/conditional_fields"
             },
-            "time": "2018-03-09T13:43:40+00:00"
+            "time": "2018-07-03T23:30:03+00:00"
         },
         {
             "name": "drupal/config_direct_save",
@@ -3299,7 +3316,8 @@
                     "Issue 2923634: Template suggestions for views https://www.drupal.org/project/drupal/issues/2923634": "https://www.drupal.org/files/issues/2018-04-07/2923634-43.patch",
                     "Issue 2118743 Twig debug": "https://www.drupal.org/files/issues/2118743-139-twig-debug-info.patch",
                     "Issue 2741429: calculateDependencies doesn't check $mode_entity if it is NULL": "https://www.drupal.org/files/issues/2741429.2.patch",
-                    "Issue 2457999: Cannot use relationship for rendered entity on Views": "https://www.drupal.org/files/issues/2457999-164.patch"
+                    "Issue 2457999: Cannot use relationship for rendered entity on Views": "https://www.drupal.org/files/issues/2457999-164.patch",
+                    "Issue 2825869 Views Exposed output": "https://www.drupal.org/files/issues/exposed-filter-notice-2825860-14.patch"
                 }
             },
             "autoload": {
@@ -4293,7 +4311,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/field_group",
-                "reference": "156100419fa88b185197affdc35a6d3876e9756b"
+                "reference": "327821ebd9861a205007bc7ae961bd118d32f9e4"
             },
             "require": {
                 "drupal/core": "*"
@@ -4304,14 +4322,13 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-beta1+15-dev",
-                    "datestamp": "1531041220",
+                    "version": "8.x-3.0-beta1+16-dev",
+                    "datestamp": "1531041521",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": []
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -4343,7 +4360,8 @@
             "homepage": "https://www.drupal.org/project/field_group",
             "support": {
                 "source": "http://cgit.drupalcode.org/field_group"
-            }
+            },
+            "time": "2018-07-11T15:11:28+00:00"
         },
         {
             "name": "drupal/field_permissions",
@@ -4512,17 +4530,17 @@
         },
         {
             "name": "drupal/google_analytics",
-            "version": "2.2.0",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/google_analytics",
-                "reference": "8.x-2.2"
+                "reference": "8.x-2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/google_analytics-8.x-2.2.zip",
-                "reference": "8.x-2.2",
-                "shasum": "15cd0642ad99f3776a46b702e5012713405a0733"
+                "url": "https://ftp.drupal.org/files/projects/google_analytics-8.x-2.3.zip",
+                "reference": "8.x-2.3",
+                "shasum": "9ea88a81925ba538d9fa7ac6ce4f1598e5ee48e4"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -4537,8 +4555,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.2",
-                    "datestamp": "1506372845",
+                    "version": "8.x-2.3",
+                    "datestamp": "1531469021",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5171,6 +5189,9 @@
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "Issue 2926257: Module settings should be stored as config": "https://www.drupal.org/files/issues/2926257-store-settings-as-config-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5192,7 +5213,8 @@
             "homepage": "https://www.drupal.org/project/lockr",
             "support": {
                 "source": "http://cgit.drupalcode.org/lockr"
-            }
+            },
+            "time": "2018-07-06T20:18:40+00:00"
         },
         {
             "name": "drupal/mailsystem",

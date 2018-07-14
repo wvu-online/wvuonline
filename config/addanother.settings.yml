@@ -7,12 +7,20 @@ _core:
 button:
   cour: true
   help: false
+  docu: false
+  spag: true
 message:
   cour: false
   help: false
+  docu: false
+  spag: true
 tab:
   cour: false
   help: false
+  docu: false
+  spag: true
 tab_edit:
   cour: false
   help: false
+  docu: false
+  spag: true

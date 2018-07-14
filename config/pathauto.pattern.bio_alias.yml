@@ -1,0 +1,22 @@
+uuid: fedca945-b0da-469a-aacf-1dac9669453b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: bio_alias
+label: 'Bio Alias'
+type: 'canonical_entities:node'
+pattern: '/[node:field_bio_bio_type]/bio/[node:title]'
+selection_criteria:
+  eafb62b0-5a37-4b55-8692-7361e22f1457:
+    id: node_type
+    bundles:
+      bio: bio
+    negate: false
+    context_mapping:
+      node: node
+    uuid: eafb62b0-5a37-4b55-8692-7361e22f1457
+selection_logic: and
+weight: -5
+relationships: {  }

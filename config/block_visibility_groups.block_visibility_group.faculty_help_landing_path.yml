@@ -1,0 +1,17 @@
+uuid: b6860424-45fc-49a8-a5f2-4701411bf4c0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: faculty_help_landing_path
+label: 'Faculty Help Landing Path'
+logic: or
+conditions:
+  0f512ca4-1161-43e9-a18e-96bea2a7c8a9:
+    id: request_path
+    pages: "/node/760\r\n/faculty/help"
+    negate: false
+    context_mapping: {  }
+    uuid: 0f512ca4-1161-43e9-a18e-96bea2a7c8a9
+allow_other_conditions: false
