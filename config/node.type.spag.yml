@@ -8,6 +8,7 @@ dependencies:
 third_party_settings:
   menu_ui:
     available_menus:
+      - faculty-menu
       - main
     parent: 'main:'
   scheduler:
@@ -25,6 +26,6 @@ name: 'Static Page'
 type: spag
 description: 'For entering/editing a page that has a main menu link and its related content.'
 help: ''
-new_revision: false
+new_revision: true
 preview_mode: 0
 display_submitted: false

@@ -16,7 +16,7 @@ third_party_settings:
 id: mainpagecontent_4
 theme: wvuonline2018
 region: content
-weight: -2
+weight: -9
 provider: null
 plugin: system_main_block
 settings:

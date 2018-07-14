@@ -8,8 +8,10 @@ dependencies:
     - field.field.node.bio.field_bio_first_name
     - field.field.node.bio.field_bio_full_bio_about
     - field.field.node.bio.field_bio_graduation_year
+    - field.field.node.bio.field_bio_hero_ref
     - field.field.node.bio.field_bio_last_name
     - field.field.node.bio.field_bio_middle_initial
+    - field.field.node.bio.field_bio_personal_quote
     - field.field.node.bio.field_bio_portrait
     - field.field.node.bio.field_bio_prefix
     - field.field.node.bio.field_bio_suffix
@@ -20,6 +22,7 @@ dependencies:
     - conditional_fields
     - field_group
     - image
+    - inline_entity_form
     - text
 third_party_settings:
   field_group:
@@ -28,8 +31,9 @@ third_party_settings:
         - group_identity
         - group_text
         - group_image
+        - group_hero
       parent_name: ''
-      weight: 5
+      weight: 4
       format_type: tabs
       format_settings:
         id: ''
@@ -59,6 +63,7 @@ third_party_settings:
     group_text:
       children:
         - field_bio_condensed_about
+        - field_bio_personal_quote
         - field_bio_full_bio_about
       parent_name: group_wrapper
       weight: 14
@@ -85,6 +90,20 @@ third_party_settings:
         required_fields: true
       label: Image
       region: content
+    group_hero:
+      children:
+        - field_bio_hero_ref
+      parent_name: group_wrapper
+      weight: 16
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Hero
+      region: content
 id: node.bio.default
 targetEntityType: node
 bundle: bio
@@ -97,9 +116,9 @@ content:
     type: options_select
     region: content
   field_bio_condensed_about:
-    weight: 10
+    weight: 27
     settings:
-      rows: 5
+      rows: 3
       placeholder: ''
     third_party_settings: {  }
     type: string_textarea
@@ -113,7 +132,7 @@ content:
     type: string_textfield
     region: content
   field_bio_full_bio_about:
-    weight: 12
+    weight: 29
     settings:
       rows: 5
       placeholder: ''
@@ -145,6 +164,22 @@ content:
           bundle: bio
     type: number
     region: content
+  field_bio_hero_ref:
+    weight: 17
+    settings:
+      match_operator: CONTAINS
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      allow_new: true
+      allow_existing: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
   field_bio_last_name:
     weight: 16
     settings:
@@ -160,6 +195,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_bio_personal_quote:
+    weight: 28
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
     region: content
   field_bio_portrait:
     weight: 18

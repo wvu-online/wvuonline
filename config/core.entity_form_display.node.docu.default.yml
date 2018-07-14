@@ -1,0 +1,60 @@
+uuid: ec292300-1d2c-45bb-93ef-2e7d43834b02
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.docu.field_docu_description
+    - field.field.node.docu.field_docu_document_file
+    - node.type.docu
+  module:
+    - file
+    - text
+id: node.docu.default
+targetEntityType: node
+bundle: docu
+mode: default
+content:
+  field_docu_description:
+    weight: 2
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_docu_document_file:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  moderation_state: true
+  path: true
+  promote: true
+  publish_on: true
+  sticky: true
+  uid: true
+  unpublish_on: true

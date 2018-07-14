@@ -26,13 +26,14 @@ third_party_settings:
         - group_video
         - group_spotlight
       parent_name: ''
-      weight: 1
+      weight: 4
       format_type: tabs
       format_settings:
         id: ''
         classes: ''
         direction: horizontal
       label: Wrapper
+      region: content
     group_text:
       children:
         - field_seo_summary
@@ -47,6 +48,7 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Text
+      region: content
     group_hero:
       children:
         - field_spag_hero_ref
@@ -60,6 +62,7 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Hero
+      region: content
     group_video:
       children:
         - field_spag_video
@@ -73,6 +76,7 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Video
+      region: content
     group_spotlight:
       children:
         - field_spag_spot_ref
@@ -80,12 +84,14 @@ third_party_settings:
       weight: 23
       format_type: tab
       format_settings:
-        id: ''
-        classes: ''
+        label: Spotlights
         formatter: closed
         description: ''
         required_fields: true
-      label: Spotlight
+        id: ''
+        classes: ''
+      label: Spotlights
+      region: content
 id: node.spag.default
 targetEntityType: node
 bundle: spag
@@ -151,13 +157,13 @@ content:
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 4
+    weight: 1
     settings: {  }
     region: content
     third_party_settings: {  }
   path:
     type: path
-    weight: 6
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -165,7 +171,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 2
     region: content
     third_party_settings: {  }
   title:

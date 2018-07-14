@@ -1,0 +1,27 @@
+uuid: 36296fb0-1958-41aa-ac22-7a07f38f2e08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_docu_document_file
+    - node.type.docu
+  module:
+    - file
+id: node.docu.field_docu_document_file
+field_name: field_docu_document_file
+entity_type: node
+bundle: docu
+label: 'Document File'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: document_files
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

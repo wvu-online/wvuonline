@@ -1,0 +1,19 @@
+uuid: a8d32443-4a77-4359-876f-1e46337455ef
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+id: bio_node_path
+label: 'Bio Node Path'
+logic: or
+conditions:
+  ad50fcbe-fe7c-49c9-b92b-e97a30284808:
+    id: 'entity_bundle:node'
+    bundles:
+      bio: bio
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: ad50fcbe-fe7c-49c9-b92b-e97a30284808
+allow_other_conditions: false

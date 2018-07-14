@@ -1,0 +1,35 @@
+uuid: 7d651478-df7b-443f-8435-2a6ec338f9fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.faculty_help_landing_path
+    - views.view.help
+  module:
+    - block_class
+    - block_visibility_groups
+    - views
+  theme:
+    - wvuonline2018
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__help_block_3
+theme: wvuonline2018
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:help-block_3'
+settings:
+  id: 'views_block:help-block_3'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: faculty_help_landing_path
+    context_mapping: {  }

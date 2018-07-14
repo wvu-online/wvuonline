@@ -1,9 +1,7 @@
-uuid: a619d026-1364-40fa-8021-aa91fa958258
+uuid: 464dfe8d-a996-4cd2-9542-519e234961f9
 langcode: en
 status: true
 dependencies:
-  config:
-    - block_visibility_groups.block_visibility_group.program_grouping_node_path
   module:
     - block_class
     - block_visibility_groups
@@ -16,7 +14,7 @@ third_party_settings:
 id: breadcrumbs_2
 theme: wvuonline2018
 region: content
-weight: -2
+weight: -17
 provider: null
 plugin: system_breadcrumb_block
 settings:
@@ -28,5 +26,5 @@ visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: program_grouping_node_path
+    block_visibility_group: ''
     context_mapping: {  }

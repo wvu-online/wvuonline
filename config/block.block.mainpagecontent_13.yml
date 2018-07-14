@@ -1,33 +1,32 @@
-uuid: 631d563c-d5c2-488a-b738-e5d8bc723636
+uuid: 012bc517-c2f1-4913-976e-d04e0f27c8be
 langcode: en
 status: true
 dependencies:
   config:
-    - block_visibility_groups.block_visibility_group.front_page_path
+    - block_visibility_groups.block_visibility_group.college_node_path
   module:
     - block_class
     - block_visibility_groups
+    - system
   theme:
     - wvuonline2018
 third_party_settings:
   block_class:
     classes: ''
-id: tabs_2
+id: mainpagecontent_13
 theme: wvuonline2018
 region: content
-weight: -4
+weight: 10
 provider: null
-plugin: local_tasks_block
+plugin: system_main_block
 settings:
-  id: local_tasks_block
-  label: Tabs
-  provider: core
-  label_display: '0'
-  primary: true
-  secondary: true
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: visible
 visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: front_page_path
+    block_visibility_group: college_node_path
     context_mapping: {  }

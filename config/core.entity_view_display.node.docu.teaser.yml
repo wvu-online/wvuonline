@@ -1,0 +1,18 @@
+uuid: b925f7a5-b792-452f-b3f9-5eede864a2f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.docu
+  module:
+    - user
+id: node.docu.teaser
+targetEntityType: node
+bundle: docu
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

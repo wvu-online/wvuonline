@@ -1,0 +1,28 @@
+uuid: da0428ff-d983-4edd-a7b9-bcf1275c8e32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pgro_hero_ref
+    - node.type.hero
+    - node.type.pgro
+id: node.pgro.field_pgro_hero_ref
+field_name: field_pgro_hero_ref
+entity_type: node
+bundle: pgro
+label: Hero
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      hero: hero
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
