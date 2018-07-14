@@ -1,0 +1,8 @@
+courses:
+  1:
+    title: "ACCT 101: Course Title"
+    credits: 24
+    description: "Etiam suscipit etiam suscipit."
+    prerequisites: "Some courses here"
+
+

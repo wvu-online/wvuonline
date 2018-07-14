@@ -2,8 +2,8 @@ global:
   css:
     theme:
       dist/style.css: {}
-  js:
-    dist/scripts.js: {}
+#  js:
+#    dist/scripts.js: {}
 
 # Examples of Library syntax
 # typekit:
@@ -16,3 +16,14 @@ main_menu:
     components/_patterns/02-molecules/menus/main-menu/main-menu.js: {}
   dependencies:
     - core/drupal
+
+van11y-accessible-tab-panel-aria:
+  js:
+    node_modules/van11y-accessible-tab-panel-aria/dist/van11y-accessible-tab-panel-aria.js: {}
+
+tuition-calc:
+  css:
+    theme:
+      components/css/main.4b19de75.css: {}
+  js:
+    components/js/main.50f201cb.js: {}

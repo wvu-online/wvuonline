@@ -1,15 +1,17 @@
 {% set tabbed_content_base_class = tabbed_content_base_class|default('tabbed') %}
 <div id="tabbed-content" {{ bem(tabbed_content_base_class, (tabbed_content_modifiers), tabbed_content_blockname, ['js-tabs']) }}>
+  <div class="wrapper">
     <ul {{ bem('list', (''), tabbed_content_base_class, ['js-tablist'])}} data-existing-hx="h2">
-        {% for keys, tabbedItem in tabbedItems %}
-            {% include "@molecules/tabbed-list/tabbed-list.twig" with {
-                tabbed_items: tabbedItem
-            } %}
-        {% endfor %}
+      {% for keys, tabbedItem in tabbedItems %}
+        {% include "@molecules/tabbed-list/tabbed-list.twig" with {
+          tabbed_items: tabbedItem
+        } %}
+      {% endfor %}
     </ul>
     {% for keys, tabbedItem in tabbedItems %}
-        {% include "@molecules/tabbed/tabbed.twig" with {
-            tabbed_items: tabbedItems
-        } %}
+      {% include "@molecules/tabbed/tabbed.twig" with {
+        tabbed_items: tabbedItems
+      } %}
     {% endfor %}
+  </div>
 </div>

@@ -1,8 +1,11 @@
 @import "../../00-base/global/01-colors/color-vars";
+@import "../../00-base/mixins";
 
 .tabbed {
+  @include full-width;
+
   background: $pms-5625-c;
-  padding: 2em 5%;
+  //padding: 2em 5%;
 
   &__list {
     display: flex !important;

@@ -1,0 +1,9 @@
+course_group:
+  title: "Course Group title"
+  content: "Mauris a tortor tincidunt, congue massa sed, auctor urna. Ut in odio vel diam rhoncus tempus. Phasellus ac tempus enim. Vivamus et urna ut nibh vulputate imperdiet a in neque. Curabitur placerat porttitor nisl. Nulla facilisi. Sed neque odio, viverra eget turpis pellentesque, ultrices malesuada dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras consequat sem est, a luctus orci tempor sit amet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam ornare, neque ac accumsan interdum, mi lectus malesuada nibh, ut pellentesque neque purus ut lacus. Sed ac nibh quis magna dictum convallis luctus quis arcu. Morbi placerat nisi sapien, eget ultrices lacus facilisis in. Integer vel est vitae orci varius semper. Pellentesque quis tempor ante."
+  courses:
+    1:
+      title: "Course title"
+      credits: "23"
+      prerequisites: "Some course"
+      description: "Praesent elementum vitae sapien vitae."
