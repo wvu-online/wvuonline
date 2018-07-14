@@ -1,0 +1,23 @@
+uuid: ec6bbd8c-f708-454d-84e0-0263208832f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tuit_res_uni
+    - node.type.tuit
+id: node.tuit.field_tuit_res_uni
+field_name: field_tuit_res_uni
+entity_type: node
+bundle: tuit
+label: 'Resident University Tuition'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: $
+  suffix: ''
+field_type: decimal

@@ -1,6 +1,6 @@
 uuid: 099b0644-b654-4480-84c4-53a8f21dddb0
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - block_visibility_groups.block_visibility_group.program_node_path
@@ -24,7 +24,7 @@ settings:
   id: 'views_block:curriculum-block_1'
   label: ''
   provider: views
-  label_display: '0'
+  label_display: visible
   views_label: ''
   items_per_page: none
   context_mapping: {  }

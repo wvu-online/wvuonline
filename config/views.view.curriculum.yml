@@ -814,14 +814,10 @@ display:
               rendered: true
               rendered_strip: false
           row_class: ''
-          default_row_class: false
+          default_row_class: true
       row:
         type: fields
-        options:
-          default_field_elements: false
-          inline: {  }
-          separator: ''
-          hide_empty: false
+        options: {  }
       sorts: {  }
       relationships:
         field_cgro_cour_ref:

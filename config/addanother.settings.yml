@@ -9,18 +9,22 @@ button:
   help: false
   docu: false
   spag: true
+  tuit: true
 message:
   cour: false
   help: false
   docu: false
   spag: true
+  tuit: true
 tab:
   cour: false
   help: false
   docu: false
   spag: true
+  tuit: true
 tab_edit:
   cour: false
   help: false
   docu: false
   spag: true
+  tuit: true

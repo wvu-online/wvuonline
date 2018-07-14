@@ -1,0 +1,23 @@
+uuid: 01045ff9-2264-462e-9056-b356acb0def1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tuit_non_res_uni_fee
+    - node.type.tuit
+id: node.tuit.field_tuit_non_res_uni_fee
+field_name: field_tuit_non_res_uni_fee
+entity_type: node
+bundle: tuit
+label: 'Non-Resident University Fee'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: $
+  suffix: ''
+field_type: decimal

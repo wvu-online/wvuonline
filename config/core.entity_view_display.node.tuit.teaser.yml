@@ -1,0 +1,18 @@
+uuid: 9fa0b994-796d-4f6a-bf9a-68dfa4713978
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.tuit
+  module:
+    - user
+id: node.tuit.teaser
+targetEntityType: node
+bundle: tuit
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

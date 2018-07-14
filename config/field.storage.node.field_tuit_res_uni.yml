@@ -1,0 +1,20 @@
+uuid: ad04c5b5-86d7-4869-8c9e-b7be26787f6f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_tuit_res_uni
+field_name: field_tuit_res_uni
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

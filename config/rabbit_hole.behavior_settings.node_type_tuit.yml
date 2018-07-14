@@ -1,0 +1,9 @@
+uuid: eb1c9ff5-381d-400e-877e-b307ae49d5a0
+langcode: en
+status: true
+dependencies: {  }
+id: node_type_tuit
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301

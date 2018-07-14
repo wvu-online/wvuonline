@@ -1,0 +1,23 @@
+uuid: 36b89dd5-1ee5-4a10-88e5-dfe51ebe6684
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tuit_non_res_uni
+    - node.type.tuit
+id: node.tuit.field_tuit_non_res_uni
+field_name: field_tuit_non_res_uni
+entity_type: node
+bundle: tuit
+label: 'Non-Resident University Tuition'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: $
+  suffix: ''
+field_type: decimal
