@@ -57,7 +57,7 @@ jobs:
 
             - run:
                 name: run composer install to get the vendor directory
-                command: composer install
+                command: composer install --no-interaction
 
             - save_cache:
                 key: composer-cache
