@@ -1,10 +1,19 @@
 <div class="course">
-  <h4 class="course__title">{{ course_title }}</h4>
+  {% include "@atoms/02-text/00-headings/_heading.twig" with {
+    heading_level: 4,
+    heading_base_class: "title",
+    heading_blockname: "course",
+    heading: course_title
+  } %}
   {% if course_credits %}
     <div class="course__credit">Credits: {{ course_credits }}</div>
   {% endif %}
   {% if course_description %}
-    <div class="course__description">{{ course_description }}</div>
+    {% include "@atoms/02-text/text/01-paragraph.twig" with {
+      paragraph_base_class: "description",
+      paragraph_blockname: "course",
+      paragraph_content: course_description
+    } %}
   {% endif %}
   {% if course_prerequisites %}
     <div class="course_prerequisites">Prerequisites: {{ course_prerequisites }}</div>
