@@ -1,0 +1,31 @@
+{% set careers_base_class = careers_base_class|default('careers') %}
+<div {{ bem(careers_base_class, (careers_modifiers), careers_blockname) }} >
+  <div class="wrapper">
+    {% include "@atoms/02-text/00-headings/_heading.twig" with {
+      heading_level: 2,
+      heading: "Career Information",
+      heading_blockname: "careers",
+      heading_base_class: "title"
+    } %}
+    {% include "@atoms/02-text/text/01-paragraph.twig" with {
+      paragraph_base_class: "body",
+      paragraph_blockname: "careers",
+      paragraph_content: course_subhead
+    } %}
+    <div class="careers__list">
+      {% for keys, career in careers %}
+        <div class="career">
+          {% include "@atoms/02-text/00-headings/_heading.twig" with {
+            heading_level: 2,
+            heading: career.title,
+            heading_blockname: "career",
+            heading_base_class: "title"
+          } %}
+          <div class="career__growth">
+            <strong>Projected Growth: </strong>{{ career.growth }}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
