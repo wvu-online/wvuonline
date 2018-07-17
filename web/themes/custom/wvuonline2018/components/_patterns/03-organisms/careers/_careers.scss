@@ -1,0 +1,43 @@
+.careers {
+  padding: 2em 0;
+  text-align: center;
+  background: linear-gradient(
+                  rgba(44, 42, 41, 0.8),
+                  rgba(44, 42, 41, 0.8)
+  ),
+  url('/themes/custom/wvuonline2018/images/background__black--1.0.0.svg');
+  background-size: cover;
+  color: $white;
+
+  @include full-width;
+
+  .wrapper {
+    @extend %container;
+  }
+
+  &--list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-column-gap: 2em;
+    justify-items: center;
+    padding-top: 1em;
+  }
+
+  header {
+    grid-column: -1 / 1;
+  }
+
+  .career {
+    padding-bottom: 1em;
+    &__title {
+      @extend .u-wvu-gold;
+    }
+
+    &__title {
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 0.5em;
+      @extend .u-wvu-gold;
+    }
+  }
+}

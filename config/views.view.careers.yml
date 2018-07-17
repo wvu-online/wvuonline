@@ -9,6 +9,7 @@ dependencies:
     - node.type.care
     - system.menu.account
     - user.role.administrator
+    - user.role.online_admin
   module:
     - node
     - options
@@ -34,6 +35,7 @@ display:
         options:
           role:
             administrator: administrator
+            online_admin: online_admin
       cache:
         type: tag
         options: {  }
@@ -465,6 +467,7 @@ display:
       arguments: {  }
       display_extenders: {  }
       use_ajax: true
+      css_class: careers__list
     cache_metadata:
       max-age: -1
       contexts:
@@ -775,10 +778,14 @@ display:
         options:
           grouping: {  }
           row_class: ''
-          default_row_class: true
+          default_row_class: false
       row:
         type: fields
-        options: {  }
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
       relationships:
         reverse__node__field_prog_care_ref:
           id: reverse__node__field_prog_care_ref

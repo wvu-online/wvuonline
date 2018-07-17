@@ -22,6 +22,7 @@ third_party_settings:
         classes: ''
         direction: horizontal
       label: Wrapper
+      region: content
     group_text:
       children: {  }
       parent_name: ''
@@ -34,6 +35,7 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Text
+      region: content
 id: node.care.default
 targetEntityType: node
 bundle: care

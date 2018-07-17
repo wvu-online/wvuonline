@@ -14,6 +14,7 @@ dependencies:
     - taxonomy.vocabulary.faculty_help_category
     - taxonomy.vocabulary.student_help_category
     - user.role.administrator
+    - user.role.online_admin
   module:
     - link
     - node
@@ -41,6 +42,7 @@ display:
         options:
           role:
             administrator: administrator
+            online_admin: online_admin
       cache:
         type: tag
         options: {  }

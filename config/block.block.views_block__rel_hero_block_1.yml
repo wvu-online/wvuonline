@@ -1,6 +1,6 @@
 uuid: b68bc5e6-16aa-403b-b935-067f70a8e93d
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - block_visibility_groups.block_visibility_group.front_page_path
@@ -16,8 +16,8 @@ third_party_settings:
     classes: block__rel-hero
 id: views_block__rel_hero_block_1
 theme: wvuonline2018
-region: content
-weight: -19
+region: pre_content
+weight: -16
 provider: null
 plugin: 'views_block:rel_hero-block_1'
 settings:

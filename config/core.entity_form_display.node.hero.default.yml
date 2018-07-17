@@ -29,6 +29,7 @@ third_party_settings:
         classes: ''
         direction: horizontal
       label: Wrapper
+      region: content
     group_link_s_:
       children:
         - field_hero_link
@@ -42,6 +43,7 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Link(s)
+      region: content
     group_teaser:
       children:
         - field_hero_teaser
@@ -55,6 +57,7 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Teaser
+      region: content
 id: node.hero.default
 targetEntityType: node
 bundle: hero
