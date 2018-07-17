@@ -8,20 +8,22 @@
   .h-form {
     box-sizing: border-box;
     padding: 1em 2em;
-    min-width: 480px;
+    //min-width: 480px;
+    width: 100%;
     flex: 1;
     order: 1;
 
     @include large {
       order: 2;
-
+      width: 50%;
     }
   }
 
   .cost-calc {
     box-sizing: border-box;
     flex: 1;
-    min-width: 480px;
+    //min-width: 480px;
+    width: 100%;
     padding: 2em;
     background: $white;
     order: 2;
@@ -31,7 +33,7 @@
     }
 
     @include large {
-
+      width: 50%;
       order: 1;
     }
   }

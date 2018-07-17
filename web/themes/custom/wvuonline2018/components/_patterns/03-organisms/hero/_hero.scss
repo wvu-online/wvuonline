@@ -11,6 +11,10 @@
   background-size: cover;
   background-color: $pms-432-c;
 
+  &--short {
+    height: 400px;
+  }
+
   .wvu-hero__container {
     max-width: 68em;
     margin: 0 auto;
@@ -36,7 +40,7 @@
         right: 0;
         left: 2em;
         height: 3em;
-        top: 2em;
+        top: 0;
         width: 1.75em;
         opacity: 1;
         z-index: 1;

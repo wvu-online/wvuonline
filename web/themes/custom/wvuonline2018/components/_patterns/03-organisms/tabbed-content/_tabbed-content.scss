@@ -5,7 +5,9 @@
   @include full-width;
 
   background: $pms-5625-c;
-  //padding: 2em 5%;
+  @include medium {
+    padding: 2em 0;
+  }
 
   &__list {
     display: flex !important;

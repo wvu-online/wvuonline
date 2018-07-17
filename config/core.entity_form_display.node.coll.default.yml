@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.coll.field_seo_summary
     - node.type.coll
   module:
+    - entity_browser_entity_form
     - field_group
     - inline_entity_form
     - path
@@ -80,17 +81,19 @@ content:
   field_coll_hero_ref:
     weight: 8
     settings:
-      match_operator: CONTAINS
       form_mode: default
-      override_labels: false
-      label_singular: ''
+      override_labels: true
+      label_singular: Hero
       label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
       collapsible: false
       collapsed: false
-      allow_new: true
-      allow_existing: false
       allow_duplicate: false
-    third_party_settings: {  }
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
     type: inline_entity_form_complex
     region: content
   field_seo_summary:
