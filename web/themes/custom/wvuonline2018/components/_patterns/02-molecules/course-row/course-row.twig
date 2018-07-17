@@ -1,5 +1,10 @@
 <div class="course">
-  <h4 class="course__title">{{ course_title }}</h4>
+  {% include "@atoms/02-text/00-headings/_heading.twig" with {
+    heading_level: 4,
+    heading_base_class: "title",
+    heading_blockname: "course",
+    heading: course_title
+  } %}
   {% if course_credits %}
     <div class="course__credit">Credits: {{ course_credits }}</div>
   {% endif %}

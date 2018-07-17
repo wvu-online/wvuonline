@@ -5,18 +5,14 @@ dependencies:
   config:
     - block_visibility_groups.block_visibility_group.program_node_path
   module:
-    - block_class
     - block_visibility_groups
     - system
   theme:
     - wvuonline2018
-third_party_settings:
-  block_class:
-    classes: ''
 id: mainpagecontent_2
 theme: wvuonline2018
 region: content
-weight: -14
+weight: -16
 provider: null
 plugin: system_main_block
 settings:

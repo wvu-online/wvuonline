@@ -16,6 +16,7 @@ dependencies:
     - system.menu.account
     - user.role.administrator
     - user.role.curriculum_editor
+    - user.role.online_admin
     - user.role.program_editor
   module:
     - node
@@ -43,6 +44,7 @@ display:
             administrator: administrator
             curriculum_editor: curriculum_editor
             program_editor: program_editor
+            online_admin: online_admin
       cache:
         type: tag
         options: {  }

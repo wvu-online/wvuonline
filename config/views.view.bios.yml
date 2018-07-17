@@ -11,6 +11,7 @@ dependencies:
     - system.menu.account
     - taxonomy.vocabulary.bio_type
     - user.role.administrator
+    - user.role.online_admin
   content:
     - 'taxonomy_term:bio_type:18a6cdbf-9e4a-4dfc-b532-f20bf87663ef'
     - 'taxonomy_term:bio_type:35ec4f06-9199-47da-bdbb-5ab9f81681e8'
@@ -39,6 +40,7 @@ display:
         options:
           role:
             administrator: administrator
+            online_admin: online_admin
       cache:
         type: tag
         options: {  }

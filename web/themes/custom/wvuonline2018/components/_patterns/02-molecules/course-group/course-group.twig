@@ -1,7 +1,16 @@
 {% set course_group_base_class = course_group_base_class|default('course_group') %}
 <div {{ bem(course_group_base_class, (course_group_modifiers), course_group_blockname) }} >
-  {{ course_group.title }}
-  {{ course_group.content }}
+  {% include "@atoms/02-text/00-headings/_heading.twig" with {
+    heading_level: 3,
+    heading: course_group.title,
+    heading_base_class: "title",
+    heading_blockname: "course-group"
+  } %}
+  {% include "@atoms/02-text/text/01-paragraph.twig" with {
+    paragraph_base_class: "body",
+    paragraph_blockname: "course-group",
+    paragraph_content: course_group.content
+  } %}
 
     {% include "@molecules/course-table/course-table.twig" with {
       courses: course_group.courses

@@ -1,0 +1,14 @@
+uuid: 0ed19130-bf24-440a-9cdc-7121756efb1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.online_admin
+  module:
+    - user
+id: user_add_role_action.online_admin
+label: 'Add the Online Admin role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: online_admin

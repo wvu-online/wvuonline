@@ -1,0 +1,14 @@
+uuid: d676356e-d7ec-4d02-8583-819ac8ede701
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.online_admin
+  module:
+    - user
+id: user_remove_role_action.online_admin
+label: 'Remove the Online Admin role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: online_admin

@@ -1,15 +1,4 @@
 {% set course_table_base_class = course_table_base_class|default('course_table') %}
-<table {{ bem(course_table_base_class, (course_table_modifiers), course_table_blockname) }} >
-  {#Loop through courses #}
-  <thead>
-  <tr>
-    <th class="table__heading-cell">Course Title</th>
-    <th class="table__heading-cell">Credits</th>
-    <th class="table__heading-cell">Description</th>
-    <th class="table__heading-cell">Pre-requisites</th>
-  </tr>
-  </thead>
-  <tbody>
   {% for keys, course in courses %}
     {% include "@molecules/course-row/course-row.twig" with {
       "course_title": course.title,
@@ -18,4 +7,4 @@
       "course_prerequisites": course.prerequisites,
     } %}
   {% endfor %}
-</table>
+
