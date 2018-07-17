@@ -27,6 +27,7 @@ third_party_settings:
         classes: ''
         direction: horizontal
       label: Wrapper
+      region: content
     group_text:
       children:
         - field_cour_body
@@ -41,6 +42,7 @@ third_party_settings:
         id: ''
         classes: ''
       label: 'Course Description'
+      region: content
 id: node.cour.default
 targetEntityType: node
 bundle: cour

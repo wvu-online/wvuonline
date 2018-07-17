@@ -24,7 +24,7 @@ ckeditor_stylesheets:
 
 regions:
   header: Header
-  pre-content: 'Pre-Content'
+  pre_content: 'Pre-Content'
   content: Content  # the content region is required
   stats: 'Stat Counter'
   features: 'Features'

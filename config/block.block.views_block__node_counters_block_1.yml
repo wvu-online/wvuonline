@@ -6,18 +6,14 @@ dependencies:
     - block_visibility_groups.block_visibility_group.front_page_path
     - views.view.node_counters
   module:
-    - block_class
     - block_visibility_groups
     - views
   theme:
     - wvuonline2018
-third_party_settings:
-  block_class:
-    classes: ''
 id: views_block__node_counters_block_1
 theme: wvuonline2018
 region: content
-weight: 4
+weight: 1
 provider: null
 plugin: 'views_block:node_counters-block_1'
 settings:

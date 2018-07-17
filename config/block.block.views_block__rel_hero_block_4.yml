@@ -1,23 +1,19 @@
 uuid: b78fb545-1571-4311-9967-93cf9b93f2a4
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - block_visibility_groups.block_visibility_group.program_grouping_node_path
     - views.view.rel_hero
   module:
-    - block_class
     - block_visibility_groups
     - views
   theme:
     - wvuonline2018
-third_party_settings:
-  block_class:
-    classes: ''
 id: views_block__rel_hero_block_4
 theme: wvuonline2018
-region: pre-content
-weight: 0
+region: pre_content
+weight: -17
 provider: null
 plugin: 'views_block:rel_hero-block_4'
 settings:

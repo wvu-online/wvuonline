@@ -8,6 +8,7 @@ dependencies:
     - node.type.gawa
     - system.menu.account
     - user.role.administrator
+    - user.role.online_admin
   module:
     - node
     - user
@@ -31,6 +32,7 @@ display:
         options:
           role:
             administrator: administrator
+            online_admin: online_admin
       cache:
         type: tag
         options: {  }

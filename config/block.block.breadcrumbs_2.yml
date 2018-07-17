@@ -3,18 +3,14 @@ langcode: en
 status: true
 dependencies:
   module:
-    - block_class
     - block_visibility_groups
     - system
   theme:
     - wvuonline2018
-third_party_settings:
-  block_class:
-    classes: ''
 id: breadcrumbs_2
 theme: wvuonline2018
 region: content
-weight: -17
+weight: -19
 provider: null
 plugin: system_breadcrumb_block
 settings:

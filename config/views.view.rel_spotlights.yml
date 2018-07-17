@@ -13,6 +13,7 @@ dependencies:
     - system.menu.account
     - taxonomy.vocabulary.spotlight_type
     - user.role.administrator
+    - user.role.online_admin
   module:
     - node
     - taxonomy
@@ -788,6 +789,7 @@ display:
         options:
           role:
             administrator: administrator
+            online_admin: online_admin
       defaults:
         access: false
         header: false

@@ -29,6 +29,7 @@ third_party_settings:
         classes: ''
         direction: horizontal
       label: Wrapper
+      region: content
     group_course_groups:
       children:
         - field_curr_cgro_ref
@@ -42,6 +43,7 @@ third_party_settings:
         description: ''
         required_fields: true
       label: 'Course Groups'
+      region: content
 id: node.curr.default
 targetEntityType: node
 bundle: curr

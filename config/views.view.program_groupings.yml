@@ -7,6 +7,7 @@ dependencies:
     - node.type.pgro
     - system.menu.account
     - user.role.administrator
+    - user.role.online_admin
     - user.role.program_editor
   module:
     - node
@@ -32,6 +33,7 @@ display:
           role:
             administrator: administrator
             program_editor: program_editor
+            online_admin: online_admin
       cache:
         type: tag
         options: {  }
