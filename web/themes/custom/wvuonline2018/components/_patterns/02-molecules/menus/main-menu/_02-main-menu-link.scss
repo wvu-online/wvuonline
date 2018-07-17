@@ -1,6 +1,6 @@
 // A
 .main-menu__link {
-  color: $gray-dark;
+  color: $white;
   display: block;
   font-size: 1.2rem;
   line-height: 1.5;
@@ -14,7 +14,7 @@
 
   @include breakpoint($main-menu-medium) {
     border-bottom: none;
-    color: $gray-dark;
+    color: $white;
     display: inline-block;
     font-size: 1.1rem;
     padding: $space $space-double $space $space;
@@ -31,7 +31,7 @@
     &::after {
       color: $white;
       display: inline-block;
-      content: ">";
+      //content: ">";
     }
 
     &--sub::after {
@@ -39,7 +39,7 @@
     }
 
     &:hover {
-      color: $white;
+      color: $gray-light;
 
       &::after {
         color: $gray-light;
