@@ -11,7 +11,6 @@
 
   &__list {
     display: flex !important;
-    width: 20%;
     font-size: 50%;
     list-style: none;
     padding: 0;
@@ -26,14 +25,17 @@
   &__item {
     flex: 1 0;
     text-align: center;
-
-
+    margin-right: 1px;
     border-bottom: 1px solid $white;
-    border-right: none !important;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
 
     @include large {
       flex: 1 0;
       margin-right: 5px;
+
 
       &:last-of-type {
         margin-right: 0;
