@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.hero.field_hero_hero_image_type
     - field.field.node.hero.field_hero_link
-    - field.field.node.hero.field_hero_short_image
     - field.field.node.hero.field_hero_tall_image
     - field.field.node.hero.field_hero_teaser
     - image.style.thumbnail
@@ -94,32 +93,6 @@ content:
           entity_type: node
           bundle: hero
     type: link_default
-    region: content
-  field_hero_short_image:
-    weight: 2
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings:
-      conditional_fields:
-        e7ff9ee5-3773-4e7e-bb74-e6398d33a71d:
-          dependee: field_hero_hero_image_type
-          settings:
-            state: visible
-            condition: value
-            grouping: AND
-            values_set: 1
-            value: ''
-            values: {  }
-            value_form:
-              -
-                target_id: '3'
-            effect: show
-            effect_options: {  }
-            selector: ''
-          entity_type: node
-          bundle: hero
-    type: image_image
     region: content
   field_hero_tall_image:
     weight: 3

@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.hero.field_hero_hero_image_type
     - field.field.node.hero.field_hero_link
-    - field.field.node.hero.field_hero_short_image
     - field.field.node.hero.field_hero_tall_image
     - field.field.node.hero.field_hero_teaser
     - node.type.hero
@@ -23,6 +22,5 @@ content:
 hidden:
   field_hero_hero_image_type: true
   field_hero_link: true
-  field_hero_short_image: true
   field_hero_tall_image: true
   field_hero_teaser: true
