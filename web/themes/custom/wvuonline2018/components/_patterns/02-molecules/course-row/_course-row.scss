@@ -1,7 +1,7 @@
 .course {
   display: grid;
   grid-template-columns: 1fr 100px;
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
   border-bottom: 1px solid $pms-115-c;
   margin-bottom: 5px;
   //grid-template: title credits
