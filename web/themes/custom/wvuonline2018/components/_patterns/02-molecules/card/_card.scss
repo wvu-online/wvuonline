@@ -43,8 +43,17 @@
     align-items: end;
     //justify-items: center;
     .card__title {
-      color: $white;
       text-transform: uppercase;
+      color: $white;
+
+      a {
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
 
     .card__copy {
@@ -52,6 +61,7 @@
       grid-row: 1 / -1;
       background: transparentize($black, 0.2);
       text-align: center;
+      height: 6em;
     }
     .card__img {
       width: 100%;
@@ -60,6 +70,7 @@
       object-fit: cover;
       grid-column: a;
       grid-row: 1 / -1;
+
     }
   }
 }
