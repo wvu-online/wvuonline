@@ -122,7 +122,7 @@ jobs:
 
             - run:
                 name: Build Theme Assets
-                command: cd web/themes/custom/wvuonline2018 && gulp build
+                command: cd web/themes/custom/wvuonline2018 && gulp build && gulp compile
 
             - run:
                 name: prepare database for site-under test
