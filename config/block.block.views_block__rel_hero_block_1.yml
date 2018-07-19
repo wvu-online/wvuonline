@@ -1,6 +1,6 @@
 uuid: b68bc5e6-16aa-403b-b935-067f70a8e93d
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - block_visibility_groups.block_visibility_group.front_page_path

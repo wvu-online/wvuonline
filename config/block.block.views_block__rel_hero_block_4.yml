@@ -1,6 +1,6 @@
 uuid: b78fb545-1571-4311-9967-93cf9b93f2a4
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - block_visibility_groups.block_visibility_group.program_grouping_node_path
