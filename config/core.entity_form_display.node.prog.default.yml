@@ -70,16 +70,18 @@ third_party_settings:
       children:
         - field_prog_residents_fee
         - field_prog_non_residents_fee
+        - field_prog_credits_for_award
       parent_name: group_wrapper
       weight: 12
       format_type: tab
       format_settings:
-        id: ''
-        classes: ''
+        label: 'Fees and Credits'
         formatter: closed
         description: ''
         required_fields: true
-      label: Fees
+        id: ''
+        classes: ''
+      label: 'Fees and Credits'
       region: content
     group_curriculum:
       children:
@@ -202,14 +204,14 @@ content:
     type: text_textarea
     region: content
   field_prog_credits_for_award:
-    weight: 26
+    weight: 16
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_prog_curr_ref:
-    weight: 13
+    weight: 27
     settings:
       form_mode: default
       override_labels: true
