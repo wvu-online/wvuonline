@@ -15,8 +15,6 @@ items:
     value: '#4c4c4c'
   - name: $gray-darker
     value: '#333'
-  - name: $black
-    value: black
   - name: $wvu-blue
     value: '#002855'
   - name: $wvu-gold

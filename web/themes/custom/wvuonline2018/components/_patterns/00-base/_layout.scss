@@ -1,5 +1,14 @@
 @import "mixins";
 
+$min_width: 320px;
+$max_width: 1200px;
+$min_font: 13px;
+$max_font: 19px;
+
+html {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
+
 .wrapper {
   @include wrapper;
 }

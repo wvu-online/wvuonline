@@ -55,5 +55,7 @@
   with {
   title: fields.title.content,
   background_image: fields.field_hero_tall_image.content|striptags|trim,
-  hero_size: hero_size
+  hero_size: hero_size,
+  body: fields.field_hero_teaser.content|striptags|trim,
+  link: fields.field_hero_link.content|striptags|trim
 } %}
