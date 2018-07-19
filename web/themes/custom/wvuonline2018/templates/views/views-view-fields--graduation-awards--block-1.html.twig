@@ -50,10 +50,11 @@
     {#</{{ field.wrapper_element }}>#}
   {#{%- endif %}#}
 {#{%- endfor %}#}
-{% set hero_size = fields.field_hero_hero_image_type.content|striptags|trim|lower %}
-{% include "@organisms/hero/hero.twig"
-  with {
-  title: fields.title.content,
-  background_image: fields.field_hero_tall_image.content|striptags|trim,
-  hero_size: hero_size
+{% set card_modifiers = ['alt'] %}
+
+{% set image_src = fields.field_prog_hero_ref.content|striptags|trim %}
+{% include "@molecules/card/01-card.twig" with {
+  card_modifiers: card_modifiers,
+  card_title: fields.title_1.content,
+  card_img_src: image_src|default('/sites/default/files/default_images/background__blue--1.0.0_0.svg')
 } %}

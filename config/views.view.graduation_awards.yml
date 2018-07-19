@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.node.field_prog_hero_ref
     - field.storage.node.field_prog_non_residents_fee
     - field.storage.node.field_prog_residents_fee
     - node.type.gawa
@@ -286,7 +287,7 @@ display:
               rendered: true
               rendered_strip: false
           row_class: ''
-          default_row_class: true
+          default_row_class: false
       row:
         type: fields
         options: {  }
@@ -421,14 +422,14 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-        field_prog_residents_fee:
-          id: field_prog_residents_fee
-          table: node__field_prog_residents_fee
-          field: field_prog_residents_fee
+        field_prog_hero_ref:
+          id: field_prog_hero_ref
+          table: node__field_prog_hero_ref
+          field: field_prog_hero_ref
           relationship: reverse__node__field_prog_gawa_ref
           group_type: group
           admin_label: ''
-          label: Residents
+          label: ''
           exclude: false
           alter:
             alter_text: false
@@ -461,88 +462,19 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
+          element_label_colon: false
+          element_wrapper_type: '0'
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: value
-          type: number_decimal
+          click_sort_column: target_id
+          type: entity_reference_entity_view
           settings:
-            thousand_separator: ''
-            prefix_suffix: true
-            decimal_separator: .
-            scale: 2
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_prog_non_residents_fee:
-          id: field_prog_non_residents_fee
-          table: node__field_prog_non_residents_fee
-          field: field_prog_non_residents_fee
-          relationship: reverse__node__field_prog_gawa_ref
-          group_type: group
-          admin_label: ''
-          label: Non-Residents
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: number_decimal
-          settings:
-            thousand_separator: ''
-            prefix_suffix: true
-            decimal_separator: .
-            scale: 2
-          group_column: value
+            view_mode: teaser
+          group_column: target_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -808,8 +740,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_prog_non_residents_fee'
-        - 'config:field.storage.node.field_prog_residents_fee'
+        - 'config:field.storage.node.field_prog_hero_ref'
   block_2:
     display_plugin: block
     id: block_2

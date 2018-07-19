@@ -1,6 +1,10 @@
 //
 // General Layout (example code)
 //
+html,
+body {
+  overflow-x:hidden;
+}
 
 .header,
 .main,

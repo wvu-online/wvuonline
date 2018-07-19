@@ -1,9 +1,16 @@
 // Menu Breakpoint
 $main-menu-medium: 43em;
 
+.menu-block {
+  @include full-width;
+  margin-right: 0;
+  background: $black;
+}
 // Nav
 .main-nav {
-  display: none;
+  @include wrapper;
+  //display: none;
+
 
   @include breakpoint($main-menu-medium) {
     display: block;
@@ -18,9 +25,16 @@ $main-menu-medium: 43em;
 .main-menu {
   @include list-reset;
 
+  background: $black;
+  color: $white;
   border-bottom: 1px solid;
   position: relative;
   z-index: 10;
+  display: grid;
+  justify-content: left;
+  //grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fill, minmax(min-content, 50%));
+
 
   @include breakpoint($main-menu-medium) {
     border-bottom: none;
