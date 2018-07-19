@@ -1,0 +1,23 @@
+uuid: 6c2ffa19-99d5-424c-aeab-09b98ad3a40f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prog_credits_for_award
+    - node.type.prog
+id: node.prog.field_prog_credits_for_award
+field_name: field_prog_credits_for_award
+entity_type: node
+bundle: prog
+label: 'Credits for Award'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

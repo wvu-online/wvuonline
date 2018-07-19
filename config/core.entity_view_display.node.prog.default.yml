@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.prog.field_prog_body
     - field.field.node.prog.field_prog_care_ref
     - field.field.node.prog.field_prog_careers_body
+    - field.field.node.prog.field_prog_credits_for_award
     - field.field.node.prog.field_prog_curr_ref
     - field.field.node.prog.field_prog_financial_aid_clause
     - field.field.node.prog.field_prog_gawa_ref
@@ -61,6 +62,15 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
+  field_prog_credits_for_award:
+    weight: 7
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
   field_prog_financial_aid_clause:
     weight: 6
     label: above

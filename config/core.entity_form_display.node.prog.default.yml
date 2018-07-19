@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.prog.field_prog_body
     - field.field.node.prog.field_prog_care_ref
     - field.field.node.prog.field_prog_careers_body
+    - field.field.node.prog.field_prog_credits_for_award
     - field.field.node.prog.field_prog_curr_ref
     - field.field.node.prog.field_prog_financial_aid_clause
     - field.field.node.prog.field_prog_gawa_ref
@@ -199,6 +200,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
+  field_prog_credits_for_award:
+    weight: 26
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
     region: content
   field_prog_curr_ref:
     weight: 13

@@ -18,13 +18,12 @@ bundle: hero
 mode: teaser
 content:
   field_hero_tall_image:
-    type: image
+    type: image_url
     weight: 0
     region: content
     label: hidden
     settings:
       image_style: ''
-      image_link: ''
     third_party_settings: {  }
 hidden:
   field_hero_hero_image_type: true

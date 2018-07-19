@@ -287,7 +287,7 @@ display:
               rendered: true
               rendered_strip: false
           row_class: ''
-          default_row_class: true
+          default_row_class: false
       row:
         type: fields
         options: {  }
