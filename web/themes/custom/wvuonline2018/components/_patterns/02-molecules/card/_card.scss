@@ -63,6 +63,9 @@
       background: transparentize($black, 0.2);
       text-align: center;
       height: 6em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .card__img {
       width: 100%;
