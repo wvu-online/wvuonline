@@ -51,8 +51,8 @@
   {#{%- endif %}#}
 {#{%- endfor %}#}
 {% set card_modifiers = ['alt'] %}
-{% set image_default = '/sites/default/files/default_images/background__blue--1.0.0_0.svg' %}
-{% set image_src = fields.field_prog_hero_ref.entity.field_hero_tall_image.uri.value %}
+
+{% set image_src = fields.field_prog_hero_ref.content|striptags|trim %}
 {% include "@molecules/card/01-card.twig" with {
   card_modifiers: card_modifiers,
   card_title: fields.title_1.content,

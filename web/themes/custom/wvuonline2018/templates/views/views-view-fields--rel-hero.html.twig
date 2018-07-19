@@ -50,9 +50,10 @@
     {#</{{ field.wrapper_element }}>#}
   {#{%- endif %}#}
 {#{%- endfor %}#}
+{% set hero_size = fields.field_hero_hero_image_type.content|striptags|trim|lower %}
 {% include "@organisms/hero/hero.twig"
   with {
   title: fields.title.content,
-  background_image: fields.field_hero_tall_image.content,
-  hero_size: fields.field_hero_hero_image_type.content
+  background_image: fields.field_hero_tall_image.content|striptags|trim,
+  hero_size: hero_size
 } %}
