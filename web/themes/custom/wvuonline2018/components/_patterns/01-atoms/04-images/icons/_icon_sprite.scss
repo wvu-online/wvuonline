@@ -2,13 +2,53 @@
   background: url("svg/sprite.css.svg") no-repeat;
 }
 
-@mixin sprite-menu {
+@mixin sprite-facebook-f-brands {
   @include svg-common;
 
   background-position: 0 0;
 }
 
+.sprite-facebook-f-brands {
+  @include sprite-facebook-f-brands;
+}
+
+@mixin sprite-menu {
+  @include svg-common;
+
+  background-position: 45.34750613246116% 0;
+}
+
 .sprite-menu {
   @include sprite-menu;
+}
+
+@mixin sprite-play-solid {
+  @include svg-common;
+
+  background-position: 99.52357483160834% 0;
+}
+
+.sprite-play-solid {
+  @include sprite-play-solid;
+}
+
+@mixin sprite-search {
+  @include svg-common;
+
+  background-position: 0 100%;
+}
+
+.sprite-search {
+  @include sprite-search;
+}
+
+@mixin sprite-twitter-brands {
+  @include svg-common;
+
+  background-position: 59.32203389830509% 100%;
+}
+
+.sprite-twitter-brands {
+  @include sprite-twitter-brands;
 }
 

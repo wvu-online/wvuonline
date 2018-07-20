@@ -17,7 +17,7 @@
 
   &--list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1fr, 500px));
+    grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
     grid-column-gap: 2em;
     justify-items: center;
     padding-top: 1em;

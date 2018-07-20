@@ -1,4 +1,32 @@
 items:
   1:
-    name: "Menu"
-    value: "menu"
+    name: "Bars"
+    value: "bars"
+  2:
+    name: "External Link"
+    value: "wvu_external_link"
+  3:
+    name: "External Link Alt(FontAwesome)"
+    value: "wvu_external_link_alt"
+  4:
+    name: "Expand Read More"
+    value: "wvu_read_more"
+    decorative: "true"
+  5:
+    name: "Facebook"
+    value: "facebook-f-brands"
+    role: "link"
+    title: "Link to our Facebook page"
+    desc: "Facebook logo with a link to our Facebook page"
+  6:
+    name: "Twitter"
+    value: "twitter-brands"
+    role: "link"
+    title: "Link to our Twitter page"
+    desc: "Twitter logo with a link to our Twitter page"
+  7:
+    name: "Youtube"
+    value: "play-solid"
+    role: "link"
+    title: "Link to our Youtube page"
+    desc: "Youtube logo with a link to our Youtube page"

@@ -1,4 +1,4 @@
-uuid: 57dbd2e3-b4a8-4740-99f1-3540f938fbac
+uuid: 485534f2-9519-407e-b355-fe498f06f3be
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ dependencies:
 id: views_block__graduation_awards_block_2
 theme: wvuonline2018
 region: content
-weight: -6
+weight: 0
 provider: null
 plugin: 'views_block:graduation_awards-block_2'
 settings:
