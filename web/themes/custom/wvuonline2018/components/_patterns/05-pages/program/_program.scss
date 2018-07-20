@@ -8,7 +8,6 @@
   .h-form {
     box-sizing: border-box;
     padding: 1em 2em;
-
     width: 100%;
     flex: 1;
     order: 1;
@@ -17,6 +16,7 @@
       order: 2;
       width: 50%;
       min-width: 480px;
+      padding-right: calc(50vw - 600px);
     }
   }
 
@@ -37,6 +37,7 @@
       width: 50%;
       order: 1;
       min-width: 480px;
+      padding-left: calc(50vw - 600px);
     }
   }
 }
