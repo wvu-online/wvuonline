@@ -1,0 +1,19 @@
+@import '../../../00-base/mixins';
+
+.footer-menu {
+  @include list-reset;
+
+  display: flex;
+}
+
+.footer-menu--sub {
+  flex-direction: column;
+}
+
+a.footer-menu__link {
+  text-decoration: none;
+}
+
+ul.footer-menu:first-child > li > a {
+  font-weight: bold;
+}
