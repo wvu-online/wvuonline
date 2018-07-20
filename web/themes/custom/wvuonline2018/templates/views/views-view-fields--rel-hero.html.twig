@@ -51,7 +51,6 @@
   {#{%- endif %}#}
 {#{%- endfor %}#}
 {% set hero_size = fields.field_hero_hero_image_type.content|striptags|trim|lower %}
-{{ dd(fields.field_hero_link__title) }}
 {% include "@organisms/hero/hero.twig"
   with {
   title: fields.title.content,
