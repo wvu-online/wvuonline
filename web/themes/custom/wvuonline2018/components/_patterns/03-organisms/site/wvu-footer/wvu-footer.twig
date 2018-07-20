@@ -1,0 +1,106 @@
+<footer class="wvu-footer">
+
+  <div class="footer-upper-content">
+    <div class="footer-contact-info">
+      <strong>West Virgina University</strong>
+      WVU Online
+    </div>
+    <div class="footer-menu-wrapper">
+      {% include "@molecules/menus/_menu.twig" with {
+        menu_class: "footer-menu",
+        items: menu_items,
+      } %}
+    </div>
+    <div class="footer-follow-us">
+      <h3>Follow Us</h3>
+      <div class="wvu-footer__social-media-icons">
+        <a class="facebook" href="//www.facebook.com" target="_blank">
+          {% include "@atoms/04-images/icons/_icon.twig" with {
+            icon_base_class: "icon",
+            icon_blockname: "facebook",
+            icon_name: "facebook-f-brands",
+            icon_role: "link",
+            icon_title: "Link to our Facebook page",
+            icon_desc: "Facebook logo with a link to our Facebook page",
+          } %}
+        </a>
+        <a class="twitter" href="//www.twitter.com" target="_blank">
+          {% include "@atoms/04-images/icons/_icon.twig" with {
+            icon_base_class: "icon",
+            icon_blockname: "twitter",
+            icon_name: "twitter-brands",
+            icon_role: "link",
+            icon_title: "Link to our Twitter page",
+            icon_desc: "Twitter logo with a link to our Twitter page",
+          } %}
+        </a>
+        <a class="youtube" href="//www.youtube.com" target="_blank">
+          {% include "@atoms/04-images/icons/_icon.twig" with {
+            icon_base_class: "icon",
+            icon_blockname: "youtube",
+            icon_name: "play-solid",
+            icon_role: "link",
+            icon_title: "Link to our Youtube page",
+            icon_desc: "Youtube logo with a link to our Youtube page",
+          } %}
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wvu-footer__static_content">
+    <div class="wvu-footer__affirmative-action-links-and-statement">
+      <ul class="wvu-footer__affirmative-action-links">
+        <li><a href="https://wvu.edu/about-wvu/wvu-facts">Accreditations</a></li>
+        <li><a href="https://webstandards.wvu.edu">Web Standards</a></li>
+        <li><a href="https://consumerinformation.wvu.edu/">Consumer Info</a></li>
+        <li><a href="mailto:web_services@mail.wvu.edu">Questions or Comments?</a></li>
+      </ul>
+      <div class="wvu-footer__affirmative-action-statement">
+        <p>
+          &copy; 2018 West Virginia University. WVU is an EEO/Affirmative Action employer —
+          <br/>
+          Minority/Female/Disability/Veteran.
+        </p>
+      </div>
+    </div>
+    <div class="wvu-footer__social-media">
+      <p>
+        Follow WVU on:
+      </p>
+      <div class="wvu-footer__social-media-icons">
+        <a class="facebook" href="//www.facebook.com" target="_blank">
+          {% include "@atoms/04-images/icons/_icon.twig" with {
+            icon_base_class: "icon",
+            icon_blockname: "facebook",
+            icon_name: "facebook-f-brands",
+            icon_role: "link",
+            icon_title: "Link to our Facebook page",
+            icon_desc: "Facebook logo with a link to our Facebook page",
+          } %}
+        </a>
+        <a class="twitter" href="//www.twitter.com" target="_blank">
+          {% include "@atoms/04-images/icons/_icon.twig" with {
+            icon_base_class: "icon",
+            icon_blockname: "twitter",
+            icon_name: "twitter-brands",
+            icon_role: "link",
+            icon_title: "Link to our Twitter page",
+            icon_desc: "Twitter logo with a link to our Twitter page",
+          } %}
+        </a>
+        <a class="youtube" href="//www.youtube.com" target="_blank">
+          {% include "@atoms/04-images/icons/_icon.twig" with {
+            icon_base_class: "icon",
+            icon_blockname: "youtube",
+            icon_name: "play-solid",
+            icon_role: "link",
+            icon_title: "Link to our Youtube page",
+            icon_desc: "Youtube logo with a link to our Youtube page",
+          } %}
+        </a>
+      </div>
+    </div>
+  </div>
+
+</footer>

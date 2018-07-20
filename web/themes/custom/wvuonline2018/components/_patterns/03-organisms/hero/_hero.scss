@@ -6,7 +6,7 @@
 
 .wvu-hero {
   width: 100vw;
-  max-height: 100vh;
+  //max-height: 100vh;
   min-height: 600px;
   background-size: cover;
   background-color: $wvu-blue;
@@ -23,6 +23,7 @@
 
   .wvu-hero__copy {
     margin-bottom: 2em;
+    max-width: 45%;
 
     h1 {
       text-shadow: 1px 1px 1px #000;

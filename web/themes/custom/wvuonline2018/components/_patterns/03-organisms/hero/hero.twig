@@ -10,10 +10,10 @@
         <div class="wvu-hero__body">{{ body }}</div>
       {% endif %}
       {% if link %}
-        {% include "@atoms/06-buttons/01-button.twig"
+        {% include "@atoms/01-links/link/link.twig"
           with {
-          button_link: link.url,
-          button_text: link.text
+          link_url: link_url,
+          link_content: link_content
         }
         %}
       {% endif %}
