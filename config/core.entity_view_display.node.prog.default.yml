@@ -38,19 +38,19 @@ content:
     type: text_default
     weight: 3
     region: content
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
   field_prog_admissions:
     weight: 4
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_prog_applicat_requirements:
     weight: 5
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
@@ -73,7 +73,7 @@ content:
     region: content
   field_prog_financial_aid_clause:
     weight: 6
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default

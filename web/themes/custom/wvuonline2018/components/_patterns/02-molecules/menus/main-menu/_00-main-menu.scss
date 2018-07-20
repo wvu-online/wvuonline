@@ -1,16 +1,10 @@
 // Menu Breakpoint
 $main-menu-medium: 43em;
 
-.menu-block {
-  @include full-width;
-  margin-right: 0;
-  background: $black;
-}
 // Nav
 .main-nav {
-  @include wrapper;
-  //display: none;
-
+  display: none;
+  background: $black;
 
   @include breakpoint($main-menu-medium) {
     display: block;
@@ -24,17 +18,11 @@ $main-menu-medium: 43em;
 // UL
 .main-menu {
   @include list-reset;
+  @include wrapper;
 
-  background: $black;
-  color: $white;
   border-bottom: 1px solid;
   position: relative;
   z-index: 10;
-  display: grid;
-  justify-content: left;
-  //grid-auto-flow: column;
-  grid-template-columns: repeat(auto-fill, minmax(min-content, 50%));
-
 
   @include breakpoint($main-menu-medium) {
     border-bottom: none;
@@ -48,7 +36,7 @@ $main-menu-medium: 43em;
     width: 100%;
     height: 85%;
     overflow-y: scroll;
-    background-color: $white;
+    background-color: $black;
   }
 }
 
@@ -72,11 +60,12 @@ $main-menu-medium: 43em;
     overflow: visible;
     padding: $space 0;
     position: absolute;
-    top: 55px;
+    top: 69px;
     width: 315px;
     z-index: 1;
     font-size: 0.9rem;
-    opacity: 0.6;
+    color: $black;
+    //opacity: 0.6;
   }
 
   &:hover {
@@ -86,13 +75,13 @@ $main-menu-medium: 43em;
       transition: all 0.2s;
 
       .main-menu__link--sub {
-        color: $gray-light;
+        color: $near-white;
 
         &.active,
         &:active,
         &:hover {
-          color: $white;
-          background-color: $black;
+          color: $black;
+          background-color: $white;
         }
       }
     }

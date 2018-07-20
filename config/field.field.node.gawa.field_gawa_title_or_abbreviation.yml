@@ -15,7 +15,9 @@ label: 'Display full title, or abbreviation'
 description: ''
 required: true
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: 'Full Title'
 default_value_callback: ''
 settings: {  }
 field_type: list_string
