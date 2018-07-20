@@ -3,7 +3,7 @@
   padding: 1em;
 
   &__title {
-    @include heading-large($font-size: 1.3rem);
+    @include heading-large($font-size: 1.1rem);
     @include no-bottom;
 
     &-link {
