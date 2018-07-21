@@ -7,7 +7,7 @@
 .wvu-hero {
   width: 100vw;
   //max-height: 100vh;
-  min-height: 600px;
+  //min-height: 600px;
   background-size: cover;
   background-color: $wvu-blue;
   position: relative;
@@ -67,6 +67,6 @@
 
 .wvu-hero--big-picture {
   .wvu-hero__container {
-    padding: 4em 0 8.3em;
+    padding: 4em 0;
   }
 }
