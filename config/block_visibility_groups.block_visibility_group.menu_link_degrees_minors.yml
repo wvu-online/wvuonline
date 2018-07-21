@@ -1,0 +1,17 @@
+uuid: b8b690db-15a8-439f-b5a3-2e644b470a64
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: menu_link_degrees_minors
+label: 'Menu Link: Degrees/Minors'
+logic: or
+conditions:
+  8b5fcd99-3435-4549-b277-017f10c41c88:
+    id: request_path
+    pages: "/degrees/minors\r\n/node/965"
+    negate: false
+    context_mapping: {  }
+    uuid: 8b5fcd99-3435-4549-b277-017f10c41c88
+allow_other_conditions: false

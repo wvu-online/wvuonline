@@ -1,0 +1,17 @@
+uuid: 81f5802b-8558-474c-8f7b-67ebf98ba656
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: menu_link_degrees_undergrad
+label: 'Menu Link: Degrees/Undergrad'
+logic: or
+conditions:
+  df3f2db4-7301-4c3b-9186-8e268aa2d727:
+    id: request_path
+    pages: "/degrees/undergraduate-degrees\r\n/node/964"
+    negate: false
+    context_mapping: {  }
+    uuid: df3f2db4-7301-4c3b-9186-8e268aa2d727
+allow_other_conditions: false

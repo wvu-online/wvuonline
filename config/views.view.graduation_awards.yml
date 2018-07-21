@@ -1308,33 +1308,10 @@ display:
       tags:
         - 'config:field.storage.node.field_prog_non_residents_fee'
         - 'config:field.storage.node.field_prog_residents_fee'
-  page_1:
-    display_plugin: page
-    id: page_1
-    display_title: 'Manage Page'
-    position: 1
-    display_options:
-      display_extenders:
-        metatag_display_extender: {  }
-      path: admin/manage/graduation-awards
-      menu:
-        type: normal
-        title: 'Manage Graduation Awards'
-        menu_name: account
-        weight: -45
-      display_description: ''
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.roles
-      tags: {  }
-  page_2:
-    display_plugin: page
-    id: page_2
-    display_title: 'Graduate Page'
+  block_3:
+    display_plugin: block
+    id: block_3
+    display_title: 'Grouped Graduate Degrees Block'
     position: 2
     display_options:
       display_extenders:
@@ -1840,16 +1817,7 @@ display:
           tokenize: false
           content: 'No results found.'
           plugin_id: text_custom
-      path: degrees/graduate
-      menu:
-        type: normal
-        title: 'Graduate Degrees'
-        description: ''
-        expanded: false
-        parent: 'menu_link_content:ffa7a07f-5f9e-414d-900e-a24430feb44c'
-        weight: -48
-        context: '0'
-        menu_name: main
+      block_description: 'Grouped Graduate Degrees Block'
     cache_metadata:
       max-age: -1
       contexts:
@@ -1859,10 +1827,10 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_prog_hero_ref'
-  page_3:
-    display_plugin: page
-    id: page_3
-    display_title: 'Undergrad Page'
+  block_4:
+    display_plugin: block
+    id: block_4
+    display_title: 'Grouped Undergrad Degrees Block'
     position: 2
     display_options:
       display_extenders:
@@ -2330,16 +2298,6 @@ display:
           tokenize: false
           content: 'No results found.'
           plugin_id: text_custom
-      path: degrees/undergraduate
-      menu:
-        type: normal
-        title: 'Undergraduate Degrees'
-        description: ''
-        expanded: false
-        parent: 'menu_link_content:ffa7a07f-5f9e-414d-900e-a24430feb44c'
-        weight: -47
-        context: '0'
-        menu_name: main
     cache_metadata:
       max-age: -1
       contexts:
@@ -2349,10 +2307,10 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_prog_hero_ref'
-  page_4:
-    display_plugin: page
-    id: page_4
-    display_title: 'Minors Page'
+  block_5:
+    display_plugin: block
+    id: block_5
+    display_title: 'Grouped Minors Block'
     position: 2
     display_options:
       display_extenders:
@@ -2742,16 +2700,7 @@ display:
           tokenize: false
           content: 'No results found.'
           plugin_id: text_custom
-      path: degrees/minors
-      menu:
-        type: normal
-        title: Minors
-        description: ''
-        expanded: false
-        parent: 'menu_link_content:ffa7a07f-5f9e-414d-900e-a24430feb44c'
-        weight: -46
-        context: '0'
-        menu_name: main
+      block_description: 'Grouped Minors Block'
     cache_metadata:
       max-age: -1
       contexts:
@@ -2761,3 +2710,26 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_prog_hero_ref'
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: 'Manage Page'
+    position: 1
+    display_options:
+      display_extenders:
+        metatag_display_extender: {  }
+      path: admin/manage/graduation-awards
+      menu:
+        type: normal
+        title: 'Manage Graduation Awards'
+        menu_name: account
+        weight: -45
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.roles
+      tags: {  }
