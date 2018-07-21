@@ -15,17 +15,28 @@
     @extend %container;
   }
 
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    @include heading-xl($font-size: 2.2em, $color:$wvu-gold);
+  }
+
   &--list {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
-    grid-column-gap: 2em;
+    grid-template-columns: repeat(auto-fit,minmax(19em, 1fr));
+    grid-column-gap: 3em;
     justify-items: center;
     padding-top: 1em;
     text-align: center;
+
+    @media (max-width: ($small)) {
+      grid-template-columns: 1fr;
+    }
   }
 
   header {
     grid-column: -1 / 1;
+    text-align: left;
   }
 
   .career {

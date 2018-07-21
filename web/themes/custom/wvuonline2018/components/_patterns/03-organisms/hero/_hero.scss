@@ -13,12 +13,13 @@
   position: relative;
 
   &--short {
-    min-height: 300px;
+    //min-height: 300px;
   }
 
   .wvu-hero__container {
     max-width: 68em;
     margin: 0 auto;
+    padding: 0 2%;
   }
 
   .wvu-hero__copy {
@@ -28,13 +29,21 @@
 
     h1 {
       text-shadow: 1px 1px 1px #000;
-      font-size: 6.2em;
+      font-size: 2.6em;
       max-width: 6em;
       margin-top: 0.8em;
       line-height: 0.80487em;
       color: white;
       text-transform: uppercase;
       font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+
+      @include small {
+        font-size: 3.5em;
+      }
+
+      @include medium {
+        font-size: 5em;
+      }
 
       &::before {
         background-color: #eaaa00;
@@ -67,6 +76,6 @@
 
 .wvu-hero--big-picture {
   .wvu-hero__container {
-    padding: 4em 0;
+    padding: 4em 2%;
   }
 }
