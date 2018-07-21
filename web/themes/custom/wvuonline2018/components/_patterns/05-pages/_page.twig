@@ -69,13 +69,15 @@
     {% endif %}
 
     <div class="main-content{% if page.sidebar %}--with-sidebar{% endif %}">
-      {{ page.content }}
+      {{ page.content|without('title') }}
     </div>{# /.layout-content #}
 
   </main>
 
   {% if page.footer %}
     {{ page.footer }}
+  {% else %}
+    {% include "@organisms/site/wvu-footer/wvu-footer.twig" %}
   {% endif %}
 
 </div>{# /.layout-container #}
