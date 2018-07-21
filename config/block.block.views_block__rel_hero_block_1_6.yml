@@ -1,31 +1,32 @@
-uuid: f0051c2d-3bb1-4ebe-8810-1ff4dbec7b10
+uuid: 3d1bf1cb-cac1-4af9-a8b0-5f12daa31559
 langcode: en
 status: true
 dependencies:
   config:
-    - block_visibility_groups.block_visibility_group.menu_link_programs
-    - views.view.program_groupings
+    - block_visibility_groups.block_visibility_group.menu_link_degrees_undergrad
+    - views.view.rel_hero
   module:
     - block_visibility_groups
     - views
   theme:
     - wvuonline2018
-id: views_block__program_groupings_block_1
+id: views_block__rel_hero_block_1_6
 theme: wvuonline2018
-region: content
+region: pre_content
 weight: 0
 provider: null
-plugin: 'views_block:program_groupings-block_1'
+plugin: 'views_block:rel_hero-block_1'
 settings:
-  id: 'views_block:program_groupings-block_1'
+  id: 'views_block:rel_hero-block_1'
   label: ''
   provider: views
   label_display: '0'
   views_label: ''
   items_per_page: none
+  context_mapping: {  }
 visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: menu_link_programs
+    block_visibility_group: menu_link_degrees_undergrad
     context_mapping: {  }

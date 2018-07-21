@@ -1,23 +1,23 @@
-uuid: f0051c2d-3bb1-4ebe-8810-1ff4dbec7b10
+uuid: efb86775-02b2-4347-9cf5-4ee603ce01b0
 langcode: en
 status: true
 dependencies:
   config:
-    - block_visibility_groups.block_visibility_group.menu_link_programs
-    - views.view.program_groupings
+    - block_visibility_groups.block_visibility_group.menu_link_degrees_graduate
+    - views.view.graduation_awards
   module:
     - block_visibility_groups
     - views
   theme:
     - wvuonline2018
-id: views_block__program_groupings_block_1
+id: views_block__graduation_awards_block_3
 theme: wvuonline2018
 region: content
 weight: 0
 provider: null
-plugin: 'views_block:program_groupings-block_1'
+plugin: 'views_block:graduation_awards-block_3'
 settings:
-  id: 'views_block:program_groupings-block_1'
+  id: 'views_block:graduation_awards-block_3'
   label: ''
   provider: views
   label_display: '0'
@@ -27,5 +27,5 @@ visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: menu_link_programs
+    block_visibility_group: menu_link_degrees_graduate
     context_mapping: {  }
