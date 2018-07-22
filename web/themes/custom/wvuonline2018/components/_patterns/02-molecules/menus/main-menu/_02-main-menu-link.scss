@@ -10,6 +10,12 @@
 
   &--with-sub {
     width: 80%;
+    &::after {
+      color: $white;
+      display: inline-block;
+      content: ">";
+    }
+
   }
 
   @include breakpoint($main-menu-medium) {
@@ -28,11 +34,6 @@
       color: $gray-lighter;
     }
 
-    &::after {
-      color: $white;
-      display: inline-block;
-      content: ">";
-    }
 
     &--sub::after {
       display: none;
