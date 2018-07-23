@@ -75,9 +75,9 @@
   </main>
 
   {% if page.footer %}
-    {{ page.footer }}
-  {% else %}
-    {% include "@organisms/site/wvu-footer/wvu-footer.twig" %}
+    {% include "@organisms/site/wvu-footer/wvu-footer.twig" with {
+      content: page.footer
+    }%}
   {% endif %}
 
 </div>{# /.layout-container #}

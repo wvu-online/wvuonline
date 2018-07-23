@@ -6,10 +6,12 @@
       WVU Online
     </div>
     <div class="footer-menu-wrapper">
+      {% block content %}
       {% include "@molecules/menus/_menu.twig" with {
         menu_class: "footer-menu",
         items: menu_items,
       } %}
+      {% endblock %}
     </div>
     <div class="footer-follow-us">
       <h3>Follow Us</h3>

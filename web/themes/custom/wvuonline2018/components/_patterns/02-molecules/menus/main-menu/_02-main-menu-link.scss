@@ -10,6 +10,13 @@
 
   &--with-sub {
     width: 80%;
+    &::after {
+      color: $white;
+      display: inline-block;
+      content: ">";
+      transition: transform 0.4s;
+      padding-left: 2px;
+    }
   }
 
   @include breakpoint($main-menu-medium) {
@@ -28,11 +35,6 @@
       color: $gray-lighter;
     }
 
-    &::after {
-      color: $white;
-      display: inline-block;
-      content: ">";
-    }
 
     &--sub::after {
       display: none;
@@ -43,6 +45,7 @@
 
       &::after {
         color: $gray-light;
+        transform: rotate(450deg);
       }
     }
   }
