@@ -1,0 +1,19 @@
+uuid: 1c81836e-55c2-44a3-95d3-efd9b5256b20
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.focal_point_square
+id: card_image
+label: 'Card Image'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - focal_point_square
+breakpoint_group: responsive_image
+fallback_image_style: focal_point_square

@@ -12,7 +12,7 @@ dependencies:
   module:
     - conditional_fields
     - field_group
-    - image
+    - focal_point
     - link
 third_party_settings:
   field_group:
@@ -82,9 +82,11 @@ content:
     settings:
       preview_image_style: medium
       progress_indicator: throbber
+      preview_link: true
+      offsets: '50,50'
     third_party_settings:
       conditional_fields: {  }
-    type: image_image
+    type: image_focal_point
     region: content
   field_hero_teaser:
     weight: 5

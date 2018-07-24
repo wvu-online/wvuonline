@@ -28,7 +28,7 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: f60b41e9-7785-4f53-9730-97c5908051b0
+    uuid: 8119aae4-8f92-4f1b-ba5b-2506eeb9bbac
     alt: 'Default hero image background'
     title: ''
     width: null
