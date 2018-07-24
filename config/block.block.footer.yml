@@ -1,25 +1,25 @@
-uuid: 41c37534-4146-424e-bb2a-4bf724f22040
+uuid: 8b030a79-b1dd-4570-8f21-ac507ae40c39
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - system.menu.cta-buttons
+    - system.menu.footer
   module:
     - block_visibility_groups
     - system
   theme:
     - wvuonline2018
-id: ctabuttons
+id: footer
 theme: wvuonline2018
-region: pre_content
-weight: -24
+region: footer
+weight: 0
 provider: null
-plugin: 'system_menu_block:cta-buttons'
+plugin: 'system_menu_block:footer'
 settings:
-  id: 'system_menu_block:cta-buttons'
-  label: 'CTA Buttons'
+  id: 'system_menu_block:footer'
+  label: Footer
   provider: system
-  label_display: '0'
+  label_display: visible
   level: 1
   depth: 0
 visibility:

@@ -1,7 +1,20 @@
 .spotlights {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  grid-gap: 2em;
+  @include full-width;
+
+  padding: 6em 0;
+  background:
+  linear-gradient(
+                  rgba(255,255,255, 0.6),
+                  rgba(255,255,255, 0.6)
+  ),
+  url('/themes/custom/wvuonline2018/images/BackgroundForProgramPageTabs.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 2em;
+  }
 }
 
 .profile {
@@ -10,6 +23,7 @@
   justify-content: space-between;
   box-sizing: border-box;
   box-shadow: 0 3px 7px 0 $gray;
+  background: $white;
 
   > * {
     //width: 100%;

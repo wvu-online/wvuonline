@@ -16,20 +16,21 @@
  */
 #}
 <div class="spotlights">
-{% if title %}
-  <h3>{{ title }}</h3>
+  <div class="wrapper">
+    {% if title %}
+      <h3>{{ title }}</h3>
 
-{% endif %}
-  {% for row in rows %}
-    {%
-      set row_classes = [
+    {% endif %}
+    {% for row in rows %}
+      {%
+        set row_classes = [
         default_row_class ? 'views-row',
       ]
-    %}
+      %}
 
       {{- row.content -}}
 
-  {% endfor %}
-
+    {% endfor %}
   </div>
+</div>
 
