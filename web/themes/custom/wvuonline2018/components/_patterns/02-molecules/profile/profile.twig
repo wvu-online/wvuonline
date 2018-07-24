@@ -24,12 +24,14 @@
           "heading_base_class": 'title',
           "heading_blockname": profile_base_class,
         } %}
-        {% include "@atoms/02-text/00-headings/_heading.twig" with {
-          "heading_level": 4,
-          "heading": profile_role,
-          "heading_base_class": 'subtitle',
-          "heading_blockname": profile_base_class,
-        } %}
+        {% if profile_role %}
+          {% include "@atoms/02-text/00-headings/_heading.twig" with {
+            "heading_level": 4,
+            "heading": profile_role,
+            "heading_base_class": 'subtitle',
+            "heading_blockname": profile_base_class,
+          } %}
+        {% endif %}
         {% include "@atoms/06-buttons/01-button.twig" with {
           "button_url": profile_link,
           "button_blockname": profile_base_class,
