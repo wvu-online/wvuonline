@@ -14,7 +14,7 @@
 {# For Pattern Lab: The icon_url is defined in _data/paths.json. No action is required #}
 {# For Drupal: The icon_url is defined in the following line. No action is required #}
 {% set icon_url = icon_url|default('/themes/custom/wvuonline2018/dist/svg/') %}
-{{ attach_library('wvuonline2018/sprite') }}
+{#{{ attach_library('wvuonline2018/sprite') }}#}
 
 <svg {{ bem(icon_base_class, (icon_modifiers), icon_blockname, (icon_js_class)) }}
 
