@@ -59,7 +59,7 @@
   {% set profile_portrait = fields.field_bio_portrait_1.content %}
   {% set profile_content = fields.field_bio_condensed_about_1.content %}
   {% set profile_subhead = fields.field_bio_graduation_year.content %}
-  {% set profile_link = fields.view_node_2.content|striptags|trim %}
+  {% set profile_link = fields.view_node_2.content %}
 {% elseif profile_type == 'Faculty Spotlight' %}
   {% set profile_header_modifiers = ['blue'] %}
   {% set profile_name = fields.field_spot_faculty_bio_ref.content %}

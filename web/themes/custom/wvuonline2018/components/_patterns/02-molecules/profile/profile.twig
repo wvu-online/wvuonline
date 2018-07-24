@@ -32,10 +32,10 @@
             "heading_blockname": profile_base_class,
           } %}
         {% endif %}
-        {% include "@atoms/06-buttons/01-button.twig" with {
-          "button_url": profile_link,
-          "button_blockname": profile_base_class,
-          "button_content": profile_button_text,
+        {% include "@atoms/01-links/link/link.twig" with {
+          "link_url": profile_link,
+          "link_blockname": profile_base_class,
+          "link_content": profile_button_text,
         } %}
       </div>
     </div>
