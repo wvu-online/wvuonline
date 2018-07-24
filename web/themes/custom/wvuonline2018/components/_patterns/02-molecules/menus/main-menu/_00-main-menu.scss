@@ -19,7 +19,6 @@ $main-menu-medium: 43em;
 .main-menu {
   @include list-reset;
   @include wrapper;
-
   border-bottom: 1px solid;
   position: relative;
   z-index: 10;
@@ -60,7 +59,7 @@ $main-menu-medium: 43em;
     overflow: visible;
     padding: $space 0;
     position: absolute;
-    top: 65px;
+    top: 58px;
     width: 315px;
     z-index: 1;
     font-size: 0.9rem;
