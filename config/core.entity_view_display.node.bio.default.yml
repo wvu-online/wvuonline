@@ -18,7 +18,6 @@ dependencies:
     - field.field.node.bio.field_bio_work_title
     - node.type.bio
   module:
-    - image
     - text
     - user
 id: node.bio.default
@@ -28,13 +27,13 @@ mode: default
 content:
   field_bio_full_bio_about:
     type: text_default
-    weight: 5
+    weight: 4
     region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
   field_bio_graduation_year:
-    weight: 3
+    weight: 2
     label: inline
     settings:
       thousand_separator: ''
@@ -43,21 +42,12 @@ content:
     type: number_integer
     region: content
   field_bio_personal_quote:
-    weight: 4
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
-  field_bio_portrait:
-    type: image
-    weight: 2
-    region: content
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
   field_bio_work_title:
     type: string
     weight: 1
@@ -78,5 +68,6 @@ hidden:
   field_bio_hero_ref: true
   field_bio_last_name: true
   field_bio_middle_initial: true
+  field_bio_portrait: true
   field_bio_prefix: true
   field_bio_suffix: true

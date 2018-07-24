@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "28fad05fb3f10f09ab5fe17f4078125a",
+    "content-hash": "411fca0e4b04d5227ff4a20b091c1588",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1115,16 +1115,16 @@
         },
         {
             "name": "drupal-composer/drupal-scaffold",
-            "version": "2.5.2",
+            "version": "2.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-scaffold.git",
-                "reference": "80c7d2794d7d1b347c6f718feaa8ec9b02e43f4f"
+                "reference": "90f42025acddba70e7f045e069b301013d3d8bbc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-scaffold/zipball/80c7d2794d7d1b347c6f718feaa8ec9b02e43f4f",
-                "reference": "80c7d2794d7d1b347c6f718feaa8ec9b02e43f4f",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-scaffold/zipball/90f42025acddba70e7f045e069b301013d3d8bbc",
+                "reference": "90f42025acddba70e7f045e069b301013d3d8bbc",
                 "shasum": ""
             },
             "require": {
@@ -1155,7 +1155,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Composer Plugin for updating the Drupal scaffold files when using drupal/core",
-            "time": "2018-06-14T17:48:21+00:00"
+            "time": "2018-07-21T08:19:20+00:00"
         },
         {
             "name": "drupal-pattern-lab/add-attributes-twig-extension",
@@ -3318,7 +3318,8 @@
                     "Issue 2741429: calculateDependencies doesn't check $mode_entity if it is NULL": "https://www.drupal.org/files/issues/2741429.2.patch",
                     "Issue 2457999: Cannot use relationship for rendered entity on Views": "https://www.drupal.org/files/issues/2457999-164.patch",
                     "Issue 2825869 Views Exposed output": "https://www.drupal.org/files/issues/exposed-filter-notice-2825860-14.patch",
-                    "Issue 2672656: Remove comments from fields https://www.drupal.org/project/drupal/issues/2672656": "https://www.drupal.org/files/issues/2018-04-23/2672656-31.patch"
+                    "Issue 2672656: Remove comments from fields https://www.drupal.org/project/drupal/issues/2672656": "https://www.drupal.org/files/issues/2018-04-23/2672656-31.patch",
+                    "Issue 2282159: Template theme hook suggestions for Fields do not include ViewModes": "https://www.drupal.org/files/issues/2282159-field-theme-hook-suggestions-viewmodes-15.patch"
                 }
             },
             "autoload": {
@@ -5045,17 +5046,17 @@
         },
         {
             "name": "drupal/jsonapi",
-            "version": "1.22.0",
+            "version": "1.23.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/jsonapi",
-                "reference": "8.x-1.22"
+                "reference": "8.x-1.23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/jsonapi-8.x-1.22.zip",
-                "reference": "8.x-1.22",
-                "shasum": "baea993454ef34a06db7caba8da77a35934efec6"
+                "url": "https://ftp.drupal.org/files/projects/jsonapi-8.x-1.23.zip",
+                "reference": "8.x-1.23",
+                "shasum": "4fb88736a9ad90a995bdc9c3ab90e7731b6d89e5"
             },
             "require": {
                 "drupal/core": "^8.4.3"
@@ -5071,8 +5072,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.22",
-                    "datestamp": "1530258091",
+                    "version": "8.x-1.23",
+                    "datestamp": "1532084496",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5278,7 +5279,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/lockr",
-                "reference": "980b48b56eb698350e0d7c5f0f8a9e7529228ca3"
+                "reference": "c5900128503ef788b453a0b457ca5be11977759c"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -5291,8 +5292,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.2+2-dev",
-                    "datestamp": "1501125544",
+                    "version": "8.x-2.4+0-dev",
+                    "datestamp": "1532122081",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5322,7 +5323,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/lockr"
             },
-            "time": "2018-07-06T20:18:40+00:00"
+            "time": "2018-07-20T21:23:31+00:00"
         },
         {
             "name": "drupal/mailsystem",
@@ -5787,17 +5788,17 @@
         },
         {
             "name": "drupal/moderation_sidebar",
-            "version": "1.0.0-beta1",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/moderation_sidebar",
-                "reference": "8.x-1.0-beta1"
+                "reference": "8.x-1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/moderation_sidebar-8.x-1.0-beta1.zip",
-                "reference": "8.x-1.0-beta1",
-                "shasum": "2724417e272e27c379c8e614165dbb58a6d02731"
+                "url": "https://ftp.drupal.org/files/projects/moderation_sidebar-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "b891645a398e434204df17610b6c91a07d2780fc"
             },
             "require": {
                 "drupal/core": "^8.5"
@@ -5808,11 +5809,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1",
-                    "datestamp": "1520437980",
+                    "version": "8.x-1.0",
+                    "datestamp": "1532027586",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -6407,20 +6408,20 @@
         },
         {
             "name": "drupal/search_api",
-            "version": "1.8.0",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/search_api",
-                "reference": "8.x-1.8"
+                "reference": "8.x-1.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.8.zip",
-                "reference": "8.x-1.8",
-                "shasum": "04d7b3b680e84aad086a61fb9eb4ffe77dc278e4"
+                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.9.zip",
+                "reference": "8.x-1.9",
+                "shasum": "b019b3af9e724a1804b540ae0e4a56d2ee98c603"
             },
             "require": {
-                "drupal/core": "^8.4"
+                "drupal/core": "^8.5"
             },
             "require-dev": {
                 "drupal/search_api_autocomplete": "@dev",
@@ -6432,8 +6433,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.8",
-                    "datestamp": "1523872384",
+                    "version": "8.x-1.9",
+                    "datestamp": "1531985581",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9679,7 +9680,7 @@
         },
         {
             "name": "symfony/config",
-            "version": "v3.4.12",
+            "version": "v3.4.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
@@ -9812,7 +9813,7 @@
         },
         {
             "name": "symfony/css-selector",
-            "version": "v2.8.42",
+            "version": "v2.8.43",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
@@ -9992,16 +9993,16 @@
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v3.4.12",
+            "version": "v3.4.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "201b210fafcdd193c1e45b2994bf7133fb6263e8"
+                "reference": "54c9e817b74c7be1840344bf4feaa7a7d02abfb8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/201b210fafcdd193c1e45b2994bf7133fb6263e8",
-                "reference": "201b210fafcdd193c1e45b2994bf7133fb6263e8",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/54c9e817b74c7be1840344bf4feaa7a7d02abfb8",
+                "reference": "54c9e817b74c7be1840344bf4feaa7a7d02abfb8",
                 "shasum": ""
             },
             "require": {
@@ -10045,7 +10046,7 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-01T22:53:27+00:00"
+            "time": "2018-07-05T11:53:23+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -10112,16 +10113,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v3.4.12",
+            "version": "v3.4.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "8a721a5f2553c6c3482b1c5b22ed60fe94dd63ed"
+                "reference": "8dab220fec8fc904821485326b29a6c670286124"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/8a721a5f2553c6c3482b1c5b22ed60fe94dd63ed",
-                "reference": "8a721a5f2553c6c3482b1c5b22ed60fe94dd63ed",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/8dab220fec8fc904821485326b29a6c670286124",
+                "reference": "8dab220fec8fc904821485326b29a6c670286124",
                 "shasum": ""
             },
             "require": {
@@ -10158,11 +10159,11 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2018-06-21T11:10:19+00:00"
+            "time": "2018-07-09T13:25:43+00:00"
         },
         {
             "name": "symfony/finder",
-            "version": "v3.4.12",
+            "version": "v3.4.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -11005,16 +11006,16 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v3.4.12",
+            "version": "v3.4.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "e173954a28a44a32c690815fbe4d0f2eac43accb"
+                "reference": "c501f46bb1eaf4c8d65ba070ab65a1986da1cd7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/e173954a28a44a32c690815fbe4d0f2eac43accb",
-                "reference": "e173954a28a44a32c690815fbe4d0f2eac43accb",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/c501f46bb1eaf4c8d65ba070ab65a1986da1cd7f",
+                "reference": "c501f46bb1eaf4c8d65ba070ab65a1986da1cd7f",
                 "shasum": ""
             },
             "require": {
@@ -11070,7 +11071,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2018-06-15T07:47:49+00:00"
+            "time": "2018-07-09T08:21:26+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -13706,7 +13707,7 @@
         },
         {
             "name": "symfony/browser-kit",
-            "version": "v3.4.12",
+            "version": "v3.4.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/browser-kit.git",

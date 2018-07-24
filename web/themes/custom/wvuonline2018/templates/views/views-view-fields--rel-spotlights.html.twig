@@ -50,15 +50,25 @@
     {#</{{ field.wrapper_element }}>#}
   {#{%- endif %}#}
 {#{%- endfor %}#}
-{% set card_modifiers = ['alt'] %}
-{% set card_link_url = fields.view_node.content|striptags|trim %}
-{% set image_src = fields.field_prog_hero_ref.content %}
-{% embed "@molecules/card/01-card.twig" with {
+{# Set modifier for profile header based on spotlight type #}
+{% if fields.field_spot_spotlight_type_ref == 'Student Spotlight' %}
+  {% set profile_header_modifiers = ['gold'] %}
+  {% set profile_name = fields.field_spot_student_bio_ref %}
+  {% set profile_content = fields.field_bio_condensed_about_1 %}
+{% elseif fields.field_spot_spotlight_type_ref == 'Faculty Spotlight' %}
+  {% set profile_header_modifiers = ['blue'] %}
+  {% set profile_name = fields.field_spot_faculty_bio_ref %}
+  {% set profile_content = fields.field_bio_condensed_about %}
+{% else %}
+  {% set profile_header_modifiers = ['black'] %}
+  {% set profile_name = fields.field_spot_faculty_bio_ref %}
+  {% set profile_content = fields.field_bio_condensed_about %}
+{% endif %}
+
+{# Get image source from view fields #}
+{% set image_src = fields.field_prog_hero_ref.content|striptags|trim %}
+{% include "@molecules/card/01-card.twig" with {
   card_modifiers: card_modifiers,
   card_title: fields.title_1.content,
-  card_link_url: card_link_url
+  card_img_src: image_src|default('/sites/default/files/default_images/background__black--1.0.0_0.svg')
 } %}
-  {% block card_image_block %}
-    <a class="card__image" href="{{ card_link_url }}">{{ image_src }}</a>
-  {% endblock %}
-{% endembed %}
