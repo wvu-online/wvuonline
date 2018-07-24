@@ -24,13 +24,12 @@
 
   .wvu-hero__copy {
     margin-bottom: 2em;
-    max-width: 45%;
+    max-width: 75%;
     color: $white;
 
     h1 {
       text-shadow: 1px 1px 1px #000;
       font-size: 2.6em;
-      max-width: 6em;
       margin-top: 0.8em;
       line-height: 0.80487em;
       color: white;
@@ -42,7 +41,7 @@
       }
 
       @include medium {
-        font-size: 5em;
+        font-size: 4.5em;
       }
 
       &::before {
