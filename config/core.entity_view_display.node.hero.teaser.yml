@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.hero.field_hero_link
     - field.field.node.hero.field_hero_tall_image
     - field.field.node.hero.field_hero_teaser
+    - image.style.focal_point_square
     - node.type.hero
   module:
     - image
@@ -23,7 +24,7 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: ''
+      image_style: focal_point_square
     third_party_settings: {  }
 hidden:
   field_hero_hero_image_type: true

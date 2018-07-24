@@ -212,7 +212,8 @@
         "Issue 2741429: calculateDependencies doesn't check $mode_entity if it is NULL": "https://www.drupal.org/files/issues/2741429.2.patch",
         "Issue 2457999: Cannot use relationship for rendered entity on Views": "https://www.drupal.org/files/issues/2457999-164.patch",
         "Issue 2825869 Views Exposed output": "https://www.drupal.org/files/issues/exposed-filter-notice-2825860-14.patch",
-        "Issue 2672656: Remove comments from fields https://www.drupal.org/project/drupal/issues/2672656": "https://www.drupal.org/files/issues/2018-04-23/2672656-31.patch"
+        "Issue 2672656: Remove comments from fields https://www.drupal.org/project/drupal/issues/2672656": "https://www.drupal.org/files/issues/2018-04-23/2672656-31.patch",
+        "Issue 2282159: Template theme hook suggestions for Fields do not include ViewModes": "https://www.drupal.org/files/issues/2282159-field-theme-hook-suggestions-viewmodes-15.patch"
       },
       "drupal/block_styles": {
         "Issue 2725167": "https://www.drupal.org/files/issues/notice_undefined-2725167-3.patch"

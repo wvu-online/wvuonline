@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.hero.field_hero_link
     - field.field.node.hero.field_hero_tall_image
     - field.field.node.hero.field_hero_teaser
-    - image.style.thumbnail
+    - image.style.medium
     - node.type.hero
   module:
     - conditional_fields
@@ -74,50 +74,16 @@ content:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings:
-      conditional_fields:
-        971b6b81-60d7-42de-bc5d-be3157664b4e:
-          dependee: field_hero_hero_image_type
-          settings:
-            state: visible
-            condition: value
-            grouping: AND
-            values_set: 1
-            value: ''
-            values: {  }
-            value_form:
-              -
-                target_id: '4'
-            effect: show
-            effect_options: {  }
-            selector: ''
-          entity_type: node
-          bundle: hero
+      conditional_fields: {  }
     type: link_default
     region: content
   field_hero_tall_image:
     weight: 3
     settings:
+      preview_image_style: medium
       progress_indicator: throbber
-      preview_image_style: thumbnail
     third_party_settings:
-      conditional_fields:
-        a9fd68e7-3382-4ca6-b79e-f06cf001b2c1:
-          dependee: field_hero_hero_image_type
-          settings:
-            state: visible
-            condition: value
-            grouping: AND
-            values_set: 1
-            value: ''
-            values: {  }
-            value_form:
-              -
-                target_id: '4'
-            effect: show
-            effect_options: {  }
-            selector: ''
-          entity_type: node
-          bundle: hero
+      conditional_fields: {  }
     type: image_image
     region: content
   field_hero_teaser:
@@ -126,24 +92,7 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings:
-      conditional_fields:
-        61f2a46c-54c7-4908-9240-9e4930415471:
-          dependee: field_hero_hero_image_type
-          settings:
-            state: visible
-            condition: value
-            grouping: AND
-            values_set: 1
-            value: ''
-            values: {  }
-            value_form:
-              -
-                target_id: '4'
-            effect: show
-            effect_options: {  }
-            selector: ''
-          entity_type: node
-          bundle: hero
+      conditional_fields: {  }
     type: string_textarea
     region: content
   status:

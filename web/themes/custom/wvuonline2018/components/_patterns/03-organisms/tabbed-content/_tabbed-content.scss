@@ -4,7 +4,13 @@
 .tabbed {
   @include full-width;
 
-  background: $pms-5625-c;
+  background:
+          linear-gradient(
+                          rgba(101, 122, 104, 0.6),
+                          rgba(101, 122, 104, 0.6)
+          ),
+          url('/themes/custom/wvuonline2018/images/BackgroundForProgramPageTabs.jpg');
+  background-size: cover;
   @include medium {
     padding: 2em 0;
   }
