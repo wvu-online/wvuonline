@@ -2,6 +2,7 @@ $breadcrumb-active: #bbb;
 
 .breadcrumb {
   @include list-reset;
+  background: transparentize($black, 0.8);
 }
 
 .breadcrumb__item,
