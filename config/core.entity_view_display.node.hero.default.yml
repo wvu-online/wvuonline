@@ -8,9 +8,10 @@ dependencies:
     - field.field.node.hero.field_hero_tall_image
     - field.field.node.hero.field_hero_teaser
     - node.type.hero
+    - responsive_image.styles.tall_hero
   module:
-    - image
     - link
+    - responsive_image
     - user
 id: node.hero.default
 targetEntityType: node
@@ -41,10 +42,10 @@ content:
     weight: 104
     label: above
     settings:
-      image_style: ''
+      responsive_image_style: tall_hero
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: content
   field_hero_teaser:
     weight: 101
@@ -56,4 +57,6 @@ content:
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

@@ -1,27 +1,25 @@
-uuid: 68f0263e-135d-48cd-91cb-18602e897f35
+uuid: 160b798f-2f6c-4c75-97a6-fd79585d19ea
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.main
+    - system.menu.footer
   module:
     - block_visibility_groups
     - system
   theme:
     - wvuonline2018
-_core:
-  default_config_hash: rx9IrdDv7Ldc4kpalZAxdhIPZfYIeOMh1N-qKoQZwHo
-id: wvuonline2018_main_menu
+id: footer
 theme: wvuonline2018
-region: pre_content
-weight: -25
+region: footer
+weight: -26
 provider: null
-plugin: 'system_menu_block:main'
+plugin: 'system_menu_block:footer'
 settings:
-  id: 'system_menu_block:main'
-  label: 'Main navigation'
+  id: 'system_menu_block:footer'
+  label: Footer
   provider: system
-  label_display: '0'
+  label_display: visible
   level: 1
   depth: 0
 visibility:

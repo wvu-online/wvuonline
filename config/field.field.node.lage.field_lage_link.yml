@@ -1,0 +1,23 @@
+uuid: 3d4ca163-16ca-4878-8efe-ea8d88cbe838
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lage_link
+    - node.type.lage
+  module:
+    - link
+id: node.lage.field_lage_link
+field_name: field_lage_link
+entity_type: node
+bundle: lage
+label: 'Licensing Agency Link'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 2
+field_type: link

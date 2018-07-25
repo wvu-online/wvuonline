@@ -9,8 +9,9 @@ dependencies:
     - field.field.node.hero.field_hero_tall_image
     - field.field.node.hero.field_hero_teaser
     - node.type.hero
+    - responsive_image.styles.card_image
   module:
-    - image
+    - responsive_image
     - user
 id: node.hero.teaser
 targetEntityType: node
@@ -18,12 +19,13 @@ bundle: hero
 mode: teaser
 content:
   field_hero_tall_image:
-    type: image_url
+    type: responsive_image
     weight: 0
     region: content
     label: hidden
     settings:
-      image_style: ''
+      responsive_image_style: card_image
+      image_link: ''
     third_party_settings: {  }
 hidden:
   field_hero_hero_image_type: true

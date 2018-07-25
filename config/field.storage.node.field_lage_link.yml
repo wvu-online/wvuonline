@@ -1,0 +1,19 @@
+uuid: b5cc243d-39b4-4c50-9bd6-2b613f0712f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_lage_link
+field_name: field_lage_link
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

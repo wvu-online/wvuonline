@@ -13,7 +13,7 @@ dependencies:
 id: views_block__rel_documents_block_1
 theme: wvuonline2018
 region: sidebar
-weight: 0
+weight: -26
 provider: null
 plugin: 'views_block:rel_documents-block_1'
 settings:

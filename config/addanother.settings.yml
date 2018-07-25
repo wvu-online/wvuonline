@@ -10,21 +10,29 @@ button:
   docu: false
   spag: true
   tuit: true
+  saut: true
+  lage: true
 message:
   cour: false
   help: false
   docu: false
   spag: true
   tuit: true
+  saut: true
+  lage: true
 tab:
   cour: false
   help: false
   docu: false
   spag: true
   tuit: true
+  saut: true
+  lage: true
 tab_edit:
   cour: false
   help: false
   docu: false
   spag: true
   tuit: true
+  saut: true
+  lage: true

@@ -1,0 +1,18 @@
+uuid: 51674942-4ef7-4884-95a0-f9419383b15c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.lage
+  module:
+    - user
+id: node.lage.teaser
+targetEntityType: node
+bundle: lage
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }
