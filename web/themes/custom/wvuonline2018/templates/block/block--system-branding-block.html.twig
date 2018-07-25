@@ -33,6 +33,7 @@
     {#</div>#}
   {#{% endif %}#}
 {#{% endblock %}#}
+{% set link_url = path('<front>') %}
 {% include "@molecules/flying-wv/flying-wv.twig" with {
   "img_src": site_logo,
   "img_alt": 'Home'|t
