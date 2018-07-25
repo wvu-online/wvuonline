@@ -55,19 +55,6 @@
           "type": "zip"
         }
       }
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "wvu-online/wvu_stateAuthorization",
-        "type": "drupal-module",
-        "version": "0.0.1",
-        "source": {
-          "url": "https://github.com/wvu-online/wvu_stateAuthorization.git",
-          "type": "git",
-          "reference": "master"
-        }
-      }
     }
   ],
   "require": {
@@ -166,8 +153,7 @@
     "fourkitchens/emulsify": "^2.3",
     "harvesthq/chosen": "^1.8",
     "rvtraveller/qs-composer-installer": "^1.1",
-    "webflo/drupal-core-strict": "^8",
-    "wvu-online/wvu_stateAuthorization": "^0.0.1"
+    "webflo/drupal-core-strict": "^8"
   },
   "require-dev": {
     "mikey179/vfsstream": "^1.2",

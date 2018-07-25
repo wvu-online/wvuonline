@@ -52,7 +52,7 @@ $main-menu-medium: 43em;
   width: 100%;
 
   @include breakpoint($main-menu-medium) {
-    background-color: $gray-lightest;
+    background-color: $black;
     display: none;
     height: auto;
     left: 0;
@@ -63,7 +63,7 @@ $main-menu-medium: 43em;
     width: 315px;
     z-index: 1;
     font-size: 0.9rem;
-    color: $black;
+    color: $white;
     //opacity: 0.6;
   }
 

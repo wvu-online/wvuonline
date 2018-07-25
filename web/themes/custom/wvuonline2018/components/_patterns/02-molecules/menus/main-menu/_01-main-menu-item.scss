@@ -27,12 +27,12 @@
   }
   &:not(.main-menu__item--sub) {
     border-right: 1px solid $pms-warm-gray-11;
-    &:nth-last-of-type(2) {
+    &:nth-last-of-type(1) {
       background: $wvu-gold;
       border: none;
       float: right;
     }
-    &:nth-last-of-type(1) {
+    &:nth-last-of-type(2) {
       background: $pms-300-c;
       border: none;
       float: right;
