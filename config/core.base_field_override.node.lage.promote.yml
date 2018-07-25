@@ -1,0 +1,22 @@
+uuid: 1b059e56-b7e5-4d39-98f9-5884e1c82c3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.lage
+id: node.lage.promote
+field_name: promote
+entity_type: node
+bundle: lage
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
