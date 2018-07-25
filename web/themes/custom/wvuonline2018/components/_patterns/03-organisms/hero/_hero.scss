@@ -12,16 +12,6 @@
   background-color: $wvu-blue;
   position: relative;
 
-  &--short {
-    //min-height: 300px;
-  }
-
-  .wvu-hero__container {
-    max-width: 68em;
-    margin: 0 auto;
-    padding: 0 2%;
-  }
-
   .wvu-hero__copy {
     margin-bottom: 2em;
     max-width: 75%;
@@ -71,6 +61,22 @@
       color: $white;
     }
   }
+
+  &--tall {
+    .wvu-hero__copy {
+      max-width: 45%;
+
+      h1 {
+        max-width: 6em;
+      }
+    }
+  }
+  .wvu-hero__container {
+    max-width: 68em;
+    margin: 0 auto;
+    padding: 0 2%;
+  }
+
 }
 
 .wvu-hero--big-picture {
