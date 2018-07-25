@@ -1,6 +1,8 @@
 {% set flying_wv_base_class = flying_wv_base_class|default('wvu-masthead__logo') %}
 {% set link_base_class = flying_wv_base_class %}
-{% embed "@atoms/01-links/link/link.twig" %}
+{% embed "@atoms/01-links/link/link.twig" with {
+  link_url: link_url
+}%}
   {% block link_content %}
     {% include "@atoms/04-images/00-image/image.twig" with {
       "img_src": img_src,

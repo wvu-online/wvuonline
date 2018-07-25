@@ -7,10 +7,11 @@
   //padding: 2em 1em;
   background:
           linear-gradient(
-                          rgba(234, 170, 0, 0.8),
-                          rgba(234, 170, 0, 0.8)
+                          rgba(234, 170, 0, 0.6),
+                          rgba(234, 170, 0, 0.6)
           ),
-          url('https://placeimg.com/2000/800/building');
+          url('/themes/custom/wvuonline2018/images/BackgroundForProgramPageForm.jpg');
+  background-size: cover;
 
   &--gold {
     @include wvu-gold-background;

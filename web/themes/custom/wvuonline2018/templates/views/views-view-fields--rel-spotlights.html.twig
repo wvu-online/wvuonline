@@ -50,15 +50,44 @@
     {#</{{ field.wrapper_element }}>#}
   {#{%- endif %}#}
 {#{%- endfor %}#}
-{% set card_modifiers = ['alt'] %}
-{% set card_link_url = fields.view_node.content|striptags|trim %}
-{% set image_src = fields.field_prog_hero_ref.content %}
-{% embed "@molecules/card/01-card.twig" with {
-  card_modifiers: card_modifiers,
-  card_title: fields.title_1.content,
-  card_link_url: card_link_url
+{# Set modifier for profile header based on spotlight type #}
+{% set profile_type = fields.field_spot_spotlight_type_ref.content|striptags|trim %}
+
+{% if profile_type == 'Student Spotlight' %}
+  {% set profile_header_modifiers = ['gold'] %}
+  {% set profile_name = fields.field_spot_student_bio_ref.content %}
+  {% set profile_portrait = fields.field_bio_portrait_1.content %}
+  {% set profile_content = fields.field_bio_condensed_about_1.content %}
+  {% set profile_subhead = fields.field_bio_graduation_year.content %}
+  {% set profile_link = fields.view_node_2.content %}
+{% elseif profile_type == 'Faculty Spotlight' %}
+  {% set profile_header_modifiers = ['blue'] %}
+  {% set profile_name = fields.field_spot_faculty_bio_ref.content %}
+  {% set profile_portrait = fields.field_bio_portrait.content %}
+  {% set profile_content = fields.field_bio_condensed_about.content %}
+  {% set profile_subhead = fields.field_bio_work_title.content %}
+  {% set profile_link = fields.view_node_1.content|striptags|trim %}
+    {% else %}
+  {% set profile_header_modifiers = ['black'] %}
+  {% set profile_name = fields.title.content|striptags|trim %}
+  {% set profile_portrait = fields.field_prog_hero_ref.content %}
+  {% set profile_content = fields.field_prog_body.content %}
+  {% set profile_link = fields.view_node.content|striptags|trim %}
+{% endif %}
+
+{# Get image source from view fields #}
+{% set profile_button_text = 'Read More About ' ~ profile_name|striptags|trim %}
+{% set image_src = fields.field_prog_hero_ref.content|striptags|trim %}
+{% embed "@molecules/profile/profile.twig" with {
+  profile_header_modifiers: profile_header_modifiers,
+  profile_title: profile_type,
+  profile_name: profile_name,
+  profile_body_short: profile_content,
+  profile_link: profile_link,
+  profile_button_text: profile_button_text,
+  profile_role: profile_subhead
 } %}
   {% block card_image_block %}
-    <a class="card__image" href="{{ card_link_url }}">{{ image_src }}</a>
+    {{ profile_portrait }}
   {% endblock %}
 {% endembed %}

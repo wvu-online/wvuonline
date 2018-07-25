@@ -1,11 +1,7 @@
 .careers {
   padding: 2em 0;
 
-  background: linear-gradient(
-                  rgba(44, 42, 41, 0.8),
-                  rgba(44, 42, 41, 0.8)
-  ),
-  url('/themes/custom/wvuonline2018/images/background__black--1.0.0.svg');
+  background: url('/themes/custom/wvuonline2018/images/background__black--1.0.0.svg') $black;
   background-size: cover;
   color: $white;
 

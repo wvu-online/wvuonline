@@ -19,7 +19,6 @@ $main-menu-medium: 43em;
 .main-menu {
   @include list-reset;
   @include wrapper;
-
   border-bottom: 1px solid;
   position: relative;
   z-index: 10;
@@ -53,18 +52,18 @@ $main-menu-medium: 43em;
   width: 100%;
 
   @include breakpoint($main-menu-medium) {
-    background-color: $gray-lightest;
+    background-color: $black;
     display: none;
     height: auto;
     left: 0;
     overflow: visible;
     padding: $space 0;
     position: absolute;
-    top: 65px;
+    top: 58px;
     width: 315px;
     z-index: 1;
     font-size: 0.9rem;
-    color: $black;
+    color: $white;
     //opacity: 0.6;
   }
 

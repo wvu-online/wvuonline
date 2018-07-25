@@ -1,18 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Pattern" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1280 400" style="enable-background:new 0 0 1280 400;" xml:space="preserve">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 393.1 139.9" style="enable-background:new 0 0 393.1 139.9;" xml:space="preserve">
 <style type="text/css">
-	.st0{opacity:0.57;}
-	.st1{fill:#F8BE25;}
+	.st0{fill:#E2B550;}
 </style>
-<title>WVU pattern on a gold background</title>
-<g class="st0">
-	<path class="st1" d="M1201.3,0L933.7,400h83.4L1280,7V0H1201.3z M437.9,350.6L404.9,400h65.9L437.9,350.6z M503.9,251.6L462.3,314
-		l57.4,86h83.2L503.9,251.6z M884.2,400L1151,0h-83.2L801,400H884.2z"/>
-	<path class="st1" d="M479.5,215l24.4-36.6L651.7,400h100.5L1019,0h-83.2L701.9,350.6l-198-296.9l-198,296.9L72,0H0v16.9L255.6,400
-		h100.5l68.7-103.1L479.5,215L479.5,215z"/>
-	<path class="st1" d="M490.9,0h-83.2L305.8,152.7L204.2,0h-83l184.6,277.4L490.9,0z M701.9,277.4L887,0h-83.2L701.9,152.7L600.1,0
-		h-83.2L701.9,277.4z"/>
+<title>Artboard 1</title>
+<g>
+	
+		<rect x="159.1" y="-22.9" transform="matrix(0.8572 -0.515 0.515 0.8572 -24.8401 98.2664)" class="st0" width="11.4" height="233.6"/>
+	<polygon class="st0" points="217.4,17.4 248.9,69.9 292.9,-3.3 283.2,-9.1 248.9,47.9 217.4,-4.6 185.8,47.9 151.6,-9.1 
+		141.8,-3.3 185.8,69.9 	"/>
+	<polygon class="st0" points="367.3,-9.1 248.9,187.9 192.4,93.9 196.3,87.4 248.9,175 356,-3.3 346.3,-9.1 248.9,152.9 202.9,76.4 
+		206.8,69.9 248.9,140 335,-3.3 325.2,-9.1 248.9,117.9 213.5,58.9 217.4,52.4 248.9,104.9 313.9,-3.3 304.2,-9.1 248.9,82.9 
+		217.4,30.4 185.8,82.9 130.5,-9.1 120.8,-3.3 180.9,96.8 241.1,197 248.9,192.2 256.7,197 377,-3.3 	"/>
+	<polygon class="st0" points="271.9,-3.3 262.1,-9.1 248.9,12.9 235.7,-9.1 226,-3.3 248.9,34.9 	"/>
+	<polygon class="st0" points="208.7,-3.3 199,-9.1 185.8,12.9 172.6,-9.1 162.8,-3.3 185.8,34.9 	"/>
+	
+		<rect x="216.3" y="88.2" transform="matrix(0.515 -0.8572 0.8572 0.515 81.0178 331.0342)" class="st0" width="233.6" height="11.4"/>
+	
+		<rect x="74.9" y="-22.9" transform="matrix(0.8572 -0.515 0.515 0.8572 -36.8598 54.9257)" class="st0" width="11.4" height="233.6"/>
+	
+		<rect x="96" y="-22.9" transform="matrix(0.8572 -0.515 0.515 0.8572 -33.8558 65.7651)" class="st0" width="11.4" height="233.6"/>
+	
+		<rect x="117" y="-22.9" transform="matrix(0.8572 -0.515 0.515 0.8572 -30.8519 76.5943)" class="st0" width="11.4" height="233.6"/>
+	
+		<rect x="138" y="-22.9" transform="matrix(0.8572 -0.515 0.515 0.8572 -27.8479 87.4336)" class="st0" width="11.4" height="233.6"/>
+	
+		<rect x="-9.2" y="-22.9" transform="matrix(0.8572 -0.515 0.515 0.8572 -48.8795 11.585)" class="st0" width="11.4" height="233.6"/>
+	
+		<rect x="11.8" y="-22.9" transform="matrix(0.8572 -0.515 0.515 0.8572 -45.8755 22.4244)" class="st0" width="11.4" height="233.6"/>
+	
+		<rect x="32.8" y="-22.9" transform="matrix(0.8572 -0.515 0.515 0.8572 -42.8716 33.2535)" class="st0" width="11.4" height="233.6"/>
+	
+		<rect x="53.9" y="-22.9" transform="matrix(0.8572 -0.515 0.515 0.8572 -39.8676 44.0929)" class="st0" width="11.4" height="233.6"/>
+	
+		<rect x="281.2" y="87.5" transform="matrix(0.5174 -0.8557 0.8557 0.5174 112.5849 386.0157)" class="st0" width="234.7" height="11.4"/>
+	
+		<rect x="258.3" y="88.2" transform="matrix(0.515 -0.8572 0.8572 0.515 101.4114 367.0976)" class="st0" width="233.6" height="11.4"/>
+	
+		<rect x="237.3" y="88.2" transform="matrix(0.515 -0.8572 0.8572 0.515 91.2139 349.0634)" class="st0" width="233.6" height="11.4"/>
 </g>
 </svg>

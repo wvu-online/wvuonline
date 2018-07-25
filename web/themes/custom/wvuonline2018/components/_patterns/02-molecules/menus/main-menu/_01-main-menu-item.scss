@@ -1,7 +1,6 @@
 // LI
 .main-menu__item {
   border-top: 1px solid;
-  border-right: 1px solid $pms-warm-gray-11;
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -24,6 +23,19 @@
   &:hover {
     .main-menu__link::after {
       color: $gray;
+    }
+  }
+  &:not(.main-menu__item--sub) {
+    border-right: 1px solid $pms-warm-gray-11;
+    &:nth-last-of-type(1) {
+      background: $wvu-gold;
+      border: none;
+      float: right;
+    }
+    &:nth-last-of-type(2) {
+      background: $pms-300-c;
+      border: none;
+      float: right;
     }
   }
 }

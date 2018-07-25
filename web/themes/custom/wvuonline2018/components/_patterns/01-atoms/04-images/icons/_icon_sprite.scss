@@ -2,20 +2,60 @@
   background: url("svg/sprite.css.svg") no-repeat;
 }
 
-@mixin sprite-facebook-f-brands {
+@mixin sprite-caret-right-solid {
   @include svg-common;
 
   background-position: 0 0;
+}
+
+.sprite-caret-right-solid {
+  @include sprite-caret-right-solid;
+}
+
+@mixin sprite-check-circle-light {
+  @include svg-common;
+
+  background-position: 21.358333333333334% 0;
+}
+
+.sprite-check-circle-light {
+  @include sprite-check-circle-light;
+}
+
+@mixin sprite-facebook-f-brands {
+  @include svg-common;
+
+  background-position: 47.63887797595663% 0;
 }
 
 .sprite-facebook-f-brands {
   @include sprite-facebook-f-brands;
 }
 
+@mixin sprite-file-edit-light {
+  @include svg-common;
+
+  background-position: 0 50%;
+}
+
+.sprite-file-edit-light {
+  @include sprite-file-edit-light;
+}
+
+@mixin sprite-info-circle-light {
+  @include svg-common;
+
+  background-position: 26.041666666666668% 50%;
+}
+
+.sprite-info-circle-light {
+  @include sprite-info-circle-light;
+}
+
 @mixin sprite-menu {
   @include svg-common;
 
-  background-position: 45.34750613246116% 0;
+  background-position: 72.33729021694637% 0;
 }
 
 .sprite-menu {
@@ -25,7 +65,7 @@
 @mixin sprite-play-solid {
   @include svg-common;
 
-  background-position: 99.52357483160834% 0;
+  background-position: 0 100%;
 }
 
 .sprite-play-solid {
@@ -35,7 +75,7 @@
 @mixin sprite-search {
   @include svg-common;
 
-  background-position: 0 100%;
+  background-position: 27.608333333333338% 100%;
 }
 
 .sprite-search {
@@ -45,10 +85,20 @@
 @mixin sprite-twitter-brands {
   @include svg-common;
 
-  background-position: 59.32203389830509% 100%;
+  background-position: 56.775% 100%;
 }
 
 .sprite-twitter-brands {
   @include sprite-twitter-brands;
+}
+
+@mixin sprite-usd-square-light {
+  @include svg-common;
+
+  background-position: 99.4584393205875% 0;
+}
+
+.sprite-usd-square-light {
+  @include sprite-usd-square-light;
 }
 

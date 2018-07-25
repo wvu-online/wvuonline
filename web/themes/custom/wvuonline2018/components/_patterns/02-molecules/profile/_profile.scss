@@ -1,9 +1,29 @@
+.spotlights {
+  @include full-width;
+
+  padding: 6em 0;
+  background:
+  linear-gradient(
+                  rgba(255,255,255, 0.6),
+                  rgba(255,255,255, 0.6)
+  ),
+  url('/themes/custom/wvuonline2018/images/BackgroundForProgramPageTabs.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 2em;
+  }
+}
+
 .profile {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   box-sizing: border-box;
   box-shadow: 0 3px 7px 0 $gray;
+  background: $white;
 
   > * {
     //width: 100%;
@@ -16,15 +36,15 @@
 
   &__header {
     width: 100%;
-    height: 145px;
-    background: $wvu-blue;
+        background: $wvu-blue;
     display: flex;
     padding-top: 2em;
     padding-bottom: 2em;
     margin-bottom: 2em;
+    justify-content: flex-end;
 
     @include small {
-      padding-left: calc(50% + 1.6em);
+
     }
 
     &--blue {
@@ -36,18 +56,24 @@
       background: url("../images/background__gold--1.0.0.svg") no-repeat $wvu-gold;
       background-size: cover;
     }
+
+    &--black {
+      background: url("../images/background__black--1.0.0.svg") no-repeat $black;
+      background-size: cover;
+    }
   }
 
   &__h2 {
     width: 50%;
-    font-size: 3em;
+    font-size: 2.2em;
     text-transform: uppercase;
     line-height: 0.75;
     font-weight: 900;
     letter-spacing: -2px;
     font-family: $font-heading;
 
-    &--blue {
+    &--blue,
+    &--black {
       color: $white;
     }
 
@@ -68,6 +94,15 @@
     align-items: center;
     text-align: center;
     margin-top: calc(-100px - 3em);
+
+    img {
+      border-radius: 50%;
+      //margin-bottom: 3em;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      max-width: 200px;
+    }
 
     @include small {
       width: 40%;
@@ -117,7 +152,7 @@
     max-width: 200px;
   }
 
-  &__button {
+  &__link {
     @include button($wvu-blue, $white, $white, $wvu-blue);
 
     border: 2px solid;
