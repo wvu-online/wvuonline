@@ -1,23 +1,23 @@
-uuid: 01cf1e58-f51f-4c6c-92de-f0ee33ff428d
+uuid: bb3ad083-c3b2-4a07-93ee-ac0521178fca
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.footer
+    - system.menu.footer-2
   module:
     - block_visibility_groups
     - system
   theme:
     - wvuonline2018
-id: footer
+id: footer2
 theme: wvuonline2018
 region: footer
-weight: -26
+weight: 0
 provider: null
-plugin: 'system_menu_block:footer'
+plugin: 'system_menu_block:footer-2'
 settings:
-  id: 'system_menu_block:footer'
-  label: Footer
+  id: 'system_menu_block:footer-2'
+  label: 'Footer 2'
   provider: system
   label_display: visible
   level: 1

@@ -4,6 +4,8 @@
   @include list-reset;
 
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .footer-menu--sub {
@@ -15,5 +17,9 @@ a.footer-menu__link {
 }
 
 ul.footer-menu:first-child > li > a {
-  font-weight: bold;
+  //font-weight: bold;
+}
+
+.footer-menu__item--with-sub .expand-sub {
+  display: none;
 }

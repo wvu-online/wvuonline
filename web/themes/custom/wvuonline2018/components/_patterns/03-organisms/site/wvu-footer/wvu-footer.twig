@@ -1,56 +1,67 @@
 <footer class="wvu-footer">
-
-  <div class="footer-upper-content">
-    <div class="footer-contact-info">
-      <strong>West Virgina University</strong>
-      WVU Online
-    </div>
-    <div class="footer-menu-wrapper">
-      {% block content %}
-      {% include "@molecules/menus/_menu.twig" with {
-        menu_class: "footer-menu",
-        items: menu_items,
-      } %}
-      {% endblock %}
-    </div>
-    <div class="footer-follow-us">
-      <h3>Follow Us</h3>
-      <div class="wvu-footer__social-media-icons">
-        <a class="facebook" href="//www.facebook.com" target="_blank">
-          {% include "@atoms/04-images/icons/_icon.twig" with {
-            icon_base_class: "icon",
-            icon_blockname: "facebook",
-            icon_name: "facebook-f-brands",
-            icon_role: "link",
-            icon_title: "Link to our Facebook page",
-            icon_desc: "Facebook logo with a link to our Facebook page",
-          } %}
-        </a>
-        <a class="twitter" href="//www.twitter.com" target="_blank">
-          {% include "@atoms/04-images/icons/_icon.twig" with {
-            icon_base_class: "icon",
-            icon_blockname: "twitter",
-            icon_name: "twitter-brands",
-            icon_role: "link",
-            icon_title: "Link to our Twitter page",
-            icon_desc: "Twitter logo with a link to our Twitter page",
-          } %}
-        </a>
-        <a class="youtube" href="//www.youtube.com" target="_blank">
-          {% include "@atoms/04-images/icons/_icon.twig" with {
-            icon_base_class: "icon",
-            icon_blockname: "youtube",
-            icon_name: "play-solid",
-            icon_role: "link",
-            icon_title: "Link to our Youtube page",
-            icon_desc: "Youtube logo with a link to our Youtube page",
-          } %}
-        </a>
+  <div class="footer-upper">
+    <div class="footer-upper-content">
+      <div class="footer-contact-info">
+        <h4>West Virginia University</h4>
+        <p class="footer-contact-info-address">
+          WVU Online
+          <br/>
+          PO Box 6800, Morgantown WV 26506-6800
+          <br/>
+          GPS: <a href="http://maps.google.com/maps?q=150+Clay+Street,+Morgantown,+WV&hl=en&ll=39.627086,-79.961983&spn=0.00671,0.013894&sll=37.0625,-95.677068&sspn=55.806079,113.818359&vpsrc=6&t=m&z=17" target="_blank">39.627086, -79.961983</a>
+          <br/><br/>
+        </p>
+        <p class="footer-contact-info-phone-email">
+          (800) 254-2762
+          <br/>
+          <a href="mailto:wvuonline@mail.wvu.edu">wvuonline@mail.wvu.edu</a>
+        </p>
+      </div>
+      <div class="footer-menu-outer-wrapper">
+        {% block footer_content %}
+          {{ content }}
+        {% endblock %}
+      </div>
+      <div class="footer-follow-us">
+        <h4>Follow Us</h4>
+        <div class="wvu-footer__social-media-icons">
+          <a class="facebook" href="//www.facebook.com" target="_blank">
+            {% include "@atoms/04-images/icons/_icon.twig" with {
+              icon_base_class: "icon",
+              icon_blockname: "facebook",
+              icon_name: "facebook-f-brands",
+              icon_role: "link",
+              icon_title: "Link to our Facebook page",
+              icon_desc: "Facebook logo with a link to our Facebook page",
+            } %}
+          </a>
+          <a class="twitter" href="//www.twitter.com" target="_blank">
+            {% include "@atoms/04-images/icons/_icon.twig" with {
+              icon_base_class: "icon",
+              icon_blockname: "twitter",
+              icon_name: "twitter-brands",
+              icon_role: "link",
+              icon_title: "Link to our Twitter page",
+              icon_desc: "Twitter logo with a link to our Twitter page",
+            } %}
+          </a>
+          <a class="youtube" href="//www.youtube.com" target="_blank">
+            {% include "@atoms/04-images/icons/_icon.twig" with {
+              icon_base_class: "icon",
+              icon_blockname: "youtube",
+              icon_name: "play-solid",
+              icon_role: "link",
+              icon_title: "Link to our Youtube page",
+              icon_desc: "Youtube logo with a link to our Youtube page",
+            } %}
+          </a>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="wvu-footer__static_content">
+  <div class="footer-lower">
+    <div class="wvu-footer__static_content">
     <div class="wvu-footer__affirmative-action-links-and-statement">
       <ul class="wvu-footer__affirmative-action-links">
         <li><a href="https://wvu.edu/about-wvu/wvu-facts">Accreditations</a></li>

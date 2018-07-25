@@ -74,10 +74,17 @@
 
   </main>
 
+  {% block page_footer %}
+    {% if page.footer %}
+      {{ page.footer }}
+    {% endif %}
+  {% endblock %}
+{#
   {% if page.footer %}
     {% include "@organisms/site/wvu-footer/wvu-footer.twig" with {
       content: page.footer
     }%}
   {% endif %}
+#}
 
 </div>{# /.layout-container #}

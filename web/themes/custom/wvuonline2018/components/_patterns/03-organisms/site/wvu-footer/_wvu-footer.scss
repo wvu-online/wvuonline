@@ -1,24 +1,75 @@
 .wvu-footer {
-  background-color: $wvu-blue;
   color: $white;
-  padding: 1em 2.5vw;
+
+  .footer-upper {
+    /// change to variable
+    background-color: #112755;
+  }
 
   .footer-upper-content {
-    margin: 0 auto;
-    max-width: 80em;
+    //@include wrapper(
+    //  $v-padding: $space-quadruple
+    //);
+
+    //margin: 0 auto;
+    //max-width: 80em;
+
+
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+
+    //h3,
+    h4 {
+      margin: 0;
+    }
   }
 
   .footer-contact-info {
     display: flex;
     flex-direction: column;
+    padding-bottom: 2em;
+    padding-right: 2em;
+
+    p {
+      margin: 0;
+    }
+
+    .footer-contact-info-address {
+      a {
+        color: $pms-629-c;
+        &:hover {
+          color: $wvu-gold;
+        }
+      }
+    }
+
+    .footer-contact-info-phone-email {
+      color: $wvu-gold;
+      font-weight: bold;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .footer-lower {
+    /// change to variable
+    background-color: #041f4a;
   }
 
   .wvu-footer__static_content {
-    margin: 0 auto;
-    max-width: 80em;
     display: flex;
+    flex-wrap: wrap;
+
+    //@include wrapper(
+    //  $v-padding: $space-quadruple
+    //);
+
+    //padding: 5em 0;
+    //margin: 0 auto;
+    //max-width: 80em;
     justify-content: space-between;
   }
 
@@ -27,11 +78,40 @@
 
     &:hover {
       color: $white;
+      text-decoration: underline;
     }
   }
 
-  ul.footer-menu:first-child > li > a {
-    color: white;
+  .footer-menu-outer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-grow: 1;
+
+    .menu-block {
+      h2 {
+        margin-bottom: 0;
+        font-size: 1.1em;
+      }
+    }
+  }
+
+  .footer-menu-wrapper {
+
+    //margin: 0 2em;
+    //padding: 0 2em;
+
+
+    .footer-menu {
+      flex-direction: column;
+      a {
+        color: $wvu-gold;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
   }
 
   .wvu-footer__static_content a {
@@ -41,15 +121,24 @@
   .wvu-footer__affirmative-action-links-and-statement {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
   }
 
   .wvu-footer__affirmative-action-links {
     display: flex;
+    flex-wrap: wrap;
     padding-left: 0;
+    margin: 0;
 
     li {
       list-style: none;
       margin-right: 1em;
+    }
+  }
+
+  .wvu-footer__affirmative-action-statement {
+    p {
+      margin: 0;
     }
   }
 
@@ -65,11 +154,9 @@
 
   .wvu-footer__social-media-icons {
     display: flex;
-    align-self: flex-start;
-    align-items: center;
 
     a {
-      padding: 0.5em;
+      //padding: 0.5em;
       margin-right: 1em;
       border-radius: 100%;
       display: flex;
@@ -81,8 +168,8 @@
     }
 
     svg {
-      height: 1em;
-      width: 1em;
+      height: 2em;
+      width: 2em;
     }
 
     .facebook {
@@ -100,13 +187,12 @@
 
   .footer-follow-us {
     a {
-      padding: 1em;
+      //padding: 1em;
     }
 
     svg {
-      height: 2em;
-      width: 2em;
+      height: 3em;
+      width: 3em;
     }
   }
 }
-
