@@ -55,12 +55,12 @@
 //
 // A (Nested)
 .main-menu__link--sub {
-  color: $gray-dark;
+  color: $white;
   padding-left: $space-triple;
   font-weight: normal;
 
   @include breakpoint($main-menu-medium) {
-    color: $gray-light;
+    color: $white;
     display: block;
     padding: $space-one-third $space;
   }
