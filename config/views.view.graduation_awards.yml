@@ -704,27 +704,34 @@ display:
                   min: ''
                   max: ''
               8:
+                title: 'Master of Legal Studies'
+                operator: '='
+                value:
+                  value: '990'
+                  min: ''
+                  max: ''
+              9:
                 title: 'Master of Science'
                 operator: '='
                 value:
                   value: '7'
                   min: ''
                   max: ''
-              9:
+              10:
                 title: 'Master of Science in Nursing and Master of Business Administration'
                 operator: '='
                 value:
                   value: '933'
                   min: ''
                   max: ''
-              10:
+              11:
                 title: Minor
                 operator: '='
                 value:
                   value: '101'
                   min: ''
                   max: ''
-              11:
+              12:
                 title: RN-BSN
                 operator: '='
                 value:

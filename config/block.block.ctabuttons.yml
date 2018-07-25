@@ -1,6 +1,6 @@
 uuid: 41c37534-4146-424e-bb2a-4bf724f22040
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.cta-buttons

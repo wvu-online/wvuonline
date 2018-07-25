@@ -1,0 +1,23 @@
+uuid: 7be2d19b-ebd6-401a-a1a9-2f9f4165ad0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_saut_sara_authorized
+    - node.type.saut
+  module:
+    - options
+id: node.saut.field_saut_sara_authorized
+field_name: field_saut_sara_authorized
+entity_type: node
+bundle: saut
+label: 'SARA Authorized'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'No'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

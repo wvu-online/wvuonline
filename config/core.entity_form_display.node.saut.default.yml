@@ -1,0 +1,195 @@
+uuid: 77ca5a3e-54ab-4b35-9862-6319a911dbfe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.saut.field_saut_body
+    - field.field.node.saut.field_saut_lage_ref
+    - field.field.node.saut.field_saut_prog_ref
+    - field.field.node.saut.field_saut_sara_authorized
+    - field.field.node.saut.field_saut_state
+    - field.field.node.saut.field_saut_state_compliant_link
+    - node.type.saut
+  module:
+    - entity_browser_entity_form
+    - field_group
+    - inline_entity_form
+    - link
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_wrapper:
+      children:
+        - group_state
+        - group_text
+        - group_programs
+        - group_link
+        - group_licensing_agency
+      parent_name: ''
+      weight: 4
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Wrapper
+      region: content
+    group_text:
+      children:
+        - field_saut_body
+      parent_name: group_wrapper
+      weight: 13
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Text
+      region: content
+    group_programs:
+      children:
+        - field_saut_prog_ref
+      parent_name: group_wrapper
+      weight: 14
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Programs
+      region: content
+    group_link:
+      children:
+        - field_saut_state_compliant_link
+      parent_name: group_wrapper
+      weight: 15
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Link
+      region: content
+    group_licensing_agency:
+      children:
+        - field_saut_lage_ref
+      parent_name: group_wrapper
+      weight: 16
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Licensing Agency'
+      region: content
+    group_state:
+      children:
+        - field_saut_sara_authorized
+        - field_saut_state
+      parent_name: group_wrapper
+      weight: 12
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: State
+      region: content
+id: node.saut.default
+targetEntityType: node
+bundle: saut
+mode: default
+content:
+  field_saut_body:
+    weight: 7
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_saut_lage_ref:
+    weight: 3
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
+  field_saut_prog_ref:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_saut_sara_authorized:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_saut_state:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_saut_state_compliant_link:
+    weight: 5
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  moderation_state: true
+  promote: true
+  publish_on: true
+  sticky: true
+  uid: true
+  unpublish_on: true
+  url_redirects: true

@@ -1,0 +1,21 @@
+uuid: d03e2203-a35b-4b95-9ae0-85662970b9ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lage_body
+    - node.type.lage
+  module:
+    - text
+id: node.lage.field_lage_body
+field_name: field_lage_body
+entity_type: node
+bundle: lage
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

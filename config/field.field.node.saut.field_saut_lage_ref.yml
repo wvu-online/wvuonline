@@ -1,0 +1,29 @@
+uuid: 229dc408-f36d-42c3-a2b6-fb601eedf862
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_saut_lage_ref
+    - node.type.lage
+    - node.type.saut
+id: node.saut.field_saut_lage_ref
+field_name: field_saut_lage_ref
+entity_type: node
+bundle: saut
+label: 'Licensing Agency'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      lage: lage
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
