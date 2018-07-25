@@ -12,7 +12,7 @@ dependencies:
 id: ctabuttons
 theme: wvuonline2018
 region: pre_content
-weight: -24
+weight: -25
 provider: null
 plugin: 'system_menu_block:cta-buttons'
 settings:
