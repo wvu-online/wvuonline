@@ -12,8 +12,8 @@
  * @see template_preprocess_region()
  */
 #}
-{% extends "@organisms/site/wvu-footer/wvu-footer.twig" %}
-
-{% block footer_content %}
+{% embed "@organisms/site/wvu-footer/wvu-footer.twig" %}
+  {% block footer_content %}
     {{ content }}
-{% endblock %}
+  {% endblock %}
+{% endembed %}

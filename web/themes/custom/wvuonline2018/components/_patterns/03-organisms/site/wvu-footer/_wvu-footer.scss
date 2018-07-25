@@ -38,6 +38,9 @@
     .footer-contact-info-address {
       a {
         color: $pms-629-c;
+        &:hover {
+          color: $wvu-gold;
+        }
       }
     }
 
@@ -75,26 +78,40 @@
 
     &:hover {
       color: $white;
+      text-decoration: underline;
+    }
+  }
+
+  .footer-menu-outer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-grow: 1;
+
+    .menu-block {
+      h2 {
+        margin-bottom: 0;
+        font-size: 1.1em;
+      }
     }
   }
 
   .footer-menu-wrapper {
-    flex-grow: 1;
+
     //margin: 0 2em;
     //padding: 0 2em;
 
+
     .footer-menu {
-      //justify-content: space-between;
+      flex-direction: column;
+      a {
+        color: $wvu-gold;
+
+        &:hover {
+          color: $white;
+        }
+      }
     }
-  }
-
-  ul.footer-menu:first-child > li > a {
-    color: white;
-  }
-
-  ul.footer-menu:first-child > li {
-    padding-right: 2em;
-    padding-bottom: 1em;
   }
 
   .wvu-footer__static_content a {

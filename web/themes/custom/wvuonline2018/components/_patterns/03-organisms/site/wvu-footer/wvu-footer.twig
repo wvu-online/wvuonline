@@ -17,9 +17,9 @@
           <a href="mailto:wvuonline@mail.wvu.edu">wvuonline@mail.wvu.edu</a>
         </p>
       </div>
-      <div class="footer-menu-wrapper">
+      <div class="footer-menu-outer-wrapper">
         {% block footer_content %}
-          {% include "@molecules/menus/footer-menu/footer-menu.twig" %}
+          {{ content }}
         {% endblock %}
       </div>
       <div class="footer-follow-us">
