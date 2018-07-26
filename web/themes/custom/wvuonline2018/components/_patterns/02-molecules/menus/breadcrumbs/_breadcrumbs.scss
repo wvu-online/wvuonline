@@ -1,8 +1,14 @@
 $breadcrumb-active: #bbb;
 
+#block-breadcrumbs-2 {
+  background: rgba(44, 42, 41, 0.5);
+  opacity: 0.9;
+}
 .breadcrumb {
   @include list-reset;
-  background: transparentize($black, 0.8);
+  @include wrapper;
+
+  margin-top: -2em;
 }
 
 .breadcrumb__item,
@@ -10,17 +16,17 @@ $breadcrumb-active: #bbb;
 .breadcrumb__link:link,
 .breadcrumb__link:visited,
 .breadcrumb__link:focus {
-  color: $gray-light;
+  color: $white;
   text-decoration: none;
 }
 
 .breadcrumb__link:hover {
-  color: $gray;
+  color: $wvu-gold;
 }
 
 .breadcrumb__item {
   display: inline-block;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
 
   &::after {
     content: "/";
