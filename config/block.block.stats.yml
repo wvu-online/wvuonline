@@ -12,7 +12,7 @@ dependencies:
 id: stats
 theme: wvuonline2018
 region: content
-weight: 0
+weight: -4
 provider: null
 plugin: stats
 settings:

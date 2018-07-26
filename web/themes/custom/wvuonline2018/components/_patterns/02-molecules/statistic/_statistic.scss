@@ -1,0 +1,34 @@
+.stat-block {
+  @include full-width;
+  background: url('/themes/custom/wvuonline2018/images/background__gold--1.0.0.svg') $wvu-gold;
+  background-size: cover;
+  text-align: center;
+  padding: 2em 0;
+  color: $wvu-blue;
+  text-transform: uppercase;
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  h3 {
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
+
+  .views-element-container {
+    width: 25%;
+  }
+
+  .stat__title {
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+
+  .stat__number {
+    font-size: 5em;
+    font-weight: bold;
+  }
+}

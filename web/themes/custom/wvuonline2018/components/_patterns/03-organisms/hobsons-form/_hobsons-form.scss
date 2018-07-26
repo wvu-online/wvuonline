@@ -1,10 +1,14 @@
 @import '../../00-base/global/01-colors/color-vars';
 @import '../../00-base/mixins';
 
+.hobsons {
+  @include full-width;
+}
+
 .h-form {
   //box-shadow: 0 3px 7px 0 $gray;
   //width: 70em;
-  //padding: 2em 1em;
+  padding: 2em 1em;
   background:
           linear-gradient(
                           rgba(234, 170, 0, 0.6),
@@ -30,6 +34,7 @@
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
+    margin-top: 0;
     padding-bottom: 1.5em;
     @extend .u-wvu-blue;
   }

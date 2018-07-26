@@ -45,7 +45,6 @@
 
 .big-link {
   @include full-width;
-  background: url('/themes/custom/wvuonline2018/images/BackgroundForHomepageDegreeButtons.jpg');
+  background: url('/themes/custom/wvuonline2018/images/BackgroundForHomepageDegreeButtons.jpg') center center;
   background-size: cover;
-  background-position: center center;
 }

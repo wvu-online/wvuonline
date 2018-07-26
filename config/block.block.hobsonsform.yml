@@ -1,29 +1,25 @@
-uuid: 591db933-a244-4060-8707-997618cd878b
+uuid: 5008dce1-f169-4066-92a6-86026202df39
 langcode: en
 status: true
 dependencies:
   config:
     - block_visibility_groups.block_visibility_group.front_page_path
-    - views.view.rel_spotlights
   module:
     - block_visibility_groups
-    - views
+    - wvu_custom_blocks
   theme:
     - wvuonline2018
-id: views_block__rel_spotlights_block_1
+id: hobsonsform
 theme: wvuonline2018
 region: content
-weight: -3
+weight: -7
 provider: null
-plugin: 'views_block:rel_spotlights-block_1'
+plugin: hobsons_form
 settings:
-  id: 'views_block:rel_spotlights-block_1'
-  label: ''
-  provider: views
+  id: hobsons_form
+  label: 'Hobsons form'
+  provider: wvu_custom_blocks
   label_display: '0'
-  views_label: ''
-  items_per_page: none
-  context_mapping: {  }
 visibility:
   condition_group:
     id: condition_group
