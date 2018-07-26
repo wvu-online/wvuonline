@@ -1,0 +1,17 @@
+uuid: 1b9c987f-82b9-4650-8e83-082360120d62
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: state_authorization_landing
+label: 'State Authorization Landing'
+logic: or
+conditions:
+  965b5367-8f1a-44c8-ad00-6790706c862e:
+    id: request_path
+    pages: "/node/982\r\n/state-authorization"
+    negate: false
+    context_mapping: {  }
+    uuid: 965b5367-8f1a-44c8-ad00-6790706c862e
+allow_other_conditions: false
