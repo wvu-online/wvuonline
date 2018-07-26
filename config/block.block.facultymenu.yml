@@ -13,7 +13,7 @@ dependencies:
 id: facultymenu
 theme: wvuonline2018
 region: sidebar
-weight: -25
+weight: 0
 provider: null
 plugin: 'system_menu_block:faculty-menu'
 settings:

@@ -1,30 +1,28 @@
-uuid: 8a3e0b2f-4b4a-4c71-af3d-78acf110bb84
+uuid: a596c372-a09f-4a83-9c50-f928f86b7ed9
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.footer-3
+    - block_visibility_groups.block_visibility_group.state_authorization_landing
   module:
     - block_visibility_groups
     - system
   theme:
     - wvuonline2018
-id: footer3
+id: mainpagecontent_18
 theme: wvuonline2018
-region: footer
+region: content
 weight: 0
 provider: null
-plugin: 'system_menu_block:footer-3'
+plugin: system_main_block
 settings:
-  id: 'system_menu_block:footer-3'
-  label: 'Footer 3'
+  id: system_main_block
+  label: 'Main page content'
   provider: system
   label_display: visible
-  level: 1
-  depth: 0
 visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: ''
+    block_visibility_group: state_authorization_landing
     context_mapping: {  }
