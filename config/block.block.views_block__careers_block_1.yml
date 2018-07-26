@@ -13,7 +13,7 @@ dependencies:
 id: views_block__careers_block_1
 theme: wvuonline2018
 region: content
-weight: -22
+weight: -3
 provider: null
 plugin: 'views_block:careers-block_1'
 settings:
