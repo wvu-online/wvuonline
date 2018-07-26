@@ -41,27 +41,17 @@
       includePaths: (['./node_modules']),
     },
     iconConfig: {
-      shape: {
-        dimension: {
-          maxWidth: 15,
-          maxHeight: 15,
-        },
-        spacing: {
-          padding: 10,
+      mode: {
+        symbol: {
+          // symbol mode to build the SVG
+          dest: 'dist/img/sprite', // destination foldeer
+          sprite: 'sprite.svg', // sprite name
+          example: false, // Don't build sample page
         },
       },
-      mode: {
-        css: {
-          bust: false,
-          dest: '../../dist',
-          prefix: '@mixin sprite-%s',
-          render: {
-            scss: {
-              dest: '../components/_patterns/01-atoms/04-images/icons/_icon_sprite.scss',
-              template: 'node_modules/emulsify-gulp/gulp-tasks/svg-icons/sprite.scss.handlebars',
-            },
-          },
-        },
+      svg: {
+        xmlDeclaration: false, // strip out the XML attribute
+        doctypeDeclaration: false, // don't include the !DOCTYPE declaration
       },
     },
     patternLab: {
