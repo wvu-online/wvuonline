@@ -9,7 +9,7 @@ dependencies:
 id: tabs_7
 theme: wvuonline2018
 region: content
-weight: -8
+weight: -5
 provider: null
 plugin: local_tasks_block
 settings:

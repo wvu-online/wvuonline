@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.pgro.field_pgro_coll_ref
     - field.field.node.pgro.field_pgro_hero_ref
+    - field.field.node.pgro.field_pgro_spot_ref
     - node.type.pgro
   module:
     - user
@@ -21,3 +22,4 @@ content:
 hidden:
   field_pgro_coll_ref: true
   field_pgro_hero_ref: true
+  field_pgro_spot_ref: true
