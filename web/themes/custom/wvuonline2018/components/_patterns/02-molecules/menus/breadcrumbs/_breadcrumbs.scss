@@ -4,10 +4,10 @@ $breadcrumb-active: #bbb;
   background: rgba(44, 42, 41, 0.5);
   opacity: 0.9;
 }
+
 .breadcrumb {
   @include list-reset;
   @include wrapper;
-
   margin-top: -2em;
 }
 

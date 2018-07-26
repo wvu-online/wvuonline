@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.hero.field_hero_hero_image_type
+    - field.field.node.hero.field_hero_image
     - field.field.node.hero.field_hero_link
     - field.field.node.hero.field_hero_tall_image
     - field.field.node.hero.field_hero_teaser
@@ -25,6 +26,15 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_hero_image:
+    type: entity_reference_entity_view
+    weight: 107
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
     region: content
   field_hero_link:
     weight: 102

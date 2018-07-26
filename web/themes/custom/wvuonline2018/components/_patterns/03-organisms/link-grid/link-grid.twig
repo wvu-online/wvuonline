@@ -8,12 +8,15 @@
     {# PL content in YAML #}
   {% else %}
     {% for link in links %}
-        {% include "@atoms/01-links/link/link.twig" with {
-          "link_content": link.content,
+        {% embed "@atoms/01-links/link/link.twig" with {
           "link_url": link.url,
           "link_blockname": 'grid',
           "link_base_class": 'item'
         } %}
+          {% block link_content %}
+            {{ link.content }}{% if link.degree == 1 %}<span class="yellow-text">Degrees</span>{% endif %}
+          {% endblock %}
+        {% endembed %}
     {% endfor %}
   {% endif %}
 {% endblock %}

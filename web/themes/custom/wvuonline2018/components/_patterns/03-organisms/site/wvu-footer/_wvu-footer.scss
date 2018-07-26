@@ -97,6 +97,13 @@
         margin-bottom: 0;
         font-size: 1.1em;
       }
+
+      a {
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
 

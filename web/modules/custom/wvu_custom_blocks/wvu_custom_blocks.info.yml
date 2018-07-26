@@ -1,0 +1,5 @@
+name: 'wvu-custom-blocks'
+type: module
+description: 'Custom Blocks for Site'
+core: 8.x
+package: 'WVU'

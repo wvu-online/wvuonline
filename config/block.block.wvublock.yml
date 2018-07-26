@@ -1,0 +1,28 @@
+uuid: 3de34143-781f-4109-a508-57baaf3be983
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.front_page_path
+  module:
+    - block_visibility_groups
+    - wvu_custom_blocks
+  theme:
+    - wvuonline2018
+id: wvublock
+theme: wvuonline2018
+region: content
+weight: -4
+provider: null
+plugin: wvu_block
+settings:
+  id: wvu_block
+  label: 'Wvu block'
+  provider: wvu_custom_blocks
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: front_page_path
+    context_mapping: {  }

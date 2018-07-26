@@ -1,0 +1,14 @@
+{
+  "name": "drupal/wvu_custom_blocks",
+  "type": "drupal-module",
+  "description": "Custom Blocks for Site",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/wvu_custom_blocks",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/wvu_custom_blocks",
+    "source": "http://cgit.drupalcode.org/wvu_custom_blocks"
+  },
+  "require": { }
+}

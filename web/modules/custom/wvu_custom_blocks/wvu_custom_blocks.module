@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains wvu_custom_blocks.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function wvu_custom_blocks_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the wvu_custom_blocks module.
+    case 'help.page.wvu_custom_blocks':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom Blocks for Site') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function wvu_custom_blocks_theme() {
+  return array(
+    'ws_custom_block' => array(
+      'variables' => array('title' => NULL, 'link' => NULL),
+      'template' => 'wvu-custom-blocks',
+    ),
+  );
+}

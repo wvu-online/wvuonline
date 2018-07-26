@@ -1,0 +1,28 @@
+uuid: 1f5aaf06-6a29-4545-a658-ded3ab230c21
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.front_page_path
+  module:
+    - block_visibility_groups
+    - wvu_custom_blocks
+  theme:
+    - wvuonline2018
+id: stats
+theme: wvuonline2018
+region: content
+weight: 0
+provider: null
+plugin: stats
+settings:
+  id: stats
+  label: 'Find The Program That''s Right For You'
+  provider: wvu_custom_blocks
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: front_page_path
+    context_mapping: {  }

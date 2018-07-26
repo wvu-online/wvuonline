@@ -12,7 +12,7 @@ dependencies:
 id: mainpagecontent_16
 theme: wvuonline2018
 region: content
-weight: -5
+weight: -6
 provider: null
 plugin: system_main_block
 settings:
