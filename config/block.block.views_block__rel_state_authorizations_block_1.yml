@@ -13,7 +13,7 @@ dependencies:
 id: views_block__rel_state_authorizations_block_1
 theme: wvuonline2018
 region: content
-weight: 2
+weight: 0
 provider: null
 plugin: 'views_block:rel_state_authorizations-block_1'
 settings:

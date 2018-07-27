@@ -13,7 +13,7 @@ dependencies:
 id: views_block__program_groupings_block_1
 theme: wvuonline2018
 region: content
-weight: -5
+weight: -8
 provider: null
 plugin: 'views_block:program_groupings-block_1'
 settings:

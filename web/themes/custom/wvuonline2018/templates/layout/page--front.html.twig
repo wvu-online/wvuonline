@@ -43,48 +43,4 @@
  * @see html.html.twig
  */
 #}
-<div class="layout-container">
-
-  {{ page.header }}
-
-  {{ page.primary_menu }}
-  {{ page.secondary_menu }}
-
-  {{ page.breadcrumb }}
-
-  {{ page.highlighted }}
-  {{ page.pre_content }}
-
-  {{ page.help }}
-
-  {{ messages }}
-
-  <main role="main" class="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
-    {% if page.sidebar %}
-      <aside class="main-sidebar" role="complementary">
-        {{ page.sidebar }}
-      </aside>
-    {% endif %}
-
-    <div class="main-content{% if page.sidebar %}--with-sidebar{% endif %}">
-      {% if not is_front %}{{ page.content|without('title') }}{% endif %}
-    </div>{# /.layout-content #}
-
-  </main>
-
-  {% block page_footer %}
-    {% if page.footer %}
-      {{ page.footer }}
-    {% endif %}
-  {% endblock %}
-{#
-  {% if page.footer %}
-    {% include "@organisms/site/wvu-footer/wvu-footer.twig" with {
-      content: page.footer
-    }%}
-  {% endif %}
-#}
-
-</div>{# /.layout-container #}
+{% include "@pages/_page.twig" %}

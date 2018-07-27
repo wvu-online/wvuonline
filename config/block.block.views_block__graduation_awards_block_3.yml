@@ -13,7 +13,7 @@ dependencies:
 id: views_block__graduation_awards_block_3
 theme: wvuonline2018
 region: content
-weight: -11
+weight: -17
 provider: null
 plugin: 'views_block:graduation_awards-block_3'
 settings:

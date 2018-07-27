@@ -1,28 +1,30 @@
-uuid: ef0dda54-8918-4083-ba5f-c6f94d1f5fbf
+uuid: 63930327-6534-483e-929d-6767485a4d40
 langcode: en
 status: true
 dependencies:
   config:
-    - block_visibility_groups.block_visibility_group.spotlight_path
+    - system.menu.faculty-footer
   module:
     - block_visibility_groups
     - system
   theme:
     - wvuonline2018
-id: mainpagecontent_7
+id: facultyfooter
 theme: wvuonline2018
-region: content
-weight: 2
+region: footer
+weight: 0
 provider: null
-plugin: system_main_block
+plugin: 'system_menu_block:faculty-footer'
 settings:
-  id: system_main_block
-  label: 'Main page content'
+  id: 'system_menu_block:faculty-footer'
+  label: Faculty
   provider: system
   label_display: visible
+  level: 1
+  depth: 0
 visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: spotlight_path
+    block_visibility_group: ''
     context_mapping: {  }

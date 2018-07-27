@@ -1,23 +1,23 @@
-uuid: 517054a7-c1a6-4a55-8318-7464ab23d21f
+uuid: 7e441c8e-2cf5-4c0b-9597-385618bb4a26
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.faculty-menu
+    - system.menu.student-footer
   module:
     - block_visibility_groups
     - system
   theme:
     - wvuonline2018
-id: facultymenu_2
+id: studentfooter
 theme: wvuonline2018
 region: footer
 weight: 0
 provider: null
-plugin: 'system_menu_block:faculty-menu'
+plugin: 'system_menu_block:student-footer'
 settings:
-  id: 'system_menu_block:faculty-menu'
-  label: 'Faculty Menu'
+  id: 'system_menu_block:student-footer'
+  label: Students
   provider: system
   label_display: visible
   level: 1

@@ -1,0 +1,8 @@
+uuid: 68fb55d3-d576-4b63-bf75-12d9c9ab872f
+langcode: en
+status: true
+dependencies: {  }
+id: student-footer
+label: 'Student Footer'
+description: ''
+locked: false

@@ -1,0 +1,8 @@
+uuid: b028b659-1532-402c-9163-bd1d814e23ef
+langcode: en
+status: true
+dependencies: {  }
+id: faculty-footer
+label: 'Faculty Footer'
+description: ''
+locked: false
