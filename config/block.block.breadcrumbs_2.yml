@@ -10,7 +10,7 @@ dependencies:
 id: breadcrumbs_2
 theme: wvuonline2018
 region: pre_content
-weight: -15
+weight: -3
 provider: null
 plugin: system_breadcrumb_block
 settings:
