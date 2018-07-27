@@ -96,13 +96,13 @@ display:
             preserve_tags: ''
             html: false
           element_type: ''
-          element_class: featured-video__video
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: false
+          element_default_classes: true
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -190,7 +190,6 @@ display:
           entity_field: nid
           plugin_id: node_nid
       display_extenders: {  }
-      css_class: feature-video
     cache_metadata:
       max-age: -1
       contexts:
@@ -211,7 +210,6 @@ display:
         metatag_display_extender: {  }
       display_description: ''
       block_description: 'Video on Static Page Block'
-      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:

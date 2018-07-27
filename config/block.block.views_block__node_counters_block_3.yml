@@ -1,6 +1,6 @@
 uuid: 8e10ebd5-bf79-4c33-adb9-9c223971a260
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - block_visibility_groups.block_visibility_group.front_page_path
@@ -13,7 +13,7 @@ dependencies:
 id: views_block__node_counters_block_3
 theme: wvuonline2018
 region: content
-weight: 1
+weight: -1
 provider: null
 plugin: 'views_block:node_counters-block_3'
 settings:
