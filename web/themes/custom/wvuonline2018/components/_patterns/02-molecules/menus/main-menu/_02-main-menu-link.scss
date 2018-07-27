@@ -9,14 +9,7 @@
   //font-weight: bold;
 
   &--with-sub {
-    width: 80%;
-    &::after {
-      color: $white;
-      display: inline-block;
-      content: ">";
-      transition: transform 0.4s;
-      padding-left: 2px;
-    }
+    flex: 1;
   }
 
   @include breakpoint($main-menu-medium) {
@@ -29,15 +22,20 @@
     position: relative;
     width: auto;
 
+    &--with-sub {
+      &::after {
+        color: $white;
+        display: inline-block;
+        content: ">";
+        transition: transform 0.4s;
+        padding-left: 2px;
+      }
+    }
+
     &.active,
     &:active,
     &:hover {
       color: $gray-lighter;
-    }
-
-
-    &--sub::after {
-      display: none;
     }
 
     &:hover {
@@ -67,7 +65,7 @@
 }
 
 .main-menu--sub-2 {
-  background-color: $gray-lightest;
+  background-color: lighten($black, 0.1);
 }
 
 .main-menu__link--sub-2 {

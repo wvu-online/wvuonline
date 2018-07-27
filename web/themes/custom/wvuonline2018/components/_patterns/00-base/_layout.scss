@@ -6,7 +6,7 @@ $min_font: 10px;
 $max_font: 24px;
 
 html {
-  font-size: calc(14px + 4 * (100vw - 320px) / 1046);
+  font-size: calc(13px + 4 * (100vw - 320px) / 1046);
 
   @include xl {
     font-size: 18px;

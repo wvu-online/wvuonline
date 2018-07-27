@@ -1,3 +1,12 @@
+.main-nav--open {
+  .main-menu__item {
+    &:not(.main-menu__item--sub) {
+      &:nth-last-child(-n+2) {
+        display: none;
+      }
+    }
+  }
+}
 // LI
 .main-menu__item {
   border-top: 1px solid;
@@ -42,11 +51,11 @@
 
 // Expand Button
 .expand-sub {
-  background-color: $black;
+  background-color: $white;
   cursor: pointer;
   display: block;
-  width: 20%;
-  color: $white;
+  width: 13%;
+  color: $black;
   position: relative;
 
   @include breakpoint($main-menu-medium) {
@@ -71,8 +80,8 @@
 
   // See main-menu.js
   &--open {
-    background-color: $black;
-    color: $near-white;
+    background-color: $white;
+    color: $black;
 
     &::after {
       border-top-color: transparent;

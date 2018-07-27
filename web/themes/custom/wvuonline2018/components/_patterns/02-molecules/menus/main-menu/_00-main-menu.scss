@@ -48,7 +48,7 @@ $main-menu-medium: 43em;
   border-bottom: none;
   height: 0;
   overflow: hidden;
-  background-color: $near-white;
+  background-color: lighten($black, 0.2);
   width: 100%;
 
   @include breakpoint($main-menu-medium) {
