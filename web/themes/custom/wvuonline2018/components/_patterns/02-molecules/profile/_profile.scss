@@ -12,7 +12,7 @@
   background-size: cover;
   .wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(24em, 1fr));
     grid-gap: 2em;
   }
 }
@@ -25,15 +25,6 @@
   box-shadow: 0 3px 7px 0 $gray;
   background: $white;
 
-  > * {
-    //width: 100%;
-    //padding: 0 1.5em;
-
-    //@include small {
-    //  width: 50%;
-    //}
-  }
-
   &__header {
     width: 100%;
         background: $wvu-blue;
@@ -42,10 +33,6 @@
     padding-bottom: 2em;
     margin-bottom: 2em;
     justify-content: flex-end;
-
-    @include small {
-
-    }
 
     &--blue {
       background: url("../images/background__blue--1.0.0.svg") no-repeat $wvu-blue;
@@ -84,7 +71,7 @@
 
   &__container {
     display: flex;
-    height: 450px;
+    min-height: 450px;
     padding: 0 2em;
   }
 

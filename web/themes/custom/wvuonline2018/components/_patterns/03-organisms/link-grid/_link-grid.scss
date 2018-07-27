@@ -10,7 +10,6 @@
 
   .grid__item {
     @include grid-item($columns: 2);
-    height: 40vh;
     min-height: 200px;
     display: flex;
     flex-wrap: wrap;
@@ -21,7 +20,7 @@
     background: transparentize($wvu-blue, 0.2);
     border: 1px solid white;
     color: $white;
-    font-size: 4em;
+    font-size: 3.3em;
     text-transform: uppercase;
     text-decoration: none;
     font-family: $font-heading;

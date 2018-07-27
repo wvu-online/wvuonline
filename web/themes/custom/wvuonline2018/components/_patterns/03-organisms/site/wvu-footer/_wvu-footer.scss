@@ -49,7 +49,10 @@
       font-weight: bold;
 
       a {
-        text-decoration: none;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }

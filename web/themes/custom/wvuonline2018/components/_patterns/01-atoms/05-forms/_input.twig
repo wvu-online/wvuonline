@@ -10,4 +10,5 @@
  * @see template_preprocess_input()
  */
 #}
-<input{{ attributes.addClass('form-item__textfield') }} />{{ children }}
+{% set role = attributes.name %}
+<input{{ attributes.addClass('form-item__textfield') }} aria-label="{{ role }}" />{{ children }}

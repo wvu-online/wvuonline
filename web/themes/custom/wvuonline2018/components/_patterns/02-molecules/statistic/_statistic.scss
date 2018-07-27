@@ -10,8 +10,8 @@
   .wrapper {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+
   }
   h3 {
     width: 100%;
@@ -19,7 +19,16 @@
   }
 
   .views-element-container {
-    width: 25%;
+    flex: 1 0 100%;
+    margin-bottom: 2em;
+
+    @include small {
+      flex-basis: 50%;
+    }
+
+    @include medium {
+      flex-basis: 25%;
+    }
   }
 
   .stat__title {
