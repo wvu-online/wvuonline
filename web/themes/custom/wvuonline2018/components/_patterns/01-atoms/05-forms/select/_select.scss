@@ -37,7 +37,7 @@
   background-color: $white;
 
   :focus {
-    outline: none;
+    outline: 2px solid $gray;
     color: #222;
   }
 }
@@ -63,6 +63,7 @@
 
     &:focus {
       border-color: $gray;
+      outline: 2px solid $gray;
       border-radius: 0;
     }
   }
