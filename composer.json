@@ -236,6 +236,9 @@
       },
       "drupal/lockr": {
         "Issue 2926257: Module settings should be stored as config": "https://www.drupal.org/files/issues/2926257-store-settings-as-config-2.patch"
+      },
+      "drupal/video_embed_field": {
+        "Issue 2913598: Provide title attribute in iframe tag for accessibility": "https://www.drupal.org/files/issues/2018-05-14/video_embed_field-title_attribute-2913598-21-8.x-2.x.patch"
       }
     },
     "installer-paths": {

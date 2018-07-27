@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "950600535f08037aead214656e792160",
+    "content-hash": "c91623313632e604d444c7c4c93a7b90",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -7684,6 +7684,9 @@
                         "message": "Covered by Drupal's security advisory policy"
                     },
                     "package": "Field types"
+                },
+                "patches_applied": {
+                    "Issue 2913598: Provide title attribute in iframe tag for accessibility": "https://www.drupal.org/files/issues/2018-05-14/video_embed_field-title_attribute-2913598-21-8.x-2.x.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
