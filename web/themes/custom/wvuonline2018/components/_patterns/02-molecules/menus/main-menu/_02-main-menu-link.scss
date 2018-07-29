@@ -10,6 +10,9 @@
 
   &--with-sub {
     flex: 1;
+    svg {
+      display: none;
+    }
   }
 
   @include breakpoint($main-menu-medium) {
