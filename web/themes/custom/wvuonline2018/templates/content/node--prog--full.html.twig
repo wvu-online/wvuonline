@@ -85,7 +85,12 @@
   'Financial Aid'
 ] %}
 
+{% set tuition = drupal_view('rel_tuition', 'block_1') %}
 {% set course = drupal_view('curriculum', 'block_1') %}
+{% set non_res_uni_fee = drupal_field('field_tuit_non_res_uni_fee', 'node', 855) %}
+{% set res_uni_fee = drupal_field('field_tuit_res_uni_fee', 'node', 855) %}
+{% set non_res_uni_tuition = drupal_field('field_tuit_non_res_uni', 'node', 855) %}
+{% set res_uni_tuition = drupal_field('field_tuit_res_uni', 'node', 855) %}
 
 {% set tabbedItems = {
   0: {'title': 'Program Info', 'content': content.field_prog_body},
@@ -97,7 +102,12 @@
   {% block content %}
     <div class="section-2">
       <div class="cost-calc">
-        {% include "@organisms/tuition-calc/tuition-calc.twig" %}
+        {% include "@organisms/tuition-calc/tuition-calc.twig" with {
+          non_res_uni_fee: non_res_uni_fee,
+          res_uni_fee: res_uni_fee,
+          non_res_uni_tuition: non_res_uni_tuition,
+          res_uni_tuition: res_uni_tuition,
+        }%}
       </div>
       {% include "@organisms/hobsons-form/hobsons-form.twig" %}
     </div>
