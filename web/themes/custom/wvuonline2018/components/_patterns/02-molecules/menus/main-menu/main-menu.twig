@@ -1,18 +1,23 @@
 <a href="#" id="toggle-expand" class="toggle-expand">
   <span class="toggle-expand__open">
-    <span class="toggle-expand__icon sprite-menu sprite-icon">
-      <span class="visually-hidden">
-        Mobile menu expand icon.
-      </span>
-    </span>
+    {% include "@atoms/04-images/icons/_icon.twig" with {
+      icon_base_class: "icon",
+      icon_blockname: "toggle-expand",
+      icon_name: "menu",
+    } %}
     <span class="toggle-expand__text">Main Menu</span>
   </span>
   <span class="toggle-expand__close">
+    {% include "@atoms/04-images/icons/_icon.twig" with {
+      icon_base_class: "icon",
+      icon_blockname: "toggle-expand",
+      icon_name: "times-solid",
+    } %}
     <span class="toggle-expand__text">Close</span>
   </span>
 </a>
 <nav id="main-nav" class="main-nav" aria-labelledby="main-nav">
   {% include "@molecules/menus/_menu.twig" with {
-    menu_class: 'main-menu'
+    menu_class: menu_class|default('main-menu')
   } %}
 </nav>

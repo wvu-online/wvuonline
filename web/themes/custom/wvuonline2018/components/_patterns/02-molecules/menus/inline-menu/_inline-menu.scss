@@ -22,3 +22,38 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+.menu__cta-buttons {
+  @include list-reset;
+  display: flex;
+
+  &__item {
+    .menu__cta-buttons__link {
+      color: $white;
+      display: block;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      padding: $space;
+      text-decoration: none;
+    }
+    &:nth-child(1) {
+      .menu__cta-buttons__link {
+        background: $wvu-gold;
+        color: $wvu-blue;
+        border: none;
+        &:hover {
+          color: $wvu-gold;
+          background: $wvu-blue;
+        }
+      }
+    }
+    &:nth-child(2) {
+      .menu__cta-buttons__link {
+        background: $pms-300-c;
+        &:hover {
+          background: $wvu-blue;
+        }
+      }
+    }
+  }
+}

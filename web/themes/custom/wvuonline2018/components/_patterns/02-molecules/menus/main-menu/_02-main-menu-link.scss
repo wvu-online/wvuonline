@@ -4,7 +4,7 @@
   display: block;
   font-size: 1.2rem;
   line-height: 1.5;
-  padding: $space;
+  padding: $space $space 0;
   text-decoration: none;
   //font-weight: bold;
 
@@ -15,20 +15,26 @@
   @include breakpoint($main-menu-medium) {
     border-bottom: none;
     color: $white;
-    display: inline-block;
     font-size: 1.1rem;
     padding: $space;
     text-transform: none;
     position: relative;
     width: auto;
+    display: flex;
+    align-items: center;
 
     &--with-sub {
-      &::after {
-        color: $white;
-        display: inline-block;
-        content: ">";
-        transition: transform 0.4s;
-        padding-left: 2px;
+      //&::after {
+      //  color: $white;
+      //  display: inline-block;
+      //  content: ">";
+      //  transition: transform 0.4s;
+      //  padding-left: 2px;
+      //}
+      svg {
+        margin-left: 0.5em;
+        height: 1.4em;
+        width: 1em;
       }
     }
 
@@ -36,6 +42,9 @@
     &:active,
     &:hover {
       color: $gray-lighter;
+      svg {
+        transform: rotate(90deg);
+      }
     }
 
     &:hover {

@@ -1,10 +1,5 @@
 .main-nav--open {
   .main-menu__item {
-    &:not(.main-menu__item--sub) {
-      &:nth-last-child(-n+2) {
-        display: none;
-      }
-    }
   }
 }
 // LI
@@ -36,21 +31,24 @@
   }
   &:not(.main-menu__item--sub) {
     border-right: 1px solid $pms-warm-gray-11;
-    &:nth-last-of-type(1) {
-      background: $wvu-gold;
-      color: $wvu-blue;
-      border: none;
-      float: right;
-      &:hover {
-        color: $wvu-gold;
-        background: $wvu-blue;
-      }
-    }
-    &:nth-last-of-type(2) {
-      background: $pms-300-c;
-      border: none;
-      float: right;
-    }
+    //&:nth-last-of-type(1) {
+    //  background: $wvu-gold;
+    //  border: none;
+    //  float: right;
+    //
+    //  a {
+    //
+    //    &:hover {
+    //      color: $wvu-gold;
+    //      background: $wvu-blue;
+    //    }
+    //  }
+    //}
+    //&:nth-last-of-type(2) {
+    //  background: $pms-300-c;
+    //  border: none;
+    //  float: right;
+    //}
   }
 }
 

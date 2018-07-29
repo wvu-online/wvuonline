@@ -1,10 +1,32 @@
 // Menu Breakpoint
 $main-menu-medium: 43em;
 
+.region__navigation {
+    background: $black;
+  .wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "menu";
+    grid-template-rows: 100%;
+    //justify-content: space-between;
+    justify-items: stretch;
+
+    .menu-block {
+      grid-column: -1 / 1;
+      grid-row: -1 / 1;
+      z-index: 1;
+
+      &:last-of-type {
+        z-index: 2;
+        justify-self: end;
+      }
+    }
+  }
+}
 // Nav
 .main-nav {
   display: none;
-  background: $black;
+
 
   @include breakpoint($main-menu-medium) {
     display: block;

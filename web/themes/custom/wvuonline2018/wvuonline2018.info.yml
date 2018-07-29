@@ -24,9 +24,9 @@ ckeditor_stylesheets:
 
 regions:
   header: Header
+  navigation: 'Navigation'
   pre_content: 'Pre-Content'
   content: Content  # the content region is required
-  stats: 'Stat Counter'
   features: 'Features'
   sidebar: 'Sidebar'
   footer: Footer
