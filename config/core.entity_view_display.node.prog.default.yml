@@ -64,12 +64,10 @@ content:
     third_party_settings: {  }
   field_prog_credits_for_award:
     weight: 7
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
-    type: number_integer
+    type: number_unformatted
     region: content
   field_prog_financial_aid_clause:
     weight: 6
@@ -78,6 +76,28 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
+  field_prog_non_residents_fee:
+    type: number_decimal
+    weight: 8
+    region: content
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 0
+      prefix_suffix: false
+    third_party_settings: {  }
+  field_prog_residents_fee:
+    type: number_decimal
+    weight: 9
+    region: content
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 0
+      prefix_suffix: false
+    third_party_settings: {  }
   links:
     weight: 1
     region: content
@@ -89,9 +109,7 @@ hidden:
   field_prog_curr_ref: true
   field_prog_gawa_ref: true
   field_prog_hero_ref: true
-  field_prog_non_residents_fee: true
   field_prog_pgro_ref: true
   field_prog_public_title: true
-  field_prog_residents_fee: true
   field_prog_spot_ref: true
   field_seo_summary: true

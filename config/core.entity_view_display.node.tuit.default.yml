@@ -17,49 +17,51 @@ mode: default
 content:
   field_tuit_non_res_uni:
     weight: 102
-    label: above
+    label: hidden
     settings:
       thousand_separator: ''
       decimal_separator: .
-      scale: 2
-      prefix_suffix: true
+      scale: 0
+      prefix_suffix: false
     third_party_settings: {  }
     type: number_decimal
     region: content
   field_tuit_non_res_uni_fee:
     weight: 104
-    label: above
+    label: hidden
     settings:
       thousand_separator: ''
       decimal_separator: .
-      scale: 2
-      prefix_suffix: true
+      scale: 0
+      prefix_suffix: false
     third_party_settings: {  }
     type: number_decimal
     region: content
   field_tuit_res_uni:
     weight: 101
-    label: above
+    label: hidden
     settings:
       thousand_separator: ''
       decimal_separator: .
-      scale: 2
-      prefix_suffix: true
+      scale: 0
+      prefix_suffix: false
     third_party_settings: {  }
     type: number_decimal
     region: content
   field_tuit_res_uni_fee:
     weight: 103
-    label: above
+    label: hidden
     settings:
       thousand_separator: ''
       decimal_separator: .
-      scale: 2
-      prefix_suffix: true
+      scale: 0
+      prefix_suffix: false
     third_party_settings: {  }
     type: number_decimal
     region: content
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }
