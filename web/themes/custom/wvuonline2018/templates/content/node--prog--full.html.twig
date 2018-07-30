@@ -93,7 +93,7 @@
 {% set res_uni_tuition = drupal_field('field_tuit_res_uni', 'node', 855)|render|striptags|trim %}
 {% set res_coll_tuition = content.field_prog_residents_fee|render|striptags|trim %}
 {% set non_res_coll_tuition = content.field_prog_non_residents_fee|render|striptags|trim %}
-{% if res_uni_tuition === non_res_uni_tuition || res_coll_tuition === non_res_coll_tuition %}
+{% if res_uni_tuition == non_res_uni_tuition or res_coll_tuition == non_res_coll_tuition %}
   {% set diff_oos = false %}
 {% else %}
   {% set diff_oos = true %}
