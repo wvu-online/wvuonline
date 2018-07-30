@@ -1,20 +1,6 @@
-{% if diff_oos == false %}
-  <div
-      id="tuition-calc"
-      class="tuition-calc"
-      data-totalCreditHours={{totalCreditHours}}
-      data-unituition={{uniTuition}}
-      data-colltuition={{colltuition}}
-      data-unifee={{unifee}}
-  ></div>
-{% else %}
-    <div
-        id="tuition-calc"
-        class="tuition-calc"
-        data-totalCreditHours={{totalCreditHours}}
-        data-resunituition={{uniTuition}}
-        data-nonresunituition={{nonResUniTuition}}
-        data-colltuition={{colltuition}}
-        data-unifee={{unifee}}
-    ></div>
-{% endif %}
+{#{{ dd(totalCreditHours) }}#}
+{#{{ dd(unituition) }}#}
+{#{{ dd(colltuition) }}#}
+{#{{ dd(unifee) }}#}
+<div {{ attributes.addClass('tuition-calc').setAttribute('id', 'tuition-calc').setAttribute('data-totalCreditHours', totalcredithours).setAttribute('data-unituition', unituition).setAttribute('data-colltuition', colltuition).setAttribute('data-unifee', unifee) }}
+></div>

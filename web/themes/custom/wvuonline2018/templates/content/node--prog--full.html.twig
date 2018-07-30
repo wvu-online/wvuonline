@@ -91,14 +91,8 @@
 {% set res_uni_fee = drupal_field('field_tuit_res_uni_fee', 'node', 855)|render|striptags|trim %}
 {% set non_res_uni_tuition = drupal_field('field_tuit_non_res_uni', 'node', 855)|render|striptags|trim %}
 {% set res_uni_tuition = drupal_field('field_tuit_res_uni', 'node', 855)|render|striptags|trim %}
+{% set credit_hours = content.field_prog_credits_for_award|render %}
 {% set res_coll_tuition = content.field_prog_residents_fee|render|striptags|trim %}
-{% set non_res_coll_tuition = content.field_prog_non_residents_fee|render|striptags|trim %}
-{% if res_uni_tuition == non_res_uni_tuition or res_coll_tuition == non_res_coll_tuition %}
-  {% set diff_oos = false %}
-{% else %}
-  {% set diff_oos = true %}
-{% endif %}
-{% set credit_hours = content.field_prog_credits_for_award|render|striptags|trim %}
 
 {% set tabbedItems = {
   0: {'title': 'Program Info', 'content': content.field_prog_body},
@@ -109,12 +103,14 @@
 {% embed "@organisms/_node.twig" %}
   {% block content %}
     <div class="section-2">
+      {{ kint(content.field_prog_credits_for_award) }}
+      {{ kint(content.field_prog_residents_fee) }}
       <div class="cost-calc">
         {% include "@organisms/tuition-calc/tuition-calc.twig" with{
-          totalCreditHours: credit_hours,
-          uniTuition: res_uni_tuition,
-          collTuition: res_coll_tuition,
-          uniFee: res_uni_fee
+          totalcredithours: credit_hours,
+          unituition: res_uni_tuition,
+          colltuition: res_coll_tuition,
+          unifee: res_uni_fee
         } %}
       </div>
       {% include "@organisms/hobsons-form/hobsons-form.twig" %}
