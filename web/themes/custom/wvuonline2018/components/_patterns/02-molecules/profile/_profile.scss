@@ -12,9 +12,14 @@
   background-size: cover;
   .wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+    grid-template-columns: 1fr;
     grid-gap: 2em;
     padding: 0 $space;
+
+    @include xs {
+      grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+
+    }
   }
 }
 
@@ -52,7 +57,7 @@
   }
 
   &__h2 {
-    width: 50%;
+    width: 55%;
     font-size: 2.2em;
     text-transform: uppercase;
     line-height: 0.75;
