@@ -27,7 +27,7 @@
 
   &__header {
     width: 100%;
-        background: $wvu-blue;
+    background: $wvu-blue;
     display: flex;
     padding-top: 2em;
     padding-bottom: 2em;
@@ -121,7 +121,7 @@
     color: $wvu-blue;
     font-size: 1.5em;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 1.6em;
 
     @include small {
       //margin-top: 150px;
