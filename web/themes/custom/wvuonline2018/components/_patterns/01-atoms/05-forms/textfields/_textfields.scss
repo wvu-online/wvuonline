@@ -60,10 +60,10 @@
 .views-exposed-form {
   display: flex;
   align-items: flex-end;
+  flex-wrap: wrap;
 
   .form-item {
-    margin-bottom: 0;
-    margin-right: 0.5em;
+    margin: 0.5em 0.5em 0;
   }
 
 }
