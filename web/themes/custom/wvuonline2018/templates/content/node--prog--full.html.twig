@@ -84,14 +84,14 @@
   'Courses',
   'Financial Aid'
 ] %}
-
+{% set node_id = node.id %}
 {% set tuition = drupal_view('rel_tuition', 'block_1') %}
 {% set course = drupal_view('curriculum', 'block_1') %}
 {% set non_res_uni_fee = drupal_field('field_tuit_non_res_uni_fee', 'node', 855)|render|striptags|trim %}
 {% set res_uni_fee = drupal_field('field_tuit_res_uni_fee', 'node', 855)|render|striptags|trim %}
 {% set non_res_uni_tuition = drupal_field('field_tuit_non_res_uni', 'node', 855)|render|striptags|trim %}
 {% set res_uni_tuition = drupal_field('field_tuit_res_uni', 'node', 855)|render|striptags|trim %}
-{% set credit_hours = content.field_prog_credits_for_award|render %}
+{% set credit_hours = content.field_prog_credits_for_award %}
 {% set res_coll_tuition = content.field_prog_residents_fee|render|striptags|trim %}
 
 {% set tabbedItems = {
@@ -103,8 +103,6 @@
 {% embed "@organisms/_node.twig" %}
   {% block content %}
     <div class="section-2">
-      {{ kint(content.field_prog_credits_for_award) }}
-      {{ kint(content.field_prog_residents_fee) }}
       <div class="cost-calc">
         {% include "@organisms/tuition-calc/tuition-calc.twig" with{
           totalcredithours: credit_hours,
