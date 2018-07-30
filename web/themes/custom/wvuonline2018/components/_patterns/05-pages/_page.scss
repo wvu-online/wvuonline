@@ -7,11 +7,14 @@ body {
 }
 
 .header,
-.main,
 .footer {
   @include wrapper;
 
   margin-bottom: 4em;
+}
+
+.main {
+  @include wrapper;
 }
 
 .footer-upper-content,
