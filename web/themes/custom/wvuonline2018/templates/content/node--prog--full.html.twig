@@ -87,10 +87,18 @@
 
 {% set tuition = drupal_view('rel_tuition', 'block_1') %}
 {% set course = drupal_view('curriculum', 'block_1') %}
-{% set non_res_uni_fee = drupal_field('field_tuit_non_res_uni_fee', 'node', 855) %}
-{% set res_uni_fee = drupal_field('field_tuit_res_uni_fee', 'node', 855) %}
-{% set non_res_uni_tuition = drupal_field('field_tuit_non_res_uni', 'node', 855) %}
-{% set res_uni_tuition = drupal_field('field_tuit_res_uni', 'node', 855) %}
+{% set non_res_uni_fee = drupal_field('field_tuit_non_res_uni_fee', 'node', 855)|render|striptags|trim %}
+{% set res_uni_fee = drupal_field('field_tuit_res_uni_fee', 'node', 855)|render|striptags|trim %}
+{% set non_res_uni_tuition = drupal_field('field_tuit_non_res_uni', 'node', 855)|render|striptags|trim %}
+{% set res_uni_tuition = drupal_field('field_tuit_res_uni', 'node', 855)|render|striptags|trim %}
+{% set res_coll_tuition = content.field_prog_residents_fee|render|striptags|trim %}
+{% set non_res_coll_tuition = content.field_prog_non_residents_fee|render|striptags|trim %}
+{% if res_uni_tuition === non_res_uni_tuition || res_coll_tuition === non_res_coll_tuition %}
+  {% set diff_oos = false %}
+{% else %}
+  {% set diff_oos = true %}
+{% endif %}
+{% set credit_hours = content.field_prog_credits_for_award|render|striptags|trim %}
 
 {% set tabbedItems = {
   0: {'title': 'Program Info', 'content': content.field_prog_body},
@@ -102,12 +110,12 @@
   {% block content %}
     <div class="section-2">
       <div class="cost-calc">
-        {% include "@organisms/tuition-calc/tuition-calc.twig" with {
-          non_res_uni_fee: non_res_uni_fee,
-          res_uni_fee: res_uni_fee,
-          non_res_uni_tuition: non_res_uni_tuition,
-          res_uni_tuition: res_uni_tuition,
-        }%}
+        {% include "@organisms/tuition-calc/tuition-calc.twig" with{
+          totalCreditHours: credit_hours,
+          uniTuition: res_uni_tuition,
+          collTuition: res_coll_tuition,
+          uniFee: res_uni_fee
+        } %}
       </div>
       {% include "@organisms/hobsons-form/hobsons-form.twig" %}
     </div>
