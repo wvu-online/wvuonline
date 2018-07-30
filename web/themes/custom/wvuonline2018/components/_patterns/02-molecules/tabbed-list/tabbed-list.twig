@@ -1,7 +1,9 @@
 <li id="tabbed-{{ loop.index }}" {{ bem('item', (''), 'tabbed', ['js-tablist__item']) }}>
 
-    <a href="#tab-panel-{{ loop.index }}" {{ bem('link', (''), 'tabbed', ['js-tablist__link']) }}>
-        <i class="fa fa-camera-retro"></i>
-        {{ tabbedItem.title }}
-    </a>
+  <a href="#tab-panel-{{ loop.index }}" {{ bem('link', (''), 'tabbed', ['js-tablist__link']) }}>
+    {% include "@atoms/04-images/icons/_icon.twig" with {
+      icon_name: tabbedItem.icon_name
+    } %}
+    {{ tabbedItem.title }}
+  </a>
 </li>

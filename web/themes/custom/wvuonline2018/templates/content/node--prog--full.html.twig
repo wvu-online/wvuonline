@@ -91,14 +91,14 @@
 {% set res_uni_fee = drupal_field('field_tuit_res_uni_fee', 'node', 855)|render|striptags|trim %}
 {% set non_res_uni_tuition = drupal_field('field_tuit_non_res_uni', 'node', 855)|render|striptags|trim %}
 {% set res_uni_tuition = drupal_field('field_tuit_res_uni', 'node', 855)|render|striptags|trim %}
-{% set credit_hours = content.field_prog_credits_for_award %}
+{% set credit_hours = content.field_prog_credits_for_award|render|striptags|trim %}
 {% set res_coll_tuition = content.field_prog_residents_fee|render|striptags|trim %}
 
 {% set tabbedItems = {
-  0: {'title': 'Program Info', 'content': content.field_prog_body},
-  1: {'title': 'Admissions', 'content': content.field_prog_admissions},
-  2: {'title': 'Courses', 'content': course},
-  3: {'title': 'Financial Aid', 'content': content.field_prog_financial_aid_clause }
+  0: {'title': 'Program Info', 'content': content.field_prog_body, 'icon_name': 'info-circle-light'},
+  1: {'title': 'Admissions', 'content': content.field_prog_admissions, 'icon_name': 'check-circle-light'},
+  2: {'title': 'Courses', 'content': course, 'icon_name': 'file-edit-light'},
+  3: {'title': 'Financial Aid', 'content': content.field_prog_financial_aid_clause, 'icon_name': 'usd-square-light'}
 } %}
 {% embed "@organisms/_node.twig" %}
   {% block content %}
@@ -111,7 +111,7 @@
           unifee: res_uni_fee
         } %}
       </div>
-      {% include "@organisms/hobsons-form/hobsons-form.twig" %}
+        {% include "@organisms/hobsons-form/hobsons-form.twig" %}
     </div>
     <div class="wrapper">
       {% include "@organisms/tabbed-content/tabbed-content.twig" with
