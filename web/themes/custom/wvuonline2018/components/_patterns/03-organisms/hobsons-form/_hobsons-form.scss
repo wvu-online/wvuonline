@@ -43,13 +43,13 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-column-gap: 1.5em;
-    max-width: 50em;
+    max-width: 40em;
     margin: 0 auto;
     justify-content: space-around;
-    padding: 0 $space-double;
+    padding: 0 $space-double 0 0;
 
     @include small {
-      grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+      grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
     }
   }
 
