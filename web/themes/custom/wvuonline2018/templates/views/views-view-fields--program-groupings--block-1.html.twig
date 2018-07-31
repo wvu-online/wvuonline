@@ -51,16 +51,16 @@
   {#{%- endif %}#}
 {#{%- endfor %}#}
 {% set card_modifiers = ['alt'] %}
-
+{% set card_link_url = fields.view_node.content|striptags|trim %}
 {% set image_src = fields.field_pgro_hero_ref.content %}
-{#{{ dd(image_src) }}#}
 {% embed "@molecules/card/01-card.twig" with {
     card_modifiers: card_modifiers,
-    card_title: fields.title.content
+    card_title: fields.title.content,
+    card_link_url: card_link_url
   } %}
 
   {% block card_image_block %}
-    {{ image_src }}
+    <a class="card__image" href={{ card_link_url }}>{{ image_src }}</a>
   {% endblock %}
 
 {% endembed %}
