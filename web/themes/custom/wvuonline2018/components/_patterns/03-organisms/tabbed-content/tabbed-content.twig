@@ -1,4 +1,4 @@
-{% set tabbed_content_base_class = tabbed_content_base_class|default('tabbed') %}
+  {% set tabbed_content_base_class = tabbed_content_base_class|default('tabbed') %}
 <div id="tabbed-content" {{ bem(tabbed_content_base_class, (tabbed_content_modifiers), tabbed_content_blockname, ['js-tabs']) }}>
   <div class="wrapper">
     <ul {{ bem('list', (''), tabbed_content_base_class, ['js-tablist'])}} data-existing-hx="h2">

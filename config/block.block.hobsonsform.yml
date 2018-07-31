@@ -12,7 +12,7 @@ dependencies:
 id: hobsonsform
 theme: wvuonline2018
 region: content
-weight: -12
+weight: -16
 provider: null
 plugin: hobsons_form
 settings:

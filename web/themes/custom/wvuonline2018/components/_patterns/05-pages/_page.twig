@@ -72,7 +72,7 @@
     <div class="main-content{% if page.sidebar %}--with-sidebar{% endif %}">
       {{ page.content|without('title') }}
     </div>{# /.layout-content #}
-
+    {{ page.post_content }}
   </main>
 
   {% block page_footer %}

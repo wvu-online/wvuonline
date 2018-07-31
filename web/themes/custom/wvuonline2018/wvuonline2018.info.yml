@@ -27,6 +27,7 @@ regions:
   navigation: 'Navigation'
   pre_content: 'Pre-Content'
   content: Content  # the content region is required
+  post_content: 'Post-Content'
   features: 'Features'
   sidebar: 'Sidebar'
   footer: Footer

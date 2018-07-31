@@ -1,3 +1,12 @@
+
+.main-nav--open {
+  .menu-sub__icon {
+    display: none;
+  }
+}
+
+
+
 // A
 .main-menu__link {
   color: $white;
@@ -11,7 +20,7 @@
   &--with-sub {
     flex: 1;
     svg {
-      display: none;
+      //display: none;
     }
   }
 
