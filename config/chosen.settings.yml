@@ -9,7 +9,10 @@ allow_single_deselect: false
 placeholder_text_multiple: 'Choose some options'
 placeholder_text_single: 'Choose an option'
 no_results_text: 'No results match'
-disabled_themes: {  }
-chosen_include: 2
+disabled_themes:
+  seven: '0'
+  adminimal_theme: '0'
+  wvuonline2018: '0'
+chosen_include: 0
 _core:
   default_config_hash: JUHKHJeHl1bWXY41HMIcDR-VmAWvJ4OJycDubCkIeDU
