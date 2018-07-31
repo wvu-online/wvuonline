@@ -52,9 +52,15 @@
 {#{%- endfor %}#}
 {% set card_modifiers = ['alt'] %}
 
-{% set image_src = fields.field_pgro_hero_ref.content|striptags|trim %}
-{% include "@molecules/card/01-card.twig" with {
-  card_modifiers: card_modifiers,
-  card_title: fields.title.content,
-  card_img_src: image_src|default('/sites/default/files/default_images/background__blue--1.0.0_0.svg')
-} %}
+{% set image_src = fields.field_pgro_hero_ref.content %}
+{#{{ dd(image_src) }}#}
+{% embed "@molecules/card/01-card.twig" with {
+    card_modifiers: card_modifiers,
+    card_title: fields.title.content
+  } %}
+
+  {% block card_image_block %}
+    {{ image_src }}
+  {% endblock %}
+
+{% endembed %}
