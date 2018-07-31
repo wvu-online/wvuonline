@@ -2,6 +2,8 @@ global:
   css:
     theme:
       dist/style.css: {}
+      //fast.fonts.net/cssapi/3f7b1335-4c99-4404-92cf-3ba0e32e8f17.css: { every_page: true }
+
 
 #  js:
 #    dist/scripts.js: {}

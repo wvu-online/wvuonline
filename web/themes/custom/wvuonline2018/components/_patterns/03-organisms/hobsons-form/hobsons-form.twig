@@ -1,7 +1,7 @@
 {% set hobsons_form_base_class = hobsons_form_base_class|default('h-form') %}
-<div {{ bem(hobsons_form_base_class, (hobsons_form_modifiers), hobsons_form_blockname) }}>
-  <h2 {{ bem('title', (''), hobsons_form_base_class) }}>Request Program Information:</h2>
-  <form action="">
+<div {{ bem(hobsons_form_base_class, (hobsons_form_modifiers), hobsons_form_blockname) }} >
+  <h2 {{ bem('title', (''), hobsons_form_base_class) }} id="hobsons-form">Request Program Information:</h2>
+  <form action="" >
 
     <label {{ bem('label', (''), hobsons_form_base_class,['visually-hidden']) }} for="first_name">First Name</label>
     <input id="first_name" {{ bem('field', (''), hobsons_form_base_class) }} type="text" placeholder="First Name">
