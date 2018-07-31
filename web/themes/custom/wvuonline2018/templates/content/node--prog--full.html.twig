@@ -93,6 +93,7 @@
 {% set res_uni_tuition = drupal_field('field_tuit_res_uni', 'node', 855)|render|striptags|trim %}
 {% set credit_hours = content.field_prog_credits_for_award|render|striptags|trim %}
 {% set res_coll_tuition = content.field_prog_residents_fee|render|striptags|trim %}
+{% set grad_award = content.field_prog_gawa_ref|render|striptags|trim %}
 
 {% set tabbedItems = {
   0: {'title': 'Program Info', 'content': content.field_prog_body, 'icon_name': 'info-circle-light'},
@@ -103,15 +104,17 @@
 {% embed "@organisms/_node.twig" %}
   {% block content %}
     <div class="section-2">
-      <div class="cost-calc">
-        {% include "@organisms/tuition-calc/tuition-calc.twig" with{
-          totalcredithours: credit_hours,
-          unituition: res_uni_tuition,
-          colltuition: res_coll_tuition,
-          unifee: res_uni_fee
-        } %}
-      </div>
-        {% include "@organisms/hobsons-form/hobsons-form.twig" %}
+      {% if grad_award != 'Minor' %}
+        <div class="cost-calc">
+          {% include "@organisms/tuition-calc/tuition-calc.twig" with{
+            totalcredithours: credit_hours,
+            unituition: res_uni_tuition,
+            colltuition: res_coll_tuition,
+            unifee: res_uni_fee
+          } %}
+        </div>
+      {% endif %}
+      {% include "@organisms/hobsons-form/hobsons-form.twig" %}
     </div>
     <div class="wrapper">
       {% include "@organisms/tabbed-content/tabbed-content.twig" with
