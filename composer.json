@@ -55,6 +55,19 @@
           "type": "zip"
         }
       }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "wvuonline/wvu_hobsons",
+        "version": "dev-master",
+        "type":"drupal-module",
+        "source": {
+          "url": "https://github.com/wvu-online/wvu_hobsons.git",
+          "type": "git",
+          "reference": "master"
+        }
+      }
     }
   ],
   "require": {
@@ -154,7 +167,8 @@
     "fourkitchens/emulsify": "^2.3",
     "harvesthq/chosen": "^1.8",
     "rvtraveller/qs-composer-installer": "^1.1",
-    "webflo/drupal-core-strict": "^8"
+    "webflo/drupal-core-strict": "^8",
+    "wvuonline/wvu_hobsons": "dev-master"
   },
   "require-dev": {
     "mikey179/vfsstream": "^1.2",
