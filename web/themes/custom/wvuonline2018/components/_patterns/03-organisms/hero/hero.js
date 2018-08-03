@@ -1,45 +1,30 @@
-(function (Drupal) { // UNCOMMENT IF DRUPAL.
+class ResponsiveBackgroundImage {
 
-  Drupal.behaviors.responsiveHero = {
-  attach: function (context, settings) {
+  constructor(element) {
+    this.element = element;
+    this.img = element.querySelector('img');
+    this.src = '';
 
-// (function () { // REMOVE IF DRUPAL
+    this.img.addEventListener('load', () => {
+      this.update();
+    });
 
-    'use strict';
-
-    // Your JS Code Here
-    class ResponsiveBackgroundImage {
-
-      constructor(element) {
-        this.element = element;
-        this.img = element.querySelector('img');
-        this.src = '';
-
-        this.img.addEventListener('load', () => {
-          this.update();
-        });
-
-        if (this.img.complete) {
-          this.update();
-        }
-      }
-
-      update() {
-        let src = typeof this.img.currentSrc !== 'undefined' ? this.img.currentSrc : this.img.src;
-        if (this.src !== src) {
-          this.src = src;
-          this.element.style.backgroundImage = 'url("' + this.src + '")';
-
-        }
-      }
+    if (this.img.complete) {
+      this.update();
     }
+  }
 
-    let elements = document.querySelectorAll('[data-responsive-background-image]');
-    for (let i = 0; i < elements.length; i++) {
-      new ResponsiveBackgroundImage(elements[i]);
+  update() {
+    let src = typeof this.img.currentSrc !== 'undefined' ? this.img.currentSrc : this.img.src;
+    if (this.src !== src) {
+      this.src = src;
+      this.element.style.backgroundImage = 'url("' + this.src + '")';
+
     }
-// })(); // REMOVE IF DRUPAL
   }
-// UNCOMMENT IF DRUPAL
-  }
-})(Drupal);
+}
+
+let elements = document.querySelectorAll('[data-responsive-background-image]');
+for (let i=0; i<elements.length; i++) {
+  new ResponsiveBackgroundImage(elements[i]);
+}
