@@ -1,5 +1,8 @@
 name: wvuonline
 recipe: pantheon
+services:
+  appserver:
+    xdebug: true
 config:
   framework: drupal8
   site: wvuonline

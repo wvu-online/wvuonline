@@ -55,19 +55,6 @@
           "type": "zip"
         }
       }
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "wvuonline/wvu_hobsons",
-        "version": "dev-master",
-        "type":"drupal-module",
-        "source": {
-          "url": "https://github.com/wvu-online/wvu_hobsons.git",
-          "type": "git",
-          "reference": "master"
-        }
-      }
     }
   ],
   "require": {
