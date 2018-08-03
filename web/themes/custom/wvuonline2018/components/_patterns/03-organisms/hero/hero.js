@@ -1,4 +1,6 @@
-Drupal.behaviors.responsiveHero = {
+(function (Drupal) { // UNCOMMENT IF DRUPAL.
+
+  Drupal.behaviors.responsiveHero = {
   attach: function (context, settings) {
 
 // (function () { // REMOVE IF DRUPAL
@@ -37,7 +39,7 @@ Drupal.behaviors.responsiveHero = {
       new ResponsiveBackgroundImage(elements[i]);
     }
 // })(); // REMOVE IF DRUPAL
-
+  }
 // UNCOMMENT IF DRUPAL
   }
-};
+})(Drupal);
