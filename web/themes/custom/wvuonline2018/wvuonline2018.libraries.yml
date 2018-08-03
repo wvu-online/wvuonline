@@ -32,3 +32,7 @@ tuition-calc:
       components/css/main.4b19de75.css: {}
   js:
     components/js/main.b46bcf01.js: {}
+
+responsive-hero:
+  js:
+    components/_patterns/03-organisms/hero/hero.js: {}
