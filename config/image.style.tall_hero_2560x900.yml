@@ -1,15 +1,17 @@
 uuid: 50898032-0e7d-465e-ad6c-58fe37bdb334
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - focal_point
 name: tall_hero_2560x900
-label: 'Tall Hero 2560x900'
+label: 'Hero (2560x900)'
 effects:
-  9a525954-0f73-4a68-b8c2-63b3c9a9419b:
-    uuid: 9a525954-0f73-4a68-b8c2-63b3c9a9419b
-    id: image_scale
+  8352293f-8558-4adc-93cd-7c3aabafe026:
+    uuid: 8352293f-8558-4adc-93cd-7c3aabafe026
+    id: focal_point_scale_and_crop
     weight: 1
     data:
       width: 2560
       height: 900
-      upscale: false
+      crop_type: focal_point
