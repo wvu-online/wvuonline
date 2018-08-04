@@ -7,13 +7,16 @@
       {% if body %}
         <div class="wvu-hero__body">{{ body }}</div>
       {% endif %}
-      {% if link %}
-        {% include "@atoms/01-links/link/link.twig"
+      {% if link_url %}
+        {% embed "@atoms/01-links/link/link.twig"
           with {
           link_url: link_url,
-          link_content: link_content
-        }
-        %}
+          link_base_class: "button"
+        } %}
+          {% block link_content %}
+            {{ link_content }}
+          {% endblock %}
+      {% endembed %}
       {% endif %}
     </div>
   </div>
