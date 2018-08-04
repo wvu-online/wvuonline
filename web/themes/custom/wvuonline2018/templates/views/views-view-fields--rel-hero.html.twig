@@ -50,13 +50,15 @@
     {#</{{ field.wrapper_element }}>#}
   {#{%- endif %}#}
 {#{%- endfor %}#}
+{{ attach_library('wvuonline2018/responsive-hero') }}
 {% set hero_size = fields.field_hero_hero_image_type.content|striptags|trim|lower %}
+
 {% include "@organisms/hero/hero.twig"
   with {
   title: fields.title.content,
-  background_image: fields.field_hero_tall_image.content|striptags|trim,
+  background_image: fields.field_hero_image.content,
   hero_size: hero_size,
   body: fields.field_hero_teaser.content,
-  link_content: fields.field_hero_link.content|striptags|trim,
-  link_url: fields.field_hero_link_1.content|striptags|trim
+  link_content: fields.field_hero_link_1.content|striptags|trim,
+  link_url: fields.field_hero_link.content|striptags|trim
 } %}

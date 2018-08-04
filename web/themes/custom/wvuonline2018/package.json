@@ -10,8 +10,7 @@
     "emulsify-gulp": "fourkitchens/emulsify-gulp#v2.3.0",
     "gulp": "^3.9.1",
     "requirejs": "^2.3.5",
-    "twig-components": "0.0.6",
-    "twig-loader": "^0.4.0"
+    "webpack": "^4.16.4"
   },
   "scripts": {
     "start": "gulp clean && gulp compile && gulp theme",

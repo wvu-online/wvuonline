@@ -8,13 +8,24 @@
   width: 100vw;
   //max-height: 100vh;
   //min-height: 600px;
-  background-size: cover;
+  //background-size: cover;
   background-color: $wvu-blue;
   position: relative;
 
+  img {
+    //width: 100%;
+    //height: 100%;
+    //object-fit: cover;
+    //object-position: 70%;
+  }
+
+  .button {
+    margin-top: 2em;
+  }
+
   .wvu-hero__copy {
-    margin-bottom: 2em;
-    max-width: 75%;
+    margin: 0 auto 2em;
+    max-width: 75em;
     color: $white;
 
     h1 {
@@ -24,6 +35,7 @@
       line-height: 0.80487em;
       color: white;
       text-transform: uppercase;
+      font-weight: normal;
       font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
 
       @include small {
@@ -40,7 +52,7 @@
         position: absolute;
         right: 0;
         left: 0;
-        height: 3em;
+        height: 2em;
         top: 0;
         width: 1.75em;
         opacity: 1;
@@ -48,6 +60,9 @@
         -ms-transform: skewX(146.25deg);
         -webkit-transform: skewX(146.25deg);
         transform: skewX(146.25deg);
+        @include large {
+          height: 3em;
+        }
       }
 
       span {
@@ -63,20 +78,53 @@
   }
 
   &--tall {
+
     .wvu-hero__copy {
-      max-width: 45%;
 
       h1 {
         max-width: 6em;
       }
+      .wvu-hero__body {
+        max-width: 45%;
+      }
     }
   }
   .wvu-hero__container {
-    max-width: 68em;
+    //position: absolute;
+    //top: 0; right: 0; bottom: 0; left: 0;
+    //display: flex;
+    //flex-direction: column;
+    //
+    //align-items: flex-start;
+    //justify-content: center;
+    //max-width: 68em;
+
     margin: 0 auto;
     padding: 0 2%;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    cursor: pointer;
+    background: linear-gradient(
+                    to right,
+                    rgba(44, 42, 41, 0.4) 40%,
+                    rgba(44, 42, 41, 0.2) 60%,
+                    rgba(44, 42, 41, 0) 100%
+    );
   }
+}
 
+[data-responsive-background-image] {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  //width: 24%;
+  //padding-bottom: 56.25% /* 16:9 ratio */
+}
+
+[data-responsive-background-image] img {
+  display: none;
 }
 
 .wvu-hero--big-picture {
