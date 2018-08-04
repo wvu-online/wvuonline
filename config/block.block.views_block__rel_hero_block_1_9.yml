@@ -1,9 +1,9 @@
-uuid: 629e552e-e9e7-4db5-8cb5-45c8ac852964
+uuid: 33cf7721-adf7-46ef-ad1e-1103db1a9f46
 langcode: en
 status: true
 dependencies:
   config:
-    - block_visibility_groups.block_visibility_group.state_authorization_landing
+    - block_visibility_groups.block_visibility_group.search_state_auth_by_program
     - views.view.rel_hero
   module:
     - block_visibility_groups
@@ -13,7 +13,7 @@ dependencies:
 id: views_block__rel_hero_block_1_9
 theme: wvuonline2018
 region: pre_content
-weight: -19
+weight: -6
 provider: null
 plugin: 'views_block:rel_hero-block_1'
 settings:
@@ -28,5 +28,5 @@ visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: state_authorization_landing
+    block_visibility_group: search_state_auth_by_program
     context_mapping: {  }

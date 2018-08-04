@@ -3,8 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.lage.field_lage_agency_name
     - field.field.node.lage.field_lage_body
+    - field.field.node.lage.field_lage_licensing_type_ref
     - field.field.node.lage.field_lage_link
+    - field.field.node.lage.field_lage_state
     - node.type.lage
   module:
     - link
@@ -14,27 +17,47 @@ targetEntityType: node
 bundle: lage
 mode: default
 content:
+  field_lage_agency_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_lage_body:
-    weight: 2
+    weight: 5
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
     region: content
+  field_lage_licensing_type_ref:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_lage_link:
-    weight: 1
+    weight: 4
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
     region: content
+  field_lage_state:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 3
+    weight: 6
     region: content
     third_party_settings: {  }
   title:

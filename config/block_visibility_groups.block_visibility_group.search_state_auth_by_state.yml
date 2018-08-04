@@ -1,0 +1,17 @@
+uuid: 6a28e76a-0778-43c1-a4f0-8090c1669b03
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: search_state_auth_by_state
+label: 'Search State Auth by State'
+logic: or
+conditions:
+  be3e8546-cc6e-4f62-94fb-c9b486b40a14:
+    id: request_path
+    pages: "/state-authorization-state\r\n/node/1032"
+    negate: false
+    context_mapping: {  }
+    uuid: be3e8546-cc6e-4f62-94fb-c9b486b40a14
+allow_other_conditions: false

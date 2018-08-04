@@ -1,0 +1,19 @@
+uuid: e127d8dd-79d2-43d6-bddf-bf5d92943868
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_prog_sibu_limited_ref
+field_name: field_prog_sibu_limited_ref
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

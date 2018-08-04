@@ -1,0 +1,28 @@
+uuid: f7032ea8-95f9-4434-aa63-ed4893c8b7bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sibu_lage_ref
+    - node.type.lage
+    - node.type.sibu
+id: node.sibu.field_sibu_lage_ref
+field_name: field_sibu_lage_ref
+entity_type: node
+bundle: sibu
+label: 'Licensing Agency'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      lage: lage
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

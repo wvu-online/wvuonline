@@ -1,0 +1,21 @@
+uuid: 95d64c5b-f31b-46e1-8ac0-9b1df6255829
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lage_state
+    - node.type.lage
+  module:
+    - options
+id: node.lage.field_lage_state
+field_name: field_lage_state
+entity_type: node
+bundle: lage
+label: State
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

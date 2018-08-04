@@ -1,0 +1,21 @@
+uuid: a095ef34-8507-4412-90a2-198062a097cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sibu_body
+    - node.type.sibu
+  module:
+    - text
+id: node.sibu.field_sibu_body
+field_name: field_sibu_body
+entity_type: node
+bundle: sibu
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

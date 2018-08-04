@@ -1,0 +1,21 @@
+uuid: da1813cc-e1ae-4a53-8dab-936ca3af553f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prog_state_auth_note
+    - node.type.prog
+  module:
+    - text
+id: node.prog.field_prog_state_auth_note
+field_name: field_prog_state_auth_note
+entity_type: node
+bundle: prog
+label: 'State Authorization Note'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

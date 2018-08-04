@@ -1,0 +1,19 @@
+uuid: 38ffdaf6-6856-4cbc-9d35-86a980d40ebb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_sibu_lage_ref
+field_name: field_sibu_lage_ref
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

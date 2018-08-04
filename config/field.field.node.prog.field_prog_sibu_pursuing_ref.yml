@@ -1,0 +1,28 @@
+uuid: a422c4f8-b5a9-4987-935f-d17fbc0b2c13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prog_sibu_pursuing_ref
+    - node.type.prog
+    - node.type.sibu
+id: node.prog.field_prog_sibu_pursuing_ref
+field_name: field_prog_sibu_pursuing_ref
+entity_type: node
+bundle: prog
+label: 'Not Authorized'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      sibu: sibu
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

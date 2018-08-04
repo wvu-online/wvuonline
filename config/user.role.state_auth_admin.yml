@@ -1,0 +1,23 @@
+uuid: 90f7473c-d109-4cbd-95bf-caeeee79da61
+langcode: en
+status: true
+dependencies: {  }
+id: state_auth_admin
+label: 'State Auth Admin'
+weight: 6
+is_admin: null
+permissions:
+  - 'create lage content'
+  - 'create saut content'
+  - 'delete any lage content'
+  - 'delete any saut content'
+  - 'delete own lage content'
+  - 'delete own saut content'
+  - 'edit any lage content'
+  - 'edit any saut content'
+  - 'edit own lage content'
+  - 'edit own saut content'
+  - 'revert lage revisions'
+  - 'revert saut revisions'
+  - 'view lage revisions'
+  - 'view saut revisions'

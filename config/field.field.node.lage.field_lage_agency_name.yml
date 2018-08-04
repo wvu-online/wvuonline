@@ -1,0 +1,19 @@
+uuid: 5fc83d68-abad-4b47-a342-387295cfe4d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lage_agency_name
+    - node.type.lage
+id: node.lage.field_lage_agency_name
+field_name: field_lage_agency_name
+entity_type: node
+bundle: lage
+label: 'Agency Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

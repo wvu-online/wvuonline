@@ -1,0 +1,23 @@
+uuid: 4a52ff23-caf7-44c2-8fa2-2977ecb03ef1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sibu_sara_authorized
+    - node.type.sibu
+  module:
+    - options
+id: node.sibu.field_sibu_sara_authorized
+field_name: field_sibu_sara_authorized
+entity_type: node
+bundle: sibu
+label: 'SARA Authorized'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'No'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

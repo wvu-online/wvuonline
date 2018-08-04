@@ -1,0 +1,22 @@
+uuid: 37099ed9-d60a-45ab-802f-9a21e1c1fd60
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sibu
+id: node.sibu.promote
+field_name: promote
+entity_type: node
+bundle: sibu
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

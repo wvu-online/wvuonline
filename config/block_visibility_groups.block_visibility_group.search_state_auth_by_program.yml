@@ -1,0 +1,17 @@
+uuid: 9ed210c8-358c-4364-ad69-0cc0af9513c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: search_state_auth_by_program
+label: 'Search State Auth by Program'
+logic: or
+conditions:
+  f09e6ccf-95aa-47f8-89ec-d483daa65d1f:
+    id: request_path
+    pages: "/state-authorization-program\r\n/node/1033"
+    negate: false
+    context_mapping: {  }
+    uuid: f09e6ccf-95aa-47f8-89ec-d483daa65d1f
+allow_other_conditions: false

@@ -12,6 +12,7 @@ button:
   tuit: true
   saut: true
   lage: true
+  sibu: false
 message:
   cour: false
   help: false
@@ -20,6 +21,7 @@ message:
   tuit: true
   saut: true
   lage: true
+  sibu: false
 tab:
   cour: false
   help: false
@@ -28,6 +30,7 @@ tab:
   tuit: true
   saut: true
   lage: true
+  sibu: false
 tab_edit:
   cour: false
   help: false
@@ -36,3 +39,4 @@ tab_edit:
   tuit: true
   saut: true
   lage: true
+  sibu: false

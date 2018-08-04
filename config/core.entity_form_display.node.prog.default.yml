@@ -18,7 +18,11 @@ dependencies:
     - field.field.node.prog.field_prog_pgro_ref
     - field.field.node.prog.field_prog_public_title
     - field.field.node.prog.field_prog_residents_fee
+    - field.field.node.prog.field_prog_sibu_authorized_ref
+    - field.field.node.prog.field_prog_sibu_limited_ref
+    - field.field.node.prog.field_prog_sibu_pursuing_ref
     - field.field.node.prog.field_prog_spot_ref
+    - field.field.node.prog.field_prog_state_auth_note
     - field.field.node.prog.field_seo_summary
     - node.type.prog
   module:
@@ -38,6 +42,7 @@ third_party_settings:
         - group_careers
         - group_spotlight
         - group_hero
+        - group_state_authorization_by_pro
       parent_name: ''
       weight: 7
       format_type: tabs
@@ -139,6 +144,23 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Hero
+      region: content
+    group_state_authorization_by_pro:
+      children:
+        - field_prog_state_auth_note
+        - field_prog_sibu_authorized_ref
+        - field_prog_sibu_limited_ref
+        - field_prog_sibu_pursuing_ref
+      parent_name: group_wrapper
+      weight: 17
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'State Authorization'
       region: content
 id: node.prog.default
 targetEntityType: node
@@ -288,6 +310,30 @@ content:
     third_party_settings: {  }
     type: number
     region: content
+  field_prog_sibu_authorized_ref:
+    weight: 30
+    settings: {  }
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: options_select
+    region: content
+  field_prog_sibu_limited_ref:
+    weight: 31
+    settings: {  }
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: options_select
+    region: content
+  field_prog_sibu_pursuing_ref:
+    weight: 32
+    settings: {  }
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: options_select
+    region: content
   field_prog_spot_ref:
     weight: 16
     settings:
@@ -305,6 +351,14 @@ content:
       entity_browser_entity_form:
         entity_browser_id: _none
     type: inline_entity_form_complex
+    region: content
+  field_prog_state_auth_note:
+    weight: 29
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
     region: content
   field_seo_summary:
     weight: 4
