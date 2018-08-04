@@ -1,0 +1,26 @@
+uuid: 7d13c065-fe9c-4a4f-8406-4b06aee30fe2
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - system
+  theme:
+    - wvuonline2018
+id: mainpagecontent_19
+theme: wvuonline2018
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

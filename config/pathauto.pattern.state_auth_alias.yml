@@ -1,0 +1,22 @@
+uuid: 6dba753c-d1c8-416b-ac77-e1099aec1c87
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: state_auth_alias
+label: 'State Auth Alias'
+type: 'canonical_entities:node'
+pattern: '/state-authorization/[node:field_saut_state]'
+selection_criteria:
+  85f624b0-ec61-4e2e-9627-1bb3b1bfd4ca:
+    id: node_type
+    bundles:
+      saut: saut
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 85f624b0-ec61-4e2e-9627-1bb3b1bfd4ca
+selection_logic: and
+weight: -5
+relationships: {  }

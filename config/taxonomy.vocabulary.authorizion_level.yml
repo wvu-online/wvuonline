@@ -1,0 +1,9 @@
+uuid: e4d59317-e20e-47fd-9c68-10f5e84d017d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Authorizion Level'
+vid: authorizion_level
+description: ''
+hierarchy: 0
+weight: 0

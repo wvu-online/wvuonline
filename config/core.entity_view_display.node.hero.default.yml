@@ -30,7 +30,7 @@ content:
   field_hero_image:
     type: entity_reference_entity_view
     weight: 107
-    label: hidden
+    label: above
     settings:
       view_mode: default
       link: false

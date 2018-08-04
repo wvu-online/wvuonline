@@ -1,0 +1,18 @@
+uuid: 702f34d0-d545-4cae-96c0-77744fb7e087
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.sibu
+  module:
+    - user
+id: node.sibu.teaser
+targetEntityType: node
+bundle: sibu
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

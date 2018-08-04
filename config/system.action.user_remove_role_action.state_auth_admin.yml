@@ -1,0 +1,14 @@
+uuid: b1643dc6-e43e-4907-8aad-faca0b05167c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.state_auth_admin
+  module:
+    - user
+id: user_remove_role_action.state_auth_admin
+label: 'Remove the State Auth Admin role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: state_auth_admin

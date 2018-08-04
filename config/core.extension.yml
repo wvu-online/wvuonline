@@ -46,6 +46,7 @@ module:
   entity_browser_enhanced: 0
   entity_browser_entity_form: 0
   entity_embed: 0
+  entity_reference_exposed_filters: 0
   entity_reference_views_select: 0
   externalauth: 0
   field: 0

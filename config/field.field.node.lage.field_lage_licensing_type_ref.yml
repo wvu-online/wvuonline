@@ -1,0 +1,29 @@
+uuid: 3e265d4a-fc06-47dd-8322-585c7db73676
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lage_licensing_type_ref
+    - node.type.lage
+    - taxonomy.vocabulary.licensing_type
+id: node.lage.field_lage_licensing_type_ref
+field_name: field_lage_licensing_type_ref
+entity_type: node
+bundle: lage
+label: 'Agency Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      licensing_type: licensing_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,105 @@
+uuid: 7169fbdc-6bc5-4a1a-8db3-0dbca2b727f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.sibu.field_sibu_body
+    - field.field.node.sibu.field_sibu_complaint_link
+    - field.field.node.sibu.field_sibu_hero_ref
+    - field.field.node.sibu.field_sibu_lage_ref
+    - field.field.node.sibu.field_sibu_sara_authorized
+    - field.field.node.sibu.field_sibu_state_name2
+    - node.type.sibu
+  module:
+    - entity_browser_entity_form
+    - inline_entity_form
+    - link
+    - text
+id: node.sibu.default
+targetEntityType: node
+bundle: sibu
+mode: default
+content:
+  field_sibu_body:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_sibu_complaint_link:
+    weight: 6
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_sibu_hero_ref:
+    weight: 7
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
+  field_sibu_lage_ref:
+    weight: 5
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'Licensing Agency'
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
+  field_sibu_sara_authorized:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_sibu_state_name2:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  moderation_state: true
+  path: true
+  promote: true
+  publish_on: true
+  status: true
+  sticky: true
+  uid: true
+  unpublish_on: true
+  url_redirects: true

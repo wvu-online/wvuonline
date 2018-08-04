@@ -1,0 +1,32 @@
+uuid: de62d4c4-ddca-4ae8-b8ff-7fe5b0b4de65
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.search_state_auth_by_state
+    - views.view.rel_state_info_bundles
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - wvuonline2018
+id: views_block__rel_state_info_bundles_block_3
+theme: wvuonline2018
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:rel_state_info_bundles-block_3'
+settings:
+  id: 'views_block:rel_state_info_bundles-block_3'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: search_state_auth_by_state
+    context_mapping: {  }
