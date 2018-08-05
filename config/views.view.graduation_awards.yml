@@ -302,8 +302,8 @@ display:
           label: ''
           exclude: true
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: "{% if ('Master' in title__value) or ('Doctor' in title__value) or ('DNP' in title__value) or ('RN' in title__value)%}\n  Graduate\n{% elseif 'Minor' in title__value %}\n  Minor\n{% elseif 'Cert' in title__value %}\n  Certificate\n{% elseif ('Bache' in title__value) %}\n  Undergraduate\n{% endif %}"
             make_link: false
             path: ''
             absolute: false
@@ -739,55 +739,16 @@ display:
                   min: ''
                   max: ''
           plugin_id: numeric
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: not
-          value: certificate
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: node
-          entity_field: title
-          plugin_id: string
       filter_groups:
         operator: AND
         groups:
           1: AND
       sorts:
-        title:
-          id: title
+        title_1:
+          id: title_1
           table: node_field_data
           field: title
-          relationship: none
+          relationship: reverse__node__field_prog_gawa_ref
           group_type: group
           admin_label: ''
           order: ASC
@@ -797,11 +758,11 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: standard
-        title_1:
-          id: title_1
+        title:
+          id: title
           table: node_field_data
           field: title
-          relationship: reverse__node__field_prog_gawa_ref
+          relationship: none
           group_type: group
           admin_label: ''
           order: ASC
