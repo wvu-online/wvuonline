@@ -3,7 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - image.style.max_325x325
+    - image.style.hero_1112x391
+    - image.style.hero_1413x497
+    - image.style.hero_1664x585_
+    - image.style.hero_1897x667_
+    - image.style.hero_2104x740_
+    - image.style.hero_2492x876_
+    - image.style.hero_308x108
+    - image.style.hero_783x275
     - image.style.tall_hero_2560x900
 id: tall_hero
 label: 'Tall Hero'
@@ -15,6 +22,14 @@ image_style_mappings:
     image_mapping:
       sizes: 100vw
       sizes_image_styles:
+        - hero_1112x391
+        - hero_1413x497
+        - hero_1664x585_
+        - hero_1897x667_
+        - hero_2104x740_
+        - hero_2492x876_
+        - hero_308x108
+        - hero_783x275
         - tall_hero_2560x900
 breakpoint_group: responsive_image
-fallback_image_style: max_325x325
+fallback_image_style: hero_308x108

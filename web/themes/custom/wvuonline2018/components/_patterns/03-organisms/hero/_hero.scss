@@ -19,11 +19,6 @@
     //object-position: 70%;
   }
 
-  .button {
-    margin-top: 2em;
-    border: 1px solid $white;
-  }
-
   .wvu-hero__copy {
     margin: 0 auto 2em;
     max-width: 75em;
@@ -66,11 +61,18 @@
         }
       }
 
+
+
       span {
         display: block;
         z-index: 4;
         position: relative;
       }
+    }
+
+    .button {
+      margin-top: 2em;
+      border: 1px solid $white;
     }
 
     p {

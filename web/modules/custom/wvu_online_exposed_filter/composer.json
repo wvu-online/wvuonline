@@ -1,0 +1,14 @@
+{
+  "name": "drupal/wvu_online_exposed_filter",
+  "type": "drupal-module",
+  "description": "Add exposed filter by title",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/wvu_online_exposed_filter",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/wvu_online_exposed_filter",
+    "source": "http://cgit.drupalcode.org/wvu_online_exposed_filter"
+  },
+  "require": { }
+}

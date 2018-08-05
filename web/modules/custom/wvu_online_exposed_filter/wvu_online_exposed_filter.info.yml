@@ -1,0 +1,5 @@
+name: 'WVU Online Exposed Filter'
+type: module
+description: 'Add exposed filter by title'
+core: 8.x
+package: 'WVU'
