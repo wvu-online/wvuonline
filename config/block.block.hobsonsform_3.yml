@@ -1,0 +1,40 @@
+uuid: 1ab3ef0b-fe96-4dea-ac19-eed4902a1bc3
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - ctools
+    - system
+    - wvu_custom_blocks
+  theme:
+    - wvuonline2018
+id: hobsonsform_3
+theme: wvuonline2018
+region: post_content
+weight: 0
+provider: null
+plugin: hobsons_form
+settings:
+  id: hobsons_form
+  label: 'Hobsons form'
+  provider: wvu_custom_blocks
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      prog: prog
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }
