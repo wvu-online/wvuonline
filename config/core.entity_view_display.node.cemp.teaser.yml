@@ -1,0 +1,18 @@
+uuid: b7fe5fc9-5011-4278-91f2-cb371759fd9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.cemp
+  module:
+    - user
+id: node.cemp.teaser
+targetEntityType: node
+bundle: cemp
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

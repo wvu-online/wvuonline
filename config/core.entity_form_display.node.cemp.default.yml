@@ -1,0 +1,146 @@
+uuid: 0c2272d8-7e23-48f5-8a1b-38054e1e432a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cemp.field_cemp_body
+    - field.field.node.cemp.field_cemp_hero_ref
+    - field.field.node.cemp.field_cemp_prog_ref
+    - node.type.cemp
+  module:
+    - entity_browser_entity_form
+    - field_group
+    - inline_entity_form
+    - text
+third_party_settings:
+  field_group:
+    group_wrapper:
+      children:
+        - group_text
+        - group_programs
+        - group_hero
+      parent_name: ''
+      weight: 1
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Wrapper
+      region: content
+    group_text:
+      children:
+        - field_cemp_body
+      parent_name: group_wrapper
+      weight: 6
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Text
+      region: content
+    group_programs:
+      children:
+        - field_cemp_prog_ref
+      parent_name: group_wrapper
+      weight: 7
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Programs
+      region: content
+    group_hero:
+      children:
+        - field_cemp_hero_ref
+      parent_name: group_wrapper
+      weight: 8
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Hero
+      region: hidden
+id: node.cemp.default
+targetEntityType: node
+bundle: cemp
+mode: default
+content:
+  field_cemp_body:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_cemp_hero_ref:
+    weight: 3
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Hero
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
+  field_cemp_prog_ref:
+    weight: 2
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Program
+      label_plural: ''
+      allow_existing: true
+      match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_new: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  moderation_state: true
+  path: true
+  promote: true
+  publish_on: true
+  sticky: true
+  uid: true
+  unpublish_on: true
+  url_redirects: true

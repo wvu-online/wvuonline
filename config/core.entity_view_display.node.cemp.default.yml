@@ -1,0 +1,39 @@
+uuid: ebcffee0-f868-40c0-b2ce-ace0dd97a1f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cemp.field_cemp_body
+    - field.field.node.cemp.field_cemp_hero_ref
+    - field.field.node.cemp.field_cemp_prog_ref
+    - node.type.cemp
+  module:
+    - text
+    - user
+id: node.cemp.default
+targetEntityType: node
+bundle: cemp
+mode: default
+content:
+  field_cemp_body:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_cemp_hero_ref:
+    weight: 1
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_cemp_prog_ref: true
