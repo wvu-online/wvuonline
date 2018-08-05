@@ -1,0 +1,19 @@
+uuid: bada3314-ee32-43fe-9b60-ec0c14ce9d2d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_cemp_body
+field_name: field_cemp_body
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

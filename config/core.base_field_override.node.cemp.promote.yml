@@ -1,0 +1,22 @@
+uuid: 731f4234-dc67-4d92-854e-3977903fcb73
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.cemp
+id: node.cemp.promote
+field_name: promote
+entity_type: node
+bundle: cemp
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

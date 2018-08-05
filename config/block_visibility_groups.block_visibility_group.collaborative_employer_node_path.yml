@@ -1,0 +1,19 @@
+uuid: aa9c19c8-bd7b-4dd8-9bfe-a11712f36080
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+id: collaborative_employer_node_path
+label: 'Collaborative Employer Node Path'
+logic: or
+conditions:
+  a6c5a9e4-396e-49a0-8e10-48fde8bae8c6:
+    id: 'entity_bundle:node'
+    bundles:
+      cemp: cemp
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: a6c5a9e4-396e-49a0-8e10-48fde8bae8c6
+allow_other_conditions: false
