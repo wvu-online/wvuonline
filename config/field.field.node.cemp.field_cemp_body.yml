@@ -1,0 +1,21 @@
+uuid: 7caa0be2-e769-43b4-95b6-300a41f831b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cemp_body
+    - node.type.cemp
+  module:
+    - text
+id: node.cemp.field_cemp_body
+field_name: field_cemp_body
+entity_type: node
+bundle: cemp
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
