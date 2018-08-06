@@ -1,0 +1,22 @@
+uuid: f6079f93-2819-422d-8ea5-2b81091552b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.seme
+id: node.seme.promote
+field_name: promote
+entity_type: node
+bundle: seme
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

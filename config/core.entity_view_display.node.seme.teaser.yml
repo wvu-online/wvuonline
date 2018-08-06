@@ -1,0 +1,18 @@
+uuid: 6e4145fc-1580-4882-867b-31a1e8ade4c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.seme
+  module:
+    - user
+id: node.seme.teaser
+targetEntityType: node
+bundle: seme
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

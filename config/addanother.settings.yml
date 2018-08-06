@@ -13,6 +13,7 @@ button:
   saut: true
   lage: true
   sibu: false
+  seme: false
 message:
   cour: false
   help: false
@@ -22,6 +23,7 @@ message:
   saut: true
   lage: true
   sibu: false
+  seme: false
 tab:
   cour: false
   help: false
@@ -31,6 +33,7 @@ tab:
   saut: true
   lage: true
   sibu: false
+  seme: false
 tab_edit:
   cour: false
   help: false
@@ -40,3 +43,4 @@ tab_edit:
   saut: true
   lage: true
   sibu: false
+  seme: false

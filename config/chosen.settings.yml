@@ -1,5 +1,5 @@
-minimum_single: 1
-minimum_multiple: 1
+minimum_single: 20
+minimum_multiple: 20
 disable_search_threshold: 0
 minimum_width: 0
 jquery_selector: 'select:visible'

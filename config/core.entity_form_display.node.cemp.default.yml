@@ -103,21 +103,11 @@ content:
     region: content
   field_cemp_prog_ref:
     weight: 2
-    settings:
-      form_mode: default
-      override_labels: true
-      label_singular: Program
-      label_plural: ''
-      allow_existing: true
-      match_operator: CONTAINS
-      collapsible: false
-      collapsed: false
-      allow_new: false
-      allow_duplicate: false
+    settings: {  }
     third_party_settings:
       entity_browser_entity_form:
         entity_browser_id: _none
-    type: inline_entity_form_complex
+    type: options_buttons
     region: content
   status:
     type: boolean_checkbox

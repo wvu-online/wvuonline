@@ -1,0 +1,19 @@
+uuid: 1a193101-24c9-4314-bf90-8b106d8290b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+id: static_page_node_path
+label: 'Static Page Node Path'
+logic: and
+conditions:
+  0f439139-16ec-4846-b669-b51b574b4f90:
+    id: 'entity_bundle:node'
+    bundles:
+      spag: spag
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 0f439139-16ec-4846-b669-b51b574b4f90
+allow_other_conditions: false

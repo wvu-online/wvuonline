@@ -1,0 +1,21 @@
+uuid: 9bffc6dc-6814-4f41-a1bc-4adc9685d2fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_seme_start_date
+    - node.type.seme
+  module:
+    - datetime
+id: node.seme.field_seme_start_date
+field_name: field_seme_start_date
+entity_type: node
+bundle: seme
+label: 'Start Date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -18,6 +18,7 @@ dependencies:
     - field.field.node.prog.field_prog_pgro_ref
     - field.field.node.prog.field_prog_public_title
     - field.field.node.prog.field_prog_residents_fee
+    - field.field.node.prog.field_prog_semester_name_ref
     - field.field.node.prog.field_prog_sibu_authorized_ref
     - field.field.node.prog.field_prog_sibu_limited_ref
     - field.field.node.prog.field_prog_sibu_pursuing_ref
@@ -110,6 +111,14 @@ content:
       scale: 0
       prefix_suffix: false
     third_party_settings: {  }
+  field_prog_semester_name_ref:
+    weight: 15
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_prog_sibu_authorized_ref:
     weight: 11
     label: above

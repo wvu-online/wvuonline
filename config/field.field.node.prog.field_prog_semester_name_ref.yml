@@ -1,18 +1,18 @@
-uuid: 47106e6f-c371-4b8f-aaf9-e14524ec0d3b
+uuid: 56494d45-cb08-4943-833d-a2eaa5e55042
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.taxonomy_term.field_semester_name_ref
-    - taxonomy.vocabulary.semester
+    - field.storage.node.field_prog_semester_name_ref
+    - node.type.prog
     - taxonomy.vocabulary.semester_names
-id: taxonomy_term.semester.field_semester_name_ref
-field_name: field_semester_name_ref
-entity_type: taxonomy_term
-bundle: semester
-label: 'Semester Name'
+id: node.prog.field_prog_semester_name_ref
+field_name: field_prog_semester_name_ref
+entity_type: node
+bundle: prog
+label: 'Available for Semester'
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

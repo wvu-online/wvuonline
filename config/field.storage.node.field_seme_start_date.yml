@@ -1,13 +1,13 @@
-uuid: 4c900a01-601c-4260-8985-e9aa42561c3d
+uuid: 0791bdd8-5d63-4fb6-8bee-a21b5b7e56f2
 langcode: en
 status: true
 dependencies:
   module:
     - datetime
-    - taxonomy
-id: taxonomy_term.field_semester_end_date
-field_name: field_semester_end_date
-entity_type: taxonomy_term
+    - node
+id: node.field_seme_start_date
+field_name: field_seme_start_date
+entity_type: node
 type: datetime
 settings:
   datetime_type: date

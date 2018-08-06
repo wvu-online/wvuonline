@@ -15,6 +15,79 @@ dependencies:
     - inline_entity_form
     - link
     - text
+third_party_settings:
+  field_group:
+    group_wrapper:
+      children:
+        - group_text
+        - group_licensing
+        - group_complaints
+        - group_hero
+      parent_name: ''
+      weight: 3
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Wrapper
+      region: content
+    group_text:
+      children:
+        - field_sibu_body
+      parent_name: group_wrapper
+      weight: 18
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Text
+      region: content
+    group_hero:
+      children:
+        - field_sibu_hero_ref
+      parent_name: group_wrapper
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Hero
+      region: content
+    group_licensing:
+      children:
+        - field_sibu_lage_ref
+      parent_name: group_wrapper
+      weight: 19
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Licensing
+      region: hidden
+    group_complaints:
+      children:
+        - field_sibu_complaint_link
+      parent_name: group_wrapper
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Complaints
+      region: hidden
 id: node.sibu.default
 targetEntityType: node
 bundle: sibu

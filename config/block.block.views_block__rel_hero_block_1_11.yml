@@ -1,6 +1,6 @@
 uuid: 1d0c828e-d91e-48d5-8944-1bdab6375cf3
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - block_visibility_groups.block_visibility_group.search_state_auth_by_state

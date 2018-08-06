@@ -1,6 +1,6 @@
 uuid: 0c1336ff-628b-4509-bb83-9429bdd641f5
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - block_visibility_groups.block_visibility_group.menu_link_degrees

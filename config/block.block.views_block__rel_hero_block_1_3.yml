@@ -1,6 +1,6 @@
 uuid: 7912b4cf-add4-4e28-bb53-e0ab661daf47
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - block_visibility_groups.block_visibility_group.menu_link_certificates

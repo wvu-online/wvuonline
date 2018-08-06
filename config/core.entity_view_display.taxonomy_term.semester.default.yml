@@ -3,8 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.semester.field_semester_end_date
-    - field.field.taxonomy_term.semester.field_semester_name_ref
     - field.field.taxonomy_term.semester.field_semester_start_date
     - taxonomy.vocabulary.semester
   module:
@@ -22,23 +20,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_semester_end_date:
-    weight: 2
-    label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
-  field_semester_name_ref:
-    weight: 3
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   field_semester_start_date:
     weight: 1
     label: above

@@ -1,6 +1,6 @@
 uuid: c85b2b2a-264f-4b93-a9ba-bf07b15f9f9b
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - block_visibility_groups.block_visibility_group.menu_link_degrees_minors
