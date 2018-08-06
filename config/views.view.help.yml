@@ -1617,7 +1617,7 @@ display:
         type: normal
         title: 'Manage Help'
         menu_name: account
-        weight: -44
+        weight: -43
       display_description: ''
       filters:
         status:

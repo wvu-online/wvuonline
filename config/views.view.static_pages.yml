@@ -377,7 +377,7 @@ display:
         type: normal
         title: 'Manage Static Pages'
         menu_name: account
-        weight: -38
+        weight: -36
       display_description: ''
     cache_metadata:
       max-age: -1

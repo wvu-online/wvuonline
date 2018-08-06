@@ -1787,7 +1787,7 @@ display:
         type: normal
         title: 'Manage Spotlights'
         menu_name: account
-        weight: -40
+        weight: -38
       display_description: ''
       access:
         type: role

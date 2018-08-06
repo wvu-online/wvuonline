@@ -3276,7 +3276,7 @@ display:
         type: normal
         title: 'Manage Graduation Awards'
         menu_name: account
-        weight: -45
+        weight: -44
       display_description: ''
     cache_metadata:
       max-age: -1

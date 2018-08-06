@@ -1159,7 +1159,7 @@ display:
         type: normal
         title: 'Manage Curriculum'
         menu_name: account
-        weight: -46
+        weight: -45
       display_description: ''
       filters:
         status:

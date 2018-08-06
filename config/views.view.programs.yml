@@ -1411,7 +1411,7 @@ display:
         type: normal
         title: 'Manage Programs'
         menu_name: account
-        weight: -43
+        weight: -42
       display_description: ''
       fields:
         title:
