@@ -26,6 +26,6 @@ visibility:
     context_mapping: {  }
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: "<front>\r\n/search-results"
     negate: true
     context_mapping: {  }
