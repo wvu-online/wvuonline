@@ -664,7 +664,7 @@ display:
           alter:
             alter_text: false
             text: '{{ field_hero_link__title }}'
-            make_link: true
+            make_link: false
             path: '{{ field_hero_link__uri }}'
             absolute: false
             external: false
@@ -701,11 +701,11 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: uri
-          type: link_separate
+          type: link
           settings:
             trim_length: null
-            url_only: false
-            url_plain: false
+            url_only: true
+            url_plain: true
             rel: '0'
             target: '0'
           group_column: ''
