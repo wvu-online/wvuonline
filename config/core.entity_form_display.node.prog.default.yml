@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.prog.field_prog_financial_aid_clause
     - field.field.node.prog.field_prog_gawa_ref
     - field.field.node.prog.field_prog_hero_ref
+    - field.field.node.prog.field_prog_hobsons_code
     - field.field.node.prog.field_prog_non_residents_fee
     - field.field.node.prog.field_prog_pgro_ref
     - field.field.node.prog.field_prog_public_title
@@ -282,6 +283,14 @@ content:
       entity_browser_entity_form:
         entity_browser_id: _none
     type: inline_entity_form_complex
+    region: content
+  field_prog_hobsons_code:
+    weight: 33
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_prog_non_residents_fee:
     weight: 15
