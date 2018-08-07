@@ -350,7 +350,18 @@ display:
             label: ''
           plugin_id: standard
       title: 'Manage State Info Bundles'
-      header: {  }
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content: "<a href=\"/user\">My Dashboard</a></br>\n<a href=\"/node/add/sibu\">Add a new State Info Bundle</a>"
+          plugin_id: text_custom
       footer: {  }
       empty: {  }
       relationships:
