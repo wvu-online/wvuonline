@@ -10,24 +10,23 @@
 2. Create new site in Lando, `lando init github --recipe=pantheon`
 3. `cd repo_dir`
 4. Run `composer install` from either your repo directory or `/web`
-5. Make sure you have node, npm/yarn and optionally/recommended [AVN](https://github.com/wbyoung/avn) 
+5. Make sure you have node, npm/yarn and optionally/recommended [AVN](https://github.com/wbyoung/avn).
 6.Generate front-end assets `cd web/themes/custom/wvuonline2018`
-7. If not using AVN, run `./install-node.sh`
+7. If not using AVN, be sure to use Node V 9.X
 8. Run `yarn install`
 
 ## Front-End Information
 Theme is built using FourKitchens/Emulsify
 
 ### NPM Tasks
-- postinstall: `find node_modules/ -name '*.info' -type f -delete`
-- install-tools: `npm install --force"`
-- uninstall-tools: `rm -r node_modules;`,
-- build: `gulp` 
-- build:dev: `gulp build:dev`
-- serve: `gulp serve`
-- watch: `gulp watch`
+- start
+### Gulp Tasks
+- default - Launches watch task to compile and watch files for changes
+- build - Will build all assets
+- serve - Will launch BrowserSync instance
 
- 
+All necessary tasks will be run by CircleCI to generate the theme assets.
+
 ## Configuration
 All configuration is managed using Drupal's built in Configuration Management `/admin/config/development/configuration/` or via Drush.
 
